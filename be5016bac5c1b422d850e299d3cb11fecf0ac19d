@@ -1,0 +1,11 @@
+Revision: be5016bac5c1b422d850e299d3cb11fecf0ac19d
+Patch-set: 2
+File: media/libstagefright/id3/ID3.cpp
+
+746
+Wed Jul 11 21:38:20 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAHJX///To=
+Bytes: 139
+Marco - Looks like the consistent thing to do - since we added the termination at line 737, but does the client care about these two bytes?
+
