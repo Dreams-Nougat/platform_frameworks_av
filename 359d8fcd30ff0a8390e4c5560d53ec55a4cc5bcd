@@ -10,3 +10,11 @@ Bytes: 128
 MallocWrapper does not reset the newly allocated memory.
 what do you mean by the "allocation callback" already reset the memory?
 
+193
+Thu Jul 12 18:23:48 2012 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAHJX///Pk=
+UUID: AAAHMn////M=
+Bytes: 255
+It does reset the newly allocated memory when https://android-review.googlesource.com/38893 has been merged, which is a dependency of this change. That change is what you suggested during the review of https://android-review.googlesource.com/35291 before.
+
