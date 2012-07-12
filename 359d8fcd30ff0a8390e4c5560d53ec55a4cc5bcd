@@ -1,0 +1,12 @@
+Revision: 359d8fcd30ff0a8390e4c5560d53ec55a4cc5bcd
+Base-for-patch-set: 1
+File: media/libstagefright/codecs/avc/enc/src/rate_control.cpp
+
+193
+Thu Jul 12 18:20:18 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAHJX///Pk=
+Bytes: 128
+MallocWrapper does not reset the newly allocated memory.
+what do you mean by the "allocation callback" already reset the memory?
+
