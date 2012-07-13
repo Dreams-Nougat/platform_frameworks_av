@@ -9,3 +9,17 @@ UUID: AAAHJX///To=
 Bytes: 139
 Marco - Looks like the consistent thing to do - since we added the termination at line 737, but does the client care about these two bytes?
 
+746
+Fri Jul 13 06:52:08 2012 +0000
+Author: Henrik Baard <1004424@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAHJX///To=
+UUID: AAAHOn///+w=
+Bytes: 389
+The method StringSize is used by method getAlbumArt(), and is used when calculating the length and return data.
+
+ size_t descLen = StringSize(&data[2 + mimeLen], encoding);
+ *length = size - 2 - mimeLen - descLen;
+  return &data[2 + mimeLen + descLen];
+
+So if the descLen is of by 2 bytes, then the length of the album art will be wrong, and the pointer to the data will be off by 2 bytes.
+
