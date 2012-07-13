@@ -1,0 +1,18 @@
+Revision: 983995747ed3adaf25035c433df1ccbaa056a898
+Patch-set: 1
+File: media/libstagefright/MPEG2TSWriter.cpp
+
+988
+Fri Jul 13 18:14:46 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAHOX///94=
+Bytes: 69
+In the future please don't use javadoc style comments in native code.
+
+989
+Fri Jul 13 18:14:46 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAHOX///90=
+Bytes: 20
+could've been const.
+
