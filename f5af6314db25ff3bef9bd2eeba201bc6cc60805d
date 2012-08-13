@@ -1,0 +1,11 @@
+Revision: f5af6314db25ff3bef9bd2eeba201bc6cc60805d
+Patch-set: 1
+File: media/libstagefright/codecs/avc/enc/src/sad_halfpel_inline.h
+
+76
+Mon Aug 13 22:55:29 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIRn///fM=
+Bytes: 23
+will this ever be used?
+
