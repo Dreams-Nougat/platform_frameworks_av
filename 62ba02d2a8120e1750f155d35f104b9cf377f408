@@ -1,0 +1,25 @@
+Revision: 62ba02d2a8120e1750f155d35f104b9cf377f408
+Patch-set: 1
+File: media/libstagefright/MPEG2TSWriter.cpp
+
+873
+Wed Aug 15 15:52:02 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIbX///5A=
+Bytes: 40
+please put the condition in parentheses.
+
+923
+Wed Aug 15 15:52:02 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIbX///48=
+Bytes: 72
+please add parentheses around the difference to make precedence obvious.
+
+949
+Wed Aug 15 15:52:02 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIbX///44=
+Bytes: 76
+no whitespace after the open parenthesis and before the closing parenthesis.
+
