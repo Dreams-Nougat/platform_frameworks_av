@@ -25,3 +25,11 @@ UUID: AAAIiX///8o=
 Bytes: 179
 Confirmed that the RVCT inline assembly still works with recent RVCT versions (RVCT 4.0), and is faster than the generic C code on that compiler, so it does make sense to keep it.
 
+76
+Thu Aug 16 19:35:21 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIiX///8o=
+UUID: AAAIf3///nI=
+Bytes: 32
+ok. lets keep this then. thanks.
+
