@@ -17,3 +17,11 @@ UUID: AAAIiX////A=
 Bytes: 247
 It will be used if you build the code with RVCT. I don't know if that's supported for building the full Android system, but the codec code itself might be able to handle it - I haven't tested it myself. I'll see if I can get a RVCT test license...
 
+76
+Thu Aug 16 10:50:50 2012 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIiX////A=
+UUID: AAAIiX///8o=
+Bytes: 179
+Confirmed that the RVCT inline assembly still works with recent RVCT versions (RVCT 4.0), and is faster than the generic C code on that compiler, so it does make sense to keep it.
+
