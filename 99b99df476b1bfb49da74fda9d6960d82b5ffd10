@@ -1,0 +1,18 @@
+Revision: 99b99df476b1bfb49da74fda9d6960d82b5ffd10
+Patch-set: 2
+File: media/libstagefright/MPEG2TSWriter.cpp
+
+937
+Fri Aug 17 22:53:56 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIkn///Uw=
+Bytes: 103
+I believe this should read "184", correct? 4 bytes are taken up by the ts header, leaving 184, not 183.
+
+962
+Fri Aug 17 22:53:56 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIkn///Uo=
+Bytes: 70
+You don't actually 0-fill anything but the 2nd (if any) byte, correct?
+
