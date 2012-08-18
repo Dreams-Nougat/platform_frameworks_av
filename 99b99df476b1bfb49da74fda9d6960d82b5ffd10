@@ -9,10 +9,26 @@ UUID: AAAIkn///Uw=
 Bytes: 103
 I believe this should read "184", correct? 4 bytes are taken up by the ts header, leaving 184, not 183.
 
+937
+Sat Aug 18 16:29:43 2012 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIkn///Uw=
+UUID: AAAIvX////8=
+Bytes: 333
+Hmm, yes, after rereading, I think so as well. I'm out of office for a week so I can't retest it properly with that change right now (in the current form it was way better than before, but I still saw some odd glitches every now and then - I hope this would be the thing that fixes it), but it does look like it indeed should be 184.
+
 962
 Fri Aug 17 22:53:56 2012 +0000
 Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: AAAIkn///Uo=
 Bytes: 70
 You don't actually 0-fill anything but the 2nd (if any) byte, correct?
+
+962
+Sat Aug 18 16:29:43 2012 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIkn///Uo=
+UUID: AAAIvX////4=
+Bytes: 184
+Yes, that seems right. Sorry for the unclear code comments - I'm not the original author to these ones, I've merely tried to clean them up and fix them in order to get them upstreamed.
 
