@@ -1,0 +1,18 @@
+Revision: 509fad6dae5855591e98fca174651c282460ed7b
+Patch-set: 1
+File: media/libstagefright/rtsp/AMPEG4ElementaryAssembler.cpp
+
+262
+Mon Aug 20 15:21:32 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIrn///2s=
+Bytes: 38
+Please add parentheses around the sum.
+
+356
+Mon Aug 20 15:21:32 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIrn///2o=
+Bytes: 37
+Please add parentheses around the sum
+
