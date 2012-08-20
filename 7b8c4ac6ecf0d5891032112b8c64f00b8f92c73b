@@ -1,0 +1,11 @@
+Revision: 7b8c4ac6ecf0d5891032112b8c64f00b8f92c73b
+Patch-set: 1
+File: media/libstagefright/MPEG4Extractor.cpp
+
+2053
+Mon Aug 20 15:25:45 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIrn///2Y=
+Bytes: 255
+strncasecmp, also add a comment that this workaround is for _malformed_ files that declare 0 sync samples instead of leaving the stss table out completely to indicate that all samples are sync samples (which would be the correct way according to the spec)
+
