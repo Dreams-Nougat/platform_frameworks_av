@@ -1,0 +1,11 @@
+Revision: 3b67b6f11875113b4de3247ad931f6ec47ea24d4
+Patch-set: 1
+File: media/libstagefright/MPEG4Extractor.cpp
+
+2074
+Mon Aug 20 23:23:46 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIu3///O0=
+Bytes: 83
+we might need to cast sampleTime to int64_t before it is multiplied by the constant
+
