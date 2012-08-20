@@ -1,0 +1,11 @@
+Revision: eb370ead8a9fcb9091c0ed265206f37a76f57904
+Patch-set: 1
+File: media/libstagefright/chromium_http/support.cpp
+
+173
+Mon Aug 20 15:22:52 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIrn///2g=
+Bytes: 47
+This should probably be based off of LOG_NDEBUG
+
