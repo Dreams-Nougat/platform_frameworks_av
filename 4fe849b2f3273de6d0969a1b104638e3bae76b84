@@ -1,0 +1,11 @@
+Revision: 4fe849b2f3273de6d0969a1b104638e3bae76b84
+Patch-set: 3
+File: media/libstagefright/rtsp/MyHandler.h
+
+204
+Mon Aug 20 16:55:50 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIu3///tU=
+Bytes: 157
+the caller of addSDES() may be sending invalid data since the buffer data (for instance, around line 327?)  is not constructed when getsockname() call fails.
+
