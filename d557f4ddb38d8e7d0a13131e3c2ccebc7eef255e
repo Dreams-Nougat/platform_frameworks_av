@@ -9,3 +9,11 @@ UUID: AAAIf3///m0=
 Bytes: 108
 I suppose that if the target state is the same as the current state, onChangeState should never be received.
 
+429
+Mon Aug 20 15:27:06 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIf3///m0=
+UUID: AAAIrn///2Q=
+Bytes: 151
+that's correct. let's leave the assertion in and debug the underlying issue instead of hiding it. Please file a bugreport with steps to repro the issue
+
