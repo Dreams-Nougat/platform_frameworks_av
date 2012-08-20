@@ -17,6 +17,14 @@ UUID: AAAIvX////8=
 Bytes: 333
 Hmm, yes, after rereading, I think so as well. I'm out of office for a week so I can't retest it properly with that change right now (in the current form it was way better than before, but I still saw some odd glitches every now and then - I hope this would be the thing that fixes it), but it does look like it indeed should be 184.
 
+937
+Mon Aug 20 13:51:18 2012 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIvX////8=
+UUID: AAAIvX///+E=
+Bytes: 212
+I managed to get this tested remotely, and yes, switching this to 184 fixes the last few glitches that I saw. Thanks for spotting it! I sent a new change for this in https://android-review.googlesource.com/41821.
+
 962
 Fri Aug 17 22:53:56 2012 +0000
 Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
