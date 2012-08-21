@@ -17,3 +17,11 @@ UUID: AAAIw3///zQ=
 Bytes: 158
 I think the code is OK, actually. The constant is a long long, which is guaranteed to be at least 64-bit, and sampleTime will be upcast as necessary to match.
 
+2074
+Tue Aug 21 18:23:27 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIw3///zQ=
+UUID: AAAIw3///xc=
+Bytes: 156
+yeah, since the constant is of type long long, the result of the multiplication won't cause data overflow (the value assigned to also have time of int64_t).
+
