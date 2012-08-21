@@ -9,3 +9,11 @@ UUID: AAAIu3///O0=
 Bytes: 83
 we might need to cast sampleTime to int64_t before it is multiplied by the constant
 
+2074
+Tue Aug 21 17:58:27 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIu3///O0=
+UUID: AAAIw3///zQ=
+Bytes: 158
+I think the code is OK, actually. The constant is a long long, which is guaranteed to be at least 64-bit, and sampleTime will be upcast as necessary to match.
+
