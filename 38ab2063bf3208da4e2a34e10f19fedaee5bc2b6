@@ -1,0 +1,13 @@
+Revision: 38ab2063bf3208da4e2a34e10f19fedaee5bc2b6
+Patch-set: 1
+File: media/libstagefright/OMXCodec.cpp
+
+369
+Tue Aug 21 19:18:08 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAIw3///vw=
+Bytes: 181
+there is no need to add the code here.
+
+OnlySubmitOneInputBufferAtOneTime is passed from StagefrightRecorder.cpp anyway for timelapse recording, regardless what codec is being used.
+
