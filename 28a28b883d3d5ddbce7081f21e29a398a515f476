@@ -9,12 +9,28 @@ UUID: AAAIrn///yA=
 Bytes: 11
 100 columns
 
+31
+Tue Aug 21 10:59:40 2012 +0000
+Author: Kei Takahashi <1010188@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIrn///yA=
+UUID: AAAIyH///98=
+Bytes: 17
+Added a linefeed.
+
 39
 Mon Aug 20 16:57:58 2012 +0000
 Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: AAAIsH///t4=
 Bytes: 30
 missing space before the brace
+
+39
+Tue Aug 21 10:59:40 2012 +0000
+Author: Kei Takahashi <1010188@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIsH///t4=
+UUID: AAAIyH///94=
+Bytes: 14
+Added a space.
 
 66
 Mon Aug 20 16:57:58 2012 +0000
@@ -23,12 +39,28 @@ UUID: AAAIu3///tg=
 Bytes: 28
 Yoda condition not mandatory
 
+66
+Tue Aug 21 10:59:40 2012 +0000
+Author: Kei Takahashi <1010188@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIu3///tg=
+UUID: AAAIyH///90=
+Bytes: 4
+Done
+
 115
 Mon Aug 20 16:57:58 2012 +0000
 Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: AAAIrn///x8=
 Bytes: 50
 This continuation needs to be indented by 8 spaces
+
+115
+Tue Aug 21 10:59:40 2012 +0000
+Author: Kei Takahashi <1010188@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIrn///x8=
+UUID: AAAIyH///9w=
+Bytes: 4
+Done
 
 File: drm/common/IDrmServiceListener.cpp
 
@@ -39,6 +71,14 @@ UUID: AAAIrn///x0=
 Bytes: 77
 Unnecessary Yoda condition, especially because it's not testing for equality.
 
+74
+Tue Aug 21 10:59:40 2012 +0000
+Author: Kei Takahashi <1010188@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIrn///x0=
+UUID: AAAIyH///9o=
+Bytes: 4
+Done
+
 File: include/drm/DrmInfoEvent.h
 
 101
@@ -48,10 +88,26 @@ UUID: AAAIrn///x4=
 Bytes: 49
 This continuation should be indented by 8 spaces.
 
+101
+Tue Aug 21 10:59:40 2012 +0000
+Author: Kei Takahashi <1010188@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIrn///x4=
+UUID: AAAIyH///9g=
+Bytes: 4
+Done
+
 125
 Mon Aug 20 16:57:58 2012 +0000
 Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: AAAIsH///t0=
 Bytes: 8
 8 spaces
+
+125
+Tue Aug 21 10:59:40 2012 +0000
+Author: Kei Takahashi <1010188@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIsH///t0=
+UUID: AAAIyH///9k=
+Bytes: 4
+Done
 
