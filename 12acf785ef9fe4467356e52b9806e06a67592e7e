@@ -10,6 +10,14 @@ Bytes: 155
 My experience is, using 0 increases anr's: Also see reasoning in: https://android-review.googlesource.com/#/c/41640/
 But I consider that a low value is OK.
 
+1795
+Wed Aug 22 14:18:22 2012 +0000
+Author: Gabriel Beddingfield <1010481@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAI3X///8k=
+UUID: AAAI1X////E=
+Bytes: 101
+Interesting... We've never seen an ANR because of this.... and we've been doing it since Gingerbread.
+
 1831
 Wed Aug 22 08:46:04 2012 +0000
 Author: Jan Olof Svensson <1015345@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -17,4 +25,12 @@ UUID: AAAI3X///8g=
 Bytes: 154
 My experience is, using 0 increases anr's: Also see reasoning in: https://android-review.googlesource.com/#/c/41640
 But I consider that a low value is OK.
+
+1831
+Wed Aug 22 14:18:22 2012 +0000
+Author: Gabriel Beddingfield <1010481@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAI3X///8g=
+UUID: AAAI1X////A=
+Bytes: 10
+See above.
 
