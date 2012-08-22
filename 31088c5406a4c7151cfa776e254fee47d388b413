@@ -1,0 +1,14 @@
+Revision: 31088c5406a4c7151cfa776e254fee47d388b413
+Patch-set: 2
+File: media/libstagefright/OMXCodec.cpp
+
+586
+Wed Aug 22 02:30:00 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI13///n8=
+Bytes: 198
+has this patch ever been tested at all?
+The quirk proposes to set both profile and level, but only level is set here.
+
+Unless we see compelling reasons for this patch, we will not accept new quirks.
+
