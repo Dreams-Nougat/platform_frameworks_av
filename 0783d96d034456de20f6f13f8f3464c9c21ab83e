@@ -1,0 +1,11 @@
+Revision: 0783d96d034456de20f6f13f8f3464c9c21ab83e
+Patch-set: 1
+File: media/libmediaplayerservice/Android.mk
+
+47
+Thu Aug 23 19:29:55 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI13//+XU=
+Bytes: 31
+Let's use a tab for consistency
+
