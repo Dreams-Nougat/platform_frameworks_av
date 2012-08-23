@@ -1,0 +1,11 @@
+Revision: ff7ef024eb84c82a4510411dc037c0aeea5f9e50
+Patch-set: 1
+File: media/libstagefright/tests/Android.mk
+
+41
+Thu Aug 23 19:29:22 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI13//+XY=
+Bytes: 58
+Let's use a tab for consistency with the rest of the list.
+
