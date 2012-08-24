@@ -1,0 +1,39 @@
+Revision: d30b41a7c8f898f5fccef0b8307b7375bee5eef5
+Patch-set: 2
+File: media/libstagefright/matroska/MatroskaExtractor.cpp
+
+840
+Fri Aug 24 17:11:45 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI2X//9wQ=
+Bytes: 28
+Add a space before the brace
+
+893
+Fri Aug 24 17:11:45 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI2H//9/Q=
+Bytes: 28
+Add a blank line above this.
+
+895
+Fri Aug 24 17:11:45 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI2X//9wY=
+Bytes: 6
+Braces
+
+908
+Fri Aug 24 17:11:45 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI2X//9wU=
+Bytes: 23
+Add a space after "for"
+
+917
+Fri Aug 24 17:11:45 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI2H//9/I=
+Bytes: 6
+braces
+
