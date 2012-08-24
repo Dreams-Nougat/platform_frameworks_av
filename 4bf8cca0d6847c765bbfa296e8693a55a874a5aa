@@ -1,0 +1,11 @@
+Revision: 4bf8cca0d6847c765bbfa296e8693a55a874a5aa
+Patch-set: 2
+File: libvideoeditor/vss/mcs/src/M4MCS_API.c
+
+843
+Fri Aug 24 17:12:59 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI2H//9+4=
+Bytes: 23
+We prefer 8 spaces here
+
