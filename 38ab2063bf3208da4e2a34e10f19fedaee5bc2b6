@@ -11,3 +11,11 @@ there is no need to add the code here.
 
 OnlySubmitOneInputBufferAtOneTime is passed from StagefrightRecorder.cpp anyway for timelapse recording, regardless what codec is being used.
 
+369
+Mon Aug 27 03:02:46 2012 +0000
+Author: Liang Zhao <1015402@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAIw3///vw=
+UUID: AAAI3X///bs=
+Bytes: 122
+Intel OMX Encoder doesn't support OnlySubmitOneInputBufferAtOneTime for power performance concern, so disables it forcely.
+
