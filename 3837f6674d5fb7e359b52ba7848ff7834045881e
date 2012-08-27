@@ -1,0 +1,11 @@
+Revision: 3837f6674d5fb7e359b52ba7848ff7834045881e
+Patch-set: 1
+File: media/libstagefright/rtsp/APacketSource.cpp
+
+593
+Mon Aug 27 18:07:01 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI63///pY=
+Bytes: 35
+This should be indented by 8 spaces
+
