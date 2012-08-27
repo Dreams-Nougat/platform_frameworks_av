@@ -1,0 +1,20 @@
+Revision: dfe50c28c11a73247bfa63ab9be716222ad67cc2
+Patch-set: 1
+File: include/media/stagefright/MetaData.h
+
+95
+Mon Aug 27 18:15:49 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI63///o0=
+Bytes: 77
+The capitalization and alignment aren't consistent with the surrounding code.
+
+File: media/libstagefright/OMXCodec.cpp
+
+2732
+Mon Aug 27 18:15:49 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI6X///k0=
+Bytes: 11
+100 columns
+
