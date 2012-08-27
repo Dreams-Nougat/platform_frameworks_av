@@ -1,0 +1,11 @@
+Revision: 14e1a4d8df99c1c200134f91f5c1c705b2f4f836
+Patch-set: 1
+File: media/libstagefright/WAVExtractor.cpp
+
+408
+Mon Aug 27 17:38:02 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI6n///wU=
+Bytes: 35
+We prefer spaces around "*" and "/"
+
