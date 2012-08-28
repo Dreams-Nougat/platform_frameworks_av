@@ -9,3 +9,11 @@ UUID: AAAI6X//+2A=
 Bytes: 75
 who is sending 0-length input buffers to AudioPlayer? - parser? If so, why?
 
+457
+Tue Aug 28 12:30:15 2012 +0000
+Author: Muthukumar Kandasamy <1012595@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAI6X//+2A=
+UUID: AAAI2n///cI=
+Bytes: 223
+This happens for some specific clips where the final chunk of data comes in multiple of buffers and the last buffer is given as a zero length data buffer and thus the timestamp is set to the first buffer of the final chunk.
+
