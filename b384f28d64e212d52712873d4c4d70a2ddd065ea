@@ -1,0 +1,11 @@
+Revision: b384f28d64e212d52712873d4c4d70a2ddd065ea
+Patch-set: 2
+File: media/libstagefright/AudioPlayer.cpp
+
+457
+Tue Aug 28 01:34:25 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI6X//+2A=
+Bytes: 75
+who is sending 0-length input buffers to AudioPlayer? - parser? If so, why?
+
