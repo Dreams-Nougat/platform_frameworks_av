@@ -17,3 +17,17 @@ UUID: AAAI2n///cI=
 Bytes: 223
 This happens for some specific clips where the final chunk of data comes in multiple of buffers and the last buffer is given as a zero length data buffer and thus the timestamp is set to the first buffer of the final chunk.
 
+457
+Tue Aug 28 20:03:54 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI63//+go=
+Bytes: 90
+Ack, I missed a code style issue the first time around. There should be a space after "if"
+
+460
+Tue Aug 28 20:03:54 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI6X//+is=
+Bytes: 192
+This line is supposed to be indented 8 characters from the previous one. I know it was wrong in the original code, but since we're re-indenting it we should use the opportunity to clean it up.
+
