@@ -1,0 +1,11 @@
+Revision: 742b6225a3b272f721bb7ee26d55e828d080474b
+Patch-set: 1
+File: media/libstagefright/codecs/avc/enc/SoftAVCEncoder.cpp
+
+852
+Wed Aug 29 15:48:06 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI63//+Ds=
+Bytes: 141
+The canonical Android style wants braces here, but I don't know how much that applies to C++ (and I don't know the local style of this file).
+
