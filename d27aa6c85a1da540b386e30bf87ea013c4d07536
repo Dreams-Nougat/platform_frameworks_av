@@ -1,0 +1,11 @@
+Revision: d27aa6c85a1da540b386e30bf87ea013c4d07536
+Patch-set: 1
+File: media/libstagefright/MPEG2TSWriter.cpp
+
+258
+Wed Aug 29 20:20:21 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI6n//+Qc=
+Bytes: 63
+Any chance to fit that on 100 columns, maybe by indenting less?
+
