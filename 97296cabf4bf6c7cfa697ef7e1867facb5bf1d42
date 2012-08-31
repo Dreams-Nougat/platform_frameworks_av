@@ -1,0 +1,18 @@
+Revision: 97296cabf4bf6c7cfa697ef7e1867facb5bf1d42
+Patch-set: 3
+File: media/libstagefright/rtsp/ARTPConnection.cpp
+
+371
+Fri Aug 31 16:34:27 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI63//8W4=
+Bytes: 46
+Possibly over-indented -  I missed that erlier
+
+375
+Fri Aug 31 16:34:27 2012 +0000
+Author: Jean-Baptiste Queru <1000660@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI6X//8Rc=
+Bytes: 80
+Since we're moving this line, we could use the opportunity to use 8 spaces here.
+
