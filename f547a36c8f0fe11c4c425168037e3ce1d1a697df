@@ -20,3 +20,11 @@ If I remember correctly, the issue was that the EOS flag (when called from OMXCo
 
 This fixes using the recordvideo test application (among other things, I'd guess) with this encoder, FWIW.
 
+853
+Wed Sep 12 19:38:20 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAI5n//+Vw=
+UUID: AAAI83//80s=
+Bytes: 100
+Yup, that is exactly what I was thinking but I am not sure recordvideo is broken due to this though.
+
