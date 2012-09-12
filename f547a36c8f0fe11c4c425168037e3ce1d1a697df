@@ -10,3 +10,13 @@ Bytes: 264
 Martin,
 could you please double check or confirm - I believe normally inputBufInfo->mFlags should have the flag set already? maybe this is an issue that when mSawInputEOS=true happens, there are other input buffers in the queue and thus the flag is missed? thanks.
 
+853
+Wed Sep 12 19:34:54 2012 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAI83//8/M=
+UUID: AAAI5n//+Vw=
+Bytes: 319
+If I remember correctly, the issue was that the EOS flag (when called from OMXCodec.cpp) comes on a separate, empty buffer.  Thus, the flags from that buffer actually never turns up in inputBufInfo->mFlags here.
+
+This fixes using the recordvideo test application (among other things, I'd guess) with this encoder, FWIW.
+
