@@ -1,0 +1,12 @@
+Revision: f547a36c8f0fe11c4c425168037e3ce1d1a697df
+Patch-set: 2
+File: media/libstagefright/codecs/avc/enc/SoftAVCEncoder.cpp
+
+853
+Wed Sep 12 15:39:55 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAI83//8/M=
+Bytes: 264
+Martin,
+could you please double check or confirm - I believe normally inputBufInfo->mFlags should have the flag set already? maybe this is an issue that when mSawInputEOS=true happens, there are other input buffers in the queue and thus the flag is missed? thanks.
+
