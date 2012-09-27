@@ -1,0 +1,11 @@
+Revision: 752e18727e19431eeba7ae07b89ac526f85c94cb
+Patch-set: 1
+File: services/audioflinger/AudioFlinger.cpp
+
+2372
+Thu Sep 27 16:45:19 2012 +0000
+Author: John Grossman <1005668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAAJfn///sg=
+Bytes: 128
+minor nit; why assign to NULL here and use clear() to release mSoaker?  Perhaps change one of these patterns to match the other?
+
