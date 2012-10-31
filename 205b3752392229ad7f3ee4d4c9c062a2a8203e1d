@@ -1,0 +1,11 @@
+Revision: 205b3752392229ad7f3ee4d4c9c062a2a8203e1d
+Patch-set: 1
+File: media/libstagefright/MPEG4Extractor.cpp
+
+1226
+Wed Oct 31 15:57:09 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAALLn////Y=
+Bytes: 51
+wrong error code - should report no memory instead.
+
