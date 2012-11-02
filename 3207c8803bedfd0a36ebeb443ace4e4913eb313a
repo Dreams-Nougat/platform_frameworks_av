@@ -1,0 +1,11 @@
+Revision: 3207c8803bedfd0a36ebeb443ace4e4913eb313a
+Patch-set: 1
+File: media/libstagefright/rtsp/AAVCAssembler.cpp
+
+110
+Fri Nov 02 14:59:13 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAALLn///1U=
+Bytes: 81
+change ALOGV("Ignoring undefined buffer") to ALOGW("Ignoring undefined nal type")
+
