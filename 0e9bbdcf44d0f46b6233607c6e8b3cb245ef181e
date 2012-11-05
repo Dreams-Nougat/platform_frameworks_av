@@ -10,3 +10,11 @@ Bytes: 408
 In general I think it's a very nice fix. My only concern is that we change the api from the DrmBuffer receiving the memory it will now always make a copy out of it. In some cases in the jni layer we now get one extra memory allocation and one memcpy extra that might decrease performance slighty.
 Have you though about letting the DrmBuffer take the ownership of the received memory for performance reasons?
 
+77
+Mon Nov 05 00:52:03 2012 +0000
+Author: You Kim <1014554@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAALOX///l8=
+UUID: AAALTH////8=
+Bytes: 298
+The changes in this patch won't give any big deal. Because I only changed the place where memory create/delete is taking place. The data filed is still public and can be accessed or replaced directly. That's the way if performance is the concern. (You can see many code as such in DRMExtractor.cpp)
+
