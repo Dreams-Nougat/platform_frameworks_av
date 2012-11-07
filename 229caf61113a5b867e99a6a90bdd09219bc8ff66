@@ -1,0 +1,11 @@
+Revision: 229caf61113a5b867e99a6a90bdd09219bc8ff66
+Patch-set: 1
+File: libvideoeditor/vss/3gpwriter/src/M4MP4W_Writer.c
+
+3704
+Wed Nov 07 16:04:24 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAALLn//+lY=
+Bytes: 40
+shouldn't this be detected much earlier?
+
