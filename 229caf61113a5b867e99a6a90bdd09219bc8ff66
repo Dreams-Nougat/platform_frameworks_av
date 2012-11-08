@@ -21,3 +21,14 @@ if entry-count is zero, the time-to-sample table can be ignored when writing.
 James, for "detected much earlier", do you mean detect before writing 'stts'?
 I am not sure whether it's ok to remove the whole 'stts'.
 
+3704
+Thu Nov 08 18:14:15 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAALQH///7c=
+UUID: AAALLn//+G8=
+Bytes: 370
+the problem is that we have known this value much earlier (i.e., sttsTableEntryNb <= 1) before the code reaches here. We should fail at the earliest time when we know sttsTableEntryNb<=1.
+For instance, on line 3698, sttsTableEntryNb is already being used.
+
+In addition, I believe one item should be OK for stts, not sure why sttsTableEntryNb has to subtract one from it.
+
