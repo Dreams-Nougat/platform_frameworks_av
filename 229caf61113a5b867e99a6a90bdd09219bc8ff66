@@ -9,3 +9,15 @@ UUID: AAALLn//+lY=
 Bytes: 40
 shouldn't this be detected much earlier?
 
+3704
+Thu Nov 08 10:11:47 2012 +0000
+Author: Yajun Zeng <1017056@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAALLn//+lY=
+UUID: AAALQH///7c=
+Bytes: 369
+according MPEG4 ISO/IEC 14496-12:2004(E) standard, 'stts'(decoding-time-to-sample box) is madatory. 
+thus, syntax 'stts', version and entry_count is must. 
+if entry-count is zero, the time-to-sample table can be ignored when writing.
+James, for "detected much earlier", do you mean detect before writing 'stts'?
+I am not sure whether it's ok to remove the whole 'stts'.
+
