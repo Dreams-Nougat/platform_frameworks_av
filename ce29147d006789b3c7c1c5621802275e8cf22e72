@@ -9,3 +9,11 @@ UUID: AAALoX///Kk=
 Bytes: 88
 Make sure to clear the component name in ::setState if the target state is UNINITIALIZED
 
+551
+Fri Nov 16 18:48:02 2012 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAALoX///Kk=
+UUID: AAALpn///84=
+Bytes: 229
+Thanks - for simplicity I chose to clear it for both INITIALIZED and UNINITIALIZED (since there's already a code block for that in setState), since it's only updated after calling setState() here anyway) - updated patch coming...
+
