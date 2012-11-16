@@ -1,0 +1,27 @@
+Revision: 354cc77352d43324109d980f492a5f78ac31c54b
+Patch-set: 2
+File: media/libstagefright/MPEG4Extractor.cpp
+
+1223
+Fri Nov 16 17:03:44 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAALoX///KQ=
+Bytes: 101
+#include <media/stagefright/foundation/ABuffer.h>
+
+sp<ABuffer> buffer = new ABuffer(chunk_data_size);
+
+1226
+Fri Nov 16 17:03:44 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAALoX///KM=
+Bytes: 40
+readAt(data_offset, buffer->data(), ...)
+
+1227
+Fri Nov 16 17:03:44 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAALoX///KI=
+Bytes: 36
+Now you can get rid of the delete[]s
+
