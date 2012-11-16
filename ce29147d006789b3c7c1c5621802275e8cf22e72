@@ -1,0 +1,11 @@
+Revision: ce29147d006789b3c7c1c5621802275e8cf22e72
+Patch-set: 2
+File: media/libstagefright/MediaCodec.cpp
+
+551
+Fri Nov 16 16:59:08 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAALoX///Kk=
+Bytes: 88
+Make sure to clear the component name in ::setState if the target state is UNINITIALIZED
+
