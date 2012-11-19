@@ -1,0 +1,11 @@
+Revision: 432a03610eadc0164027f1c6797a6c6c248caf2a
+Patch-set: 2
+File: media/libstagefright/rtsp/AH263Assembler.cpp
+
+113
+Mon Nov 19 17:08:52 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAALoX//+fg=
+Bytes: 54
+Please use ALOGV, you can then also get rid of the #if
+
