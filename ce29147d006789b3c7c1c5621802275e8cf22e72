@@ -17,3 +17,11 @@ UUID: AAALpn///84=
 Bytes: 229
 Thanks - for simplicity I chose to clear it for both INITIALIZED and UNINITIALIZED (since there's already a code block for that in setState), since it's only updated after calling setState() here anyway) - updated patch coming...
 
+551
+Mon Nov 19 17:04:55 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAALpn///84=
+UUID: AAALoX///Ao=
+Bytes: 192
+You don't want to clear it when going to the INITIALIZED state though because then if you stop an initialized codec it will go from configured->initialized and it should keep its codec name...
+
