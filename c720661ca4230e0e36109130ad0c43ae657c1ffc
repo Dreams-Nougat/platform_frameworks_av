@@ -1,0 +1,18 @@
+Revision: c720661ca4230e0e36109130ad0c43ae657c1ffc
+Patch-set: 1
+File: media/libmedia/ToneGenerator.cpp
+
+807
+Fri Nov 23 01:27:31 2012 +0000
+Author: You Kim <1014554@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAALzH///zY=
+Bytes: 35
+mpAudioTrack should be initialized.
+
+860
+Fri Nov 23 01:27:31 2012 +0000
+Author: You Kim <1014554@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAALzH///zc=
+Bytes: 46
+If mpAudioTrack is not initialized. crash here
+
