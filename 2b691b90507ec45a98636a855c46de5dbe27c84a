@@ -1,0 +1,11 @@
+Revision: 2b691b90507ec45a98636a855c46de5dbe27c84a
+Patch-set: 1
+File: media/libmedia/AudioTrack.cpp
+
+1446
+Fri Nov 23 08:51:28 2012 +0000
+Author: Johan Redestig <1002951@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAALxX///e4=
+Bytes: 19
+it is checked here.
+
