@@ -1,0 +1,11 @@
+Revision: 5aa79f7dded71c1542d3252c62ade670662a4d04
+Patch-set: 3
+File: media/libstagefright/rtsp/AH263Assembler.cpp
+
+17
+Mon Nov 26 17:04:16 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: AAALvH///MU=
+Bytes: 14
+AH263Assembler
+
