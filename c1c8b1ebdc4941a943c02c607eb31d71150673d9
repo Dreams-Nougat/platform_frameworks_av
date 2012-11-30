@@ -1,0 +1,25 @@
+Revision: c1c8b1ebdc4941a943c02c607eb31d71150673d9
+Patch-set: 1
+File: media/libstagefright/WAVExtractor.cpp
+
+404
+Fri Nov 30 03:53:33 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: MQ7-e19c
+Bytes: 40
+please add a space before "make sure..."
+
+406
+Fri Nov 30 03:53:33 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: MQx-Qo8U
+Bytes: 64
+could you help split this into two lines? this line is too long.
+
+429
+Fri Nov 30 03:53:33 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: MQ3-Vb7U
+Bytes: 38
+please add space before and after "||"
+
