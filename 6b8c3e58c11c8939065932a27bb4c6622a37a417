@@ -10,3 +10,11 @@ Bytes: 116
 if these are errors that renders the stream not playable, we should use ALOGE here.
 Similarly for other cases below.
 
+115
+Fri Nov 30 16:28:53 2012 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: MQ.JVaMI
+UUID: MPW6vo4M
+Bytes: 73
+Please make that ALOGW since we continue playing, i.e. this is not fatal.
+
