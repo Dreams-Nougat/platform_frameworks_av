@@ -1,0 +1,12 @@
+Revision: 6b8c3e58c11c8939065932a27bb4c6622a37a417
+Patch-set: 4
+File: media/libstagefright/rtsp/AH263Assembler.cpp
+
+115
+Fri Nov 30 15:25:24 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: MQ.JVaMI
+Bytes: 116
+if these are errors that renders the stream not playable, we should use ALOGE here.
+Similarly for other cases below.
+
