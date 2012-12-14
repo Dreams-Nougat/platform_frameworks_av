@@ -9,3 +9,11 @@ UUID: AAALvH//+9A=
 Bytes: 169
 Although the code looks ok to me, I was wondering how you could end up using the software video decoder? On the device, the MovieStudio app always uses HW video decoder.
 
+1153
+Fri Dec 14 03:03:29 2012 +0000
+Author: Yajun Zeng <1017056@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAALvH//+9A=
+UUID: M4hIpCp4
+Bytes: 97
+we are testing the SW decoder path. you can simply enable it by define macro USE_SOFTWARE_DECODER
+
