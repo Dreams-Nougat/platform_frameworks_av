@@ -1,0 +1,18 @@
+Revision: 473609d50545fd960bbb9fe1798fa2ded9de9f85
+Patch-set: 2
+File: media/libstagefright/SampleIterator.cpp
+
+60
+Thu Dec 20 00:13:10 2012 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: NFgBO1jY
+Bytes: 83
+The "if" test can be removed, and free replaced by delete. (delete NULL is a no-op)
+
+260
+Thu Dec 20 00:13:10 2012 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: NFuBKqiA
+Bytes: 46
+we usually use new [] instead of malloc in C++
+
