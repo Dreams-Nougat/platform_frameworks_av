@@ -1,0 +1,43 @@
+Revision: 93c7fc73cdaec3506c106591068dbd35c7eb879c
+Patch-set: 1
+File: drm/common/IDrmManagerService.cpp
+
+193
+Thu Dec 20 21:39:56 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: NFgIgE-w
+Bytes: 37
+make sense. Fixed some leaked memory.
+
+File: drm/libdrmframework/plugins/forward-lock/internal-format/converter/FwdLockConv.c
+
+248
+Thu Dec 20 21:39:56 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: NFmLzV5g
+Bytes: 44
+sizeof (struct FwdLockConv_DeriveKeys_Data)?
+
+271
+Thu Dec 20 21:39:56 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: NFkL4W3A
+Bytes: 9
+same here
+
+File: drm/libdrmframework/plugins/forward-lock/internal-format/decoder/FwdLockFile.c
+
+177
+Thu Dec 20 21:39:56 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: NFgLqU5U
+Bytes: 68
+sizeof (struct FwdLockFile_DeriveKeys_Data) instead of sizeof *pData
+
+205
+Thu Dec 20 21:39:56 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: NFqIm3yU
+Bytes: 10
+same here.
+
