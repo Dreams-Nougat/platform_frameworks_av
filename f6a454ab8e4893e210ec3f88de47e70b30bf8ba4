@@ -1,0 +1,15 @@
+Revision: f6a454ab8e4893e210ec3f88de47e70b30bf8ba4
+Patch-set: 1
+File: drm/drmserver/DrmManager.cpp
+
+54
+Thu Dec 20 21:03:53 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: NFqI6X5o
+Bytes: 198
+two features are changed:
+1. now, the session id is deterministic
+2. we used to generate a session Id if isNative is true.
+
+This change could break existing code relies on the feature, especially 2.
+
