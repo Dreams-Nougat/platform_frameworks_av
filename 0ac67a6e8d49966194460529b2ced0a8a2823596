@@ -1,0 +1,36 @@
+Revision: 0ac67a6e8d49966194460529b2ced0a8a2823596
+Patch-set: 2
+File: drm/drmserver/DrmManager.cpp
+
+58
+Fri Dec 21 21:59:14 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: NGSgkHsM
+Bytes: 82
+the naming convention of a const is starting with k.
+For instance, kUniqueIdRange.
+
+61
+Fri Dec 21 21:59:14 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: NGagP7j4
+Bytes: 52
+please add spaces around "="
+remove space before ";"
+
+63
+Fri Dec 21 21:59:14 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: NGSsa2HU
+Bytes: 109
+you can move uniqueId assignment (line 63) out of the if condition, and then reuse it inside the if condition
+
+File: drm/libdrmframework/include/DrmManager.h
+
+147
+Fri Dec 21 21:59:14 2012 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: NGWgqFpM
+Bytes: 61
+type for the array should not be "unsigned char", but an int.
+
