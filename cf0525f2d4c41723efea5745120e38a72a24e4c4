@@ -1,0 +1,16 @@
+Revision: cf0525f2d4c41723efea5745120e38a72a24e4c4
+Patch-set: 1
+File: media/libstagefright/AwesomePlayer.cpp
+
+2028
+Tue Jan 08 09:45:57 2013 +0000
+Author: Patrik Carlsson <1017178@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: N556qmXE
+Bytes: 362
+The Mutex is already unlocked when connection so there seems to be 
+no point in adding mConnectingDataSource.disconnect() outside of the mutex
+in reset() and it is already present inside of the mutex.
+
+When reset_l() aborts the connection and this function returns an error it
+will call abortPrepare that signals the preparedcondition so that reset_l can finish.
+
