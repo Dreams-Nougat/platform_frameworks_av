@@ -14,3 +14,11 @@ in reset() and it is already present inside of the mutex.
 When reset_l() aborts the connection and this function returns an error it
 will call abortPrepare that signals the preparedcondition so that reset_l can finish.
 
+2028
+Tue Jan 08 10:15:32 2013 +0000
+Author: Feng Xiao <1015362@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: N556qmXE
+UUID: N4KiVX6I
+Bytes: 467
+Yes, what you explain is right. But this mConnectingDataSource.disconnect() is not just for interrupt  mConnectingDataSource->connect(mUri, &mUriHeaders), also for other things.  For example, requesting enough data to establish extractor or meta data and so on, when these are blocked, other calling cannot acquire the lock. So add another way to interrupt from the "mConnectingDataSource" , make the blocking calls return err and other calling can  acquire the lock.
+
