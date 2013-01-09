@@ -32,3 +32,11 @@ This change was to handle matroska test7.mkv
 I guess it is a rigged test but the requirement is to keep on playing.
 A torrent downloaded to 99% could possibly show the same behaviour but we had some partially downloaded files and those usually triggers the return error below.
 
+245
+Wed Jan 09 17:35:30 2013 +0000
+Author: Johann Koenig <1013986@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: N8lkfVxI
+UUID: N8teaK88
+Bytes: 145
+I think it's good to be able to get the coverage from the mkv test suite. They are available here: http://www.matroska.org/downloads/test_w1.html
+
