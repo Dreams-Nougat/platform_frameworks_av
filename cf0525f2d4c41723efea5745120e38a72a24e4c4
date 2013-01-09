@@ -41,3 +41,11 @@ it will try to reconnect first and any read blocking from within a mutex in awes
 
 See NuCachedSource::ReadInternal
 
+2028
+Wed Jan 09 02:47:23 2013 +0000
+Author: Feng Xiao <1015362@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: N536s7TY
+UUID: N94tt7fs
+Bytes: 92
+How do you think this "reconnect" after you click "BACK" key while it is blocked in reading?
+
