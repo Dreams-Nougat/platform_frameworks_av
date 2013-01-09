@@ -9,3 +9,14 @@ UUID: N8laDpA0
 Bytes: 103
 What sort of files return this? Otherwise normal files, corrupted downloads, etc. For my own curiosity.
 
+245
+Wed Jan 09 01:15:05 2013 +0000
+Author: Matthew Heaney <1018653@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: N8lkfVxI
+Bytes: 401
+How is this even meaningful?  If the file is invalid, then how can you even continue at all?  Shouldn't you just stop playing this file?
+
+If you skip a cluster, you're potentially skipping intervening video frames.  The frames that follow in the next cluster aren't necessarily even decodable.
+
+Do you have a specific example of a WebM with a bad cluster, from which you were able to continue playing?
+
