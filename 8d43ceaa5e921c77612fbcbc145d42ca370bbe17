@@ -56,3 +56,15 @@ UUID: N8lZ3EmE
 Bytes: 71
 Actually, I found something now, near off=450376.  Investigating now...
 
+245
+Fri Jan 11 02:59:26 2013 +0000
+Author: Matthew Heaney <1018653@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: N8lZ3EmE
+UUID: N8jG7eN8
+Bytes: 575
+Well, I claim that this is a malformed file.  
+
+The issue is that you have an element (nested inside a cluster) that specifies a size such that it lies beyond the end of the cluster.  We are a bit paranoid about such things (perhaps this stream is deliberately malformed), so we reject the file.
+
+One thing we could do is, if this element is neither a simple block nor a block group (the case here, in fact), then just complete this cluster and move on to the next.  We would skip this element anyway, so this is perhaps a reasonable compromise between safety and liberalism.
+
