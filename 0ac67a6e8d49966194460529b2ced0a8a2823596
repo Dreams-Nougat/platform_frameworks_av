@@ -34,3 +34,12 @@ UUID: NGWgqFpM
 Bytes: 61
 type for the array should not be "unsigned char", but an int.
 
+147
+Fri Jan 18 11:28:48 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: NGWgqFpM
+UUID: OaTw3XZs
+Bytes: 185
+Each member in the array just keeps a 0 or 1 to indicate if it's used or not.
+Currently 4kB memory is used. Changing to int would use 16kB memory. Are you sure you want it to be a int?
+
