@@ -19,3 +19,15 @@ UUID: AAAI3X///bs=
 Bytes: 122
 Intel OMX Encoder doesn't support OnlySubmitOneInputBufferAtOneTime for power performance concern, so disables it forcely.
 
+369
+Fri Jan 18 20:20:21 2013 +0000
+Author: Bruce J Beare <1003360@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: AAAI3X///bs=
+UUID: OjBatfDU
+Bytes: 254
+James...
+
+I'd prefer the use of quirks for this sort of thing. I really don't understand why quirks are out of favor. IMO... changes to look for particular codec's is a bad idea.
+
+Can you suggest a way that we can resolve this without a framework change?
+
