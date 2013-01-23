@@ -1,0 +1,74 @@
+Revision: 18f5210fcaf2fae0a5ace9171936c172fe57b859
+Patch-set: 1
+File: media/libstagefright/mpeg2ts/ESQueue.cpp
+
+256
+Wed Jan 23 07:37:50 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpSY395o
+Bytes: 29
+Missing new lines around case
+
+261
+Wed Jan 23 07:37:50 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpQYy.6o
+Bytes: 19
+This is unnecessary
+
+398
+Wed Jan 23 07:37:50 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpcYrszY
+Bytes: 6
+Remove
+
+399
+Wed Jan 23 07:37:50 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpeYwL6E
+Bytes: 22
+Missing space before (
+
+400
+Wed Jan 23 07:37:50 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpYYmC2s
+Bytes: 48
+Missing space before + and extra space before );
+
+401
+Wed Jan 23 07:37:50 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: Opca4k.M
+Bytes: 92
+Do we need the magic number in the comment? If so please add a space for better readability.
+
+415
+Wed Jan 23 07:37:50 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpaYjB1s
+Bytes: 25
+Missing spaces around ( )
+
+416
+Wed Jan 23 07:37:50 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpUYgA04
+Bytes: 71
+Is it needed to cast this? It is not done in other places in this file.
+
+417
+Wed Jan 23 07:37:50 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpWYd-xY
+Bytes: 47
+Missing space after , also in many places below
+
+426
+Wed Jan 23 07:37:50 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpSbJN3w
+Bytes: 95
+Missing space after if and curly brackets, used in other places in this file even for oneliners
+
