@@ -9,12 +9,28 @@ UUID: OpSY395o
 Bytes: 29
 Missing new lines around case
 
+256
+Wed Jan 23 08:56:04 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OpSY395o
+UUID: OoAutJYs
+Bytes: 4
+Done
+
 261
 Wed Jan 23 07:37:50 2013 +0000
 Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: OpQYy.6o
 Bytes: 19
 This is unnecessary
+
+261
+Wed Jan 23 08:56:04 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OpQYy.6o
+UUID: OoKuhmZc
+Bytes: 4
+Done
 
 398
 Wed Jan 23 07:37:50 2013 +0000
@@ -23,12 +39,28 @@ UUID: OpcYrszY
 Bytes: 6
 Remove
 
+398
+Wed Jan 23 08:56:04 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OpcYrszY
+UUID: OoMumXa0
+Bytes: 4
+Done
+
 399
 Wed Jan 23 07:37:50 2013 +0000
 Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: OpeYwL6E
 Bytes: 22
 Missing space before (
+
+399
+Wed Jan 23 08:56:04 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OpeYwL6E
+UUID: OoGu88bo
+Bytes: 4
+Done
 
 400
 Wed Jan 23 07:37:50 2013 +0000
@@ -37,12 +69,28 @@ UUID: OpYYmC2s
 Bytes: 48
 Missing space before + and extra space before );
 
+400
+Wed Jan 23 08:56:04 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OpYYmC2s
+UUID: OoCu26dg
+Bytes: 4
+Done
+
 401
 Wed Jan 23 07:37:50 2013 +0000
 Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: Opca4k.M
 Bytes: 92
 Do we need the magic number in the comment? If so please add a space for better readability.
+
+401
+Wed Jan 23 08:56:04 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: Opca4k.M
+UUID: OoAvYxRw
+Bytes: 54
+Number is sync word for AC3. Added space and comments.
 
 415
 Wed Jan 23 07:37:50 2013 +0000
@@ -51,12 +99,28 @@ UUID: OpaYjB1s
 Bytes: 25
 Missing spaces around ( )
 
+415
+Wed Jan 23 08:56:04 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OpaYjB1s
+UUID: OoKvcORE
+Bytes: 4
+Done
+
 416
 Wed Jan 23 07:37:50 2013 +0000
 Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: OpUYgA04
 Bytes: 71
 Is it needed to cast this? It is not done in other places in this file.
+
+416
+Wed Jan 23 08:56:04 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OpUYgA04
+UUID: OoKvz2ZM
+Bytes: 24
+Removed the static cast.
 
 417
 Wed Jan 23 07:37:50 2013 +0000
@@ -65,10 +129,26 @@ UUID: OpWYd-xY
 Bytes: 47
 Missing space after , also in many places below
 
+417
+Wed Jan 23 08:56:04 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OpWYd-xY
+UUID: OoGvHET0
+Bytes: 4
+Done
+
 426
 Wed Jan 23 07:37:50 2013 +0000
 Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: OpSbJN3w
 Bytes: 95
 Missing space after if and curly brackets, used in other places in this file even for oneliners
+
+426
+Wed Jan 23 08:56:04 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OpSbJN3w
+UUID: OoIvE1Tc
+Bytes: 4
+Done
 
