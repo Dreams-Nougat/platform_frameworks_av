@@ -18,3 +18,16 @@ UUID: OpSnO6Cw
 Bytes: 57
 This should probably be placed with the other audio types
 
+File: media/libstagefright/mpeg2ts/ATSParser.cpp
+
+497
+Wed Jan 23 11:12:37 2013 +0000
+Author: Sungmin Choi <1016953@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: Oqwz2ox0
+Bytes: 114
+how about above "case" sentences?
+
+mQueue = new ElementaryStreamQueue(
+     ElementaryStreamQueue:PCM_AC3);
+break;
+
