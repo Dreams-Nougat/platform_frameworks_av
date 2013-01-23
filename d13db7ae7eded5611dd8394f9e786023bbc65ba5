@@ -1,0 +1,20 @@
+Revision: d13db7ae7eded5611dd8394f9e786023bbc65ba5
+Patch-set: 4
+File: include/media/stagefright/MediaDefs.h
+
+59
+Wed Jan 23 11:03:26 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpcnS5Mw
+Bytes: 32
+Place with the other audio types
+
+File: media/libstagefright/MediaDefs.cpp
+
+57
+Wed Jan 23 11:03:26 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpSnO6Cw
+Bytes: 57
+This should probably be placed with the other audio types
+
