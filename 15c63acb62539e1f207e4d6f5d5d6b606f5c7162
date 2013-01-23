@@ -1,0 +1,25 @@
+Revision: 15c63acb62539e1f207e4d6f5d5d6b606f5c7162
+Patch-set: 2
+File: media/libstagefright/mpeg2ts/ESQueue.cpp
+
+257
+Wed Jan 23 10:14:37 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpanVGAo
+Bytes: 19
+trailing whitespace
+
+402
+Wed Jan 23 10:14:37 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpWnPEHs
+Bytes: 21
+missing space after ,
+
+415
+Wed Jan 23 10:14:37 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OpUnSVCI
+Bytes: 19
+trailing whitespace
+
