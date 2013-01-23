@@ -31,3 +31,20 @@ mQueue = new ElementaryStreamQueue(
      ElementaryStreamQueue:PCM_AC3);
 break;
 
+497
+Wed Jan 23 11:22:05 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: Oqwz2ox0
+UUID: OpUmLNMA
+Bytes: 45
+I think AC3 is enough, since it is called AAC
+
+File: media/libstagefright/mpeg2ts/ATSParser.h
+
+91
+Wed Jan 23 11:22:05 2013 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: Opamz2Jg
+Bytes: 30
+Should be STREAMTYPE_AC3_AUDIO
+
