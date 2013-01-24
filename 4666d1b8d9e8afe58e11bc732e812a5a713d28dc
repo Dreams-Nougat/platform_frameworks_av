@@ -1,0 +1,29 @@
+Revision: 4666d1b8d9e8afe58e11bc732e812a5a713d28dc
+Patch-set: 2
+File: media/libstagefright/include/SDPLoader.h
+
+30
+Thu Jan 24 17:06:55 2013 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OvQyT.1Y
+Bytes: 54
+just derive from AHandler and get rid of the reflector
+
+File: media/libstagefright/rtsp/MyHandler.h
+
+176
+Thu Jan 24 17:06:55 2013 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OvaytB6A
+Bytes: 104
+We usually pass const sp<XXX> & references as parameters to avoid the brief refcount increment/decrement
+
+File: media/libstagefright/rtsp/SDPLoader.cpp
+
+126
+Thu Jan 24 17:06:55 2013 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OveyVPzo
+Bytes: 64
+would be better to use sp<ABuffer> instead of manuall malloc'ing
+
