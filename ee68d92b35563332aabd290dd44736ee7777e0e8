@@ -1,0 +1,50 @@
+Revision: ee68d92b35563332aabd290dd44736ee7777e0e8
+Patch-set: 3
+File: drm/common/DrmInfoEvent.cpp
+
+99
+Thu Jan 24 00:11:19 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OvU0Puzs
+Bytes: 59
+if the next is out of bounds, do we still increment mIndex?
+
+105
+Thu Jan 24 00:11:19 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OvW0M90U
+Bytes: 50
+check on whether this is the same as the argument?
+
+116
+Thu Jan 24 00:11:19 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: Ovc0Ra1k
+Bytes: 54
+check whether this is the same as the passed argument?
+
+128
+Thu Jan 24 00:11:19 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OvQ1qI64
+Bytes: 66
+not thread safe. probably not an issue, depending on the use case.
+
+File: drm/common/IDrmServiceListener.cpp
+
+73
+Thu Jan 24 00:11:19 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OvSJEzmk
+Bytes: 93
+valueData can be local to the if(valueSize > 0) block, and delete can also move to that block
+
+File: include/drm/DrmInfo.h
+
+59
+Thu Jan 24 00:11:19 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OvYJoIuI
+Bytes: 106
+the changes in this file simply add a few spaces. this is not needed. please drop the change in this file.
+
