@@ -9,3 +9,11 @@ UUID: OvYKKYiQ
 Bytes: 224
 Since the value in the array just indicates whether the slot in the array is occupied or not, if I understand the change correctly, why don't we simply use bool for the type? Isn't that more descriptive than "unsigned char"?
 
+147
+Thu Jan 24 07:16:51 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OvYKKYiQ
+UUID: OvJFVzeg
+Bytes: 86
+Yes that will work since bool is only one byte. I'll fix. I'm use to c-programming :-)
+
