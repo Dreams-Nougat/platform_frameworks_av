@@ -9,6 +9,14 @@ UUID: OpcnS5Mw
 Bytes: 32
 Place with the other audio types
 
+59
+Thu Jan 24 04:22:19 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OpcnS5Mw
+UUID: OqQU5laY
+Bytes: 4
+Done
+
 File: media/libstagefright/MediaDefs.cpp
 
 57
@@ -17,6 +25,14 @@ Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: OpSnO6Cw
 Bytes: 57
 This should probably be placed with the other audio types
+
+57
+Thu Jan 24 04:22:19 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OpSnO6Cw
+UUID: OqSU.GY8
+Bytes: 4
+Done
 
 File: media/libstagefright/mpeg2ts/ATSParser.cpp
 
@@ -47,6 +63,14 @@ UUID: Oq0xVe.U
 Bytes: 50
 I mean indentations, not PCM_AC3 (this is mistake)
 
+497
+Thu Jan 24 04:22:19 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: Oq0xVe.U
+UUID: OqWVUEcM
+Bytes: 4
+Done
+
 File: media/libstagefright/mpeg2ts/ATSParser.h
 
 91
@@ -55,4 +79,12 @@ Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: Opamz2Jg
 Bytes: 30
 Should be STREAMTYPE_AC3_AUDIO
+
+91
+Thu Jan 24 04:22:19 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: Opamz2Jg
+UUID: OqUVurYw
+Bytes: 4
+Done
 
