@@ -11,6 +11,17 @@ make sense. Fixed some leaked memory.
 
 File: drm/libdrmframework/plugins/forward-lock/internal-format/converter/FwdLockConv.c
 
+31
+Thu Jan 24 21:05:22 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: Ovb1MU8c
+Bytes: 248
+one more question - I see most of the MACROS defined here in this c file also show up in FwdLockConv.c file. Shouldn't we move the definition to a single place to avoid copy & paste code?
+
+Is FwdLockGlue.h a good place to hold these MACROs?
+
+Thanks
+
 248
 Thu Dec 20 21:39:56 2012 +0000
 Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
