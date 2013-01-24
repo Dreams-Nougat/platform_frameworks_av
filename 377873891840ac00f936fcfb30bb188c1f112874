@@ -1,0 +1,11 @@
+Revision: 377873891840ac00f936fcfb30bb188c1f112874
+Patch-set: 1
+File: media/libstagefright/avc_utils.cpp
+
+354
+Thu Jan 24 17:08:58 2013 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: OvcycA2Y
+Bytes: 75
+Is this actually necessary? Won't this be contained in an IDR frame anyway?
+
