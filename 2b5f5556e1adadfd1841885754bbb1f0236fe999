@@ -1,0 +1,17 @@
+Revision: 2b5f5556e1adadfd1841885754bbb1f0236fe999
+Patch-set: 3
+File: media/libstagefright/rtsp/MyHandler.h
+
+1182
+Mon Jan 28 22:28:50 2013 +0000
+Author: Zoran Jovanovic <1010077@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: O5B50zVg
+Bytes: 897
+We have seen that the range attribute in the SDP actually differs from the Play Response. We think that if the SDP indicates that it is a live stream, it should be treated as a live stream even if the Play Response says something else.
+
+Also, we have seen that the a=LiveStream attribute is used by some servers (for example Helix, Wowza) to indicate live streams. This is also retrieved from the SDP.
+
+We have also seen that the Play Response after seek differs, for example containing a Range: npt=sometime- That stream would suddenly be considered a live stream, which also means that the Normal Playtime Mapping would not be updated. (There is a separate patch for that, though, see https://android-review.googlesource.com/#/c/42574/ )
+
+The progress bar and app behaviour should not be able to change during the playtime, which means that we should use the value from the SDP and go with that.
+
