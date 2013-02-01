@@ -120,3 +120,19 @@ Bytes: 83
 why the uniqueId is passed as a fixed constant 0?
 similarly for other test cases...
 
+File: drm/libdrmframework/plugins/forward-lock/internal-format/test/FwdLockTest.cpp
+
+15
+Fri Feb 01 21:55:36 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PD9lDCmM
+Bytes: 84
+In general, could you add some comment showing what each test case is about? thanks.
+
+105
+Fri Feb 01 21:55:36 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PD5QEOSI
+Bytes: 31
+EXPECT file open is successful?
+
