@@ -19,3 +19,104 @@ UUID: PD3wPaPA
 Bytes: 132
 passing a on-stack temp object (DrmBuffer) to DrmInfo might be a problem leading to hidden/tough bugs. Your thoughts on this? Thanks
 
+File: drm/libdrmframework/plugins/forward-lock/FwdLockEngine/test/src/fwdlockTest.cpp
+
+2
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PD0DpQ6A
+Bytes: 107
+A general question - should we update the date to use 2013 in the copyright header for the new files added?
+
+60
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PD4Bquw4
+Bytes: 79
+for member variable, the convention is to use mXXX, such as mForwardLockEngine.
+
+76
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PDwBg6yo
+Bytes: 10
+same here.
+
+88
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PD4Dc.94
+Bytes: 42
+why ASSERT is not used but EXPECT is used?
+
+89
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PD8C9U2k
+Bytes: 90
+since we already check on the inFileDesc with EXPECT above, is this check still necessary?
+
+94
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PD8B2c80
+Bytes: 17
+similar comments.
+
+102
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PD8BPk40
+Bytes: 98
+what if this read just reaches the end of the file. size will not be > 0, but it is not a failure?
+
+104
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PD8BIs38
+Bytes: 74
+isn't there a constructor for DrmBuffer taking these two parameters below?
+
+112
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PD8Ah07c
+Bytes: 81
+why we check these again? they are checked a couple of lines earlier using EXPECT
+
+123
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PD4MEBSI
+Bytes: 25
+why is this check needed?
+
+125
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PDwNDVUY
+Bytes: 113
+DrmConvertedStatus class may also have lifecycle management problem? Why is a const pointer used in that class...
+
+222
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PD0OybU4
+Bytes: 130
+why do you call next first in a do-while loop?
+why not use 
+
+while (...hasNext()) {
+....
+}
+
+similarly for the mimeIter loop above.
+
+293
+Fri Feb 01 20:09:08 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PDwPQ9Uw
+Bytes: 83
+why the uniqueId is passed as a fixed constant 0?
+similarly for other test cases...
+
