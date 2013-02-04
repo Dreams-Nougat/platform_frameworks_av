@@ -1,0 +1,64 @@
+Revision: 70566b09c6d047c570a3a7566ca9d8c194424e45
+Patch-set: 1
+File: media/libstagefright/codecs/on2/enc/NOTICE
+
+2
+Mon Feb 04 20:15:36 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTn3mCxE
+Bytes: 14
+why 2005-2008?
+
+File: media/libstagefright/codecs/on2/enc/SoftVPXEncoder.cpp
+
+32
+Mon Feb 04 20:15:36 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTvoU4VY
+Bytes: 49
+does this require us to update the OMX IL header?
+
+96
+Mon Feb 04 20:15:36 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTr01Q9k
+Bytes: 61
+mFrameDuration in Us? Could mFrameDurationUs be used instead?
+
+131
+Mon Feb 04 20:15:36 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTj19s2I
+Bytes: 30
+reciprocal was not calculated?
+
+262
+Mon Feb 04 20:15:36 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTt0dnxg
+Bytes: 39
+color format enum feature is missing...
+
+265
+Mon Feb 04 20:15:36 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTl1872I
+Bytes: 46
+is the calculation considering the reciprocal?
+
+455
+Mon Feb 04 20:15:36 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTt0Ef9A
+Bytes: 51
+not sure how AndroidOpaque color format is handled.
+
+File: media/libstagefright/codecs/on2/enc/SoftVPXEncoder.h
+
+112
+Mon Feb 04 20:15:36 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTl3rT9U
+Bytes: 25
+mFrameDurationUs instead?
+
