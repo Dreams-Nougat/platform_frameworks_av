@@ -1,0 +1,46 @@
+Revision: 7da689e16b99df284a0254b3c93d12dcd714172f
+Patch-set: 6
+File: media/libstagefright/mpeg2ts/ESQueue.cpp
+
+357
+Mon Feb 04 16:41:36 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTpcXhlo
+Bytes: 7
+const ?
+
+358
+Mon Feb 04 16:41:36 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTvcU.lY
+Bytes: 7
+const ?
+
+359
+Mon Feb 04 16:41:36 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTtcR-mQ
+Bytes: 8
+static ?
+
+425
+Mon Feb 04 16:41:36 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTjrwGSI
+Bytes: 115
+frmsizecod has not been range-checked - it's a getBits(6) so could go up to 63 not 37, and result in buffer overrun
+
+428
+Mon Feb 04 16:41:36 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTlr-1e8
+Bytes: 45
+use { } to make it easier to add an ALOG etc.
+
+443
+Mon Feb 04 16:41:36 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: PTpoATQ0
+Bytes: 112
+I don't have the full context, but what guarantees a lack of buffer overrun here? It may at least need a comment
+
