@@ -9,12 +9,28 @@ UUID: PTpcXhlo
 Bytes: 7
 const ?
 
+357
+Tue Feb 05 05:27:47 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTpcXhlo
+UUID: PdK5Idys
+Bytes: 4
+Done
+
 358
 Mon Feb 04 16:41:36 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: PTvcU.lY
 Bytes: 7
 const ?
+
+358
+Tue Feb 05 05:27:47 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTvcU.lY
+UUID: PdM5Vw8I
+Bytes: 4
+Done
 
 359
 Mon Feb 04 16:41:36 2013 +0000
@@ -23,12 +39,28 @@ UUID: PTtcR-mQ
 Bytes: 8
 static ?
 
+359
+Tue Feb 05 05:27:47 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTtcR-mQ
+UUID: PdO5Sf9c
+Bytes: 4
+Done
+
 425
 Mon Feb 04 16:41:36 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: PTjrwGSI
 Bytes: 115
 frmsizecod has not been range-checked - it's a getBits(6) so could go up to 63 not 37, and result in buffer overrun
+
+425
+Tue Feb 05 05:27:47 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTjrwGSI
+UUID: PdC4PJ-E
+Bytes: 4
+Done
 
 428
 Mon Feb 04 16:41:36 2013 +0000
@@ -37,10 +69,26 @@ UUID: PTlr-1e8
 Bytes: 45
 use { } to make it easier to add an ALOG etc.
 
+428
+Tue Feb 05 05:27:47 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTlr-1e8
+UUID: PdK76N6s
+Bytes: 4
+Done
+
 443
 Mon Feb 04 16:41:36 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: PTpoATQ0
 Bytes: 112
 I don't have the full context, but what guarantees a lack of buffer overrun here? It may at least need a comment
+
+443
+Tue Feb 05 05:27:47 2013 +0000
+Author: chanabasappa chitrali <1018607@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTpoATQ0
+UUID: PdC44B4g
+Bytes: 80
+Buffer overrun will not happen, as offset is calculated from the mBuffer->size()
 
