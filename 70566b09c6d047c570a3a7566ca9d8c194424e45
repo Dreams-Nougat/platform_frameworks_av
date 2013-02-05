@@ -9,6 +9,16 @@ UUID: PTn3mCxE
 Bytes: 14
 why 2005-2008?
 
+2
+Tue Feb 05 14:12:51 2013 +0000
+Author: kuntergultekin <1017830@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTn3mCxE
+UUID: PbT6ZDdk
+Bytes: 201
+This is obviously wrong, I will replace it with 2005-2013, or is there a more up-to-date version of this NOTICE files?
+
+(By the way rest of the NOTICE files in stagefright are outdated as such as well)
+
 File: media/libstagefright/codecs/on2/enc/SoftVPXEncoder.cpp
 
 32
@@ -18,12 +28,28 @@ UUID: PTvoU4VY
 Bytes: 49
 does this require us to update the OMX IL header?
 
+32
+Tue Feb 05 14:12:51 2013 +0000
+Author: kuntergultekin <1017830@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTvoU4VY
+UUID: PbRvI4x4
+Bytes: 128
+I believe not, as according to frameworks/native/include/media/openmax/OMX_Core.h line 41 it is already OpenMax IL version 1.1.2
+
 96
 Mon Feb 04 20:15:36 2013 +0000
 Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: PTr01Q9k
 Bytes: 61
 mFrameDuration in Us? Could mFrameDurationUs be used instead?
+
+96
+Tue Feb 05 14:12:51 2013 +0000
+Author: kuntergultekin <1017830@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTr01Q9k
+UUID: PbZ5eoQ0
+Bytes: 4
+Done
 
 131
 Mon Feb 04 20:15:36 2013 +0000
@@ -32,12 +58,28 @@ UUID: PTj19s2I
 Bytes: 30
 reciprocal was not calculated?
 
+131
+Tue Feb 05 14:12:51 2013 +0000
+Author: kuntergultekin <1017830@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTj19s2I
+UUID: Pbb5bXRw
+Bytes: 4
+Done
+
 253
 Tue Feb 05 00:09:55 2013 +0000
 Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: PXsdS4Nc
 Bytes: 201
 I do not see the support for querying profiles and levels. According to OpenMax IL, at least 4 levels are defined, and one profile (main) is defined. We must support the codec capability query feature.
+
+253
+Tue Feb 05 14:12:51 2013 +0000
+Author: kuntergultekin <1017830@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PXsdS4Nc
+UUID: PbduJC8c
+Bytes: 432
+If we would be willing to include 1.1.2 vp8 extension headers, I can easily fix this. Otherwise if my understanding is correct OMX IL 1.1.2 do not have a format agnostic type for profiles or levels and consequently without those extension headers, there is simply no type we can use to return codec capability info about this. (BTW profiles or levels do not apply for encoder in VP8, so there is no functional implication for this.)
 
 262
 Mon Feb 04 20:15:36 2013 +0000
@@ -46,6 +88,14 @@ UUID: PTt0dnxg
 Bytes: 39
 color format enum feature is missing...
 
+262
+Tue Feb 05 14:12:51 2013 +0000
+Author: kuntergultekin <1017830@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTt0dnxg
+UUID: PbR5CkUE
+Bytes: 89
+James, did you mean the eColorFormat the line above or was it something else I've missed?
+
 265
 Mon Feb 04 20:15:36 2013 +0000
 Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -53,12 +103,28 @@ UUID: PTl1872I
 Bytes: 46
 is the calculation considering the reciprocal?
 
+265
+Tue Feb 05 14:12:51 2013 +0000
+Author: kuntergultekin <1017830@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTl1872I
+UUID: Pbd5YGSI
+Bytes: 4
+Done
+
 455
 Mon Feb 04 20:15:36 2013 +0000
 Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: PTt0Ef9A
 Bytes: 51
 not sure how AndroidOpaque color format is handled.
+
+455
+Tue Feb 05 14:12:51 2013 +0000
+Author: kuntergultekin <1017830@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTt0Ef9A
+UUID: PbTufXw8
+Bytes: 96
+It is assumed to be planar. Is this incorrect? Other encoders seem to treat it as such at least.
 
 File: media/libstagefright/codecs/on2/enc/SoftVPXEncoder.h
 
@@ -68,4 +134,12 @@ Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: PTl3rT9U
 Bytes: 25
 mFrameDurationUs instead?
+
+112
+Tue Feb 05 14:12:51 2013 +0000
+Author: kuntergultekin <1017830@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PTl3rT9U
+UUID: Pbf5V1eg
+Bytes: 4
+Done
 
