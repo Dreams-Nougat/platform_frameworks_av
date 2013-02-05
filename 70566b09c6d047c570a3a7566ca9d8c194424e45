@@ -81,6 +81,14 @@ UUID: PbduJC8c
 Bytes: 432
 If we would be willing to include 1.1.2 vp8 extension headers, I can easily fix this. Otherwise if my understanding is correct OMX IL 1.1.2 do not have a format agnostic type for profiles or levels and consequently without those extension headers, there is simply no type we can use to return codec capability info about this. (BTW profiles or levels do not apply for encoder in VP8, so there is no functional implication for this.)
 
+253
+Tue Feb 05 16:47:52 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PbduJC8c
+UUID: Pc28mkdA
+Bytes: 161
+we need to get this fixed so that developers would have a way to tell what the codec is able to do. you can submit a separate patch just changing the OMX header.
+
 262
 Mon Feb 04 20:15:36 2013 +0000
 Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -95,6 +103,14 @@ Parent: PTt0dnxg
 UUID: PbR5CkUE
 Bytes: 89
 James, did you mean the eColorFormat the line above or was it something else I've missed?
+
+262
+Tue Feb 05 16:47:52 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PbR5CkUE
+UUID: Pc48a1YA
+Bytes: 112
+eColorFormat. In OpenMAX IL, there is a way that all color formats supported by the component can be enumerated.
 
 265
 Mon Feb 04 20:15:36 2013 +0000
@@ -125,6 +141,14 @@ Parent: PTt0Ef9A
 UUID: PbTufXw8
 Bytes: 96
 It is assumed to be planar. Is this incorrect? Other encoders seem to treat it as such at least.
+
+455
+Tue Feb 05 16:47:52 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: PbTufXw8
+UUID: PcxLwyiE
+Bytes: 47
+ic. please add a simple line of comment. thanks
 
 File: media/libstagefright/codecs/on2/enc/SoftVPXEncoder.h
 
