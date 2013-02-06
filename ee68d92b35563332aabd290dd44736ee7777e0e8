@@ -9,12 +9,32 @@ UUID: OvU0Puzs
 Bytes: 59
 if the next is out of bounds, do we still increment mIndex?
 
+99
+Wed Feb 06 05:50:26 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OvU0Puzs
+UUID: PiRmCSws
+Bytes: 165
+This is the same code as in DrmInfoRequest.cpp, DrmInfo.cpp,..
+So I don't want to fix that now.
+If something is strange we should fix that seperately for all places.
+
 105
 Thu Jan 24 00:11:19 2013 +0000
 Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: OvW0M90U
 Bytes: 50
 check on whether this is the same as the argument?
+
+105
+Wed Feb 06 05:50:26 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OvW0M90U
+UUID: Pifl-lwA
+Bytes: 165
+This is the same code as in DrmInfoRequest.cpp, DrmInfo.cpp,..
+So I don't want to fix that now.
+If something is strange we should fix that seperately for all places.
 
 116
 Thu Jan 24 00:11:19 2013 +0000
@@ -23,12 +43,32 @@ UUID: Ovc0Ra1k
 Bytes: 54
 check whether this is the same as the passed argument?
 
+116
+Wed Feb 06 05:50:26 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: Ovc0Ra1k
+UUID: PidmE0xU
+Bytes: 165
+This is the same code as in DrmInfoRequest.cpp, DrmInfo.cpp,..
+So I don't want to fix that now.
+If something is strange we should fix that seperately for all places.
+
 128
 Thu Jan 24 00:11:19 2013 +0000
 Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: OvQ1qI64
 Bytes: 66
 not thread safe. probably not an issue, depending on the use case.
+
+128
+Wed Feb 06 05:50:26 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OvQ1qI64
+UUID: PibmJHyw
+Bytes: 165
+This is the same code as in DrmInfoRequest.cpp, DrmInfo.cpp,..
+So I don't want to fix that now.
+If something is strange we should fix that seperately for all places.
 
 File: drm/common/IDrmServiceListener.cpp
 
@@ -39,6 +79,14 @@ UUID: OvSJEzmk
 Bytes: 93
 valueData can be local to the if(valueSize > 0) block, and delete can also move to that block
 
+73
+Wed Feb 06 05:50:26 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OvSJEzmk
+UUID: PiVmR40w
+Bytes: 7
+I agree
+
 File: include/drm/DrmInfo.h
 
 59
@@ -47,4 +95,12 @@ Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: OvYJoIuI
 Bytes: 106
 the changes in this file simply add a few spaces. this is not needed. please drop the change in this file.
+
+59
+Wed Feb 06 05:50:26 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: OvYJoIuI
+UUID: PiTmeL10
+Bytes: 7
+I agree
 
