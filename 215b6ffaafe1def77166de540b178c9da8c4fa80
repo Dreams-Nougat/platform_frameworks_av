@@ -18,6 +18,14 @@ in OpenMAX IL 1.2.0 (note 1.1.2), I found that four levels are defined in sectio
 
 When your comment said that "vp8 encoder has no profiles or levels", are you saying that the vp8 software encoder in Android source tree has such notion and only supports version0 and could not be set to deal with other versions/levels, or just the extension header has not defined such versions yet? Could this be a problem for future extension?
 
+331
+Wed Feb 06 18:43:12 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: Phdd1xME
+UUID: PhZcynA4
+Bytes: 94
+Actually, I also found the four different levels in 1.1.2 extension headers that you uploaded.
+
 338
 Wed Feb 06 18:39:44 2013 +0000
 Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
