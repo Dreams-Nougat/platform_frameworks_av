@@ -20,3 +20,13 @@ UUID: QQ8jMw7U
 Bytes: 98
 Note, I'm not touching the frame count field, that is still 1. I'm changing the compressor string.
 
+2561
+Tue Feb 26 21:07:27 2013 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: QQ8jMw7U
+UUID: QQwjXyz8
+Bytes: 383
+More exactly, the spec says the following about the compressor string:
+
+"Compressorname is a name, for informative purposes. It is formatted in a fixed 32-byte field, with the first byte set to the number of bytes to be displayed, followed by that number of bytes of displayable data, and then padding to complete 32 bytes total (including the size byte). The field may be set to 0."
+
