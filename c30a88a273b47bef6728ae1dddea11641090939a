@@ -12,3 +12,11 @@ according to the spec that I have, this frame count must be 1, on page 28 in sec
 
 0 does not make sense.
 
+2561
+Tue Feb 26 21:05:03 2013 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: QVmxLG44
+UUID: QQ8jMw7U
+Bytes: 98
+Note, I'm not touching the frame count field, that is still 1. I'm changing the compressor string.
+
