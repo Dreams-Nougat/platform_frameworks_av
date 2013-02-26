@@ -30,3 +30,12 @@ More exactly, the spec says the following about the compressor string:
 
 "Compressorname is a name, for informative purposes. It is formatted in a fixed 32-byte field, with the first byte set to the number of bytes to be displayed, followed by that number of bytes of displayable data, and then padding to complete 32 bytes total (including the size byte). The field may be set to 0."
 
+2561
+Tue Feb 26 21:51:18 2013 +0000
+Author: jdong <1006668@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: QQwjXyz8
+UUID: QVs-TIVA
+Bytes: 56
+sorry, I misread the field.
+The change looks good to me.
+
