@@ -1,0 +1,18 @@
+Revision: c4c640b9a627d438303805c21f095161e0aff7b0
+Patch-set: 1
+File: media/libmedia/IMediaMetadataRetriever.cpp
+
+169
+Wed Feb 27 17:01:46 2013 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: QVaFepvI
+Bytes: 353
+My only concern here is that if you do something like:
+
+const char *meta1 = extractMetadata(foo);
+const char *meta2 = extractMetadata(bar);
+
+then meta1 will again point to garbage.
+
+I think the only way to fix that is to keep copies of *all* the metadata here, not just the last one, for example in a keyed vector like StagefrightMetadataRetriever does.
+
