@@ -1,0 +1,11 @@
+Revision: fd49edb923aa8ca7ed967bef9aac7d24da1c5c9f
+Patch-set: 3
+File: media/libmedia/IMediaMetadataRetriever.cpp
+
+165
+Thu Feb 28 04:13:19 2013 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: QXuov4-c
+Bytes: 126
+please check that readCString() returned a non-NULL value before proceeding, to avoid adding unnecessary values to the vector.
+
