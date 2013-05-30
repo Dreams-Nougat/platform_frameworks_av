@@ -10,3 +10,11 @@ Bytes: 256
 we should wait with a timeout here (1- 3 seconds) s that we are not stuck if the requesting thread is stuck because ::Exit() only signals mWaitWorkCV.
 I realize there is also a problem in ::exit() because we do not signal all pending commands when exiting.
 
+700
+Thu May 30 08:22:46 2013 +0000
+Author: Christer Fletcher <1021996@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: U868WOVk
+UUID: 5df75599_2b5f395a
+Bytes: 104
+Would you like the change to exit to signal the pending commands done in same commit or a different one?
+
