@@ -1,0 +1,20 @@
+Revision: c863c982d14a7b3082328797556745acd00cdc5c
+Patch-set: 1
+File: media/libstagefright/codecs/amrwbenc/inc/acelp.h
+
+42
+Mon Jun 03 16:05:03 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1d879d2a_ef043526
+Bytes: 260
+Could the architecture-specific optimizations in this file be moved to a filename or directory name which is specific to that architecture, rather than mixing together?  The current approach does not seem scalable.  E.g. by ifdef arch include arch_name.h endif
+
+File: media/libstagefright/codecs/amrwbenc/src/c4t64fx.c
+
+92
+Mon Jun 03 16:05:03 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1d879d2a_0f13496e
+Bytes: 15
+similar comment
+
