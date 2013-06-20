@@ -18,3 +18,11 @@ UUID: 5df75599_2b5f395a
 Bytes: 104
 Would you like the change to exit to signal the pending commands done in same commit or a different one?
 
+700
+Thu Jun 20 11:50:40 2013 +0000
+Author: Christer Fletcher <1016038@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 5df75599_2b5f395a
+UUID: aa72c51d_654a2670
+Bytes: 116
+Updated with waitRelative so this part can be merged if you want it in separate commits. If not, please let me know.
+
