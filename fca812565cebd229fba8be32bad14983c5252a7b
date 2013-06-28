@@ -9,10 +9,26 @@ UUID: 0a2cb179_b166a2fd
 Bytes: 40
 doesn't free previous allocation, if any
 
+278
+Fri Jun 28 16:47:39 2013 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0a2cb179_b166a2fd
+UUID: 0a2cb179_11ba0ef8
+Bytes: 116
+not a concern since allocateStorage is only called a) in the constructor or b) after a previous clear()/freeStorage.
+
 283
 Fri Jun 28 16:36:29 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 0a2cb179_7136eae8
 Bytes: 43
 free(NULL) is a nop, so 'if' is unnecessary
+
+283
+Fri Jun 28 16:47:39 2013 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0a2cb179_7136eae8
+UUID: 0a2cb179_91735eae
+Bytes: 143
+It's good form to not pass NULL to free() as some quirky implementations don't like it, I think this'd be fine with android's c-library though.
 
