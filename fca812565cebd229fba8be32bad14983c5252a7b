@@ -1,0 +1,18 @@
+Revision: fca812565cebd229fba8be32bad14983c5252a7b
+Patch-set: 1
+File: media/libstagefright/MetaData.cpp
+
+278
+Fri Jun 28 16:36:29 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0a2cb179_b166a2fd
+Bytes: 40
+doesn't free previous allocation, if any
+
+283
+Fri Jun 28 16:36:29 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0a2cb179_7136eae8
+Bytes: 43
+free(NULL) is a nop, so 'if' is unnecessary
+
