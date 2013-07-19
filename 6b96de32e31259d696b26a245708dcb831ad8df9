@@ -1,0 +1,98 @@
+Revision: 6b96de32e31259d696b26a245708dcb831ad8df9
+Patch-set: 3
+File: drm/common/DrmEngineBase.cpp
+
+31
+Fri Jul 19 06:10:54 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9362a322_73f12019
+Bytes: 22
+space between if and (
+
+55
+Fri Jul 19 06:10:54 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b365e72b_54f68c12
+Bytes: 22
+space between if and (
+
+84
+Fri Jul 19 06:10:54 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9349c3a6_9bf7ab0b
+Bytes: 22
+space between if and (
+
+107
+Fri Jul 19 06:10:54 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9349c3a6_fb04ef29
+Bytes: 22
+space between if and (
+
+File: drm/common/IDrmManagerService.cpp
+
+234
+Fri Jul 19 06:10:54 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9349c3a6_db013318
+Bytes: 13
+Too long line
+
+File: drm/drmserver/DrmManager.cpp
+
+168
+Fri Jul 19 06:10:54 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9362a322_53f6a412
+Bytes: 13
+too long line
+
+File: drm/drmserver/DrmManagerService.cpp
+
+106
+Fri Jul 19 06:10:54 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9362a322_b3fa98f3
+Bytes: 13
+too long line
+
+File: drm/libdrmframework/include/IDrmManagerService.h
+
+190
+Fri Jul 19 06:10:54 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b365e72b_b4fa80f3
+Bytes: 13
+too long line
+
+File: drm/libdrmframework/plugins/common/include/DrmEngineBase.h
+
+528
+Fri Jul 19 06:10:54 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9349c3a6_3b0e5748
+Bytes: 20
+tab instead of space
+
+541
+Fri Jul 19 06:10:54 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9362a322_93f79c0b
+Bytes: 20
+tab instead of space
+
+557
+Fri Jul 19 06:10:54 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9362a322_f304102a
+Bytes: 20
+tab instead of space
+
+568
+Fri Jul 19 06:10:54 2013 +0000
+Author: Henrik Andersson <1004910@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9362a322_d3011418
+Bytes: 20
+tab instead of space
+
