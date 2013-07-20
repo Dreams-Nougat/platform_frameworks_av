@@ -1,0 +1,39 @@
+Revision: 94240340db6d36ca4b62938afc6e3128b2237523
+Patch-set: 1
+File: services/audioflinger/AudioResampler.cpp
+
+106
+Sat Jul 20 00:11:40 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1325d3ee_8743c6b8
+Bytes: 45
+we use 4 spaces for indentation, no hard tabs
+
+182
+Sat Jul 20 00:11:40 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1325d3ee_e750c27f
+Bytes: 28
+no whitespace at end of line
+
+184
+Sat Jul 20 00:11:40 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1325d3ee_0786b6d5
+Bytes: 40
+not clear what this comment block is for
+
+197
+Sat Jul 20 00:11:40 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1325d3ee_071fd6d5
+Bytes: 82
+separate line per variable, and initialize as part of declaration e.g. bool x = y;
+
+207
+Sat Jul 20 00:11:40 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1325d3ee_872aa6f0
+Bytes: 286
+To permit comparisons easily, we'll want to (at least initially) not remove the previous resamplers, but rather add your new ones.  So add 3 or 4 new quality levels for your new implementation.  Later, as a separate CL, we can remove the previous implementation if and when appropriate.
+
