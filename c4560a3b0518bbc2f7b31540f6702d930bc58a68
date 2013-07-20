@@ -30,6 +30,14 @@ UUID: 1325d3ee_47670e54
 Bytes: 202
 Separate .h for the coefficients, see audio-resampler/filter_coefficients.h for an example.  This permits easier updating of tables, and makes it easier to read the code without looking at coefficients.
 
+68
+Sat Jul 20 01:28:11 2013 +0000
+Author: Adam Strauss <1022388@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_47670e54
+UUID: 1325d3ee_0aecfb40
+Bytes: 87
+There appears to be 2 conventions.  We followed the example in AudioResamplerSinc.cpp .
+
 1322
 Sat Jul 20 00:29:04 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
