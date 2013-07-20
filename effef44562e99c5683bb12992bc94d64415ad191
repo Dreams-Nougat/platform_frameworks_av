@@ -1,0 +1,11 @@
+Revision: effef44562e99c5683bb12992bc94d64415ad191
+Patch-set: 1
+File: services/audioflinger/AudioMixer.cpp
+
+558
+Sat Jul 20 00:14:32 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1325d3ee_a7740a09
+Bytes: 93
+our convention is ", value /* input sample rate */, ", and again no whitespace at end of line
+
