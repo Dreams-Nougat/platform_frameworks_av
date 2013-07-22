@@ -38,6 +38,14 @@ UUID: 1325d3ee_0aecfb40
 Bytes: 87
 There appears to be 2 conventions.  We followed the example in AudioResamplerSinc.cpp .
 
+68
+Mon Jul 22 15:41:07 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_0aecfb40
+UUID: 1325d3ee_8aef4b72
+Bytes: 62
+OK, then ignore that comment. We'll fix both in a separate CL.
+
 1322
 Sat Jul 20 00:29:04 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
