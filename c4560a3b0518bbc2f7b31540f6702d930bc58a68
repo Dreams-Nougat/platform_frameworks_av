@@ -9,12 +9,28 @@ UUID: 1325d3ee_e77e02e7
 Bytes: 141
 If this is new code, use 2013.  If this is existing code, use that date.  We don't update the date or add additional dates for later changes.
 
+2
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_e77e02e7
+UUID: 934d4312_27ecd540
+Bytes: 4
+Done
+
 53
 Sat Jul 20 00:29:04 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 1325d3ee_c77bfef4
 Bytes: 28
 no hard tabs, 4 space indent
+
+53
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_c77bfef4
+UUID: 934d4312_e7f58d05
+Bytes: 4
+Done
 
 55
 Sat Jul 20 00:29:04 2013 +0000
@@ -53,12 +69,28 @@ UUID: 1325d3ee_47eeee79
 Bytes: 66
 column 1 for method bodies; method declarations in .h are indented
 
+1322
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_47eeee79
+UUID: 934d4312_a7f8e5fc
+Bytes: 4
+Done
+
 1323
 Sat Jul 20 00:29:04 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 1325d3ee_a75b6a8c
 Bytes: 16
 ", int16_t" etc.
+
+1323
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_a75b6a8c
+UUID: 934d4312_47056122
+Bytes: 8
+not done
 
 1329
 Sat Jul 20 00:29:04 2013 +0000
@@ -67,12 +99,28 @@ UUID: 1325d3ee_e7556257
 Bytes: 29
 "// ..." (one space after //)
 
+1329
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_e7556257
+UUID: 934d4312_070e7947
+Bytes: 4
+Done
+
 1331
 Sat Jul 20 00:29:04 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 1325d3ee_8758e690
 Bytes: 5
 ") {"
+
+1331
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_8758e690
+UUID: 934d4312_e70cad4d
+Bytes: 4
+Done
 
 1334
 Sat Jul 20 00:29:04 2013 +0000
@@ -81,12 +129,28 @@ UUID: 1325d3ee_c752de6c
 Bytes: 60
 minimum 1 space, aligned at multiple of 4 spaces e.g. "; //"
 
+1334
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_c752de6c
+UUID: 934d4312_a71f856f
+Bytes: 8
+not done
+
 1339
 Sat Jul 20 00:29:04 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 1325d3ee_67e97270
 Bytes: 48
 no space after (, one space each side of = and >
+
+1339
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_67e97270
+UUID: 934d4312_471c817a
+Bytes: 8
+not done
 
 1352
 Sat Jul 20 00:29:04 2013 +0000
@@ -95,12 +159,28 @@ UUID: 1325d3ee_87ef4672
 Bytes: 28
 indent 8 for line extensions
 
+1352
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_87ef4672
+UUID: 934d4312_073519ef
+Bytes: 8
+not done
+
 1371
 Sat Jul 20 00:29:04 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 1325d3ee_c7f93e3f
 Bytes: 9
 "while ("
+
+1371
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_c7f93e3f
+UUID: 934d4312_273a95e1
+Bytes: 4
+Done
 
 1391
 Sat Jul 20 00:29:04 2013 +0000
@@ -109,12 +189,28 @@ UUID: 1325d3ee_67005250
 Bytes: 97
 only split line if > 100 characters, or for clarity; in this case it would be clearer on one line
 
+1391
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_67005250
+UUID: 934d4312_c73e51d3
+Bytes: 4
+Done
+
 1403
 Sat Jul 20 00:29:04 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 1325d3ee_a719aace
 Bytes: 62
 multi-line end-of-line comments should be aligned with initial
+
+1403
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_a719aace
+UUID: 934d4312_e7434d4a
+Bytes: 4
+Done
 
 1451
 Sat Jul 20 00:29:04 2013 +0000
@@ -123,12 +219,28 @@ UUID: 1325d3ee_8716269a
 Bytes: 13
 split comment
 
+1451
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_8716269a
+UUID: 934d4312_87292999
+Bytes: 8
+not done
+
 1452
 Sat Jul 20 00:29:04 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 1325d3ee_e713a2a8
 Bytes: 19
 excess indentation?
+
+1452
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_e713a2a8
+UUID: 934d4312_a726a5c3
+Bytes: 4
+Done
 
 1460
 Sat Jul 20 00:29:04 2013 +0000
@@ -137,10 +249,26 @@ UUID: 1325d3ee_07b23697
 Bytes: 8
 indent 8
 
+1460
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_07b23697
+UUID: 934d4312_47332107
+Bytes: 4
+Done
+
 1657
 Sat Jul 20 00:29:04 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 1325d3ee_67b7b287
 Bytes: 14
 split if > 100
+
+1657
+Thu Jul 25 23:53:31 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1325d3ee_67b7b287
+UUID: 934d4312_075c3927
+Bytes: 4
+Done
 
