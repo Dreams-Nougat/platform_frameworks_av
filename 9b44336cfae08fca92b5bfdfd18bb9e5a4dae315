@@ -25,6 +25,14 @@ UUID: 934d4312_843da7f6
 Bytes: 11
 significant
 
+27
+Fri Jul 26 15:43:16 2013 +0000
+Author: Adam Strauss <1022388@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 934d4312_843da7f6
+UUID: 3302d7bb_f8f0f117
+Bytes: 45
+Is this an internal note or a change request?
+
 File: services/audioflinger/AudioResampler.cpp
 
 134
