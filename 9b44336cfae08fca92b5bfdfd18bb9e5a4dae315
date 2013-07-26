@@ -56,6 +56,14 @@ UUID: 934d4312_c4296fb2
 Bytes: 7
 needed?
 
+205
+Fri Jul 26 15:50:45 2013 +0000
+Author: Adam Strauss <1022388@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 934d4312_c4296fb2
+UUID: 93f9c300_0f08f537
+Bytes: 107
+This helps us debug from ADB (setting the resampler via a global property).  We can pull it, please advise.
+
 263
 Thu Jul 25 23:56:02 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
