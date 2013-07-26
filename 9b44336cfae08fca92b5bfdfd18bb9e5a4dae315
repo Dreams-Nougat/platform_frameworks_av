@@ -33,6 +33,19 @@ UUID: 3302d7bb_f8f0f117
 Bytes: 45
 Is this an internal note or a change request?
 
+27
+Fri Jul 26 16:37:01 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 3302d7bb_f8f0f117
+UUID: 530d8be8_593003f9
+Bytes: 474
+Internal note
+
+Android.mk is new for patch set 3; it was not present in patch set 1.  Previously the change to Android.mk was in the dependency https://android-review.googlesource.com/#/c/62455/
+I have now merged Android.mk into this CL, eliminating the dependency.
+
+The comments at line 18 and line 26 refer to the fact that the base has changed recently: AOSP used to be "JB 4.2" but is now "JB 4.3". So there were changes to Android.mk that were unrelated to your change.
+
 File: services/audioflinger/AudioResampler.cpp
 
 134
@@ -63,6 +76,22 @@ Parent: 934d4312_c4296fb2
 UUID: 93f9c300_0f08f537
 Bytes: 107
 This helps us debug from ADB (setting the resampler via a global property).  We can pull it, please advise.
+
+205
+Fri Jul 26 16:37:01 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 93f9c300_0f08f537
+UUID: 530d8be8_9960dbde
+Bytes: 228
+OK, then please put within #if or #ifdef instead of comment, and leave the symbol defined by default for non-debug mode.  E.g.
+
+at top of file
+#undef DEBUG_FROM_ADB
+
+at line 205
+#ifdef DEBUG_FROM_ADB
+    char value[ ... ]
+#endif
 
 263
 Thu Jul 25 23:56:02 2013 +0000
@@ -108,6 +137,14 @@ Parent: 934d4312_07e7595f
 UUID: 3302d7bb_d80c0d4e
 Bytes: 50
 Please explain in more detail about dependent CLs.
+
+50
+Fri Jul 26 16:37:01 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 3302d7bb_d80c0d4e
+UUID: 3302d7bb_9860d5de
+Bytes: 85
+For now, ignore this comment.  After you upload next patch set, I'll split it in two.
 
 File: services/audioflinger/AudioResamplerBeats.cpp
 
