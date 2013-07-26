@@ -101,6 +101,14 @@ UUID: 934d4312_07e7595f
 Bytes: 38
 separate dependent CL, and line length
 
+50
+Fri Jul 26 16:03:31 2013 +0000
+Author: Adam Strauss <1022388@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 934d4312_07e7595f
+UUID: 3302d7bb_d80c0d4e
+Bytes: 50
+Please explain in more detail about dependent CLs.
+
 File: services/audioflinger/AudioResamplerBeats.cpp
 
 52
