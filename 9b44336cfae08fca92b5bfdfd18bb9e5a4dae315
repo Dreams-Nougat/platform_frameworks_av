@@ -62,6 +62,14 @@ UUID: 934d4312_2435b306
 Bytes: 88
 Please move API changes to a separate CL, and then have this CL depend on that first CL.
 
+150
+Mon Jul 29 16:06:14 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 934d4312_2435b306
+UUID: d3189b2e_98d8d9c5
+Bytes: 63
+Regarding how to do dependent changes, see cover comment below.
+
 205
 Thu Jul 25 23:56:02 2013 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
