@@ -1,0 +1,11 @@
+Revision: 03fe3cee5492eed05e2f87f3ae5a995602be9e11
+Patch-set: 3
+File: media/libstagefright/MPEG4Extractor.cpp
+
+2163
+Tue Jul 30 16:40:17 2013 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 138a339d_e8cda701
+Bytes: 223
+According to a spec I found (http://www.etsi.org/deliver/etsi_ts/126200_126299/126244/11.01.00_60/ts_126244v110100p.pdf), the track number is optional. Should there be code here to check whether it's actually present/valid?
+
