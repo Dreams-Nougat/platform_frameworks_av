@@ -1,0 +1,20 @@
+Revision: 40bb6ad0ef0a674d3ac06596c3c21894d3bd3fd4
+Patch-set: 4
+File: services/audioflinger/AudioResampler.cpp
+
+270
+Wed Jul 31 00:28:13 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 138a339d_3c61880f
+Bytes: 8
+not done
+
+File: services/audioflinger/AudioResamplerBeats.h
+
+27
+Wed Jul 31 00:28:13 2013 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 138a339d_f7ebbb28
+Bytes: 8
+not done
+
