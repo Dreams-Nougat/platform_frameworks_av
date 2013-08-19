@@ -1,0 +1,18 @@
+Revision: f6f348f7ebd27813c06b229b7b0c9c01562bb2b4
+Patch-set: 1
+File: media/libmedia/mediaplayer.cpp
+
+515
+Mon Aug 19 09:17:12 2013 +0000
+Author: Sungmin Choi <1016953@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 4d6328f2_ccaa3fb4
+Bytes: 18
+remove white space
+
+519
+Mon Aug 19 09:17:12 2013 +0000
+Author: Sungmin Choi <1016953@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 4d6328f2_aca70bea
+Bytes: 5
+ditto
+
