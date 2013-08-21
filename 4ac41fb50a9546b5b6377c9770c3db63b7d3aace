@@ -1,0 +1,15 @@
+Revision: 4ac41fb50a9546b5b6377c9770c3db63b7d3aace
+Patch-set: 1
+File: media/libstagefright/matroska/MatroskaExtractor.cpp
+
+839
+Wed Aug 21 12:57:21 2013 +0000
+Author: Patrik Carlsson <1017178@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: edc77c62_965dac81
+Bytes: 266
+FrameRate seems to be deprecated in the matroska.org standard,
+DefaultDuration on the other hand seems to be commonly used 
+and contains the same information.
+
+http://git.chromium.org/gitweb/?p=webm/libwebm.git;a=commitdiff;h=a9f43fe8e7d6bb3c09476980ba3e5d0d5dd3063f
+
