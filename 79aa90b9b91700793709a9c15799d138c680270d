@@ -1,0 +1,11 @@
+Revision: 79aa90b9b91700793709a9c15799d138c680270d
+Patch-set: 3
+File: media/libstagefright/codecs/avc/enc/SoftAVCEncoder.cpp
+
+872
+Tue Sep 24 20:44:05 2013 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c416178f_79346fbf
+Bytes: 85
+This logic needs to check nAllocLen >= 4, and be inside the inHeader->nFilledLen > 0.
+
