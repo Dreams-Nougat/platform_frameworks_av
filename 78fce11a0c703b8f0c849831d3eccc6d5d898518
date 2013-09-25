@@ -1,0 +1,14 @@
+Revision: 78fce11a0c703b8f0c849831d3eccc6d5d898518
+Patch-set: 1
+File: media/libstagefright/matroska/MatroskaExtractor.cpp
+
+464
+Wed Sep 25 13:47:14 2013 +0000
+Author: Patrik Carlsson <1017145@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 84e5fff4_de22e1c4
+Bytes: 263
+You can simplify this if compared to http://android-review.googlesource.com/35964
+
+Skip getting track and track type for each block and just calculate diffTimeUs.
+Assuming only audio has several frames per block you don't even have to add a check within the loop.
+
