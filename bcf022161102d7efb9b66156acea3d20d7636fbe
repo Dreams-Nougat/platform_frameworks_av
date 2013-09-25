@@ -1,0 +1,12 @@
+Revision: bcf022161102d7efb9b66156acea3d20d7636fbe
+Patch-set: 1
+File: media/libstagefright/matroska/MatroskaExtractor.cpp
+
+410
+Wed Sep 25 14:06:12 2013 +0000
+Author: Patrik Carlsson <1017145@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 64b48bde_c0de7227
+Bytes: 141
+This will advance audio to be later than video for all searches
+unless you add a small constant to allow an audio block closely before video.
+
