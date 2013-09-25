@@ -10,10 +10,26 @@ Bytes: 141
 This will advance audio to be later than video for all searches
 unless you add a small constant to allow an audio block closely before video.
 
+410
+Wed Sep 25 15:05:56 2013 +0000
+Author: Dan Liang <1004496@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 64b48bde_c0de7227
+UUID: 24d53300_a3c424e0
+Bytes: 45
+like abs(blockTimeUs() - seekTimeUs) <= 10ms?
+
 413
 Wed Sep 25 14:17:05 2013 +0000
 Author: Patrik Carlsson <1017145@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 84e5fff4_a1233ab2
 Bytes: 35
 Also this log print does not build.
+
+413
+Wed Sep 25 15:05:56 2013 +0000
+Author: Dan Liang <1004496@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 84e5fff4_a1233ab2
+UUID: 44d0670f_c4d050e6
+Bytes: 24
+I didn't change the log.
 
