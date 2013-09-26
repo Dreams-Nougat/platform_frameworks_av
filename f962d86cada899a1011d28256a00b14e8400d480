@@ -1,0 +1,11 @@
+Revision: f962d86cada899a1011d28256a00b14e8400d480
+Patch-set: 2
+File: media/libmedia/mediaplayer.cpp
+
+513
+Thu Sep 26 16:47:42 2013 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 04a82f8f_9b204e61
+Bytes: 182
+It seems that all you want to do is do p->disconnect() outside of the mutex lock.  You could do this by keeping reset_l() mostly intact.  When will clear_l() be called if mPlayer!=0?
+
