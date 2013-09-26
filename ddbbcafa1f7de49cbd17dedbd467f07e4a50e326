@@ -1,0 +1,11 @@
+Revision: ddbbcafa1f7de49cbd17dedbd467f07e4a50e326
+Patch-set: 1
+File: media/libstagefright/MPEG4Extractor.cpp
+
+627
+Thu Sep 26 16:11:00 2013 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c4d0d73d_b83915e8
+Bytes: 118
+Is this quicktime container specific? Why do we just skip the chunk length field, and not some other arbitrary amount?
+
