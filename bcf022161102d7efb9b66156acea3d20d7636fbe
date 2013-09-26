@@ -18,6 +18,14 @@ UUID: 24d53300_a3c424e0
 Bytes: 45
 like abs(blockTimeUs() - seekTimeUs) <= 10ms?
 
+410
+Thu Sep 26 08:41:15 2013 +0000
+Author: Patrik Carlsson <1017145@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 24d53300_a3c424e0
+UUID: a4b4c3fc_5c12fd1d
+Bytes: 51
+or just add 10ms to Blocktime in your current code.
+
 413
 Wed Sep 25 14:17:05 2013 +0000
 Author: Patrik Carlsson <1017145@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -32,4 +40,12 @@ Parent: 84e5fff4_a1233ab2
 UUID: 44d0670f_c4d050e6
 Bytes: 24
 I didn't change the log.
+
+413
+Thu Sep 26 08:41:15 2013 +0000
+Author: Patrik Carlsson <1017145@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 44d0670f_c4d050e6
+UUID: e4aa3b99_debf25a2
+Bytes: 47
+No blame, just as good time as any to fix it :)
 
