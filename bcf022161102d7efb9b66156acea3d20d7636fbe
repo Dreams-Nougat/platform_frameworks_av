@@ -49,3 +49,11 @@ UUID: e4aa3b99_debf25a2
 Bytes: 47
 No blame, just as good time as any to fix it :)
 
+413
+Fri Sep 27 02:12:48 2013 +0000
+Author: Dan Liang <1004496@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e4aa3b99_debf25a2
+UUID: 0442efdb_7ff34f1d
+Bytes: 97
+But I'm confused. IMHO, this log will be built and could be useful to debug seeking and a/v sync.
+
