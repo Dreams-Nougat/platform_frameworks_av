@@ -1,0 +1,13 @@
+Revision: ea5e0dc3e3c5092c9e5368ebaa3f420ad3d5ced0
+Patch-set: 1
+File: media/libstagefright/timedtext/TextDescriptions.h
+
+54
+Wed Oct 02 14:17:23 2013 +0000
+Author: Patrik Carlsson <1017178@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c1c1a91a_2dd1ad9e
+Bytes: 159
+Is this reserved for TTML? 
+Why not have a RAW subtitle payload and combine it with a MIME key?
+That could enable an application to decode even binary formats.
+
