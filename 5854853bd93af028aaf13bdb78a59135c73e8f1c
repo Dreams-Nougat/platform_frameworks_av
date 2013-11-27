@@ -14,3 +14,13 @@ There are comments elsewhere in this file that imply the audio mixer expects a m
 And even if you happened to be getting a multiple of 16, it seems possible that you wouldn't actually get the required minimum number of samples to resample an input buffer to an output buffer.
 For example, if the sample rates are 48k and 44k, and mNormalFrameCount is 960, and we have 3 such buffers, then minFrameCount will be 3134, which is not a multiple of 16, and depending on the implementation of the resampler might need one or more extra frames in order to actually be able to fill the output buffer.
 
+1228
+Wed Nov 27 16:34:06 2013 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 03abca57_c500fac8
+UUID: a3583e70_3ab4a16c
+Bytes: 692
+I'm not quite familiar myself either, but AudioTrack::createTrack_l has got a line doing almost exactly the same thing (but only for the case when the AUDIO_OUTPUT_FLAG_FAST isn't set), so I would guess it works sufficiently.
+
+The case here is when the caller thinks this might work with the fast path (the only thing differing from the native setup is the sample rate), so AudioTrack::createTrack_l doesn't meddle with the values at all, while AudioFlinger realizes that the fast path doesn't handle it, and thus should fill in values similarly to what AudioTrack would have done. (AudioTrack::createTrack_l also has got a FIXME saying that those calculations should be moved to the server).
+
