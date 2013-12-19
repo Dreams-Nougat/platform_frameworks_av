@@ -1,0 +1,21 @@
+Revision: 495bae2bd381421a94587d384c5dec6b53b143af
+Patch-set: 5
+File: media/mtp/MtpStringBuffer.cpp
+
+143
+Thu Dec 19 16:04:18 2013 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e871338d_d4595c3e
+Bytes: 290
+Shouldn't this be enforced in the set(const char*) method above instead?
+Right now if you call set() with a 500-character ascii string, it will happily copy that into mBuffer, and set both mByteCount and mCharCount to 500. (the character limit *is* enforced for 16 bit input strings though)
+
+File: media/mtp/mtp.h
+
+493
+Thu Dec 19 16:04:18 2013 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c86e2fb0_53fc848c
+Bytes: 145
+suggest moving this definition to MtpStringBuffer.h, and using it in other places in MtpStringBuffer where it currently hardcodes the number 255.
+
