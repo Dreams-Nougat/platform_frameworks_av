@@ -9,3 +9,11 @@ UUID: 685e23ff_f229080c
 Bytes: 119
 how about keeping this memcpy, and then just counting (instead of copying byte-by-byte) the characters within the loop?
 
+62
+Fri Dec 20 21:30:09 2013 +0000
+Author: Zoran Jovanovic <1010077@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 685e23ff_f229080c
+UUID: a832dbd0_ad8729fa
+Bytes: 251
+I thought of that at first, but then figured I'd copy while counting since there may be either some excessive bytes or some discarded bytes at truncated characters so the correct byte length is needed as well and then it's also a bit easier to follow.
+
