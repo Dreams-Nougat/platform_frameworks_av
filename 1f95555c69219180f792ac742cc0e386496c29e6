@@ -1,0 +1,11 @@
+Revision: 1f95555c69219180f792ac742cc0e386496c29e6
+Base-for-patch-set: 7
+File: media/mtp/MtpStringBuffer.cpp
+
+62
+Fri Dec 20 20:20:43 2013 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 685e23ff_f229080c
+Bytes: 119
+how about keeping this memcpy, and then just counting (instead of copying byte-by-byte) the characters within the loop?
+
