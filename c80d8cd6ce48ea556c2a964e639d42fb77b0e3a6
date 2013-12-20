@@ -10,3 +10,11 @@ Bytes: 426
 "length" is the number of bytes here, not the number of characters. A character can consist of multiple bytes (which is why mBuffer is allocated at size (255*3+1)), so you might end up copying substantially less characters than needed.
 You should instead work this into the loop below, similar to what's done for set(uint16_t*) below, and calculate the actual number of characters and bytes as you're parsing the input string.
 
+63
+Fri Dec 20 19:45:22 2013 +0000
+Author: Zoran Jovanovic <1010077@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: a8649bc8_f4f018be
+UUID: a832dbd0_2da97978
+Bytes: 35
+Ooops, you're right. Fix is coming.
+
