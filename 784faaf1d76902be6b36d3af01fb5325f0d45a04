@@ -9,10 +9,32 @@ UUID: ad33cd7d_624bb675
 Bytes: 102
 Just curious about why you use String8. AString is used elsewhere in this file. Any particular reason?
 
+620:4-620:11
+Fri Jan 10 10:09:39 2014 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ad33cd7d_624bb675
+UUID: 0dd6993f_ed68e511
+Bytes: 155
+Mainly because the existing getUri() method returns String8, so I went with that. I can try to change this to AString instead if that would be preferred...
+
 655:38-655:41
 Fri Jan 10 10:01:33 2014 +0000
 Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: ad33cd7d_82483a78
 Bytes: 93
 Ok, sounds resonable. How common is this problem? We haven't seen this for HLS, but for RTSP.
+
+655:38-655:41
+Fri Jan 10 10:09:39 2014 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ad33cd7d_82483a78
+UUID: ede2251a_6f4bcd75
+Bytes: 966
+It is in actual use in some places, but the impact of it varies. If a HLS stream is launched from the browser via an <a href> it will first load the m3u8 with the browser before it determines that it should be played by the video player, based on the mime type - in this case the redirect for the main playlist is already taken care of by the browser and stagefright never knows about it, and thus the problem silently disappears. If you instead try to play such a stream in a <video> tag, stagefright will get the original URL prior to the redirect - and fail.
+
+An actual website (my employer) had to work around this issue, we experimented with HLS playback in <video> tags on android but had to revert to launching the external player since the redircts fail in the former.
+
+So yes, the problem exists, but it might not be too visible to you since users are working around it since it doesn't work right now.
+
+Can't speak for others about how common it is though.
 
