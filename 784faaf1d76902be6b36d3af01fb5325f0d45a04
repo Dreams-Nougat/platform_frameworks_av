@@ -1,0 +1,18 @@
+Revision: 784faaf1d76902be6b36d3af01fb5325f0d45a04
+Patch-set: 2
+File: media/libstagefright/httplive/LiveSession.cpp
+
+620:4-620:11
+Fri Jan 10 10:01:33 2014 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ad33cd7d_624bb675
+Bytes: 102
+Just curious about why you use String8. AString is used elsewhere in this file. Any particular reason?
+
+655:38-655:41
+Fri Jan 10 10:01:33 2014 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ad33cd7d_82483a78
+Bytes: 93
+Ok, sounds resonable. How common is this problem? We haven't seen this for HLS, but for RTSP.
+
