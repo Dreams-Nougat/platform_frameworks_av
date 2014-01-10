@@ -10,10 +10,28 @@ Bytes: 33
 Can the uri be empty?
 Missing { }
 
+605:30-605:33
+Fri Jan 10 09:42:59 2014 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ad33cd7d_a2377efc
+UUID: ede2251a_2f2ca5ac
+Bytes: 406
+Yes, the uri can be empty if the source is a DataSource that doesn't implement/override the getUri method. ChromiumHTTPDataSource implements it, but e.g. FileSource doesn't. (Not sure if it's possible to trigger HLS playback from local files via stagefright, but in general we should handle the case if the data source doesn't implement the method.)
+
+I'll add the missing {} in a new revision of the patch.
+
 654:31-654:32
 Fri Jan 10 09:07:10 2014 +0000
 Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 0dd6993f_8ddde1a8
 Bytes: 81
 Is it safe to assume that the redirected uri can resolve the ts segments as well?
+
+654:31-654:32
+Fri Jan 10 09:42:59 2014 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0dd6993f_8ddde1a8
+UUID: 0dd6993f_ad89bd9f
+Bytes: 475
+Yes, I would say so. To use the same analogy with normal HTML pages and relative URLs as in the other case, if we request http://some-server/foo and we're redirected to http://other-server/bar/baz.html, and this page contains a <a href="123.html">, this obviously is relative to the actual page it was loaded from, not from whichever other page on the web that originally redirected us here. The same analogy goes for m3u8 and relative filenames within the playlists as well.
 
