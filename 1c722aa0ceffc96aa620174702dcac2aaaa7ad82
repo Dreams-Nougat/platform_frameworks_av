@@ -1,0 +1,19 @@
+Revision: 1c722aa0ceffc96aa620174702dcac2aaaa7ad82
+Patch-set: 1
+File: media/libstagefright/httplive/LiveSession.cpp
+
+605:30-605:33
+Fri Jan 10 09:07:10 2014 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ad33cd7d_a2377efc
+Bytes: 33
+Can the uri be empty?
+Missing { }
+
+654:31-654:32
+Fri Jan 10 09:07:10 2014 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0dd6993f_8ddde1a8
+Bytes: 81
+Is it safe to assume that the redirected uri can resolve the ts segments as well?
+
