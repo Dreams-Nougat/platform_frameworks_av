@@ -1,0 +1,11 @@
+Revision: 254d16afc95eae87014083d8a370a7f5635f7b70
+Patch-set: 3
+File: media/libstagefright/MetaData.cpp
+
+224
+Wed Jan 15 17:22:58 2014 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0df0590e_06e6205b
+Bytes: 26
+please call this "hasData"
+
