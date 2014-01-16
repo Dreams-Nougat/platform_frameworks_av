@@ -1,5 +1,21 @@
 Revision: 254d16afc95eae87014083d8a370a7f5635f7b70
 Patch-set: 3
+File: media/libstagefright/MPEG4Extractor.cpp
+
+2182
+Thu Jan 16 01:25:53 2014 +0000
+Author: Takeshi Aimi <1017042@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8fddae_7ef79100
+Bytes: 56
+haveData() is changed to hasData() in the next patch set
+
+2356
+Thu Jan 16 01:25:53 2014 +0000
+Author: Takeshi Aimi <1017042@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 6d855589_c0099e48
+Bytes: 56
+haveData() is changed to hasData() in the next patch set
+
 File: media/libstagefright/MetaData.cpp
 
 224
@@ -8,4 +24,12 @@ Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 0df0590e_06e6205b
 Bytes: 26
 please call this "hasData"
+
+224
+Thu Jan 16 01:25:53 2014 +0000
+Author: Takeshi Aimi <1017042@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0df0590e_06e6205b
+UUID: 2d8fddae_5efad5e9
+Bytes: 34
+thanks. done in the next patch set
 
