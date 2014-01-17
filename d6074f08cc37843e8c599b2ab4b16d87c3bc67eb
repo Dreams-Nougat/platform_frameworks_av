@@ -1,0 +1,18 @@
+Revision: d6074f08cc37843e8c599b2ab4b16d87c3bc67eb
+Patch-set: 1
+File: media/libmediaplayerservice/nuplayer/NuPlayerRenderer.cpp
+
+412:16-412:27
+Fri Jan 17 15:59:15 2014 +0000
+Author: Johan Redestig <1002951@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 12215a95_f5783852
+Bytes: 23
+Declared in this scope.
+
+425:15-425:24
+Fri Jan 17 15:59:15 2014 +0000
+Author: Johan Redestig <1002951@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f204c603_3ccc5150
+Bytes: 17
+Not visible here.
+
