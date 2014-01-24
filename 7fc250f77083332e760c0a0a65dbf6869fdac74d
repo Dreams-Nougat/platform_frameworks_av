@@ -1,0 +1,34 @@
+Revision: 7fc250f77083332e760c0a0a65dbf6869fdac74d
+Patch-set: 1
+File: services/camera/libcameraservice/CameraService.cpp
+
+796:63-796:71
+Fri Jan 24 18:16:10 2014 +0000
+Author: Eino-Ville Talvala <1010050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 92bf0a8c_a8526e50
+Bytes: 151
+this should remain as int (probably should be unsigned, really)- the cameraId is a small number between 0-2, and switching to intptr_t reduces clarity.
+
+801:40-801:49
+Fri Jan 24 18:16:10 2014 +0000
+Author: Eino-Ville Talvala <1010050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 72b456b0_5dd297f1
+Bytes: 53
+this also needs to stay as int, for the same reasons.
+
+1045:46-1045:54
+Fri Jan 24 18:16:10 2014 +0000
+Author: Eino-Ville Talvala <1010050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f265a62a_4355303f
+Bytes: 298
+since we really want to use an int as an argument to getClientLockById, this'll need a bit more massaging - perhaps cast to intptr_t, and then extract the low 32 bits explicitly into an int? 
+
+And the writing side needs to be updated as well, to ensure we're serializing/deserializing consistently.
+
+1051:68-1051:77
+Fri Jan 24 18:16:10 2014 +0000
+Author: Eino-Ville Talvala <1010050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f265a62a_835f485f
+Bytes: 48
+as above; probably worth a small utility method.
+
