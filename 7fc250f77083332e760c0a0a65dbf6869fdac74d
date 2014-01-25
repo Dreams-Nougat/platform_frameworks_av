@@ -25,6 +25,14 @@ since we really want to use an int as an argument to getClientLockById, this'll 
 
 And the writing side needs to be updated as well, to ensure we're serializing/deserializing consistently.
 
+1045:46-1045:54
+Sat Jan 25 01:57:40 2014 +0000
+Author: Colin Cross <1002751@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f265a62a_4355303f
+UUID: 12eebac6_30b4c6ff
+Bytes: 31
+(int)(intptr_t)user should work
+
 1051:68-1051:77
 Fri Jan 24 18:16:10 2014 +0000
 Author: Eino-Ville Talvala <1010050@85c56323-6fa9-3386-8a01-6480fb634889>
