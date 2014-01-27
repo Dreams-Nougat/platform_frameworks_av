@@ -9,6 +9,13 @@ UUID: f2fa0681_954646dc
 Bytes: 16
 nit: typo Utils.
 
+13
+Mon Jan 27 19:47:03 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 321adeb4_4664322b
+Bytes: 65
+Please separate part 3 from the other parts (1 & 2) of the patch.
+
 14:13-14:18
 Mon Jan 27 19:08:25 2014 +0000
 Author: Tenghui Zhu <1040058@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -21,6 +28,14 @@ if (mCurrentMediaBuffer != NULL) {
             mCurrentMediaBuffer = NULL;
         }
 
+14
+Mon Jan 27 19:47:03 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d2f7c297_d4dc5200
+UUID: f213e69e_048cf6b0
+Bytes: 114
+I think the issue is that if the buffer was not yet read, setObserver was not set, so it did not dec_ref properly.
+
 File: media/libstagefright/MediaMuxer.cpp
 
 166
@@ -29,4 +44,12 @@ Author: Tenghui Zhu <1040058@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: f2fa0681_b549c2f0
 Bytes: 126
 I guess you can add setObserver() here instead of moving the add_ref() into the MediaAdapter if that really can fix the crash.
+
+166
+Mon Jan 27 19:47:03 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f2fa0681_b549c2f0
+UUID: f213e69e_e4c55ad1
+Bytes: 91
+I think that both the add_ref() and the setObserver() belong to MediaApapter::pushBuffer().
 
