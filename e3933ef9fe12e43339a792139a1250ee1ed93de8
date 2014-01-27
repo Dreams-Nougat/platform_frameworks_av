@@ -1,0 +1,32 @@
+Revision: e3933ef9fe12e43339a792139a1250ee1ed93de8
+Patch-set: 1
+File: /COMMIT_MSG
+
+9
+Mon Jan 27 19:08:25 2014 +0000
+Author: Tenghui Zhu <1040058@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f2fa0681_954646dc
+Bytes: 16
+nit: typo Utils.
+
+14:13-14:18
+Mon Jan 27 19:08:25 2014 +0000
+Author: Tenghui Zhu <1040058@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d2f7c297_d4dc5200
+Bytes: 230
+What exactly is the root cause ?
+In the stop() code which is under a lock , we have check NULL first.
+if (mCurrentMediaBuffer != NULL) {
+            mCurrentMediaBuffer->release();
+            mCurrentMediaBuffer = NULL;
+        }
+
+File: media/libstagefright/MediaMuxer.cpp
+
+166
+Mon Jan 27 19:08:25 2014 +0000
+Author: Tenghui Zhu <1040058@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f2fa0681_b549c2f0
+Bytes: 126
+I guess you can add setObserver() here instead of moving the add_ref() into the MediaAdapter if that really can fix the crash.
+
