@@ -9,12 +9,28 @@ UUID: 92bf0a8c_a8526e50
 Bytes: 151
 this should remain as int (probably should be unsigned, really)- the cameraId is a small number between 0-2, and switching to intptr_t reduces clarity.
 
+796:63-796:71
+Mon Jan 27 15:33:25 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 92bf0a8c_a8526e50
+UUID: f2e846cd_3ce83161
+Bytes: 4
+Done
+
 801:40-801:49
 Fri Jan 24 18:16:10 2014 +0000
 Author: Eino-Ville Talvala <1010050@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 72b456b0_5dd297f1
 Bytes: 53
 this also needs to stay as int, for the same reasons.
+
+801:40-801:49
+Mon Jan 27 15:33:25 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 72b456b0_5dd297f1
+UUID: 32df3e25_5e0255d5
+Bytes: 4
+Done
 
 1045:46-1045:54
 Fri Jan 24 18:16:10 2014 +0000
@@ -33,10 +49,26 @@ UUID: 12eebac6_30b4c6ff
 Bytes: 31
 (int)(intptr_t)user should work
 
+1045:46-1045:54
+Mon Jan 27 15:33:25 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 12eebac6_30b4c6ff
+UUID: 12dcfa2e_bdd19f20
+Bytes: 4
+Done
+
 1051:68-1051:77
 Fri Jan 24 18:16:10 2014 +0000
 Author: Eino-Ville Talvala <1010050@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: f265a62a_835f485f
 Bytes: 48
 as above; probably worth a small utility method.
+
+1051:68-1051:77
+Mon Jan 27 15:33:25 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f265a62a_835f485f
+UUID: 12dcfa2e_ddde6b2f
+Bytes: 4
+Done
 
