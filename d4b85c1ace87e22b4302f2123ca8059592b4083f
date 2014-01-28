@@ -1,0 +1,95 @@
+Revision: d4b85c1ace87e22b4302f2123ca8059592b4083f
+Patch-set: 2
+File: media/libmedia/AudioTrack.cpp
+
+912
+Tue Jan 28 20:24:05 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 321adeb4_afc0596a
+Bytes: 2
+OK
+
+1241
+Tue Jan 28 20:24:05 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 321adeb4_8fbd9dea
+Bytes: 2
+OK
+
+File: services/audioflinger/AudioFlinger.cpp
+
+1013
+Tue Jan 28 20:24:05 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d210a297_c9fdd51f
+Bytes: 44
+This won't merge, please revert this portion
+
+File: services/audioflinger/AudioFlinger.h
+
+192
+Tue Jan 28 20:24:05 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f213e69e_8d12c971
+Bytes: 44
+This won't merge, please revert this portion
+
+File: services/audioflinger/AudioMixer.cpp
+
+424
+Tue Jan 28 20:24:05 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 321adeb4_8f763daa
+Bytes: 181
+Ugh I would rather fix the API, either to use a separate API for different size types, or to make it a varargs.  Let me talk to the guy who's working on this and then will get back.
+
+File: services/audioflinger/Effects.cpp
+
+854
+Tue Jan 28 20:24:05 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 321adeb4_2fcd89a7
+Bytes: 126
+When the %p is not at end of line, should we use a %np where n is some constant so that the headings and data will align well?
+
+File: services/audioflinger/StateQueue.cpp
+
+62
+Tue Jan 28 20:24:05 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 321adeb4_0fd24d47
+Bytes: 107
+Why don't we add an atomic_acquire_load/release_store for pointers? It will make all the uses much cleaner.
+
+File: services/audioflinger/Threads.cpp
+
+1740
+Tue Jan 28 20:24:05 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 321adeb4_6fd78137
+Bytes: 57
+uint32_t in hardware/libhardware/include/hardware/audio.h
+
+1741
+Tue Jan 28 20:24:05 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 321adeb4_4fdc455a
+Bytes: 11
+extra space
+
+1742
+Tue Jan 28 20:24:05 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d210a297_290aa97f
+Bytes: 86
+I'd prefer an explicit cast here to indicate the inconsistency:  " = (size_t) frames;"
+
+File: services/audioflinger/Tracks.cpp
+
+504
+Tue Jan 28 20:24:05 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 321adeb4_af79799e
+Bytes: 28
+what about using %p instead?
+
