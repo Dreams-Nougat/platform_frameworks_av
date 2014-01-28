@@ -1,0 +1,20 @@
+Revision: d49733aa92f2df4f67ec0120b67132a0b6dc591c
+Patch-set: 2
+File: /COMMIT_MSG
+
+14
+Tue Jan 28 04:06:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 12eebac6_79c63259
+Bytes: 95
+pls. submit a separate patch for 3. (1-2 can be in the same patch as they are somewhat related)
+
+File: media/libstagefright/MediaMuxer.cpp
+
+166
+Tue Jan 28 04:06:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d2f7c297_80044471
+Bytes: 47
+pls. remove this line instead of commenting it.
+
