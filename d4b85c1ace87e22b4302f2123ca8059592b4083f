@@ -25,6 +25,16 @@ UUID: d210a297_c9fdd51f
 Bytes: 44
 This won't merge, please revert this portion
 
+1013
+Wed Jan 29 09:56:59 2014 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d210a297_c9fdd51f
+UUID: 12a87aa1_9d4e4387
+Bytes: 305
+Our goal is to keep both the internal & external trees in good health. The external tree should build and run on 64 bit devices.
+
+I suggest cherry-picking the conflicting change to the external tree (and rebasing this one), or leaving this as is and dealing with the merge conflict ("-s ours" internally).
+
 File: services/audioflinger/AudioFlinger.h
 
 192
@@ -43,6 +53,14 @@ UUID: 321adeb4_8f763daa
 Bytes: 181
 Ugh I would rather fix the API, either to use a separate API for different size types, or to make it a varargs.  Let me talk to the guy who's working on this and then will get back.
 
+424
+Wed Jan 29 09:56:59 2014 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 321adeb4_8f763daa
+UUID: d2b1820e_5b41e353
+Bytes: 146
+I agree. When we've come across this before (In the AssetManager for example) I've changed the API instead of introducing these nasty workarounds.
+
 File: services/audioflinger/Effects.cpp
 
 854
@@ -60,6 +78,14 @@ Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 321adeb4_0fd24d47
 Bytes: 107
 Why don't we add an atomic_acquire_load/release_store for pointers? It will make all the uses much cleaner.
+
+62
+Wed Jan 29 09:56:59 2014 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 321adeb4_0fd24d47
+UUID: 929c6a85_61907683
+Bytes: 145
+It would, but I think that's beyond the scope of this change. (Unless you're suggesting we add a (static) helper method to this compilation unit)
 
 File: services/audioflinger/Threads.cpp
 
