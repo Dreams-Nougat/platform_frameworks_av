@@ -35,6 +35,14 @@ Our goal is to keep both the internal & external trees in good health. The exter
 
 I suggest cherry-picking the conflicting change to the external tree (and rebasing this one), or leaving this as is and dealing with the merge conflict ("-s ours" internally).
 
+1013
+Thu Jan 30 17:57:50 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 12a87aa1_9d4e4387
+UUID: b2824e17_33b95af8
+Bytes: 221
+Internally, we now use uint32_t for return type of getInputFramesLost.  If that works in AOSP also, please use uint32_t.  If it does not work, then keep size_t and I will ignore this part of the CL when it fails to merge.
+
 File: services/audioflinger/AudioFlinger.h
 
 192
@@ -43,6 +51,14 @@ Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: f213e69e_8d12c971
 Bytes: 44
 This won't merge, please revert this portion
+
+192
+Thu Jan 30 17:57:50 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f213e69e_8d12c971
+UUID: b2824e17_73b3d215
+Bytes: 18
+Ditto re: uint32_t
 
 File: services/audioflinger/AudioMixer.cpp
 
@@ -69,6 +85,14 @@ UUID: 929c6a85_c41cf054
 Bytes: 85
 Glenn: Did you make any progress on this API ? I'll fix this change up once you know.
 
+424
+Thu Jan 30 17:57:50 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 929c6a85_c41cf054
+UUID: b2824e17_93a766ce
+Bytes: 133
+It's going to too hard to change the API now.  Keep this as is now for the submit, and I'm making a TODO to myself to fix this later.
+
 File: services/audioflinger/Effects.cpp
 
 854
@@ -77,6 +101,14 @@ Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 321adeb4_2fcd89a7
 Bytes: 126
 When the %p is not at end of line, should we use a %np where n is some constant so that the headings and data will align well?
+
+854
+Thu Jan 30 17:57:50 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 321adeb4_2fcd89a7
+UUID: 32765e13_0ce19bed
+Bytes: 13
+Needs a reply
 
 File: services/audioflinger/StateQueue.cpp
 
@@ -94,6 +126,14 @@ Parent: 321adeb4_0fd24d47
 UUID: 929c6a85_61907683
 Bytes: 145
 It would, but I think that's beyond the scope of this change. (Unless you're suggesting we add a (static) helper method to this compilation unit)
+
+62
+Thu Jan 30 17:57:50 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 929c6a85_61907683
+UUID: 32765e13_2ce65706
+Bytes: 109
+OK, I'm making a note to self to ask someone from atomics about this.  Keep this part of the CL as is for now
 
 File: services/audioflinger/Threads.cpp
 
@@ -118,6 +158,14 @@ UUID: d210a297_290aa97f
 Bytes: 86
 I'd prefer an explicit cast here to indicate the inconsistency:  " = (size_t) frames;"
 
+1742
+Thu Jan 30 17:57:50 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d210a297_290aa97f
+UUID: b2824e17_d3a1deb8
+Bytes: 37
+Needs a reply to the above 3 comments
+
 File: services/audioflinger/Tracks.cpp
 
 504
@@ -126,4 +174,12 @@ Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 321adeb4_af79799e
 Bytes: 28
 what about using %p instead?
+
+504
+Thu Jan 30 17:57:50 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 321adeb4_af79799e
+UUID: b2824e17_f39ee27d
+Bytes: 12
+Need a reply
 
