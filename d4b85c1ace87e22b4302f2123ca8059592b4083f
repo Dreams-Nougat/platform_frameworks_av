@@ -43,6 +43,14 @@ UUID: b2824e17_33b95af8
 Bytes: 221
 Internally, we now use uint32_t for return type of getInputFramesLost.  If that works in AOSP also, please use uint32_t.  If it does not work, then keep size_t and I will ignore this part of the CL when it fails to merge.
 
+1013
+Thu Jan 30 18:14:08 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b2824e17_33b95af8
+UUID: 12a87aa1_400e90be
+Bytes: 16
+I will try that.
+
 File: services/audioflinger/AudioFlinger.h
 
 192
@@ -59,6 +67,14 @@ Parent: f213e69e_8d12c971
 UUID: b2824e17_73b3d215
 Bytes: 18
 Ditto re: uint32_t
+
+192
+Thu Jan 30 18:14:08 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b2824e17_73b3d215
+UUID: 12a87aa1_60118cde
+Bytes: 71
+I will try that but vaguely remember having trouble with other modules.
 
 File: services/audioflinger/AudioMixer.cpp
 
@@ -110,6 +126,14 @@ UUID: 32765e13_0ce19bed
 Bytes: 13
 Needs a reply
 
+854
+Thu Jan 30 18:14:08 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 32765e13_0ce19bed
+UUID: 929c6a85_448340ed
+Bytes: 152
+In this case n would have to be always large enough for 64bit pointers. One solution would again be https://android-review.googlesource.com/#/c/80035/2.
+
 File: services/audioflinger/StateQueue.cpp
 
 62
@@ -135,6 +159,14 @@ UUID: 32765e13_2ce65706
 Bytes: 109
 OK, I'm making a note to self to ask someone from atomics about this.  Keep this part of the CL as is for now
 
+62
+Thu Jan 30 18:14:08 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 32765e13_2ce65706
+UUID: 12a87aa1_801498d0
+Bytes: 105
+I'm doing some experiments to introduce atomics for pointers in cutils but don't have anything ready yet.
+
 File: services/audioflinger/Threads.cpp
 
 1740
@@ -144,12 +176,28 @@ UUID: 321adeb4_6fd78137
 Bytes: 57
 uint32_t in hardware/libhardware/include/hardware/audio.h
 
+1740
+Thu Jan 30 18:14:08 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 321adeb4_6fd78137
+UUID: 12a87aa1_7d4a57e5
+Bytes: 4
+Done
+
 1741
 Tue Jan 28 20:24:05 2014 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 321adeb4_4fdc455a
 Bytes: 11
 extra space
+
+1741
+Thu Jan 30 18:14:08 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 321adeb4_4fdc455a
+UUID: 12a87aa1_5d479bd9
+Bytes: 4
+Done
 
 1742
 Tue Jan 28 20:24:05 2014 +0000
@@ -165,6 +213,14 @@ Parent: d210a297_290aa97f
 UUID: b2824e17_d3a1deb8
 Bytes: 37
 Needs a reply to the above 3 comments
+
+1742
+Thu Jan 30 18:14:08 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d210a297_290aa97f
+UUID: 929c6a85_618e36d8
+Bytes: 4
+Done
 
 File: services/audioflinger/Tracks.cpp
 
@@ -182,4 +238,12 @@ Parent: 321adeb4_af79799e
 UUID: b2824e17_f39ee27d
 Bytes: 12
 Need a reply
+
+504
+Thu Jan 30 18:14:08 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b2824e17_f39ee27d
+UUID: 929c6a85_84794857
+Bytes: 319
+I agree the current code is incorrect. If you're not bothered with potential alignment issues in the dumps, I can certainly do that. Otherwise, I'm afraid we'll have to be conservative and use very large fields unless we can rely on https://android-review.googlesource.com/#/c/80035/2 if it gets merged in the meantime.
 
