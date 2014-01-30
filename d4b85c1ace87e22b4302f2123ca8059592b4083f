@@ -61,6 +61,14 @@ UUID: d2b1820e_5b41e353
 Bytes: 146
 I agree. When we've come across this before (In the AssetManager for example) I've changed the API instead of introducing these nasty workarounds.
 
+424
+Thu Jan 30 14:59:53 2014 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d2b1820e_5b41e353
+UUID: 929c6a85_c41cf054
+Bytes: 85
+Glenn: Did you make any progress on this API ? I'll fix this change up once you know.
+
 File: services/audioflinger/Effects.cpp
 
 854
