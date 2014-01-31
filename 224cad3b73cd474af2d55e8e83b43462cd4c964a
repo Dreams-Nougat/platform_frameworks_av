@@ -78,3 +78,11 @@ Bytes: 75
 OK, but I thought we were going to use %p here?
 I'll just fix later instead
 
+504
+Fri Jan 31 18:05:48 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 12d6ba3f_56766a64
+UUID: 12a87aa1_a338beb2
+Bytes: 207
+Ideally I'd like to see something like https://android-review.googlesource.com/#/c/80035/ used. I'll certainly send an updated version if it gets merged or fallback on %p if it doesn't get people's interest.
+
