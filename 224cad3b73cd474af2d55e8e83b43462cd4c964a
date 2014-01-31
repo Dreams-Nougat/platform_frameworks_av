@@ -1,0 +1,80 @@
+Revision: 224cad3b73cd474af2d55e8e83b43462cd4c964a
+Patch-set: 3
+File: services/audioflinger/AudioFlinger.cpp
+
+1013
+Fri Jan 31 17:32:08 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 12d6ba3f_36d51efa
+Bytes: 2
+OK
+
+File: services/audioflinger/AudioFlinger.h
+
+192
+Fri Jan 31 17:32:08 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 12d6ba3f_16d22212
+Bytes: 2
+OK
+
+File: services/audioflinger/AudioMixer.cpp
+
+424
+Fri Jan 31 17:32:08 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 52811216_5ae6d406
+Bytes: 26
+OK, noted to fix API later
+
+1161
+Fri Jan 31 17:32:08 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 52811216_7a02b8d5
+Bytes: 14
+OK from rebase
+
+File: services/audioflinger/Effects.cpp
+
+854
+Fri Jan 31 17:32:08 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 12d6ba3f_b697ce35
+Bytes: 36
+OK, will fix display alignment later
+
+File: services/audioflinger/StateQueue.cpp
+
+62
+Fri Jan 31 17:32:08 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 12d6ba3f_f68436fb
+Bytes: 19
+OK, noted for later
+
+File: services/audioflinger/Threads.cpp
+
+1739
+Fri Jan 31 17:32:08 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 12d6ba3f_9693b241
+Bytes: 2
+OK
+
+3044
+Fri Jan 31 17:32:08 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 12d6ba3f_b6658ea1
+Bytes: 14
+OK from rebase
+
+File: services/audioflinger/Tracks.cpp
+
+504
+Fri Jan 31 17:32:08 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 12d6ba3f_56766a64
+Bytes: 75
+OK, but I thought we were going to use %p here?
+I'll just fix later instead
+
