@@ -1,5 +1,14 @@
 Revision: d4b85c1ace87e22b4302f2123ca8059592b4083f
 Patch-set: 2
+File: media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp
+
+151:32-151:40
+Fri Jan 31 18:13:28 2014 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 12731a25_0ed8afbf
+Bytes: 100
+BassBoost_getParameter, Virtualizer_getParameter and Volume_getParameter should be fixed too, right?
+
 File: media/libmedia/AudioTrack.cpp
 
 912
@@ -133,6 +142,15 @@ Parent: 32765e13_0ce19bed
 UUID: 929c6a85_448340ed
 Bytes: 152
 In this case n would have to be always large enough for 64bit pointers. One solution would again be https://android-review.googlesource.com/#/c/80035/2.
+
+854
+Fri Jan 31 18:13:28 2014 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 929c6a85_448340ed
+UUID: 12731a25_4e91c7c8
+Bytes: 110
+we also need a similar macro for the title line spacing.
+OK to mover "Buffer" field at the end of dump though.
 
 File: services/audioflinger/StateQueue.cpp
 
