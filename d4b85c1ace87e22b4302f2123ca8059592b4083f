@@ -9,6 +9,14 @@ UUID: 12731a25_0ed8afbf
 Bytes: 100
 BassBoost_getParameter, Virtualizer_getParameter and Volume_getParameter should be fixed too, right?
 
+151:32-151:40
+Mon Feb 03 12:38:02 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 12731a25_0ed8afbf
+UUID: 3202de8d_0641dac2
+Bytes: 10
+Yep, done.
+
 File: media/libmedia/AudioTrack.cpp
 
 912
@@ -151,6 +159,14 @@ UUID: 12731a25_4e91c7c8
 Bytes: 110
 we also need a similar macro for the title line spacing.
 OK to mover "Buffer" field at the end of dump though.
+
+854
+Mon Feb 03 12:38:02 2014 +0000
+Author: Kévin PETIT <1038054@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 12731a25_4e91c7c8
+UUID: 9238ea5d_e13906ba
+Bytes: 47
+Ok, then. I've moved it to the end of the line.
 
 File: services/audioflinger/StateQueue.cpp
 
