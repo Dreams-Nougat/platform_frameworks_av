@@ -1,0 +1,20 @@
+Revision: b23e4518c8ccfe7ce89c090834d9a745e91269cf
+Patch-set: 2
+File: media/libstagefright/httplive/M3UParser.cpp
+
+428
+Wed Feb 05 16:35:33 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 32a1fe0c_2e44e764
+Bytes: 137
+I think this should be pos = end - 1, otherwise first character checked is always NUL or '?'.  But it's a benign extra pass through loop.
+
+435
+Wed Feb 05 16:35:33 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f2aa06eb_0c413755
+Bytes: 133
+Can you explain this magic number 6?
+I realize it was in the original code also, but
+this might be a good opportunity to document it.
+
