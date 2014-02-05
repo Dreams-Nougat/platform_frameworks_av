@@ -9,6 +9,14 @@ UUID: 32a1fe0c_2e44e764
 Bytes: 137
 I think this should be pos = end - 1, otherwise first character checked is always NUL or '?'.  But it's a benign extra pass through loop.
 
+428
+Wed Feb 05 16:56:30 2014 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 32a1fe0c_2e44e764
+UUID: d212620d_3330c817
+Bytes: 46
+Right - I can update the CL with that changed.
+
 435
 Wed Feb 05 16:35:33 2014 +0000
 Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -17,4 +25,12 @@ Bytes: 133
 Can you explain this magic number 6?
 I realize it was in the original code also, but
 this might be a good opportunity to document it.
+
+435
+Wed Feb 05 16:56:30 2014 +0000
+Author: Martin Storsjö <1002068@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f2aa06eb_0c413755
+UUID: 92b2aa5a_512754db
+Bytes: 275
+It's probably to make sure the found slash isn't part of the http:// - I can add such a comment. That doesn't of course work as intended if the protocol is https:// or something else. I can add a comment about it, but solving it better is outside of the scope of this change.
 
