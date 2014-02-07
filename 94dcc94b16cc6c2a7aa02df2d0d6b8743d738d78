@@ -2,6 +2,13 @@ Revision: 94dcc94b16cc6c2a7aa02df2d0d6b8743d738d78
 Patch-set: 1
 File: media/libstagefright/mpeg2ts/ESQueue.cpp
 
+580
+Fri Feb 07 17:39:01 2014 +0000
+Author: Colin Cross <1002751@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 123a3aa9_30138679
+Bytes: 51
+The out variable doesn't exist if LOG_NDEBUG is set
+
 607:1-607:3
 Fri Feb 07 15:45:27 2014 +0000
 Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -17,6 +24,14 @@ From log/log.h:
 #define ALOGV(...) ((void)ALOG(LOG_VERBOSE, LOG_TAG, __VA_ARGS__))
 #endif
 
+607:1-607:3
+Fri Feb 07 17:39:01 2014 +0000
+Author: Colin Cross <1002751@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 323d7e9f_ae70f763
+UUID: 123a3aa9_f0001e1d
+Bytes: 9
+See above
+
 File: media/libstagefright/wifi-display/source/TSPacketizer.cpp
 
 568:8-568:14
@@ -25,4 +40,12 @@ Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 123a3aa9_adaf1d61
 Bytes: 267
 Now *this* could have taken advantage of a #if as used in the previous file to hide the otherwise unused result. However, I would have opted to perform the calculations within the context of the arguments for KISS and not use the automatic to hold the interim result?
+
+568:8-568:14
+Fri Feb 07 17:39:01 2014 +0000
+Author: Colin Cross <1002751@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 123a3aa9_adaf1d61
+UUID: f2468641_ccd1cf9b
+Bytes: 177
+I expect the compiler to optimize this out for the static inline ALOGV case.  If the original author wanted it in the arguments they would have put it there, so I left it as is.
 
