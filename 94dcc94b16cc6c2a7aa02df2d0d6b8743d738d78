@@ -1,0 +1,28 @@
+Revision: 94dcc94b16cc6c2a7aa02df2d0d6b8743d738d78
+Patch-set: 1
+File: media/libstagefright/mpeg2ts/ESQueue.cpp
+
+607:1-607:3
+Fri Feb 07 15:45:27 2014 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 323d7e9f_ae70f763
+Bytes: 273
+Why was this ifdef added? Is there a flaw in the ALOGV definition, ALOGV should be allowed? I am sure I am missing a subtlety ...
+
+From log/log.h:
+
+#if LOG_NDEBUG
+#define ALOGV(...)   ((void)0)
+#else
+#define ALOGV(...) ((void)ALOG(LOG_VERBOSE, LOG_TAG, __VA_ARGS__))
+#endif
+
+File: media/libstagefright/wifi-display/source/TSPacketizer.cpp
+
+568:8-568:14
+Fri Feb 07 15:45:27 2014 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 123a3aa9_adaf1d61
+Bytes: 267
+Now *this* could have taken advantage of a #if as used in the previous file to hide the otherwise unused result. However, I would have opted to perform the calculations within the context of the arguments for KISS and not use the automatic to hold the interim result?
+
