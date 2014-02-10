@@ -1,0 +1,12 @@
+Revision: 8883a38a308fb02a653c990118ec7931a47b749b
+Patch-set: 3
+File: media/libstagefright/httplive/M3UParser.cpp
+
+428
+Mon Feb 10 17:05:17 2014 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ef4bfd71_070838f1
+Bytes: 418
+strangely, when I cherrypicked the change to my internal tree it worked fine (merged&built), but once gerrit automerged the change it broke, with this being the offending line.
+It doesn't like the "ssize_t pos - 1 = end", though I'm not sure why that would work in the external tree. Different compiler version perhaps? Regardless, as written it doesn't make much sense, and probably doesn't do what you want it to do.
+
