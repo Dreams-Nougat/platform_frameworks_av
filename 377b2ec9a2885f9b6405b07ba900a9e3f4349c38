@@ -1,0 +1,31 @@
+Revision: 377b2ec9a2885f9b6405b07ba900a9e3f4349c38
+Patch-set: 6
+File: media/libstagefright/AMRWriter.cpp
+
+194
+Tue Feb 11 12:09:15 2014 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 4f3ec9eb_3f8487fa
+Bytes: 69
+This cast chain from AMRWriter* -> uintptr_t -> void* seems pointless
+
+File: media/libstagefright/AwesomePlayer.cpp
+
+2300
+Tue Feb 11 12:09:15 2014 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 4f3ec9eb_9f5dd3dd
+Bytes: 60
+I think the better fix here is to make metaDataSize int64_t.
+
+File: services/camera/libcameraservice/CameraService.cpp
+
+1045:27-1045:44
+Tue Feb 11 12:09:15 2014 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0fabf157_259eae52
+Bytes: 388
+I'd rather have these APIs changed. It's more correct to use getClientLockFromCookie(int user). All "user" values come from CameraService::Client and are ints anyway. Having them "void*" adds another (IMO pointless) layer of indirection.
+
+(Also, there are lots of fields in that class that could be "const" and are marked "immutable after the constructor", but that's for another day :) )
+
