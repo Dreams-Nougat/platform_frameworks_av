@@ -1,0 +1,11 @@
+Revision: b5f2c76f4abc2fe7683c9c3809bb63b8cca45127
+Patch-set: 1
+File: media/libeffects/visualizer/EffectVisualizer.cpp
+
+582:14-582:15
+Tue Feb 18 17:57:40 2014 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2f5ef5cf_c93ad5ac
+Bytes: 109
+I would prefer to move this block (lines 284 to 291) before the actual copy and do the copy in a else{} block
+
