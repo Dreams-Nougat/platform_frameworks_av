@@ -1,0 +1,11 @@
+Revision: a3d87c210ab8631a47024d21f0e66a94ddb34766
+Patch-set: 1
+File: media/libstagefright/MPEG4Writer.cpp
+
+1002
+Sun Feb 23 16:42:29 2014 +0000
+Author: Michał Piechowski <1021920@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ef985df7_dfcc1f52
+Bytes: 93
+off_t should be the same as off64_t but in this file off64_t is used, so I would replace this
+
