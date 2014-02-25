@@ -1,0 +1,20 @@
+Revision: b302bd5d288be2d3363b80053ca2392560b00b25
+Patch-set: 1
+File: media/libeffects/downmix/EffectDownmix.c
+
+704
+Tue Feb 25 16:03:00 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9c3ac1c3_143a9ae0
+Bytes: 174
+not related to this CL, but the *(int32_t *)pValue could fail with memory access error if parameter type is int16_t and an int16_t is passed which is not also int32_t aligned
+
+File: media/libeffects/lvm/lib/Common/src/InstAlloc.c
+
+33
+Tue Feb 25 16:03:00 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9c3ac1c3_f41ef676
+Bytes: 30
+nice comment on base side! :-)
+
