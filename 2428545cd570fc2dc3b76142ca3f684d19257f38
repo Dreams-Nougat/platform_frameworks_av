@@ -9,6 +9,14 @@ UUID: 1cf89137_dcc7a4d9
 Bytes: 173
 If mBGAudioPCMFileHandle is a pointer, why not just change the %u to %p and remove casts? (I'm not sure if it is a pointer ... I don't have the associated .h in front of me)
 
+705
+Wed Feb 26 11:38:21 2014 +0000
+Author: Kevin Petit <1040609@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1cf89137_dcc7a4d9
+UUID: 7c0a6d15_deeb158b
+Bytes: 60
+It doesn't seem to be a pointer, I've kept the change as is.
+
 File: libvideoeditor/vss/stagefrightshells/src/VideoEditorMp3Reader.cpp
 
 337
@@ -17,4 +25,13 @@ Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 1cf89137_7c8ad099
 Bytes: 23
 same - is %p an option?
+
+337
+Wed Feb 26 11:38:21 2014 +0000
+Author: Kevin Petit <1040609@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1cf89137_7c8ad099
+UUID: 9c156131_ff15b7ca
+Bytes: 140
+optionId is a uint32_t: I changed it to %u and removed the cast.
+pValue seems to be a real pointer: moved to using %p and removed the casts.
 
