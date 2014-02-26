@@ -9,3 +9,11 @@ UUID: 5c44c956_c3a336c1
 Bytes: 351
 This double-assignment goes back to 2010 (commit 5295c0c5). I can only imagine that the purpose of this double-assignment was so that, during the period where we're blocked waiting on the mutex, the parameter was at least initialized to a default value.  But that's prone to a race.   I'd feel more comfortable having the original author approve also.
 
+385
+Wed Feb 26 20:14:49 2014 +0000
+Author: Michał Piechowski <1021920@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 5c44c956_c3a336c1
+UUID: 9c156131_ad3cb5d0
+Bytes: 314
+That's the reason I've added Andreas Huber to review, however I doubt that he did it purposely. It's rather a copy-paste type of mistake. Not only it's prone to race but even if we follow this track then getMediaTimeMapping should do the same with it's parameters, not to mention other functions in libstagefright.
+
