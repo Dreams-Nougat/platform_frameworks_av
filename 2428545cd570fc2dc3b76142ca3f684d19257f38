@@ -17,6 +17,14 @@ UUID: 7c0a6d15_deeb158b
 Bytes: 60
 It doesn't seem to be a pointer, I've kept the change as is.
 
+705
+Wed Feb 26 19:43:06 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5c44c956_0346de70
+Bytes: 115
+my version of frameworks/av//libvideoeditor/osal/inc/M4OSA_Types.h has:
+typedef void*                M4OSA_Context;
+
 File: libvideoeditor/vss/stagefrightshells/src/VideoEditorMp3Reader.cpp
 
 337
