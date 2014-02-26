@@ -1,0 +1,11 @@
+Revision: 00b52aca3427f673e8f479ecca4cbfe74766c0fb
+Patch-set: 1
+File: media/libstagefright/AudioPlayer.cpp
+
+385
+Wed Feb 26 19:53:26 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5c44c956_c3a336c1
+Bytes: 351
+This double-assignment goes back to 2010 (commit 5295c0c5). I can only imagine that the purpose of this double-assignment was so that, during the period where we're blocked waiting on the mutex, the parameter was at least initialized to a default value.  But that's prone to a race.   I'd feel more comfortable having the original author approve also.
+
