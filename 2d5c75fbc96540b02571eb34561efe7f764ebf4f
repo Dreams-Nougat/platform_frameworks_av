@@ -1,0 +1,17 @@
+Revision: 2d5c75fbc96540b02571eb34561efe7f764ebf4f
+Patch-set: 2
+File: /COMMIT_MSG
+
+19
+Wed Feb 26 16:47:35 2014 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7c0a6d15_c141f8c6
+Bytes: 249
+I hate to be a pedantic pain in the arse, but I'm going to be one anyway. 
+
+I'd prefer:
+
+"This change fixes android.media.cts.DecoderTest#testCodeBasicH264 on 64 bit platforms".
+
+We tend to avoid first and second person discourse on commit messages.
+
