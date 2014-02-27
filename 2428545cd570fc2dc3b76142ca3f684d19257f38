@@ -33,6 +33,14 @@ UUID: 9c156131_2d09c5f9
 Bytes: 237
 I had noticed that but couldn't easily find any evidence it was actually used as a pointer. If you want me to switch to %p, I can do it. You probably know better than me if there are people relying on the exact format (log parsers, etc).
 
+705
+Thu Feb 27 22:03:45 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 9c156131_2d09c5f9
+UUID: 3c29d585_09e15ab2
+Bytes: 138
+If a log parser is depending on this, it would be walking on very shaky ground! :-)  I think it's OK to change to %p and remove the casts.
+
 File: libvideoeditor/vss/stagefrightshells/src/VideoEditorMp3Reader.cpp
 
 337
