@@ -25,6 +25,14 @@ Bytes: 115
 my version of frameworks/av//libvideoeditor/osal/inc/M4OSA_Types.h has:
 typedef void*                M4OSA_Context;
 
+705
+Thu Feb 27 10:57:51 2014 +0000
+Author: Kevin Petit <1040609@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 5c44c956_0346de70
+UUID: 9c156131_2d09c5f9
+Bytes: 237
+I had noticed that but couldn't easily find any evidence it was actually used as a pointer. If you want me to switch to %p, I can do it. You probably know better than me if there are people relying on the exact format (log parsers, etc).
+
 File: libvideoeditor/vss/stagefrightshells/src/VideoEditorMp3Reader.cpp
 
 337
