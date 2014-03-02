@@ -1,0 +1,11 @@
+Revision: 74a15dfbda90987a9d2994875a322beface726bd
+Patch-set: 1
+File: media/libmedia/MediaScannerClient.cpp
+
+206
+Sun Mar 02 05:08:54 2014 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3c52b523_03c94168
+Bytes: 78
+This doesn't seem right. Why does Shift-JIS need to be treated specially here?
+
