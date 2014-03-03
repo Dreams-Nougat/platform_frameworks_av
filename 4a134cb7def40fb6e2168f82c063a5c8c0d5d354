@@ -1,0 +1,12 @@
+Revision: 4a134cb7def40fb6e2168f82c063a5c8c0d5d354
+Patch-set: 1
+File: media/libmedia/AudioTrack.cpp
+
+1009:8-1009:19
+Mon Mar 03 15:58:20 2014 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7c58ad41_9ae8ebd4
+Bytes: 298
+Can you detail the scenario or repro steps more precisely and what the exact problem is?
+The reference on the old IAudioTrack will be released when the new reference is taken below so the track on server side will be destroyed. What does stoping it before destruction here changes at the JNI layer?
+
