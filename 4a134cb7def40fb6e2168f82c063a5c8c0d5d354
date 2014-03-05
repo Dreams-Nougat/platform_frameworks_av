@@ -10,3 +10,11 @@ Bytes: 298
 Can you detail the scenario or repro steps more precisely and what the exact problem is?
 The reference on the old IAudioTrack will be released when the new reference is taken below so the track on server side will be destroyed. What does stoping it before destruction here changes at the JNI layer?
 
+1009
+Wed Mar 05 09:35:16 2014 +0000
+Author: Chao Deng <1041118@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 7c58ad41_9ae8ebd4
+UUID: dc76f9c4_86520f2d
+Bytes: 391
+We meet an issue when doing path switch between BT and SPKR/HS during Gtalk voice call. In our audio policy it switches the output from BT to audio hardware during the process and I find that the start_output/stop_output are not paired sometimes and cause logic issue, so that I add stop() here to fix that issue. But you explanation is reasonable and I will do more tests to check it again.
+
