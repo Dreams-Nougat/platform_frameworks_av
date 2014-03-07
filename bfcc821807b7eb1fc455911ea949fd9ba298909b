@@ -1,0 +1,12 @@
+Revision: bfcc821807b7eb1fc455911ea949fd9ba298909b
+Patch-set: 3
+File: media/libstagefright/rtsp/MyHandler.h
+
+152
+Fri Mar 07 15:27:19 2014 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: bc586570_1a0d5d98
+Bytes: 191
+what I actually meant was: *only* change ALOGI to ALOGV.
+ALOGV is stripped unless specifically enabled, so this won't actually print anything to the log, but it's handy to have for debugging.
+
