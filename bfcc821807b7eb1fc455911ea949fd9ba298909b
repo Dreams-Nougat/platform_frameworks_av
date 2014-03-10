@@ -10,3 +10,11 @@ Bytes: 191
 what I actually meant was: *only* change ALOGI to ALOGV.
 ALOGV is stripped unless specifically enabled, so this won't actually print anything to the log, but it's handy to have for debugging.
 
+152
+Mon Mar 10 04:29:29 2014 +0000
+Author: Hidenari Koshimae <1022419@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: bc586570_1a0d5d98
+UUID: 9c2ba1c2_6fb305cd
+Bytes: 53
+Sorry for my misunderstaning. I've updated the patch.
+
