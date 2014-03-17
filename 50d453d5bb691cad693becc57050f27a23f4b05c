@@ -1,0 +1,14 @@
+Revision: 50d453d5bb691cad693becc57050f27a23f4b05c
+Patch-set: 1
+File: media/libstagefright/rtsp/ASessionDescription.cpp
+
+52:24-52:28
+Mon Mar 17 10:41:13 2014 +0000
+Author: Christophe Cap <1042902@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3cd4752d_39c74b34
+Bytes: 295
+Why push an default/empty track here ?
+Further down the code a track is added for each media type ('m=')
+This gives issues with RTSP streams containing only one video-only track, causing getFormatType to fail on the dummy track.
+Net result is that Mediaplayer class aborts on playing the stream.
+
