@@ -1,0 +1,11 @@
+Revision: 74e5d2badedacd37273bcb05ff7926638d0f8d96
+Patch-set: 1
+File: media/libstagefright/MPEG4Writer.cpp
+
+813:23-814:4
+Tue Mar 18 18:54:52 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: dcb1990e_eff57236
+Bytes: 29
+place { on same line as if ()
+
