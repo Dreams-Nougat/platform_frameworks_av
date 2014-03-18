@@ -1,0 +1,25 @@
+Revision: 757d844975fdf82857eb30a09af079de29d2fe65
+Patch-set: 1
+File: media/libstagefright/StagefrightMetadataRetriever.cpp
+
+351:12-351:20
+Tue Mar 18 18:39:42 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7c08adab_8eceff48
+Bytes: 46
+please use brackets even for single statements
+
+495:8-495:14
+Tue Mar 18 18:39:42 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: bc0ea5b3_aa8be459
+Bytes: 4
+same
+
+515:12-515:20
+Tue Mar 18 18:39:42 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: bc0ea5b3_8a914088
+Bytes: 4
+same
+
