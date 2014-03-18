@@ -1,0 +1,22 @@
+Revision: 2ad7af29bb667d939f27417011567847c4b62f94
+Base-for-patch-set: 1
+File: media/libstagefright/AACExtractor.cpp
+
+176:71-176:75
+Tue Mar 18 18:53:04 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7c08adab_0ef68f6f
+Bytes: 200
+frameSize == 0 also denotes a parse error, where we probably should not continue parsing as the offset can be incorrect.  perhaps augment getAdtsFrameLength to separate error and non-error conditions?
+
+File: media/libstagefright/MPEG4Writer.cpp
+
+2123:12-2123:45
+Tue Mar 18 18:53:04 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7c08adab_4e1367e6
+Bytes: 227
+One can argue that a writer should be able to handle multiple CSC, but how would it resolve if there is a conflict between them?  As such, with this change it is only taking the last one.
+
+Hence the restriction on a single CSD.
+

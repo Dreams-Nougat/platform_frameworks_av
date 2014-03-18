@@ -1,0 +1,39 @@
+Revision: e75bf2997a17ba065e3c4903301a583e81f8022b
+Patch-set: 1
+File: media/libstagefright/AwesomePlayer.cpp
+
+386:12-386:20
+Tue Mar 18 18:53:04 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: dcb1990e_cf13d6e4
+Bytes: 19
+please use brackets
+
+419:12-419:20
+Tue Mar 18 18:53:04 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: bc0ea5b3_caaf38aa
+Bytes: 4
+same
+
+1416:21-1416:40
+Tue Mar 18 18:53:04 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: bc0ea5b3_8aaa6098
+Bytes: 63
+arguably, this could be an error instead of a complete message.
+
+1635
+Tue Mar 18 18:53:04 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: bc0ea5b3_2a2c9478
+Bytes: 5
+space
+
+1640:7-1643:10
+Tue Mar 18 18:53:04 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: bc0ea5b3_ea3c3ca7
+Bytes: 17
+use 8-char indent
+
