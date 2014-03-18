@@ -1,0 +1,18 @@
+Revision: db358afc965d9bfb703953ac004275428a7cda64
+Patch-set: 1
+File: services/audioflinger/AudioPolicyService.cpp
+
+1155
+Tue Mar 18 17:31:06 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: dcb1990e_cc43e45e
+Bytes: 8
+see here
+
+1209
+Tue Mar 18 17:31:06 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7c08adab_4b1359e6
+Bytes: 7
+correct
+
