@@ -1,0 +1,11 @@
+Revision: 4cba4b1c5f7932032cad12392eee0727f436219c
+Patch-set: 3
+File: /COMMIT_MSG
+
+9
+Wed Mar 19 18:00:18 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1cffb1b9_747a7601
+Bytes: 85
+p.s. I think we can now remove the [WIP] and these 2 paragraphs of the commit message
+
