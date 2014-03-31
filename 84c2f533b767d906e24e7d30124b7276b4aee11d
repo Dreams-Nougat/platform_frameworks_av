@@ -1,0 +1,11 @@
+Revision: 84c2f533b767d906e24e7d30124b7276b4aee11d
+Patch-set: 1
+File: media/libstagefright/foundation/AString.cpp
+
+205
+Mon Mar 31 23:56:57 2014 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 39ae4766_0c04fba9
+Bytes: 47
+Can't you just always use an array of 32 chars?
+
