@@ -1,0 +1,11 @@
+Revision: d7a4bd2c030f342a66b12cb3fc2498acc841b1a0
+Patch-set: 1
+File: libvideoeditor/vss/stagefrightshells/src/VideoEditorBuffer.c
+
+60:78-60:81
+Fri Apr 04 21:54:08 2014 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 398d6745_ee9effd2
+Bytes: 22
+trailing space bad ...
+
