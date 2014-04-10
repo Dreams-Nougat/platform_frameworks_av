@@ -1,0 +1,11 @@
+Revision: 2170e5c83eb00c577b985db49f55761ed8b85179
+Patch-set: 2
+File: services/audioflinger/AudioResamplerSinc.cpp
+
+757:0-757:8
+Thu Apr 10 17:17:25 2014 +0000
+Author: Zheng Xu <1042649@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b96a3764_4dab4d9d
+Bytes: 146
+This line introduces about 1% performance regression. I've reported to the compiler team internally. Hope it can be fixed in the next gcc release.
+
