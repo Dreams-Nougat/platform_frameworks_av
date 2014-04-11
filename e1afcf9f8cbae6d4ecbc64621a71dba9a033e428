@@ -1,0 +1,11 @@
+Revision: e1afcf9f8cbae6d4ecbc64621a71dba9a033e428
+Patch-set: 1
+File: media/libstagefright/timedtext/TimedTextPlayer.cpp
+
+276
+Fri Apr 11 21:50:42 2014 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 99e49352_d5a7bc8b
+Bytes: 34
+This has merge problems downstream
+
