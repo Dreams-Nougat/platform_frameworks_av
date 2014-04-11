@@ -1,0 +1,11 @@
+Revision: 175b3c5bf4ee2e7784f415d1627ec1b65fea08ed
+Patch-set: 4
+File: media/libstagefright/NuCachedSource2.cpp
+
+644:4-644:30
+Fri Apr 11 00:11:43 2014 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 99b2d35a_715d38d7
+Bytes: 254
+This shows conflict to goog/master, another CL changed %ld to %d downstream. I will just have to prepare to take the heat from the merge engine; or I can prepare for this by making a dummy CL ahead of this to change from %d to %ld to allow clean passage?
+
