@@ -1,0 +1,11 @@
+Revision: 861ff3bd183afa3f279aa8d3817b31fd89184cec
+Patch-set: 2
+File: media/libstagefright/MPEG4Writer.cpp
+
+813
+Mon Apr 14 17:00:29 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d9c0cbc1_c96b9504
+Bytes: 49
+the "if" Is not necessary, as free(NULL) is a nop
+
