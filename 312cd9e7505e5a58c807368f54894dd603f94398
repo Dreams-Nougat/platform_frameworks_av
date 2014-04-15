@@ -1,5 +1,21 @@
 Revision: 312cd9e7505e5a58c807368f54894dd603f94398
 Patch-set: 7
+File: media/mtp/MtpDevice.cpp
+
+198:8-198:18
+Tue Apr 15 21:43:53 2014 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b964f7c8_2fecf932
+Bytes: 127
+unsigned int in downstream trees, required for synchronization. A separate CL will be required afterwards to convert to size_t.
+
+256:21-256:33
+Tue Apr 15 21:43:53 2014 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b964f7c8_af000922
+Bytes: 77
+downsteam has unsigned int, required to prevent merge conflicts to all trees.
+
 File: media/mtp/MtpServer.cpp
 
 127
@@ -8,4 +24,28 @@ Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 9980137b_14049da9
 Bytes: 60
 Vector::size returns size_t. (for all your "unsigned int"s.)
+
+127
+Tue Apr 15 21:43:53 2014 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 9980137b_14049da9
+UUID: 9980137b_f4df39a3
+Bytes: 158
+I will audit (again, individually, in each case), but this is currently unsigned int in downstream, a separate CL will be required to prevent merge conflicts.
+
+139
+Tue Apr 15 21:43:53 2014 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b964f7c8_5430e415
+Bytes: 64
+unsigned int in downstream, required to 'synchronize' the trees.
+
+File: tools/resampler_tools/fir.cpp
+
+246:13-246:25
+Tue Apr 15 21:43:53 2014 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9980137b_5481c56f
+Bytes: 78
+unsigned int in downstream trees. This one is 'OK' and not a size_t var issue.
 
