@@ -1,0 +1,11 @@
+Revision: 312cd9e7505e5a58c807368f54894dd603f94398
+Patch-set: 7
+File: media/mtp/MtpServer.cpp
+
+127
+Tue Apr 15 21:18:45 2014 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9980137b_14049da9
+Bytes: 60
+Vector::size returns size_t. (for all your "unsigned int"s.)
+
