@@ -1,0 +1,22 @@
+Revision: 1cac76b8720d45ca5a306455c0b4d1c20bd00969
+Patch-set: 1
+File: media/libstagefright/Utils.cpp
+
+95
+Thu Apr 17 22:30:18 2014 +0000
+Author: Chong Zhang <1039918@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c51d3f5e_1e086af5
+Bytes: 194
+Can you make this optional? I'm afraid we might have other code path where kKeyFrameRate is not set and it will crash mediaserver. Maybe handle this similarly to "sar-width", "sar-height" below.
+
+File: media/libstagefright/wifi-display/source/PlaybackSession.cpp
+
+1039
+Thu Apr 17 22:30:18 2014 +0000
+Author: Chong Zhang <1039918@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 45586f41_e2ad0a23
+Bytes: 332
+instead of modifying the framerate on SurfaceMediaSource, could you fix RepeaterSource to return the repeating fps?
+
+Currently RepeaterSource::getFormat() returns the SurfaceMediaSource's format directly, but the fps should actually be the repeating fps. So you probably want to make a copy of the source format, and modify the fps.
+
