@@ -1,0 +1,11 @@
+Revision: a61a18977f38d2842d4d7c0ee3510eee14a56e75
+Patch-set: 1
+File: media/libstagefright/Interpolator.cpp
+
+176
+Wed Apr 30 22:52:59 2014 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ca046c04_d0c30c18
+Bytes: 35
+how often does this end up logging?
+
