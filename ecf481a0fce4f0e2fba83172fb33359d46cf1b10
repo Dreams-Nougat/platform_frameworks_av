@@ -1,0 +1,11 @@
+Revision: ecf481a0fce4f0e2fba83172fb33359d46cf1b10
+Patch-set: 1
+File: media/libstagefright/AwesomePlayer.cpp
+
+2029
+Wed Apr 30 22:51:05 2014 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0afbe434_5241441b
+Bytes: 54
+I'd prefer some extra braces here around the nested ?:
+
