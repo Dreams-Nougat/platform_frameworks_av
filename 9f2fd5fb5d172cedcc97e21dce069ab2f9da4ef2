@@ -1,0 +1,11 @@
+Revision: 9f2fd5fb5d172cedcc97e21dce069ab2f9da4ef2
+Patch-set: 1
+File: media/libstagefright/AwesomePlayer.cpp
+
+1871:55-1871:67
+Wed Apr 30 22:47:04 2014 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ca046c04_b0f08002
+Bytes: 162
+minor point, this parameter always seems to come from mSystemTimeSource.getRealTimeUs(), not sure if you want to remove it and put inside interpolateRealTimeUs().
+
