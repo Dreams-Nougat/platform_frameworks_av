@@ -1,0 +1,20 @@
+Revision: 6ad9f5587861ea1a8e124acc26ef17855ddfd03f
+Patch-set: 1
+File: include/media/stagefright/Interpolator.h
+
+29:7-29:33
+Wed Apr 30 22:56:24 2014 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: eaf77045_837302fd
+Bytes: 74
+This seems more like weighted least squares or weighted linear regression?
+
+File: media/libstagefright/Interpolator.cpp
+
+129:17-129:18
+Wed Apr 30 22:56:24 2014 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ca046c04_b00760a4
+Bytes: 1
+v
+
