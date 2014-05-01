@@ -9,3 +9,11 @@ UUID: ca046c04_d0c30c18
 Bytes: 35
 how often does this end up logging?
 
+176
+Thu May 01 00:52:25 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ca046c04_d0c30c18
+UUID: 0a292485_b43bc8bd
+Bytes: 135
+once, every time you start playback, or resume playback.  After that the top condition will be true and interpolation will be bypassed.
+
