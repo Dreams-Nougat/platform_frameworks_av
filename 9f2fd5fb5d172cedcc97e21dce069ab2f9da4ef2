@@ -9,3 +9,16 @@ UUID: ca046c04_b0f08002
 Bytes: 162
 minor point, this parameter always seems to come from mSystemTimeSource.getRealTimeUs(), not sure if you want to remove it and put inside interpolateRealTimeUs().
 
+1871:55-1871:67
+Fri May 02 02:17:46 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ca046c04_b0f08002
+UUID: aa481879_ac80276d
+Bytes: 469
+There are 2 reasons for the pass through:
+
+1. we are already calling getSystemTime() several times in this method alone, which can result in several context switches.
+
+2. throughout this routine and its logic it is assumed that time stands still.  Yet systemtime changes slightly throughout the calls to interpolateRealTimeUs(). 
+Unfortunately, the mediaTimeSource does not allow easily passing in the systemtime to be used, which is the direction I am heading towards.
+
