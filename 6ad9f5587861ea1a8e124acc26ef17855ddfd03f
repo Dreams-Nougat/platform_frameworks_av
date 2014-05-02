@@ -9,6 +9,14 @@ UUID: eaf77045_837302fd
 Bytes: 74
 This seems more like weighted least squares or weighted linear regression?
 
+29:7-29:33
+Fri May 02 03:22:48 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: eaf77045_837302fd
+UUID: 0a520423_40e05234
+Bytes: 28
+Done based on our discussion
+
 File: media/libstagefright/Interpolator.cpp
 
 129:17-129:18
@@ -17,4 +25,12 @@ Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: ca046c04_b00760a4
 Bytes: 1
 v
+
+129:17-129:18
+Fri May 02 03:22:48 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ca046c04_b00760a4
+UUID: 0a520423_60db4e88
+Bytes: 4
+Done
 
