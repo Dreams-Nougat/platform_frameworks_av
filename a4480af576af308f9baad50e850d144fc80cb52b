@@ -1,0 +1,11 @@
+Revision: a4480af576af308f9baad50e850d144fc80cb52b
+Patch-set: 3
+File: services/camera/libcameraservice/api1/client2/Parameters.cpp
+
+1754:27-1754:33
+Fri May 09 17:44:05 2014 +0000
+Author: Igor Murashkin <1021471@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2aa8a88f_64a310d2
+Bytes: 6
+return
+
