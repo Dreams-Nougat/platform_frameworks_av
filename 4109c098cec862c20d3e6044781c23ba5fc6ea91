@@ -1,0 +1,11 @@
+Revision: 4109c098cec862c20d3e6044781c23ba5fc6ea91
+Patch-set: 1
+File: services/audioflinger/Threads.cpp
+
+3954:23-3954:24
+Tue May 13 22:52:48 2014 +0000
+Author: Christian Bejram <1030069@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 4ae95c2a_5149f397
+Bytes: 49
+Add curly braces to follow the style in the file.
+
