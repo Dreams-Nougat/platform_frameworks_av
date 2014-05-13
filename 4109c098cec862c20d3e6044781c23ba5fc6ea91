@@ -9,3 +9,14 @@ UUID: 4ae95c2a_5149f397
 Bytes: 49
 Add curly braces to follow the style in the file.
 
+3954
+Tue May 13 23:12:09 2014 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 4ae95c2a_cc228c96
+Bytes: 301
+please test mUseAsyncWrite instead and assert on mCallbackThread != 0.
+ALOG_ASSERT(mCallbackThread != 0);
+This is for consistence with the rest of the offload thread code.
+
+also I really discourage the use of Offload with blocking write because it will delay significantly volume and routing commands.
+
