@@ -1,0 +1,11 @@
+Revision: 5d5f8a5d3cf24b5dcf1267ef512b24caa695787a
+Patch-set: 1
+File: media/libstagefright/foundation/ANetworkSession.cpp
+
+626
+Thu May 15 15:49:55 2014 +0000
+Author: Andreas Huber <1014088@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0a78446e_6bf2617d
+Bytes: 161
+There's no need to intiialize n since mOutFragments is guaranteed not to be empty, therefore the loop below will be entered and n will be assigned at least once.
+
