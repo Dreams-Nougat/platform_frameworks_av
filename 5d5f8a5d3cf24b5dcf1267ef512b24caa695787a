@@ -9,3 +9,11 @@ UUID: 0a78446e_6bf2617d
 Bytes: 161
 There's no need to intiialize n since mOutFragments is guaranteed not to be empty, therefore the loop below will be entered and n will be assigned at least once.
 
+626
+Thu May 15 16:45:17 2014 +0000
+Author: Amit Pundir <1031448@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0a78446e_6bf2617d
+UUID: 0a78446e_bdfe80d2
+Bytes: 217
+Ok. What do you suggest we do with this GCC-4.9 warning then? How about I submit another patch-set with "-Wno-maybe-uninitialized" additional CFLAG, if it is ok with you? GCC folks wont recommend that solution though.
+
