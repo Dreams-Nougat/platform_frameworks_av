@@ -1,0 +1,20 @@
+Revision: 477248f9d3079542b98cc8dd9b65d16258addf7a
+Patch-set: 1
+File: media/libstagefright/codecs/mp3dec/test/wavwriter.cpp
+
+34
+Fri May 16 20:38:31 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: dff7d045_31435827
+Bytes: 40
+see system/media/audio_utils/tinysndfile
+
+File: media/libstagefright/codecs/mp3dec/test/wavwriter.h
+
+35
+Fri May 16 20:38:31 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: fffad42e_ad8b8959
+Bytes: 4
+same
+
