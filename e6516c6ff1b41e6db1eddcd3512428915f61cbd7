@@ -1,0 +1,18 @@
+Revision: e6516c6ff1b41e6db1eddcd3512428915f61cbd7
+Patch-set: 1
+File: media/libmedia/AudioTrackShared.cpp
+
+235:17-235:18
+Thu May 22 01:02:22 2014 +0000
+Author: Christopher Ferris <1019050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3f8d4cf3_66ed8a70
+Bytes: 82
+I think you need to remove the minus here and below since the errno is just errno.
+
+443:17-443:18
+Thu May 22 01:02:22 2014 +0000
+Author: Christopher Ferris <1019050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9f48f879_8faaf8a7
+Bytes: 14
+Same as above.
+
