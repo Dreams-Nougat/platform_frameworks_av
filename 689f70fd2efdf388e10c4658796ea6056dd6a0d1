@@ -1,0 +1,11 @@
+Revision: 689f70fd2efdf388e10c4658796ea6056dd6a0d1
+Patch-set: 2
+File: media/libmedia/AudioTrackShared.cpp
+
+235:31-235:67
+Thu May 22 01:11:30 2014 +0000
+Author: Christopher Ferris <1019050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3f8d4cf3_09b131e4
+Bytes: 101
+One last nit, you probably want to align this with the comment above and in the block down below too.
+
