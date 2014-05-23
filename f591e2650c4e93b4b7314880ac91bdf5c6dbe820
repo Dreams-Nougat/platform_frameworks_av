@@ -1,0 +1,20 @@
+Revision: f591e2650c4e93b4b7314880ac91bdf5c6dbe820
+Patch-set: 1
+File: /COMMIT_MSG
+
+11:0-11:32
+Fri May 23 01:13:50 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ff965405_3e93fed5
+Bytes: 100
+it seems more like if the existing behavior is not supported, try encoder supported HDCP encryption.
+
+File: media/libstagefright/wifi-display/source/PlaybackSession.cpp
+
+947:22-947:52
+Fri May 23 01:13:50 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9f9d5828_04427750
+Bytes: 123
+is there a reason why encryptNative is not supported on a platform, but the encoder can encrypt "natively" on the platform?
+
