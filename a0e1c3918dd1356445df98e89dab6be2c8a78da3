@@ -1,0 +1,11 @@
+Revision: a0e1c3918dd1356445df98e89dab6be2c8a78da3
+Base-for-patch-set: 3
+File: media/libstagefright/rtsp/ARTSPConnection.cpp
+
+285:11-285:32
+Thu May 29 22:47:47 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5fc5a077_c89cf716
+Bytes: 26
+this still needs to be set
+

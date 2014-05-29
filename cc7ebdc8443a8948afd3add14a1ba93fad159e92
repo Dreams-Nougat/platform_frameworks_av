@@ -1,0 +1,35 @@
+Revision: cc7ebdc8443a8948afd3add14a1ba93fad159e92
+Patch-set: 3
+File: media/libstagefright/rtsp/ARTSPConnection.cpp
+
+173:27-173:55
+Thu May 29 22:47:47 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5fc5a077_0244102e
+Bytes: 20
+this should be NULL;
+
+180:44-180:45
+Thu May 29 22:47:47 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5fc5a077_423b28be
+Bytes: 250
+shouldn't this be != 0?
+
+There should not be anything between ] and :
+
+in any case this should be
+ if find() != 0 then { 
+  colonPos = NULL
+  if bracketend + 1 != host->size() then return false
+ } else {
+  colonPos = host->c_str() + bracketend + 1
+ }
+
+201:4-201:6
+Thu May 29 22:47:47 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3fbaacee_4c0a3f41
+Bytes: 93
+there should be a if (bracketstart > 0) return false; somewhere to check for no data before [
+
