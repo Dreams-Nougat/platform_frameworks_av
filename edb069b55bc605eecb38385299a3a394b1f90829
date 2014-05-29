@@ -1,0 +1,22 @@
+Revision: edb069b55bc605eecb38385299a3a394b1f90829
+Patch-set: 1
+File: media/libstagefright/tests/Android.mk
+
+5
+Thu May 29 20:06:54 2014 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7fc0a468_2eab7f78
+Bytes: 61
+the simulator was removed years ago. you can lose this cruft.
+
+32
+Thu May 29 20:06:54 2014 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5fc5a077_c24a98e3
+Bytes: 101
+isn't this weird? shouldn't they be using
+
+  include $(BUILD_NATIVE_TEST)
+
+and getting this for free?
+
