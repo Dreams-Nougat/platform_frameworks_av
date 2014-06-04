@@ -1,0 +1,11 @@
+Revision: 184d7853ac3e92e4a7404df727f0fb951053ed13
+Patch-set: 1
+File: media/libstagefright/codecs/m4v_h263/enc/src/motion_est.cpp
+
+742
+Wed Jun 04 09:09:21 2014 +0000
+Author: Patrik Carlsson <1017178@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: bfe21c19_06d54e51
+Bytes: 40
+Don't this function have the same error?
+
