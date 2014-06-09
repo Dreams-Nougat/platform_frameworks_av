@@ -9,3 +9,19 @@ UUID: bffcdced_5058dc0e
 Bytes: 49
 Why? Doesn't this introduce a new unused warning?
 
+52
+Mon Jun 09 23:46:20 2014 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: bffcdced_5058dc0e
+UUID: ff5d74d3_3b4f2b48
+Bytes: 648
+It suppresses the unused warning, trust me ;-).
+
+The defacto standard being followed in the Android tree is one of the following:
+
+If widespread, part of individual project's coding style, -Wno-unused added to LOCAL_CFLAGS Android.mk for the project.
+
+For C++ unused parameter names are to be commented out (or removed, for instance, for parameter names like 'unused'). C++ naturally recognizes that if a parameter type exists, but a name does not, that the parameter is not used within the function.
+
+For C, or if in doubt for instance in a header used by both, one uses the bionic macro __unused (which is defined as __attribute__((__unused__)) )
+
