@@ -1,0 +1,11 @@
+Revision: 7b73e7127dc727e78460c92ca4115ccad87cf321
+Patch-set: 1
+File: camera/CameraBase.cpp
+
+52
+Mon Jun 09 23:39:20 2014 +0000
+Author: Igor Murashkin <1021471@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: bffcdced_5058dc0e
+Bytes: 49
+Why? Doesn't this introduce a new unused warning?
+
