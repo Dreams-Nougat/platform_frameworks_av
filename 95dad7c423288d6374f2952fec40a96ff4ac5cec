@@ -1,0 +1,11 @@
+Revision: 95dad7c423288d6374f2952fec40a96ff4ac5cec
+Patch-set: 1
+File: include/media/mediascanner.h
+
+60
+Wed Jun 11 21:20:25 2014 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3f854c8a_6a0fc8c0
+Bytes: 141
+A comment here clarifying that the dummy field is so that a pointer to a non-flat AlbumArt object can be cast to this would probably be good.
+
