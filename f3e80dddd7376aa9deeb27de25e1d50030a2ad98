@@ -1,0 +1,20 @@
+Revision: f3e80dddd7376aa9deeb27de25e1d50030a2ad98
+Patch-set: 2
+File: include/media/mediascanner.h
+
+62
+Thu Jun 12 09:00:15 2014 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7fd6e483_50abc476
+Bytes: 54
+-Wpendantic, should be char mData[] for c99 and above.
+
+File: media/libmediaplayerservice/MetadataRetrieverClient.cpp
+
+248
+Thu Jun 12 09:00:15 2014 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5f6920a1_fcfac5db
+Bytes: 20
+Nice comment change.
+
