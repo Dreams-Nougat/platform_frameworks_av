@@ -9,6 +9,14 @@ UUID: 7fd6e483_50abc476
 Bytes: 54
 -Wpendantic, should be char mData[] for c99 and above.
 
+62
+Fri Jun 13 01:17:43 2014 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 7fd6e483_50abc476
+UUID: df74307d_813b1dbd
+Bytes: 45
+https://android-review.googlesource.com/97806
+
 File: media/libmediaplayerservice/MetadataRetrieverClient.cpp
 
 248
