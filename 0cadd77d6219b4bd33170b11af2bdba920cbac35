@@ -1,0 +1,11 @@
+Revision: 0cadd77d6219b4bd33170b11af2bdba920cbac35
+Patch-set: 1
+File: media/libstagefright/wifi-display/rtp/RTPSender.cpp
+
+768:4-768:6
+Mon Jun 23 22:26:07 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 24a8e18f_8fff3512
+Bytes: 59
+this is really a bug.  We should check for size >= 28 here.
+
