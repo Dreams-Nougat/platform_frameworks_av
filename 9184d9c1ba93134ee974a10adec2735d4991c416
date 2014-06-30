@@ -1,0 +1,13 @@
+Revision: 9184d9c1ba93134ee974a10adec2735d4991c416
+Patch-set: 1
+File: media/libstagefright/codecs/m4v_h263/enc/src/mp4def.h
+
+63:17-63:22
+Mon Jun 30 20:48:19 2014 +0000
+Author: Bruce J Beare <1003360@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a47bf135_31d8a8fa
+Bytes: 198
+It "seems wrong" to me to specify something called ULong as a uint32_t. This is highly misleading in the source code and can cause confusion to the reader.
+
+Better to use Uint and change the source.
+
