@@ -1,0 +1,22 @@
+Revision: 87c27a919fbeef264a2890ca1de275e390e2398b
+Patch-set: 1
+File: drm/common/DrmEngineBase.cpp
+
+31
+Wed Jul 02 18:36:57 2014 +0000
+Author: Jeff Tinker <1005920@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a412110c_b9eb175c
+Bytes: 76
+Add {} brackets on single line statements throughout.
+
+if (cond) {
+   stmt
+}
+
+33
+Wed Jul 02 18:36:57 2014 +0000
+Author: Jeff Tinker <1005920@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 84ad0dff_552e1ec6
+Bytes: 19
+Trailing whitespace
+
