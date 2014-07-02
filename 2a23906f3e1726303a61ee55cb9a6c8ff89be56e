@@ -1,0 +1,11 @@
+Revision: 2a23906f3e1726303a61ee55cb9a6c8ff89be56e
+Patch-set: 2
+File: media/libstagefright/codecs/m4v_h263/enc/include/mp4enc_api.h
+
+32:22-32:23
+Wed Jul 02 14:31:29 2014 +0000
+Author: Bruce J Beare <1003360@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 84d6ed80_3e6d41d4
+Bytes: 83
+I still have concerns about this. It's misleading and unexpected to the programmer.
+
