@@ -1,0 +1,11 @@
+Revision: fb0970295942252658a24bd147d961bf5612ffb8
+Patch-set: 1
+File: media/libstagefright/codecs/avc/enc/SoftAVCEncoder.cpp
+
+822
+Mon Jul 07 08:44:19 2014 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 043d9d9e_31562ae3
+Bytes: 74
+what is "4" ? It's clearer to express this as sizeof(whatever you expect).
+
