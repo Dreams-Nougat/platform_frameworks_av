@@ -1,0 +1,18 @@
+Revision: e2f49b14f1adbd07b212eb43b850a2ea86a26c10
+Patch-set: 4
+File: drm/drmserver/DrmManagerService.cpp
+
+190
+Wed Jul 16 20:24:13 2014 +0000
+Author: Stephen Smalley <1010111@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 39a80c90_de948980
+Bytes: 76
+Wondering what the rationale is for some of these calls being unprotected...
+
+330
+Wed Jul 16 20:24:13 2014 +0000
+Author: Stephen Smalley <1010111@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 39bf2ce0_b724889c
+Bytes: 61
+Should this also be checked by SELinux or only by this check?
+
