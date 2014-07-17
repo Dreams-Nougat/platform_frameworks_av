@@ -16,3 +16,19 @@ UUID: 39bf2ce0_b724889c
 Bytes: 61
 Should this also be checked by SELinux or only by this check?
 
+File: drm/libdrmframework/include/DrmManagerService.h
+
+29
+Thu Jul 17 05:01:43 2014 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1902688d_6fff4112
+Bytes: 103
+As this is only used within DrmManagerService.cpp, it feels inappropriate to expose this API to others.
+
+40
+Thu Jul 17 05:01:43 2014 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 590860ab_71ba8ac3
+Bytes: 100
+should be in DrmManagerService.cpp. Never used outside of that file. Shouldn't be exposed to others.
+
