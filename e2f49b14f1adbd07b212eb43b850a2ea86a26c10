@@ -25,10 +25,26 @@ UUID: 1902688d_6fff4112
 Bytes: 103
 As this is only used within DrmManagerService.cpp, it feels inappropriate to expose this API to others.
 
+29
+Wed Jul 23 19:38:09 2014 +0000
+Author: Riley Spahn <1048048@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1902688d_6fff4112
+UUID: f93914b5_ad1c7d04
+Bytes: 131
+Moving this to be within the DrmManagerService class. This felt like the correct approach since it is tightly coupled to the class.
+
 40
 Thu Jul 17 05:01:43 2014 +0000
 Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 590860ab_71ba8ac3
 Bytes: 100
 should be in DrmManagerService.cpp. Never used outside of that file. Shouldn't be exposed to others.
+
+40
+Wed Jul 23 19:38:09 2014 +0000
+Author: Riley Spahn <1048048@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 590860ab_71ba8ac3
+UUID: f93914b5_0de591ad
+Bytes: 4
+Done
 
