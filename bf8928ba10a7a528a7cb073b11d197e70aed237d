@@ -1,5 +1,14 @@
 Revision: bf8928ba10a7a528a7cb073b11d197e70aed237d
 Patch-set: 5
+File: drm/drmserver/DrmManagerService.cpp
+
+115
+Thu Jul 24 19:09:57 2014 +0000
+Author: Stephen Smalley <1010111@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 595300fd_591f577b
+Bytes: 45
+Don't we need to set up the log callback too?
+
 File: drm/libdrmframework/include/DrmManagerService.h
 
 132
