@@ -9,3 +9,11 @@ UUID: 794e0458_f7ff3840
 Bytes: 195
 Thinking that you should just take this to the same location as drm_perm_labels[] to reduce likelihood of them getting out of sync.  Especially since it is not used outside of a single .cpp file?
 
+132
+Thu Jul 24 15:41:07 2014 +0000
+Author: Riley Spahn <1048048@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 794e0458_f7ff3840
+UUID: 193d089f_ebf2e6b9
+Bytes: 4
+Done
+
