@@ -1,0 +1,26 @@
+Revision: 4f3f1d13fcf93ac02e657374e9435988b340da07
+Patch-set: 6
+File: drm/drmserver/DrmManagerService.cpp
+
+40
+Thu Jul 24 20:38:07 2014 +0000
+Author: Stephen Smalley <1010111@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 794e0458_da3df9fb
+Bytes: 37
+What's the benefit of this namespace?
+
+128
+Thu Jul 24 20:38:07 2014 +0000
+Author: Stephen Smalley <1010111@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 595300fd_59b4b7d1
+Bytes: 53
+No point in calling getcon if selinux_enabled is <=0.
+
+133
+Thu Jul 24 20:38:07 2014 +0000
+Author: Stephen Smalley <1010111@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 595300fd_79b17be0
+Bytes: 172
+No harm in calling selinux_set_callback either way.
+So can either be placed under the same if (selinux_enabled > 0) as the getcon or can be made unconditional without harm.
+
