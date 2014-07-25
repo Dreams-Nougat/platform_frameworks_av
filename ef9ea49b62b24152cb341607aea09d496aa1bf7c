@@ -1,0 +1,20 @@
+Revision: ef9ea49b62b24152cb341607aea09d496aa1bf7c
+Patch-set: 7
+File: drm/drmserver/DrmManagerService.cpp
+
+54
+Fri Jul 25 20:10:50 2014 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d91ff043_a15d692a
+Bytes: 29
+need index < 0 check here too
+
+76
+Fri Jul 25 20:10:50 2014 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 96e70794_ecfe347a
+Bytes: 68
+Please add parens
+
+ bool allowed = (selinux_check_access(...) == 0);
+
