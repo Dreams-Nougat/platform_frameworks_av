@@ -1,0 +1,11 @@
+Revision: d94f2a19157b36cb4228ec224cd8a7bf77db180c
+Patch-set: 2
+File: media/libstagefright/codecs/amrwbenc/Android.mk
+
+97
+Thu Aug 07 17:17:54 2014 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 16f157a2_fd37b3cd
+Bytes: 195
+i think all of these should have a comment and a link to the bug. otherwise we're just creating a new instance of the same problem (of undocumented strange stuff in mk files) that led us here :-)
+
