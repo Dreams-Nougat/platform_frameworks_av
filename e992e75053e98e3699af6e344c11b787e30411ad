@@ -9,3 +9,11 @@ UUID: 1a1b3f6c_f33970f7
 Bytes: 53
 I had to dig back to check this, but this looks fine.
 
+400
+Sat Nov 08 01:17:55 2014 +0000
+Author: Eino-Ville Talvala <1010050@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1a1b3f6c_f33970f7
+UUID: da152730_9f26bb24
+Bytes: 114
+I'm doing a bit of cleanup while I'm at it here, but yeah, the whole function is guarded by a null check at start.
+
