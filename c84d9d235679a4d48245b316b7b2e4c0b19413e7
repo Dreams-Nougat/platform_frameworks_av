@@ -1,0 +1,11 @@
+Revision: c84d9d235679a4d48245b316b7b2e4c0b19413e7
+Patch-set: 1
+File: services/audiopolicy/AudioPolicyService.h
+
+33:7-33:30
+Fri Nov 14 23:28:35 2014 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5a73f723_6bcaf57b
+Bytes: 64
+you prefer this way rather than guarding inside the header file?
+
