@@ -9,3 +9,13 @@ UUID: 7a8d1b44_b4360804
 Bytes: 191
 This means that gcc will be used for arm32 as well when targeting arm64 (this file is only parsed once). Is there a LOCAL_CLANG_arm64? If so, use that. If not, this behavior is probably fine.
 
+28
+Fri Nov 14 18:48:02 2014 +0000
+Author: Chih-hung Hsieh <1052399@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 7a8d1b44_b4360804
+UUID: 7a8d1b44_547de453
+Bytes: 165
+Actually, clang++ aborted also for arm target.
+So I am going to disable clang for both arm and arm64 in patch set 2.
+We don't have LOCAL_CLANG_<target> variable yet.
+
