@@ -9,3 +9,11 @@ UUID: 5a73f723_6bcaf57b
 Bytes: 64
 you prefer this way rather than guarding inside the header file?
 
+33:7-33:30
+Sat Nov 15 00:34:23 2014 +0000
+Author: Chih-hung Hsieh <1052399@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 5a73f723_6bcaf57b
+UUID: 1ab25f12_9e675995
+Bytes: 252
+Yes. USE_LEGACY_AUDIO_POLICY is only defined and used by frameworks/av non-legacy audiopolicy module. If it is guarded inside the legacy .h file, then both legacy and new modules need to define USE_LEGACY_AUDIO_POLICY to include the old legacy .h file.
+
