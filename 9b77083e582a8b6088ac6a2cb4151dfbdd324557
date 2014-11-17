@@ -1,0 +1,11 @@
+Revision: 9b77083e582a8b6088ac6a2cb4151dfbdd324557
+Base-for-patch-set: 1
+File: media/libmediaplayerservice/nuplayer/NuPlayerSource.h
+
+31:7-31:15
+Mon Nov 17 19:17:19 2014 +0000
+Author: Bernhard Rosenkränzer <1010121@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: baa153bc_06bd3e8e
+Bytes: 189
+This isn't necessary at all because MetaData.h is included a couple of lines above -- so we don't need to replace struct with class here, can just remove the forward declaration altogether.
+
