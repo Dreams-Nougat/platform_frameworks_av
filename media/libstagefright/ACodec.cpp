@@ -4952,6 +4952,11 @@ status_t ACodec::getPortFormat(OMX_U32 portIndex, sp<AMessage> &notify) {
         return err;
     }
 
+#ifdef CAPRI_HWC
+    if (strncmp(mComponentName.c_str(), "OMX.BRCM.vc4.encoder.", 21) != 0)
+        // Skip checking on vc4 encoder. It will return the incorrect
+        // port index, but correct parameters.
+#endif
     if (def.eDir != (portIndex == kPortIndexOutput ? OMX_DirOutput : OMX_DirInput)) {
         ALOGE("unexpected dir: %s(%d) on %s port", asString(def.eDir), def.eDir, niceIndex);
         return BAD_VALUE;
