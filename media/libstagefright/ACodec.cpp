@@ -1777,13 +1777,9 @@ status_t ACodec::configureCodec(
 // Capri's OMX fail to set a reasonable default size from width and height
 #ifdef CAPRI_HWC
     else if (!strncmp(mComponentName.c_str(), "OMX.BRCM.vc4.decoder.", 21)) {
-        int32_t width;
-        int32_t height;
-        if (msg->findInt32("width", &width) && msg->findInt32("height", &height)) {
-            setMinBufferSize(kPortIndexInput, (width * height * 3) / 2);
-        } else {
-            ALOGE("Failed to set min buffer size");
-        }
+        // We cannot trust the width/height from the message
+        // so just use 1920x1080
+        setMinBufferSize(kPortIndexInput, (1920 * 1080 * 3) / 2);
     }
 #endif
 
