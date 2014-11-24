@@ -1,0 +1,11 @@
+Revision: e4f6ecb9d323984c2b86f6d2735ebc69c5a3517a
+Base-for-patch-set: 1
+File: media/libstagefright/mpeg2ts/ESQueue.cpp
+
+124:0-128:25
+Mon Nov 24 23:59:28 2014 +0000
+Author: Andreas Gampe <1041833@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1fcc1153_cb4ed534
+Bytes: 46
+Seems like I altered semantics here. Will fix.
+
