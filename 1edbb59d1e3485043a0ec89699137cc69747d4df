@@ -1,0 +1,12 @@
+Revision: 1edbb59d1e3485043a0ec89699137cc69747d4df
+Patch-set: 1
+File: services/audioflinger/Android.mk
+
+43:0-43:18
+Mon Nov 24 19:44:54 2014 +0000
+Author: Chih-hung Hsieh <1052399@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7fc50d23_5704c608
+Bytes: 241
+I think this is not necessary with line 29.
+If we would like to compile with clang whenever possible, this change could replace line 29. However, if we care about performance of gcc -O2 vs clang -O1, maybe we should just use current line 29.
+
