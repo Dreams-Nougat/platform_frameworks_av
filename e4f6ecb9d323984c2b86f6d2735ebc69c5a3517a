@@ -19,3 +19,18 @@ UUID: df151930_8258a0d2
 Bytes: 146
 if instead of removing these outright we printed them with ALOGV, would that still cause compiler warnings? (since ALOGV is normally compiled out)
 
+185
+Tue Nov 25 03:51:54 2014 +0000
+Author: Andreas Gampe <1041833@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: df151930_8258a0d2
+UUID: 5fc2091f_ac483626
+Bytes: 336
+I think ALOGV is written in a way that it looks like a use to the compiler:
+
+#define ALOGV(...) do { if (0) { __ALOGV(__VA_ARGS__); } } while (0)
+
+So yes, that would mean it's not flagged as unused.
+
+
+However, I don't know if ALOGV is what you want (there were no debug statements before). Maybe just commenting them out is good enough?
+
