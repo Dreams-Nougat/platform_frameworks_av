@@ -34,3 +34,12 @@ So yes, that would mean it's not flagged as unused.
 
 However, I don't know if ALOGV is what you want (there were no debug statements before). Maybe just commenting them out is good enough?
 
+185
+Tue Nov 25 05:31:25 2014 +0000
+Author: Marco Nelissen <1000882@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 5fc2091f_ac483626
+UUID: bf0a2512_ce935c2f
+Bytes: 307
+The reason I asked is that the profile and level of the stream is useful information to have when debugging. If we take this out, then next time I need to this info I have to go look at the spec to see how to parse it out.
+I'd even prefer just commenting these lines out instead of removing them completely.
+
