@@ -9,3 +9,13 @@ UUID: 1fcc1153_cb4ed534
 Bytes: 46
 Seems like I altered semantics here. Will fix.
 
+Base-for-patch-set: 2
+File: media/libstagefright/Utils.cpp
+
+185
+Tue Nov 25 03:46:37 2014 +0000
+Author: Marco Nelissen <1000882@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: df151930_8258a0d2
+Bytes: 146
+if instead of removing these outright we printed them with ALOGV, would that still cause compiler warnings? (since ALOGV is normally compiled out)
+
