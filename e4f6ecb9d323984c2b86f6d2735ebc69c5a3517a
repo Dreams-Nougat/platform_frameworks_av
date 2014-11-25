@@ -53,3 +53,11 @@ I totally understand. I'll do whatever you prefer...
 
 If you prefer the ALOGV, it might make sense to introduce a constant kDebugXYZ at the top (and "if (kDebugXYZ)" here) just to get a little bit more specific (I dislike that most projects get way too spammy when LOG_NDEBUG is set).
 
+185
+Tue Nov 25 06:37:31 2014 +0000
+Author: Andreas Gampe <1041833@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1fcc1153_74321ee8
+UUID: 5fc2091f_6c79eef0
+Bytes: 161
+Another alternative would be to add __unused. I don't know, however, if that just turns off the warning or makes GCC retain the computation (I think the former).
+
