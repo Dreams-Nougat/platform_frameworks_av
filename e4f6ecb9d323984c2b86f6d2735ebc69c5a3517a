@@ -43,3 +43,13 @@ Bytes: 307
 The reason I asked is that the profile and level of the stream is useful information to have when debugging. If we take this out, then next time I need to this info I have to go look at the spec to see how to parse it out.
 I'd even prefer just commenting these lines out instead of removing them completely.
 
+185
+Tue Nov 25 05:35:35 2014 +0000
+Author: Andreas Gampe <1041833@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: bf0a2512_ce935c2f
+UUID: 1fcc1153_74321ee8
+Bytes: 284
+I totally understand. I'll do whatever you prefer...
+
+If you prefer the ALOGV, it might make sense to introduce a constant kDebugXYZ at the top (and "if (kDebugXYZ)" here) just to get a little bit more specific (I dislike that most projects get way too spammy when LOG_NDEBUG is set).
+
