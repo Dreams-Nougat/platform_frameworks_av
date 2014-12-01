@@ -1,0 +1,18 @@
+Revision: e58e4b52ad0e1f72402dda3679d57ed2d1b6186b
+Patch-set: 2
+File: media/libmedia/AudioTrack.cpp
+
+1221
+Mon Dec 01 17:57:35 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: df9ef96b_d7e9d416
+Bytes: 21
+see here at line 1222
+
+1875
+Mon Dec 01 17:57:35 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1fbfb1c3_590ee327
+Bytes: 69
+I think this should move to line 1222 above.  The "if" is not needed.
+
