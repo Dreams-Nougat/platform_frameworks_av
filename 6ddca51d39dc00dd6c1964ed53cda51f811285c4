@@ -9,3 +9,119 @@ UUID: ff99fd83_86039a7d
 Bytes: 157
 In other definitions of FOURCC, the casts were applied to arguments before shift operations. That should be more portable when the arguments are char values.
 
+31
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ff99fd83_86039a7d
+UUID: ff99fd83_d90e6453
+Bytes: 2
++1
+
+File: media/libstagefright/codecs/amrnb/common/src/vad1.cpp
+
+1533:17-1533:25
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5fa849a2_20b5c4ef
+Bytes: 11
+please keep
+
+File: media/libstagefright/codecs/amrnb/dec/src/b_cn_cod.cpp
+
+98:4-98:14
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ff99fd83_d9374401
+Bytes: 32
+this file should not be changed.
+
+File: media/libstagefright/codecs/amrnb/dec/src/b_cn_cod.h
+
+127:8-127:14
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3fb555f8_bc40e163
+Bytes: 12
+neither this
+
+File: media/libstagefright/codecs/amrnb/enc/src/c1035pf.cpp
+
+119:4-119:14
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3fb555f8_3c35f1f8
+Bytes: 7
+or this
+
+File: media/libstagefright/codecs/amrwbenc/src/wb_vad.c
+
+526:14-526:22
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3fb555f8_7c7c99a5
+Bytes: 4
+keep
+
+File: media/libstagefright/codecs/m4v_h263/enc/src/fastcodemb.cpp
+
+528:56-528:59
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5fa849a2_002d2887
+Bytes: 4
+keep
+
+File: media/libstagefright/codecs/on2/h264dec/omxdl/arm11/api/armCOMM_BitDec_s.h
+
+69:8-69:13
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5fa849a2_603e2caf
+Bytes: 32
+this file should not be changed.
+
+File: media/libstagefright/codecs/on2/h264dec/omxdl/arm11/api/armCOMM_IDCT_s.h
+
+151:15-151:18
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3fb555f8_dc55ed12
+Bytes: 8
+nor this
+
+File: media/libstagefright/codecs/on2/h264dec/omxdl/arm11/api/armCOMM_s.h
+
+27:8-27:12
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3fb555f8_bc4a2171
+Bytes: 7
+or this
+
+File: media/libstagefright/codecs/on2/h264dec/omxdl/arm11/vc/api/armVCCOMM_s.h
+
+3:8-3:9
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5fa849a2_00ff6877
+Bytes: 26
+what changed in this file?
+
+File: media/libstagefright/codecs/on2/h264dec/omxdl/arm_neon/api/armCOMM_BitDec_s.h
+
+665:8-665:11
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ff99fd83_d97824b3
+Bytes: 12
+or this one?
+
+File: media/libstagefright/codecs/on2/h264dec/omxdl/arm_neon/vc/api/armVCCOMM_s.h
+
+66:4-66:9
+Mon Dec 01 23:41:58 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ff99fd83_f985e82f
+Bytes: 12
+or this one?
+
