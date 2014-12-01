@@ -1,0 +1,11 @@
+Revision: 6ddca51d39dc00dd6c1964ed53cda51f811285c4
+Patch-set: 1
+File: include/media/stagefright/Utils.h
+
+31
+Mon Dec 01 20:26:25 2014 +0000
+Author: Chih-hung Hsieh <1052399@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ff99fd83_86039a7d
+Bytes: 157
+In other definitions of FOURCC, the casts were applied to arguments before shift operations. That should be more portable when the arguments are char values.
+
