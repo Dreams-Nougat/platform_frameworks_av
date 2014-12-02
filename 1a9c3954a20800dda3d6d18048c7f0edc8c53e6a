@@ -9,6 +9,14 @@ UUID: ff99fd83_a6309e5b
 Bytes: 26
 Keep this "register" word?
 
+68:43-68:51
+Tue Dec 02 18:37:13 2014 +0000
+Author: Dan Albert <1043845@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ff99fd83_a6309e5b
+UUID: 1fbfb1c3_2272d087
+Bytes: 91
+I made this change with a macro, so there are likely to be a few cases I messed up. Thanks.
+
 File: media/libstagefright/codecs/m4v_h263/enc/src/fastcodemb.cpp
 
 528

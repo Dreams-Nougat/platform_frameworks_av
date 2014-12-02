@@ -17,6 +17,14 @@ UUID: ff99fd83_d90e6453
 Bytes: 2
 +1
 
+31
+Tue Dec 02 18:37:13 2014 +0000
+Author: Dan Albert <1043845@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ff99fd83_86039a7d
+UUID: ff973d5c_a8765fc6
+Bytes: 13
+Works for me.
+
 File: media/libstagefright/codecs/amrnb/common/src/vad1.cpp
 
 1533:17-1533:25
@@ -42,6 +50,18 @@ Parent: ff99fd83_d9374401
 UUID: 1fb25112_aff30100
 Bytes: 86
 +1, agreed with Lajos about the "register" words in comments that shouldn't be removed
+
+98
+Tue Dec 02 18:37:13 2014 +0000
+Author: Dan Albert <1043845@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 1fb25112_aff30100
+UUID: ffc01d6a_2e837f2c
+Bytes: 419
+*sigh* Apparently I never actually submitted my draft comments explaining this.
+
+I had made all these changes using a macro (since there are sooooo many of them), so that's why it accidentally trashed the comments as well.
+
+There's a similar change https://android-review.googlesource.com/#/c/116493/ that was probably more careful than this one. I'm going to pull that one down and see if this can be replaced with it.
 
 File: media/libstagefright/codecs/amrnb/dec/src/b_cn_cod.h
 
