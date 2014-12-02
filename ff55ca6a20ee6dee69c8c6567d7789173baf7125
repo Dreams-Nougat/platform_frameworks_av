@@ -1,0 +1,11 @@
+Revision: ff55ca6a20ee6dee69c8c6567d7789173baf7125
+Patch-set: 1
+File: media/libstagefright/Utils.cpp
+
+563:12-563:26
+Tue Dec 02 00:38:50 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1fb25112_fb0d4fdc
+Bytes: 165
+have you tested that the generated MPEG4 stream is valid?  It seems that reassembleESDS hard-codes certain fields of the esds box that may not be suitable for video.
+
