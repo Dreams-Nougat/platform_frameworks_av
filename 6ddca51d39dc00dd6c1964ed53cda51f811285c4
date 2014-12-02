@@ -35,6 +35,14 @@ UUID: ff99fd83_d9374401
 Bytes: 32
 this file should not be changed.
 
+98
+Tue Dec 02 18:29:02 2014 +0000
+Author: Chong Zhang <1039918@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ff99fd83_d9374401
+UUID: 1fb25112_aff30100
+Bytes: 86
++1, agreed with Lajos about the "register" words in comments that shouldn't be removed
+
 File: media/libstagefright/codecs/amrnb/dec/src/b_cn_cod.h
 
 127:8-127:14
@@ -43,6 +51,15 @@ Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 3fb555f8_bc40e163
 Bytes: 12
 neither this
+
+File: media/libstagefright/codecs/amrnb/dec/src/pstfilt.cpp
+
+451
+Tue Dec 02 18:29:02 2014 +0000
+Author: Chong Zhang <1039918@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: bfba25ec_9ea19db4
+Bytes: 86
+could you please keep the comment "/* index..." aligned with the other comments above?
 
 File: media/libstagefright/codecs/amrnb/enc/src/c1035pf.cpp
 
@@ -53,6 +70,15 @@ UUID: 3fb555f8_3c35f1f8
 Bytes: 7
 or this
 
+File: media/libstagefright/codecs/amrnb/enc/src/levinson.cpp
+
+654
+Tue Dec 02 18:29:02 2014 +0000
+Author: Chong Zhang <1039918@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ffc01d6a_e3f36031
+Bytes: 90
+could you please keep the comments "/* temporary.." aligned with the other comments above?
+
 File: media/libstagefright/codecs/amrwbenc/src/wb_vad.c
 
 526:14-526:22
@@ -61,6 +87,15 @@ Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 3fb555f8_7c7c99a5
 Bytes: 4
 keep
+
+File: media/libstagefright/codecs/m4v_h263/dec/src/find_min_max.cpp
+
+141
+Tue Dec 02 18:29:02 2014 +0000
+Author: Chong Zhang <1039918@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: bfba25ec_9e2bdd71
+Bytes: 18
+indentation is off
 
 File: media/libstagefright/codecs/m4v_h263/enc/src/fastcodemb.cpp
 
