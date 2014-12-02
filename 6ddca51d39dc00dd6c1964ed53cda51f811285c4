@@ -107,6 +107,14 @@ UUID: 5fa849a2_00ff6877
 Bytes: 26
 what changed in this file?
 
+3
+Tue Dec 02 16:35:12 2014 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 5fa849a2_00ff6877
+UUID: bfba25ec_d87deddd
+Bytes: 91
+looks like the only change in this and following files is adding a newline to the last line
+
 File: media/libstagefright/codecs/on2/h264dec/omxdl/arm_neon/api/armCOMM_BitDec_s.h
 
 665:8-665:11
