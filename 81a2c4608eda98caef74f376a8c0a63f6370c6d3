@@ -11,3 +11,11 @@ Since this function is called only as a deferred action, NuPlayer::processDeferr
 
 To help us understand your case, could you provide more details? For example, the calling sequence, NuPlayer state when source returns discontinuity just after reset is performed, etc. Do you mean NuPlayer::performReset() has been called when you say "when reset is performed"?
 
+1796:27-1796:41
+Wed Dec 03 11:04:17 2014 +0000
+Author: Zoran Jovanovic <1010077@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 5fd1293e_952ce4c1
+UUID: 5f8a0930_165b62f7
+Bytes: 253
+You're right about processDeferredActions, of course. Seems that one of your recent commits (sha1#53904f3) may have fixed the issue. We'll abandon this commit for now to test more thoroughly and get back if there's a problem. Sorry for taking your time.
+
