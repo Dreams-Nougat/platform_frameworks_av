@@ -1,0 +1,50 @@
+Revision: 1b075c9a72a08414f19f7f154bb30981b82d04a6
+Patch-set: 1
+File: services/audioflinger/Effects.cpp
+
+905
+Thu Dec 04 01:47:25 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1f4ed10c_8405ac81
+Bytes: 2
+OK
+
+File: services/audioflinger/Threads.cpp
+
+2873
+Thu Dec 04 01:47:25 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1f4ed10c_444c8408
+Bytes: 151
+I prefer an assert that state != NULL rather than an if.  If we have a fast track, we must by definition have a fast mixer and thus a fast mixer state.
+
+2977
+Thu Dec 04 01:47:25 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1f4ed10c_649e60f4
+Bytes: 50
+additional test is not needed if we assert earlier
+
+2994
+Thu Dec 04 01:47:25 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1f4ed10c_44a56440
+Bytes: 5
+ditto
+
+File: services/audioflinger/Tracks.cpp
+
+77
+Thu Dec 04 01:47:25 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1f4ed10c_6408a098
+Bytes: 2
+OK
+
+78
+Thu Dec 04 01:47:25 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ff1c9dfc_c045d272
+Bytes: 25
+I don't see an mBufferEnd
+
