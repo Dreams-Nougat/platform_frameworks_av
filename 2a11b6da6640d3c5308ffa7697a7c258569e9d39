@@ -1,0 +1,11 @@
+Revision: 2a11b6da6640d3c5308ffa7697a7c258569e9d39
+Patch-set: 1
+File: media/libstagefright/MPEG4Extractor.cpp
+
+738
+Thu Dec 04 01:54:19 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1f4ed10c_24ddb893
+Bytes: 51
+why call gmtime a second time? why not use ptr_time
+
