@@ -1,0 +1,11 @@
+Revision: 5225ba0632e9dcf6fab562e4632ae8d6d4312959
+Patch-set: 1
+File: media/libmedia/IMediaPlayerService.cpp
+
+243
+Thu Dec 04 03:00:06 2014 +0000
+Author: Haojun Bao <1004466@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7fc8ad75_2541f8d8
+Bytes: 78
+Here fd is dup'ed, I think it is a good idea to close it in the same function.
+
