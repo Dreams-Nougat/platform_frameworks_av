@@ -1,0 +1,21 @@
+Revision: 8f13aec7e3e4781e7825f0dfd2cd340de599d3b3
+Patch-set: 1
+File: /COMMIT_MSG
+
+11
+Thu Dec 04 22:59:17 2014 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ff33bd7c_09aa0a19
+Bytes: 62
+Which mClient attribute?
+The code clears mPlayer, not mClient.
+
+File: media/libmediaplayerservice/MediaPlayerService.cpp
+
+549
+Thu Dec 04 22:59:17 2014 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9f69e176_0dea350b
+Bytes: 161
+I'm not sure I fully understand why moving the clear() to here is better. Can you provide an example/stacktrace of the crash that you're trying to fix with this?
+
