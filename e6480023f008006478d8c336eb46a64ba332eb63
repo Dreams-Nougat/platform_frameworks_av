@@ -1,0 +1,11 @@
+Revision: e6480023f008006478d8c336eb46a64ba332eb63
+Patch-set: 1
+File: media/libstagefright/OggExtractor.cpp
+
+724
+Thu Dec 04 16:53:39 2014 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: df219932_02cbd0e0
+Bytes: 204
+I'm not sure I understand the new logic here. Why only return ERROR_MALFORMED for OV_EBADHEADER and OV_EVERSION, but still abort for OV_EFAULT? Why not just return ERROR_MALFORMED for any non-zero retval?
+
