@@ -1,0 +1,11 @@
+Revision: 050ff19e650a53fd2b6f1f2490758b4bf3104ca4
+Base-for-patch-set: 1
+File: media/libstagefright/codecs/aacenc/basic_op/basic_op.h
+
+521:4-521:26
+Fri Dec 05 05:47:45 2014 +0000
+Author: Andreas Gampe <1041833@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5f9e89d1_cd2ba970
+Bytes: 132
+Please verify that this is the right semantics. I assume it is, else assigning to L_var1 in the true-branch doesn't make much sense.
+
