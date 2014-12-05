@@ -1,0 +1,11 @@
+Revision: 9bb0a2474396aad52cc0f3615dbcd8e1f0d64a0c
+Patch-set: 7
+File: media/libstagefright/MPEG4Writer.cpp
+
+2799
+Fri Dec 05 02:07:08 2014 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9fee4133_a29760d1
+Bytes: 195
+Has the value of kKeyBitRate already been range-checked at the time it was added to the metadata?  Or do you need to do a range check on it before using it (and default to 96000 if out of range)?
+
