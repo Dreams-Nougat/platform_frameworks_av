@@ -9,3 +9,12 @@ UUID: 24a8ea5a_ad46051a
 Bytes: 7
 zu, no?
 
+220
+Tue Dec 09 22:54:56 2014 +0000
+Author: Chih-hung Hsieh <1052399@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 24a8ea5a_ad46051a
+UUID: 44ab1e57_8b27711c
+Bytes: 127
+Yes, fixed it here and in other places in patch set 2.
+Clang does not seem to care about the difference of signed and unsigned.
+
