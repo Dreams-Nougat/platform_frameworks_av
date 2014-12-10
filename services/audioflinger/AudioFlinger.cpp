@@ -2128,8 +2128,9 @@ sp<AudioFlinger::RecordThread> AudioFlinger::openInput_l(audio_module_handle_t m
     audio_stream_in_t *inStream = NULL;
 
 #ifdef CAPRI_HWC
-    ALOGD("Forcing channel mask to mono on capri");
+    ALOGD("Forcing input to mono 48K on capri");
     halconfig.channel_mask = AUDIO_CHANNEL_IN_MONO;
+    halconfig.sample_rate = 48000;
 #endif
 
     status_t status = inHwHal->open_input_stream(inHwHal, *input, devices, &halconfig,
