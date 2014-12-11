@@ -18,3 +18,11 @@ Bytes: 139
 static_assert(false, "...") will trigger error always, even with gcc.
 Is there other static_assert to trigger error only when instantiated?
 
+64
+Thu Dec 11 22:26:03 2014 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: a4085aac_8b54b119
+UUID: a4085aac_8bdf111e
+Bytes: 34
+cast to one of the template types?
+
