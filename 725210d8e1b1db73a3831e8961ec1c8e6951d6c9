@@ -26,3 +26,11 @@ UUID: a4085aac_8bdf111e
 Bytes: 34
 cast to one of the template types?
 
+64
+Thu Dec 11 23:13:23 2014 +0000
+Author: Dan Albert <1043845@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: a4085aac_8bdf111e
+UUID: c4138eda_ecf22344
+Bytes: 62
+What's wrong with just not providing a default implementation?
+
