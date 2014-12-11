@@ -9,3 +9,12 @@ UUID: c4138eda_0947a918
 Bytes: 203
 there's only a handful of users. https://cs.corp.google.com/#search/&q=(?-i)%5CbCOMPILE_TIME_ASSERT%20pcre:yes&sq=package:%5Eandroid$&type=cs&m=100&sort=1 switch them to static_assert and kill the cruft?
 
+64
+Thu Dec 11 22:20:30 2014 +0000
+Author: Chih-hung Hsieh <1052399@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: c4138eda_0947a918
+UUID: a4085aac_8b54b119
+Bytes: 139
+static_assert(false, "...") will trigger error always, even with gcc.
+Is there other static_assert to trigger error only when instantiated?
+
