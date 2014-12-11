@@ -1,0 +1,11 @@
+Revision: 725210d8e1b1db73a3831e8961ec1c8e6951d6c9
+Patch-set: 1
+File: services/audioflinger/AudioMixerOps.h
+
+64
+Thu Dec 11 22:00:15 2014 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c4138eda_0947a918
+Bytes: 203
+there's only a handful of users. https://cs.corp.google.com/#search/&q=(?-i)%5CbCOMPILE_TIME_ASSERT%20pcre:yes&sq=package:%5Eandroid$&type=cs&m=100&sort=1 switch them to static_assert and kill the cruft?
+
