@@ -9,3 +9,11 @@ UUID: c4138eda_2f8cad93
 Bytes: 49
 Shouldn't the inline stay? Templates are weird...
 
+60
+Fri Dec 12 00:30:16 2014 +0000
+Author: Chih-hung Hsieh <1052399@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: c4138eda_2f8cad93
+UUID: 44ff9eb8_05fd52c5
+Bytes: 237
+Yes, C++ external template instantiation could be complicated, but gnu's external inline linkage could be even more confusing. :-) I think it is fine here to assume non-inlined template declaration, and then realize that it is undefined.
+
