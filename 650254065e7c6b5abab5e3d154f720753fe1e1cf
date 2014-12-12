@@ -1,0 +1,11 @@
+Revision: 650254065e7c6b5abab5e3d154f720753fe1e1cf
+Patch-set: 2
+File: services/audioflinger/AudioMixerOps.h
+
+60
+Fri Dec 12 00:14:40 2014 +0000
+Author: Dan Albert <1043845@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c4138eda_2f8cad93
+Bytes: 49
+Shouldn't the inline stay? Templates are weird...
+
