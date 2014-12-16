@@ -19,3 +19,11 @@ FOURCC(0xa9, ....) should be correct.
 At line 2231 to 2256, we can see more such patterns.
 Note that clang gives warning to FOURCC('\xA9', ...) for 64-bit targets.
 
+1536
+Tue Dec 16 20:26:14 2014 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 417dd09e_9571e47c
+UUID: 01ccb852_4b5e65c6
+Bytes: 75
+fix the comments then? and add a cast to FOURCC and then actually use '©'?
+
