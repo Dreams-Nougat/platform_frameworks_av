@@ -27,3 +27,11 @@ UUID: 01ccb852_4b5e65c6
 Bytes: 75
 fix the comments then? and add a cast to FOURCC and then actually use '©'?
 
+1536
+Tue Dec 16 22:19:31 2014 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 01ccb852_4b5e65c6
+UUID: 217a9caa_d4af5c9d
+Bytes: 154
+we may want to transition to '\xa9xyz' notation of FOURCC-s... would that solve this, or is that platform dependent?  I'll pass this to hunga@ as I am OOO
+
