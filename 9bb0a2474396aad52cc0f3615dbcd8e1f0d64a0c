@@ -9,3 +9,11 @@ UUID: 9fee4133_a29760d1
 Bytes: 195
 Has the value of kKeyBitRate already been range-checked at the time it was added to the metadata?  Or do you need to do a range check on it before using it (and default to 96000 if out of range)?
 
+2799
+Fri Dec 19 02:49:00 2014 +0000
+Author: David Pursehouse <1015668@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 9fee4133_a29760d1
+UUID: 01e03812_ab888904
+Bytes: 66
+The range check is done in StagefrightRecorder::clipAudioBitRate()
+
