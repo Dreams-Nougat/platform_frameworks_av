@@ -380,6 +380,7 @@ void GraphicBufferSource::codecBufferEmptied(OMX_BUFFERHEADERTYPE* header, int f
             }
         } else if (type == kMetadataBufferTypeANWBuffer
                 && header->nAllocLen >= sizeof(VideoNativeMetadata)) {
+#ifndef CAPRI_HWC
             VideoNativeMetadata &nativeMeta = *(VideoNativeMetadata *)data;
             if (nativeMeta.pBuffer != codecBuffer.mGraphicBuffer->getNativeBuffer()) {
                 // should never happen
@@ -387,6 +388,7 @@ void GraphicBufferSource::codecBufferEmptied(OMX_BUFFERHEADERTYPE* header, int f
                         nativeMeta.pBuffer, codecBuffer.mGraphicBuffer->getNativeBuffer());
                 CHECK(!"codecBufferEmptied: mismatched buffer");
             }
+#endif
         }
     }
 
