@@ -1,0 +1,18 @@
+Revision: faaf4d8720eb8dfb3029e2d0cd1ab00be213dafc
+Patch-set: 1
+File: media/libstagefright/Android.mk
+
+71
+Mon Jan 05 16:06:51 2015 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a12ccc7b_f1f73a98
+Bytes: 94
+also no longer needed? i don't actually see libcrypto below, so maybe this is doubly obsolete?
+
+73
+Mon Jan 05 16:06:51 2015 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a12ccc7b_d1f236ab
+Bytes: 6
+netd?!
+
