@@ -1,0 +1,11 @@
+Revision: afc5fbe3f49ef19472ca98cd966d67021c04336f
+Patch-set: 1
+File: cmds/screenrecord/TextRenderer.cpp
+
+24:9-24:19
+Thu Jan 29 01:35:40 2015 +0000
+Author: Christopher Ferris <1019050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 174ddfae_5c14fdec
+Bytes: 50
+Do you want to add string.h? I see a memset below.
+
