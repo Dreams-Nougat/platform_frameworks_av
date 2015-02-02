@@ -1,0 +1,13 @@
+Revision: 8eb806d7bc009e3d99f6a0531f9d7ffd1e542739
+Patch-set: 1
+File: media/libstagefright/httplive/LiveSession.cpp
+
+1482
+Mon Feb 02 17:26:36 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 978b8f6f_4aefb7b8
+Bytes: 332
+1. Why pick highest segment start time instead of the lowest, as the original logic in the code?
+
+2. Could you please elaborate more on your comments? A simple example would help. Do you mean audio/video TO audio only? When switching FROM audio only we wouldn't have multiple (segment) start times to compare each other against, no?
+
