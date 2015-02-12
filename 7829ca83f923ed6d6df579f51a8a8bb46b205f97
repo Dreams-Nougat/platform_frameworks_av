@@ -1,0 +1,37 @@
+Revision: 7829ca83f923ed6d6df579f51a8a8bb46b205f97
+Base-for-patch-set: 1
+File: media/libstagefright/httplive/PlaylistFetcher.cpp
+
+766
+Thu Feb 12 23:43:52 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ab159030_b9519fcf
+Bytes: 470
+Is the following logic moved else where? This is our seeking code.
+
+// SEEK_STEP_1
+
+First,
+mSeqNumber = getSeqNumberForTime(mStartTimeUs);
+finds the segment.
+
+Then,
+mStartTimeUs -= getSegmentStartTimeUs(mSeqNumber);
+determines the seek time _within_ the aforementioned segment.
+
+Finally we set mStartTimeUsRelative,
+mStartTimeUsRelative = true;
+
+For the effect of setting mStartTimeUsRelative please see my comment marked SEEK_STEP_2 in extractAndQueueAccessUnitsFromTs.
+
+1238
+Thu Feb 12 23:43:52 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 4bfb3434_07c37c2f
+Bytes: 355
+// SEEK_STEP_2
+
+We decide when to stop discarding samples on startup by comparing sample timestamps with mStartTimeUs; if mStartTimeUsRelative is true we use timestamps _relative to the start of the segment_, as opposed to raw timestamps extracted from the transport stream.
+
+In essence our seek and switch logic share the "changeConfiguration" code path.
+
