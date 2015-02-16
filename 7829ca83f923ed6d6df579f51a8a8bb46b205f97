@@ -24,6 +24,26 @@ mStartTimeUsRelative = true;
 
 For the effect of setting mStartTimeUsRelative please see my comment marked SEEK_STEP_2 in extractAndQueueAccessUnitsFromTs.
 
+766
+Mon Feb 16 07:27:08 2015 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ab159030_b9519fcf
+UUID: 2bee00c7_4d1a996f
+Bytes: 636
+This patch also uses 
+
+mSeqNumber = getSeqNumberForTime(mStartTimeUs);
+
+in order to find the segment to download at seek.
+So far there is no difference.
+
+However, as you noticed, after having downloaded the first timestamp, this patch uses the same functionality that is used when switching streams, e.g. the raw timestamp from the stream is used when discarding samples on startup.
+
+Regarding the use of mStartTimeUsRelative:
+
+We decided to always use raw timestamps, since that is what needs to be used for synchronization of live streams.
+Using relative timestamps in some sence means trusting the playlist over the actual stream(s).
+
 1238
 Thu Feb 12 23:43:52 2015 +0000
 Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -34,4 +54,17 @@ Bytes: 355
 We decide when to stop discarding samples on startup by comparing sample timestamps with mStartTimeUs; if mStartTimeUsRelative is true we use timestamps _relative to the start of the segment_, as opposed to raw timestamps extracted from the transport stream.
 
 In essence our seek and switch logic share the "changeConfiguration" code path.
+
+1238
+Mon Feb 16 07:27:08 2015 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 4bfb3434_07c37c2f
+UUID: 0ba85c5a_64690a85
+Bytes: 399
+If I understand correctly, Google switch logic will not use relative timestamps.
+Using relative timestamps only when seeking, means that we might get a different result when switching to a certain time compared to when seeking to the same time.
+
+Maybe that would be ok, but we felt that it was more consistent to always use raw timestamps.
+
+Have you seen any negative impact of using raw timestamps?
 
