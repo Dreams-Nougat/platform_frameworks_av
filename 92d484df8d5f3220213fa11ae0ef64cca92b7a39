@@ -1,0 +1,12 @@
+Revision: 92d484df8d5f3220213fa11ae0ef64cca92b7a39
+Patch-set: 1
+File: media/libstagefright/codecs/gsm/dec/SoftGSM.cpp
+
+67:29-67:36
+Thu Feb 19 19:20:35 2015 +0000
+Author: Chong Zhang <1039918@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 087a22aa_d490bc66
+Bytes: 107
+can we add some comments how this number is derived? (in case it needs to be updated later.)
+otherwise LGTM
+
