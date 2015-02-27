@@ -17,3 +17,23 @@ Segment start time means the start of a segment relative to the start of a playl
 
 For static playlists this strategy should always be accurate; for rolling playlists there is a chance that we have fetched a later version of playlist 2 than its playlist 1 counterpart, causing us to start fetching variant 2 too deep into the playlist. (This results in a large gap for variant 1 to fill, so we added logic to adjust back.)
 
+797
+Fri Feb 27 14:17:54 2015 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e2f96fff_1eadc9fe
+UUID: c2d62b82_6ad89728
+Bytes: 1405
+mStartTimeUs is relative when seeking, and raw when switching, just as before.
+When seeking we adjust the mStartTimeUs at line 801.
+
+We have chosen to use mStartTimeUs as input to getSeqNumberForTime instead of mSegmentStartTimeUs in order to be able to handle cases where segment durations differ between playlists or segment borders are not fully synced.
+
+For example: If playlist 1 contains segments with duration 10 and playlist 2 contains segments with duration 9. If switching from playlist 1 to 2 at segment 9 after 90 seconds, the segment start time would be 80, which would result in finding segment 8 in playlist 1. Then the sequence number would be stepped to 9 and we would start downloading timestamps starting at 81s, resulting in that the whole segment would be discarded.
+
+However, we see the advantages of using mSegmentStartTimeUs for some cases. 
+We will make new uploads where we will use mStartTimeUs only for static playlists without discontinuities.
+
+Additionally, in our solution, we always use the functionality in synchronizeSeqNumber at bandwidth switches, see line 1302.
+This functionality will make sure that we always find the most suitable segment to download, by synchronizing on raw timestamps.
+So, in our solution at bw switch, the segment number that is chosen at the startup of a new fetcher, will always be adjusted if needed based on the raw timestamps in the stream.
+
