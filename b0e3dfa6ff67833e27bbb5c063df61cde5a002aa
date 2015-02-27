@@ -1,0 +1,25 @@
+Revision: b0e3dfa6ff67833e27bbb5c063df61cde5a002aa
+Base-for-patch-set: 2
+File: media/libstagefright/httplive/LiveSession.cpp
+
+1143
+Fri Feb 27 23:42:38 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 92f6464a_03a7f28b
+Bytes: 24
+bandwidth polling change
+
+1496
+Fri Feb 27 23:42:38 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 92f6464a_6398f64b
+Bytes: 89
+This should still be needed as createFormatChangeBuffer is called with swap equals false.
+
+1628
+Fri Feb 27 23:42:38 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 92f6464a_c3d90a1c
+Bytes: 24
+bandwidth polling change
+

@@ -1,0 +1,38 @@
+Revision: f154b879edf94a79fd5a07526cd4b33cdbd6c7b0
+Patch-set: 2
+File: media/libstagefright/httplive/LiveSession.cpp
+
+1556
+Fri Feb 27 23:42:38 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 92f6464a_e3dc060e
+Bytes: 23
+bandwidth polling chage
+
+File: media/libstagefright/httplive/PlaylistFetcher.cpp
+
+0
+Fri Feb 27 23:42:38 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 32111a43_e09076c8
+Bytes: 20
+getLastFormat change
+
+File: media/libstagefright/mpeg2ts/AnotherPacketSource.cpp
+
+0
+Fri Feb 27 23:42:38 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a24e9754_51f1f497
+Bytes: 20
+getLastFormat change
+
+File: media/libstagefright/mpeg2ts/AnotherPacketSource.h
+
+0
+Fri Feb 27 23:42:38 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a24e9754_31f47089
+Bytes: 20
+getLastFormat change
+
