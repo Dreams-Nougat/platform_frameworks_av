@@ -1,0 +1,11 @@
+Revision: 89023b2467c67c8423aa8b82e202b5a07ed52083
+Base-for-patch-set: 2
+File: media/libstagefright/httplive/PlaylistFetcher.cpp
+
+775
+Fri Feb 27 02:31:55 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 62073fcc_b73cc85e
+Bytes: 6
+[L775]
+
