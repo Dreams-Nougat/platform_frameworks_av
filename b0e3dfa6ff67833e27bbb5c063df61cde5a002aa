@@ -16,6 +16,14 @@ UUID: 92f6464a_6398f64b
 Bytes: 89
 This should still be needed as createFormatChangeBuffer is called with swap equals false.
 
+1496
+Mon Mar 02 12:58:22 2015 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 92f6464a_6398f64b
+UUID: b2c50a26_4ef753a9
+Bytes: 181
+Yes, you are right. But if this is queued before the decoder is created and no data has been queued the decoder will never be created since the discontinuity will block getFormat().
+
 1628
 Fri Feb 27 23:42:38 2015 +0000
 Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>

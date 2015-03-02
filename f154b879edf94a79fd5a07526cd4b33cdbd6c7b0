@@ -9,6 +9,14 @@ UUID: 92f6464a_e3dc060e
 Bytes: 23
 bandwidth polling chage
 
+1556
+Mon Mar 02 12:58:22 2015 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 92f6464a_e3dc060e
+UUID: a24e9754_f17ca8cc
+Bytes: 250
+We needed to keep the canSwitchBandwidthTo to not issue a configuration change while another switch is ongoing. After the remove of the swap functionality, a new switch can happen before the first is dequeued. Thus this code is changed in this patch.
+
 File: media/libstagefright/httplive/PlaylistFetcher.cpp
 
 0
@@ -17,6 +25,13 @@ Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 32111a43_e09076c8
 Bytes: 20
 getLastFormat change
+
+1520:38-1520:51
+Mon Mar 02 12:58:22 2015 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 62581f1b_2f1c090c
+Bytes: 288
+We need to use the last queued format here since we now only have one AnotherPacketSource. If using getFormat the format of the first enqueued data is used. That may differ from the last enqueued data. But it should be possible to use getLatestEnqueuedMeta instead of adding a new method.
 
 File: media/libstagefright/mpeg2ts/AnotherPacketSource.cpp
 
