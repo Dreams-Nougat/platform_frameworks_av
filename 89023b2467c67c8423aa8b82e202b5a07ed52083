@@ -34,3 +34,12 @@ Since the PlaylistFetcher is running in the same message queue as LiveSession a 
 
 It would be possible to check the bw after the download. However we still need to abort before downloding if a reconfiguration is ongoing, e.g. if another fetcher has detected that a switch is required. We think it is better to keep it all in one place.
 
+746
+Tue Mar 03 19:02:25 2015 +0000
+Author: Chong Zhang <1039918@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d2bd1ee7_77d39055
+UUID: 92fd66c2_650ac6d9
+Bytes: 487
+We'd like to not add new code that calls from PlaylistFetcher back into LiveSession, if possible. Currently they run on the same looper, but we're considering moving PlaylistFetcher to its own looper so that data downloading won't block control flow in LiveSession. 
+The bandwidth checking can be done in onMonitorQueue(), and PlaylistFetcher can post notification back to LiveSession when buffering is high or low. If buffering is low, PlaylistFetcher can stop scheduling new downloads.
+
