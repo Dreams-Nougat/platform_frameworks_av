@@ -1,0 +1,39 @@
+Revision: b0e3dfa6ff67833e27bbb5c063df61cde5a002aa
+Patch-set: 2
+File: media/libstagefright/httplive/LiveSession.cpp
+
+371
+Wed Mar 04 01:14:08 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 321d9af7_e9fb21fc
+Bytes: 91
+Ignoring disconnect when reconfiguring looks fishy, but this seems to be existing behavior.
+
+705
+Wed Mar 04 01:14:08 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 527a0e34_8e893b27
+Bytes: 77
+There doesn't seem to be other places in the code that checks for this state.
+
+1163
+Wed Mar 04 01:14:08 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 727f1222_2f7b65a8
+Bytes: 96
+Wouldn't this drop select track commands when mReconfigurationState == RECONFIGURATION_PENDING ?
+
+1630
+Wed Mar 04 01:14:08 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 321d9af7_09d455bd
+Bytes: 141
+use LiveSession::isReconfiguring? Or maybe we should reconsider if we actually do need a LiveSession::isReconfiguring as it is quite trivial.
+
+1672
+Wed Mar 04 01:14:08 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 527a0e34_0e154b3d
+Bytes: 17
+Please see above.
+
