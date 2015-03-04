@@ -9,12 +9,28 @@ UUID: 321d9af7_e9fb21fc
 Bytes: 91
 Ignoring disconnect when reconfiguring looks fishy, but this seems to be existing behavior.
 
+371
+Wed Mar 04 15:02:08 2015 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 321d9af7_e9fb21fc
+UUID: 12da56a9_6979c5c6
+Bytes: 19
+Agree, looks fishy.
+
 705
 Wed Mar 04 01:14:08 2015 +0000
 Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 527a0e34_8e893b27
 Bytes: 77
 There doesn't seem to be other places in the code that checks for this state.
+
+705
+Wed Mar 04 15:02:08 2015 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 527a0e34_8e893b27
+UUID: 929c86d9_ad061d9c
+Bytes: 136
+No, this is just to make sure that no new commands are handled while disconnecting. (There are checks for mReconfigurationState == NONE)
 
 1163
 Wed Mar 04 01:14:08 2015 +0000
@@ -23,12 +39,28 @@ UUID: 727f1222_2f7b65a8
 Bytes: 96
 Wouldn't this drop select track commands when mReconfigurationState == RECONFIGURATION_PENDING ?
 
+1163
+Wed Mar 04 15:02:08 2015 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 727f1222_2f7b65a8
+UUID: 52a68e28_8b322d76
+Bytes: 165
+Yes, but mReconfigurationState == RECONFIGURATION_PENDING means that a configuration change is about to take place anyway and the M3UParser has already been updated.
+
 1630
 Wed Mar 04 01:14:08 2015 +0000
 Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 321d9af7_09d455bd
 Bytes: 141
 use LiveSession::isReconfiguring? Or maybe we should reconsider if we actually do need a LiveSession::isReconfiguring as it is quite trivial.
+
+1630
+Wed Mar 04 15:02:08 2015 +0000
+Author: Oscar Rydhé <1017893@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 321d9af7_09d455bd
+UUID: 929c86d9_cd1569c2
+Bytes: 137
+LiveSession::isReconfiguring() was introduced in https://android-review.googlesource.com/#/c/128247, where it is used by PlaylistFetcher.
 
 1672
 Wed Mar 04 01:14:08 2015 +0000
