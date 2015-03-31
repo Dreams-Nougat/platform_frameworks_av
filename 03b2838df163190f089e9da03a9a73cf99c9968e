@@ -1,0 +1,18 @@
+Revision: 03b2838df163190f089e9da03a9a73cf99c9968e
+Patch-set: 1
+File: services/audiopolicy/AudioPolicyManager.cpp
+
+1251:19-1251:36
+Tue Mar 31 15:45:16 2015 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a315c284_d171f7dd
+Bytes: 43
+please add a ALOGV here for this early exit
+
+1262:56-1262:58
+Tue Mar 31 15:45:16 2015 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a315c284_5147c77f
+Bytes: 57
+this integer has no corresponding argument in the va list
+
