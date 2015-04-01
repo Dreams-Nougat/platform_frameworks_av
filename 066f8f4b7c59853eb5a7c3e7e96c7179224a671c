@@ -1,0 +1,12 @@
+Revision: 066f8f4b7c59853eb5a7c3e7e96c7179224a671c
+Patch-set: 2
+File: services/audiopolicy/AudioPolicyManager.cpp
+
+1251:44-1251:60
+Wed Apr 01 16:34:44 2015 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a371421d_054df24d
+Bytes: 170
+This is not an error. It happens in normal conditions and should just be logged in verbose mode.
+It is just that current context does not allow playback of this use case.
+
