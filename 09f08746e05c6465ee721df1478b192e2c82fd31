@@ -1,0 +1,11 @@
+Revision: 09f08746e05c6465ee721df1478b192e2c82fd31
+Patch-set: 1
+File: media/libstagefright/codecs/avcenc/SoftAVC.h
+
+39:8-39:27
+Sat Apr 04 01:43:01 2015 +0000
+Author: Rachad Alao <1038885@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 23c4727c_74ca4520
+Bytes: 97
+12 Mbps or 20 Mbps? media_codecs.xml says 12 Mbps. Is 20 Mbps feasible on a Qualcomm MSM8974 SoC?
+
