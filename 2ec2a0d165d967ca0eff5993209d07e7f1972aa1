@@ -1,0 +1,12 @@
+Revision: 2ec2a0d165d967ca0eff5993209d07e7f1972aa1
+Patch-set: 1
+File: media/libstagefright/MPEG4Extractor.cpp
+
+2639:15-2639:24
+Tue Apr 07 17:08:00 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 63258a42_59a0e39e
+Bytes: 315
+Should this be checked at the point where track->timescale is actually set or used? Or verifyTrack() called in more places?
+Even with this change, there's the potential for division by zero: at line 1175 above, timescale is read from the file, and at line 1202 it is used in a way that could cause a divide by zero.
+
