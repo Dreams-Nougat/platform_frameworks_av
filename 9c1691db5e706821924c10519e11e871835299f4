@@ -1,0 +1,11 @@
+Revision: 9c1691db5e706821924c10519e11e871835299f4
+Patch-set: 1
+File: media/libstagefright/mpeg2ts/ESQueue.cpp
+
+1286:9-1286:20
+Wed Apr 08 09:06:28 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 8316fefe_b401608d
+Bytes: 28
+mEOSReached is uninitialized
+
