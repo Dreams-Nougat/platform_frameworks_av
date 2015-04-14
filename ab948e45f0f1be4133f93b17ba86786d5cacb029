@@ -1,0 +1,19 @@
+Revision: ab948e45f0f1be4133f93b17ba86786d5cacb029
+Patch-set: 11
+File: /COMMIT_MSG
+
+7:0-7:3
+Tue Apr 14 17:29:30 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d0299e86_cb80dffa
+Bytes: 238
+Please use domain here, e.g. MPEG4Writer:
+
+The patch actually does this:
+
+ use audio bit rate from the stream format
+
+Detail could be this:
+
+ Use audio bit rate from the stream format, if it is specified. [ Otherwise, default to 96kpbs. ]
+
