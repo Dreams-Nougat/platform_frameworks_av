@@ -17,3 +17,15 @@ UUID: 01e03812_ab888904
 Bytes: 66
 The range check is done in StagefrightRecorder::clipAudioBitRate()
 
+2799:9-2799:16
+Tue Apr 14 17:25:55 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b0242aae_ddc9c02d
+Bytes: 212
+note this is easier written as:
+
+ int32_t bitRate = 96000; // default bit rate
+ mMeta->findInt32(kKeyBitRate, &bitRate);
+ mOwner->writeInt32(bitRate); // max bit rate
+ mOwner->writeInt32(bitRate); // avg bit rate
+
