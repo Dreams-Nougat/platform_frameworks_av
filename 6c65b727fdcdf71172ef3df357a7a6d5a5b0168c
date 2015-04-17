@@ -1,0 +1,11 @@
+Revision: 6c65b727fdcdf71172ef3df357a7a6d5a5b0168c
+Patch-set: 1
+File: media/libstagefright/codecs/mpeg2dec/SoftMPEG2.cpp
+
+724:20-724:25
+Fri Apr 17 17:53:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 907ac6a8_3211dc88
+Bytes: 5
+ALOGV
+
