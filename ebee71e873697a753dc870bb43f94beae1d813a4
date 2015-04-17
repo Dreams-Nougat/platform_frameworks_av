@@ -1,0 +1,20 @@
+Revision: ebee71e873697a753dc870bb43f94beae1d813a4
+Patch-set: 4
+File: media/libstagefright/codecs/mpeg2dec/Android.mk
+
+24:0-24:23
+Fri Apr 17 23:28:05 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d0c51e25_5f15b172
+Bytes: 30
+this is not part of this patch
+
+File: media/libstagefright/codecs/mpeg2dec/SoftMPEG2.cpp
+
+399:61-399:62
+Fri Apr 17 23:28:05 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 70a39280_0cc39b8b
+Bytes: 30
+this is not part of this patch
+
