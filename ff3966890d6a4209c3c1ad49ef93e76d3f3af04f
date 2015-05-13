@@ -1,0 +1,27 @@
+Revision: ff3966890d6a4209c3c1ad49ef93e76d3f3af04f
+Patch-set: 2
+File: include/media/stagefright/MediaCodec.h
+
+270:9-270:28
+Wed May 13 18:02:30 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: cd1ae5b3_00217aca
+Bytes: 172
+how is this different from mCrypto != NULL?  It seems you need to consolidate mCrypto != NULL checks to mBlockOutputBuffers, and use similar code for protected audio/video.
+
+File: media/libstagefright/MediaCodec.cpp
+
+1307:47-1307:77
+Wed May 13 18:02:30 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ad15b184_8e70fa89
+Bytes: 44
+how do you verify that AudioTrack is secure?
+
+2057:25-2057:30
+Wed May 13 18:02:30 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: cd1ae5b3_a06ce603
+Bytes: 27
+what happens if this fails?
+
