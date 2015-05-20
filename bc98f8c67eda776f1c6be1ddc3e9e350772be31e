@@ -1,0 +1,11 @@
+Revision: bc98f8c67eda776f1c6be1ddc3e9e350772be31e
+Patch-set: 2
+File: media/libstagefright/codecs/amrwbenc/src/asm/ARMV5E/pred_lt4_1_opt.s
+
+49
+Wed May 20 17:25:28 2015 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 6d7ad934_71ecf03a
+Bytes: 55
+what does the NOP do?  if important, may need a comment
+
