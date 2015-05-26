@@ -1,0 +1,11 @@
+Revision: a4bc59ad26b8790f4fc36f7f94d7815883efbecb
+Patch-set: 2
+File: /COMMIT_MSG
+
+7:0-8:63
+Tue May 26 18:20:11 2015 +0000
+Author: Ian Rogers <1010118@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 8d99cdfb_e2cb0251
+Bytes: 221
+Thanks for the code! Could you improve this message. I believe the change is two-fold: (1) remove mCurrentSlot - dead code removal, (2) add an extra null check. As a single sentence I have difficulty parsing this message.
+
