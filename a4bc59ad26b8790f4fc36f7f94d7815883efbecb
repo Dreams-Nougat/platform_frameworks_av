@@ -22,3 +22,16 @@ acquireBuffer() returns a NULL mGraphicBuffer if this buffer has been acquired b
 
 In GraphicBufferSource we don't fail NULL mGraphicBuffer either.
 
+345:4-348:5
+Tue May 26 19:26:03 2015 +0000
+Author: Dan Stoza <1043625@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 8d99cdfb_90a9a48b
+UUID: ed8889a6_f3dbd89e
+Bytes: 242
+Yes. From IGraphicBufferConsumer.h:
+
+// If the buffer returned had previously been
+// acquired then the BufferItem::mGraphicBuffer field of buffer is set to
+// NULL and it is assumed that the consumer still holds a reference to the
+// buffer.
+
