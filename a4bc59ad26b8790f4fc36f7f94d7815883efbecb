@@ -9,3 +9,16 @@ UUID: 8d99cdfb_e2cb0251
 Bytes: 221
 Thanks for the code! Could you improve this message. I believe the change is two-fold: (1) remove mCurrentSlot - dead code removal, (2) add an extra null check. As a single sentence I have difficulty parsing this message.
 
+File: media/libstagefright/SurfaceMediaSource.cpp
+
+345:4-348:5
+Tue May 26 19:16:20 2015 +0000
+Author: Chong Zhang <1039918@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 8d99cdfb_90a9a48b
+Bytes: 221
+This seems incorrect..
+
+acquireBuffer() returns a NULL mGraphicBuffer if this buffer has been acquired before, it is not an error and doesn't indicate EOS.
+
+In GraphicBufferSource we don't fail NULL mGraphicBuffer either.
+
