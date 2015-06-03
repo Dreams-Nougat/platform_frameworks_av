@@ -1,0 +1,195 @@
+Revision: d67befabe364dd5f264581d1ce845ad4186d425f
+Patch-set: 1
+File: media/libstagefright/codecs/avcenc/SoftAVCEnc.cpp
+
+52:0-52:7
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b967b830_aaee93fc
+Bytes: 21
+is this still needed?
+
+639:8-639:11
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d96c6c17_b01c489d
+Bytes: 15
+space after for
+
+644
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b967b830_2a31e32a
+Bytes: 17
+this may overflow
+
+904:4-904:7
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b967b830_ea440b69
+Bytes: 15
+space after for
+
+990:12-990:16
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d96c6c17_3031582b
+Bytes: 57
+use 8 space indent for line continuation (except after =)
+
+986:14-996:16
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f955b039_cb2f9542
+Bytes: 38
+use space after if and brackets always
+
+1079:4-1079:13
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f955b039_0b818d97
+Bytes: 41
+this should be inside: for (size_t i =...
+
+1105:12-1116:13
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f955b039_2b4f310c
+Bytes: 26
+use space after for and if
+
+1133:8-1133:11
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f955b039_6b492903
+Bytes: 18
+use space after if
+
+1218:10-1218:13
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f955b039_ab5a21c6
+Bytes: 24
+no space between ( and !
+
+1230:9-1230:10
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f955b039_eb54199b
+Bytes: 14
+space after if
+
+1236:14-1236:16
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b967b830_2a8d633a
+Bytes: 7
+1 space
+
+1246:8-1246:11
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d96c6c17_d094644e
+Bytes: 14
+space after if
+
+1246:11-1246:28
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b967b830_0a1d076f
+Bytes: 26
+use != NULL here and below
+
+1273:11-1273:15
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d96c6c17_f09b6078
+Bytes: 4
+same
+
+1279:0-1281:30
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f955b039_2b9d71ec
+Bytes: 45
+keep this as it was. (always break after "(")
+
+1296:12-1296:29
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d96c6c17_f019a082
+Bytes: 7
+!= NULL
+
+1296:33-1296:79
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f955b039_8b92bdd8
+Bytes: 45
+use parenthesis as this is confusing for most
+
+1302:33-1302:48
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b967b830_8a20f7a4
+Bytes: 7
+!= NULL
+
+1303:16-1303:17
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b967b830_0acb4742
+Bytes: 21
+declare size_t i here
+
+1303:11-1304:24
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b967b830_2ad283fb
+Bytes: 18
+space after for/if
+
+1319:8-1320:36
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f955b039_cb22f531
+Bytes: 14
+keep as it was
+
+1344:8-1369:9
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b967b830_caae6f6f
+Bytes: 76
+spacing.... space after if/for, use != NULL for pointers. localize variables
+
+1377:8-1377:14
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b967b830_eab52bba
+Bytes: 7
+spacing
+
+1396:8-1396:21
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b967b830_8a7c776c
+Bytes: 7
+spacing
+
+1412:0-1412:1
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f955b039_0bdb4d94
+Bytes: 13
+no space here
+
+File: media/libstagefright/codecs/avcenc/SoftAVCEnc.h
+
+296:10-296:11
+Wed Jun 03 21:51:37 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b967b830_2ae3a31a
+Bytes: 30
+space after if and use != NULL
+
