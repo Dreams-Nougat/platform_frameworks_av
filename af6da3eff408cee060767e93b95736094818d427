@@ -1,0 +1,11 @@
+Revision: af6da3eff408cee060767e93b95736094818d427
+Patch-set: 1
+File: media/libmedia/AudioRecord.cpp
+
+1008
+Wed Jun 03 23:47:34 2015 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d96c6c17_00f96745
+Bytes: 87
+It seems like this will cause restoreRecord_l to fail even though there were no errors.
+
