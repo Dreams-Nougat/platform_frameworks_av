@@ -9,12 +9,28 @@ UUID: b967b830_aaee93fc
 Bytes: 21
 is this still needed?
 
+52:0-52:7
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b967b830_aaee93fc
+UUID: 3901083e_91401c06
+Bytes: 4
+Done
+
 639:8-639:11
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: d96c6c17_b01c489d
 Bytes: 15
 space after for
+
+639:8-639:11
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d96c6c17_b01c489d
+UUID: 1908c462_701f701c
+Bytes: 4
+Done
 
 644
 Wed Jun 03 21:51:37 2015 +0000
@@ -23,12 +39,28 @@ UUID: b967b830_2a31e32a
 Bytes: 17
 this may overflow
 
+644
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b967b830_2a31e32a
+UUID: f90a105c_0f65253d
+Bytes: 66
+mConversionBuffers is declared for MAX_CONVERSION_BUFFERS entries.
+
 904:4-904:7
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: b967b830_ea440b69
 Bytes: 15
 space after for
+
+904:4-904:7
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b967b830_ea440b69
+UUID: f90a105c_72d81663
+Bytes: 4
+Done
 
 990:12-990:16
 Wed Jun 03 21:51:37 2015 +0000
@@ -37,12 +69,28 @@ UUID: d96c6c17_3031582b
 Bytes: 57
 use 8 space indent for line continuation (except after =)
 
+990:12-990:16
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d96c6c17_3031582b
+UUID: 3901083e_111a6c2c
+Bytes: 4
+Done
+
 986:14-996:16
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: f955b039_cb2f9542
 Bytes: 38
 use space after if and brackets always
+
+986:14-996:16
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f955b039_cb2f9542
+UUID: 3901083e_711f781c
+Bytes: 4
+Done
 
 1079:4-1079:13
 Wed Jun 03 21:51:37 2015 +0000
@@ -51,12 +99,28 @@ UUID: f955b039_0b818d97
 Bytes: 41
 this should be inside: for (size_t i =...
 
+1079:4-1079:13
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f955b039_0b818d97
+UUID: 3901083e_b108c0df
+Bytes: 4
+Done
+
 1105:12-1116:13
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: f955b039_2b4f310c
 Bytes: 26
 use space after for and if
+
+1105:12-1116:13
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f955b039_2b4f310c
+UUID: f90a105c_52dd1251
+Bytes: 4
+Done
 
 1133:8-1133:11
 Wed Jun 03 21:51:37 2015 +0000
@@ -65,12 +129,28 @@ UUID: f955b039_6b492903
 Bytes: 18
 use space after if
 
+1133:8-1133:11
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f955b039_6b492903
+UUID: 1908c462_5024ec6e
+Bytes: 4
+Done
+
 1218:10-1218:13
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: f955b039_ab5a21c6
 Bytes: 24
 no space between ( and !
+
+1218:10-1218:13
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f955b039_ab5a21c6
+UUID: 3901083e_9105bcc7
+Bytes: 4
+Done
 
 1230:9-1230:10
 Wed Jun 03 21:51:37 2015 +0000
@@ -79,12 +159,28 @@ UUID: f955b039_eb54199b
 Bytes: 14
 space after if
 
+1230:9-1230:10
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f955b039_eb54199b
+UUID: 3901083e_f112480d
+Bytes: 4
+Done
+
 1236:14-1236:16
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: b967b830_2a8d633a
 Bytes: 7
 1 space
+
+1236:14-1236:16
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b967b830_2a8d633a
+UUID: 3901083e_d10f44e3
+Bytes: 4
+Done
 
 1246:8-1246:11
 Wed Jun 03 21:51:37 2015 +0000
@@ -100,6 +196,14 @@ UUID: b967b830_0a1d076f
 Bytes: 26
 use != NULL here and below
 
+1246:8-1246:11
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d96c6c17_d094644e
+UUID: f90a105c_b2f1dee1
+Bytes: 4
+Done
+
 1273:11-1273:15
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -107,12 +211,28 @@ UUID: d96c6c17_f09b6078
 Bytes: 4
 same
 
+1273:11-1273:15
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d96c6c17_f09b6078
+UUID: f90a105c_92ee5afd
+Bytes: 4
+Done
+
 1279:0-1281:30
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: f955b039_2b9d71ec
 Bytes: 45
 keep this as it was. (always break after "(")
+
+1279:0-1281:30
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f955b039_2b9d71ec
+UUID: 1908c462_b008b8df
+Bytes: 4
+Done
 
 1296:12-1296:29
 Wed Jun 03 21:51:37 2015 +0000
@@ -128,12 +248,28 @@ UUID: f955b039_8b92bdd8
 Bytes: 45
 use parenthesis as this is confusing for most
 
+1296:33-1296:79
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f955b039_8b92bdd8
+UUID: 1908c462_9005b4c7
+Bytes: 4
+Done
+
 1302:33-1302:48
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: b967b830_8a20f7a4
 Bytes: 7
 != NULL
+
+1302:33-1302:48
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b967b830_8a20f7a4
+UUID: f90a105c_f2eb66eb
+Bytes: 4
+Done
 
 1303:16-1303:17
 Wed Jun 03 21:51:37 2015 +0000
@@ -142,12 +278,28 @@ UUID: b967b830_0acb4742
 Bytes: 21
 declare size_t i here
 
+1303:16-1303:17
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b967b830_0acb4742
+UUID: f90a105c_d2e8e2f1
+Bytes: 4
+Done
+
 1303:11-1304:24
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: b967b830_2ad283fb
 Bytes: 18
 space after for/if
+
+1303:11-1304:24
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b967b830_2ad283fb
+UUID: f90a105c_3205ee4a
+Bytes: 4
+Done
 
 1319:8-1320:36
 Wed Jun 03 21:51:37 2015 +0000
@@ -156,12 +308,28 @@ UUID: f955b039_cb22f531
 Bytes: 14
 keep as it was
 
+1319:8-1320:36
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f955b039_cb22f531
+UUID: 1908c462_f012400d
+Bytes: 4
+Done
+
 1344:8-1369:9
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: b967b830_caae6f6f
 Bytes: 76
 spacing.... space after if/for, use != NULL for pointers. localize variables
+
+1344:8-1369:9
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b967b830_caae6f6f
+UUID: 3901083e_313cd084
+Bytes: 4
+Done
 
 1377:8-1377:14
 Wed Jun 03 21:51:37 2015 +0000
@@ -170,6 +338,14 @@ UUID: b967b830_eab52bba
 Bytes: 7
 spacing
 
+1377:8-1377:14
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b967b830_eab52bba
+UUID: 3901083e_1141ccec
+Bytes: 4
+Done
+
 1396:8-1396:21
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -177,12 +353,28 @@ UUID: b967b830_8a7c776c
 Bytes: 7
 spacing
 
+1396:8-1396:21
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b967b830_8a7c776c
+UUID: 3901083e_713658a4
+Bytes: 4
+Done
+
 1412:0-1412:1
 Wed Jun 03 21:51:37 2015 +0000
 Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: f955b039_0bdb4d94
 Bytes: 13
 no space here
+
+1412:0-1412:1
+Thu Jun 04 05:20:24 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f955b039_0bdb4d94
+UUID: f90a105c_120a6a5a
+Bytes: 4
+Done
 
 File: media/libstagefright/codecs/avcenc/SoftAVCEnc.h
 
