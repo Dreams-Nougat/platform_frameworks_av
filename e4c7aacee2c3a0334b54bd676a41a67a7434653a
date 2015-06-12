@@ -1,0 +1,18 @@
+Revision: e4c7aacee2c3a0334b54bd676a41a67a7434653a
+Patch-set: 6
+File: media/libmediaplayerservice/nuplayer/NuPlayer.cpp
+
+1366:22-1366:40
+Fri Jun 12 21:17:42 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 59e07c3c_5dbe2cb1
+Bytes: 153
+can this be combined with the prior logic?  We also drop frames in ATSParser when creating an AVC source. That logic should be removed after this change.
+
+1610:8-1610:26
+Fri Jun 12 21:17:42 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 59095cdc_a9d109f9
+Bytes: 83
+this should really be done once flush is complete and we are ready to decode again.
+
