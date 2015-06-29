@@ -1,0 +1,227 @@
+Revision: c153bd1cd641d7a5ae84a8e7f1145b57c15e5e9c
+Patch-set: 2
+File: media/libstagefright/codecs/mp3dec/Android.mk
+
+101:21-101:29
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 332a09c0_efe375c4
+Bytes: 5
+tests
+
+File: media/libstagefright/codecs/mp3dec/test/mp3dec_test.cpp
+
+47:5-47:7
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 53277df4_ad3189a7
+Bytes: 29
+prefer "if (" here and below.
+
+49:15-49:16
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 332a09c0_8c6be717
+Bytes: 24
+EXIT_FAILURE (and below)
+
+58:4-58:21
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 332a09c0_ef31b5f4
+Bytes: 38
+combine with line 60 to be consistent?
+
+81:7-81:14
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 73f6419f_51607404
+Bytes: 41
+prefer to compare with NULL if a pointer.
+
+95:16-95:17
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 93fbb585_d2274440
+Bytes: 12
+EXIT_SUCCESS
+
+96:0-97:5
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 53277df4_ed870195
+Bytes: 11
+while (1) {
+
+File: media/libstagefright/codecs/mp3dec/test/mp3reader.cpp
+
+191:15-191:21
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 132185e2_ebcc0d5d
+Bytes: 75
+please add what you're expecting to be same: version, layer, sampling rate.
+
+195:3-195:9
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 332a09c0_6c2e731d
+Bytes: 110
+(void) if you are ignoring the return value; i'd prefer not to fread if the fseek fails - it's not valid data.
+
+210:11-210:17
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 332a09c0_2cdf5b85
+Bytes: 19
+use sourceReadAt()?
+
+267:16-267:21
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 93fbb585_4f61f12f
+Bytes: 13
+sourceReadAt?
+
+274:16-274:49
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 332a09c0_ccdf9fcb
+Bytes: 45
+needed?  or remainingBytes += totalBytesRead.
+
+307:28-307:29
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 53277df4_aa55ef47
+Bytes: 34
+const int FRAME_MATCH_REQUIRED = 3
+
+309:12-309:42
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 332a09c0_8c93e760
+Bytes: 19
+use sourceReadAt()?
+
+310:39-310:40
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 132185e2_881d97f0
+Bytes: 11
+sizeof(tmp)
+
+332:0-333:20
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 332a09c0_ec7703af
+Bytes: 93
+maybe more consistent to do this on line 346?  or simply return true or break in this clause.
+
+339:9-340:9
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 73f6419f_0e3d2bee
+Bytes: 7
+remove?
+
+351:0-351:15
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 53277df4_2d991957
+Bytes: 26
+prefer an initializer list
+
+352:0-353:20
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 53277df4_6da3118b
+Bytes: 56
+do these need to be set? they are initialized in init().
+
+361:6-361:7
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 93fbb585_6f382d8d
+Bytes: 4
+if (
+
+364:0-364:5
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 73f6419f_6e002f72
+Bytes: 36
+compound statement block not needed.
+
+367:36-367:37
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 73f6419f_6e84af16
+Bytes: 16
+/*match_header*/
+
+368:9-368:11
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 73f6419f_2e38e7fd
+Bytes: 5
+ditto
+
+374:8-374:19
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 332a09c0_aca6ab46
+Bytes: 106
+what happens if parseHeader() returns false?  prefer to explicitly cast void if ignoring the return value.
+
+381:29-381:50
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 73f6419f_0e124be1
+Bytes: 67
+doesn't match the other style in this file: i.e. *buffer, or *size.
+
+381:54-381:55
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 53277df4_0a951b91
+Bytes: 3
+) {
+
+397:55-397:56
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 132185e2_68bdc354
+Bytes: 16
+/*out_channels*/
+
+404:49-404:50
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 132185e2_e8b09379
+Bytes: 14
+/*out_header*/
+
+424:23-424:24
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 132185e2_6894a3c4
+Bytes: 3
+) {
+
+429:22-429:24
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 332a09c0_4c60cf04
+Bytes: 3
+) {
+
+File: media/libstagefright/codecs/mp3dec/test/mp3reader.h
+
+36:22-36:42
+Mon Jun 29 22:15:21 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 53277df4_6d38318d
+Bytes: 36
+inconsistent spacing, *buffer, *size
+
