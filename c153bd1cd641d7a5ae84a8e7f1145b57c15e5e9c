@@ -9,6 +9,14 @@ UUID: 332a09c0_efe375c4
 Bytes: 5
 tests
 
+101:21-101:29
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 332a09c0_efe375c4
+UUID: b367d930_9807b9cf
+Bytes: 4
+Done
+
 File: media/libstagefright/codecs/mp3dec/test/mp3dec_test.cpp
 
 47:5-47:7
@@ -18,12 +26,28 @@ UUID: 53277df4_ad3189a7
 Bytes: 29
 prefer "if (" here and below.
 
+47:5-47:7
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 53277df4_ad3189a7
+UUID: 13b505ac_4e6bc79d
+Bytes: 4
+Done
+
 49:15-49:16
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 332a09c0_8c6be717
 Bytes: 24
 EXIT_FAILURE (and below)
+
+49:15-49:16
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 332a09c0_8c6be717
+UUID: d3ae0d65_2cb21704
+Bytes: 4
+Done
 
 58:4-58:21
 Mon Jun 29 22:15:21 2015 +0000
@@ -32,12 +56,28 @@ UUID: 332a09c0_ef31b5f4
 Bytes: 38
 combine with line 60 to be consistent?
 
+58:4-58:21
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 332a09c0_ef31b5f4
+UUID: b367d930_f814edf9
+Bytes: 4
+Done
+
 81:7-81:14
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 73f6419f_51607404
 Bytes: 41
 prefer to compare with NULL if a pointer.
+
+81:7-81:14
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 73f6419f_51607404
+UUID: 13b505ac_6e700b85
+Bytes: 4
+Done
 
 95:16-95:17
 Mon Jun 29 22:15:21 2015 +0000
@@ -46,12 +86,28 @@ UUID: 93fbb585_d2274440
 Bytes: 12
 EXIT_SUCCESS
 
+95:16-95:17
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 93fbb585_d2274440
+UUID: b3a99960_0bd9411c
+Bytes: 4
+Done
+
 96:0-97:5
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 53277df4_ed870195
 Bytes: 11
 while (1) {
+
+96:0-97:5
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 53277df4_ed870195
+UUID: 13b505ac_0e75cf73
+Bytes: 4
+Done
 
 File: media/libstagefright/codecs/mp3dec/test/mp3reader.cpp
 
@@ -62,12 +118,28 @@ UUID: 132185e2_ebcc0d5d
 Bytes: 75
 please add what you're expecting to be same: version, layer, sampling rate.
 
+191:15-191:21
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 132185e2_ebcc0d5d
+UUID: d3ae0d65_cc96e352
+Bytes: 4
+Done
+
 195:3-195:9
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 332a09c0_6c2e731d
 Bytes: 110
 (void) if you are ignoring the return value; i'd prefer not to fread if the fseek fails - it's not valid data.
+
+195:3-195:9
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 332a09c0_6c2e731d
+UUID: b367d930_d8113108
+Bytes: 4
+Done
 
 210:11-210:17
 Mon Jun 29 22:15:21 2015 +0000
@@ -76,12 +148,28 @@ UUID: 332a09c0_2cdf5b85
 Bytes: 19
 use sourceReadAt()?
 
+210:11-210:17
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 332a09c0_2cdf5b85
+UUID: b3a99960_2bde7d05
+Bytes: 4
+Done
+
 267:16-267:21
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 93fbb585_4f61f12f
 Bytes: 13
 sourceReadAt?
+
+267:16-267:21
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 93fbb585_4f61f12f
+UUID: b3a99960_cbc24928
+Bytes: 4
+Done
 
 274:16-274:49
 Mon Jun 29 22:15:21 2015 +0000
@@ -90,12 +178,28 @@ UUID: 332a09c0_ccdf9fcb
 Bytes: 45
 needed?  or remainingBytes += totalBytesRead.
 
+274:16-274:49
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 332a09c0_ccdf9fcb
+UUID: d3ae0d65_8ca0ebaa
+Bytes: 4
+Done
+
 307:28-307:29
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 53277df4_aa55ef47
 Bytes: 34
 const int FRAME_MATCH_REQUIRED = 3
+
+307:28-307:29
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 53277df4_aa55ef47
+UUID: b3a99960_ebbf05a9
+Bytes: 4
+Done
 
 309:12-309:42
 Mon Jun 29 22:15:21 2015 +0000
@@ -104,12 +208,28 @@ UUID: 332a09c0_8c93e760
 Bytes: 19
 use sourceReadAt()?
 
+309:12-309:42
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 332a09c0_8c93e760
+UUID: 13b505ac_ce5ed7f3
+Bytes: 4
+Done
+
 310:39-310:40
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 132185e2_881d97f0
 Bytes: 11
 sizeof(tmp)
+
+310:39-310:40
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 132185e2_881d97f0
+UUID: b3a99960_8bcc515c
+Bytes: 4
+Done
 
 332:0-333:20
 Mon Jun 29 22:15:21 2015 +0000
@@ -118,12 +238,28 @@ UUID: 332a09c0_ec7703af
 Bytes: 93
 maybe more consistent to do this on line 346?  or simply return true or break in this clause.
 
+332:0-333:20
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 332a09c0_ec7703af
+UUID: f3b791b3_6a679748
+Bytes: 163
+This code was taken from MP3 demux. The variable header is not available outside the loop. I would like to leave this code as is, unless you have strong objection.
+
 339:9-340:9
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 73f6419f_0e3d2bee
 Bytes: 7
 remove?
+
+339:9-340:9
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 73f6419f_0e3d2bee
+UUID: d3ae0d65_ac9da76d
+Bytes: 4
+Done
 
 351:0-351:15
 Mon Jun 29 22:15:21 2015 +0000
@@ -132,12 +268,28 @@ UUID: 53277df4_2d991957
 Bytes: 26
 prefer an initializer list
 
+351:0-351:15
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 53277df4_2d991957
+UUID: f3b791b3_0a5cdb73
+Bytes: 4
+Done
+
 352:0-353:20
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 53277df4_6da3118b
 Bytes: 56
 do these need to be set? they are initialized in init().
+
+352:0-353:20
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 53277df4_6da3118b
+UUID: f3b791b3_2a619f30
+Bytes: 4
+Done
 
 361:6-361:7
 Mon Jun 29 22:15:21 2015 +0000
@@ -146,12 +298,28 @@ UUID: 93fbb585_6f382d8d
 Bytes: 4
 if (
 
+361:6-361:7
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 93fbb585_6f382d8d
+UUID: 13b505ac_4e52e7e3
+Bytes: 4
+Done
+
 364:0-364:5
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 73f6419f_6e002f72
 Bytes: 36
 compound statement block not needed.
+
+364:0-364:5
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 73f6419f_6e002f72
+UUID: 13b505ac_6e57abd2
+Bytes: 4
+Done
 
 367:36-367:37
 Mon Jun 29 22:15:21 2015 +0000
@@ -160,6 +328,14 @@ UUID: 73f6419f_6e84af16
 Bytes: 16
 /*match_header*/
 
+367:36-367:37
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 73f6419f_6e84af16
+UUID: b3a99960_4bf6598c
+Bytes: 4
+Done
+
 368:9-368:11
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -167,12 +343,28 @@ UUID: 73f6419f_2e38e7fd
 Bytes: 5
 ditto
 
+368:9-368:11
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 73f6419f_2e38e7fd
+UUID: 13b505ac_0e4cef45
+Bytes: 4
+Done
+
 374:8-374:19
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 332a09c0_aca6ab46
 Bytes: 106
 what happens if parseHeader() returns false?  prefer to explicitly cast void if ignoring the return value.
+
+374:8-374:19
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 332a09c0_aca6ab46
+UUID: d3ae0d65_6c8faf35
+Bytes: 4
+Done
 
 381:29-381:50
 Mon Jun 29 22:15:21 2015 +0000
@@ -188,12 +380,28 @@ UUID: 53277df4_0a951b91
 Bytes: 3
 ) {
 
+381:29-381:50
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 73f6419f_0e124be1
+UUID: b367d930_383e657c
+Bytes: 4
+Done
+
 397:55-397:56
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 132185e2_68bdc354
 Bytes: 16
 /*out_channels*/
+
+397:55-397:56
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 132185e2_68bdc354
+UUID: f3b791b3_ca556347
+Bytes: 4
+Done
 
 404:49-404:50
 Mon Jun 29 22:15:21 2015 +0000
@@ -202,6 +410,14 @@ UUID: 132185e2_e8b09379
 Bytes: 14
 /*out_header*/
 
+404:49-404:50
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 132185e2_e8b09379
+UUID: 13b505ac_2e51b3da
+Bytes: 4
+Done
+
 424:23-424:24
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -209,12 +425,28 @@ UUID: 132185e2_6894a3c4
 Bytes: 3
 ) {
 
+424:23-424:24
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 132185e2_6894a3c4
+UUID: d3ae0d65_0c84fb14
+Bytes: 4
+Done
+
 429:22-429:24
 Mon Jun 29 22:15:21 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 332a09c0_4c60cf04
 Bytes: 3
 ) {
+
+429:22-429:24
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 332a09c0_4c60cf04
+UUID: b3a99960_6bfb1573
+Bytes: 4
+Done
 
 File: media/libstagefright/codecs/mp3dec/test/mp3reader.h
 
@@ -224,4 +456,12 @@ Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 53277df4_6d38318d
 Bytes: 36
 inconsistent spacing, *buffer, *size
+
+36:22-36:42
+Tue Jun 30 12:51:38 2015 +0000
+Author: Ashok Bhat <1037066@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 53277df4_6d38318d
+UUID: 13b505ac_2e7a1365
+Bytes: 4
+Done
 
