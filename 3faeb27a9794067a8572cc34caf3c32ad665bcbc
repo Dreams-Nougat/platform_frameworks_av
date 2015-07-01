@@ -1,5 +1,18 @@
 Revision: 3faeb27a9794067a8572cc34caf3c32ad665bcbc
 Patch-set: 2
+File: /COMMIT_MSG
+
+14:0-15:2
+Wed Jul 01 05:58:24 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f37f91e4_8ac80b9a
+Bytes: 80
+Before the Change-Id: can you please put on its own line
+
+Bug: 17722767
+
+Thanks!
+
 File: media/libstagefright/codecs/avc/enc/test/h264_enc_test.cpp
 
 32:0-32:19
