@@ -1,0 +1,18 @@
+Revision: 23a33868da09f9b3cdf02a9fd0a06f6d3f1612cb
+Patch-set: 3
+File: media/libstagefright/codecs/mp3dec/test/mp3dec_test.cpp
+
+69:53-69:54
+Wed Jul 01 05:02:02 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5383fd1c_e404564c
+Bytes: 27
+extra space here and below.
+
+70:9-70:28
+Wed Jul 01 05:02:02 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 339be98e_e16fe6a6
+Bytes: 65
+would prefer to release resources here and on early return below.
+
