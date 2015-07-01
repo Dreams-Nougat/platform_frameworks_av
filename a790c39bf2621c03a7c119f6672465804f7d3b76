@@ -13,6 +13,14 @@ Bug: 17722566
 
 Thanks!
 
+14:0-15:1
+Wed Jul 01 14:27:49 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f37f91e4_2ababf0e
+UUID: b3cfd99d_d5e37c52
+Bytes: 4
+Done
+
 File: media/libstagefright/codecs/amrnb/enc/test/amrnb_enc_test.cpp
 
 47:57-47:58
@@ -22,6 +30,14 @@ UUID: f3d8713c_3f56672e
 Bytes: 11
 extra space
 
+47:57-47:58
+Wed Jul 01 14:27:49 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f3d8713c_3f56672e
+UUID: 13bb45f3_b8b23953
+Bytes: 4
+Done
+
 50:28-50:29
 Wed Jul 01 05:09:16 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -29,12 +45,28 @@ UUID: 13d6e50c_a0217ad9
 Bytes: 27
 extra space here and below.
 
+50:28-50:29
+Wed Jul 01 14:27:49 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 13d6e50c_a0217ad9
+UUID: 13a265bf_0062c638
+Bytes: 4
+Done
+
 91:34-91:63
 Wed Jul 01 05:09:16 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: f37f91e4_077b36ec
 Bytes: 51
 does this need to change if kInputSize is in bytes?
+
+91:34-91:63
+Wed Jul 01 14:27:49 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f37f91e4_077b36ec
+UUID: d3ab6d9c_fe0c21ca
+Bytes: 4
+Done
 
 142:39-142:40
 Wed Jul 01 05:09:16 2015 +0000
@@ -50,12 +82,28 @@ UUID: 9370151a_c73f6090
 Bytes: 41
 h is not needed as framenum is not int16.
 
+142:39-142:40
+Wed Jul 01 14:27:49 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d3d44d30_1fca2f3f
+UUID: 53c13d6b_5ad0b56c
+Bytes: 4
+Done
+
 149:18-149:19
 Wed Jul 01 05:09:16 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 33cf6974_a14b3e7c
 Bytes: 21
 prefer lf for double.
+
+149:18-149:19
+Wed Jul 01 14:27:49 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 33cf6974_a14b3e7c
+UUID: b3cfd99d_b52da020
+Bytes: 4
+Done
 
 164:12-164:13
 Wed Jul 01 05:09:16 2015 +0000
@@ -64,12 +112,28 @@ UUID: d3dfed21_5e1ed566
 Bytes: 29
 would prefer {} here and 166.
 
+164:12-164:13
+Wed Jul 01 14:27:49 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d3dfed21_5e1ed566
+UUID: 13bb45f3_38c749a8
+Bytes: 4
+Done
+
 205:73-205:74
 Wed Jul 01 05:09:16 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: f3d8713c_5f5b2b55
 Bytes: 37
 extra space here, line 211, line 224.
+
+205:73-205:74
+Wed Jul 01 14:27:49 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f3d8713c_5f5b2b55
+UUID: 13a265bf_c05bbe7c
+Bytes: 4
+Done
 
 211:27-211:28
 Wed Jul 01 05:09:16 2015 +0000
@@ -78,10 +142,26 @@ UUID: f37f91e4_47852e59
 Bytes: 33
 extra space here and on line 224.
 
+211:27-211:28
+Wed Jul 01 14:27:49 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f37f91e4_47852e59
+UUID: d3ab6d9c_9e987df9
+Bytes: 4
+Done
+
 223:25-223:26
 Wed Jul 01 05:09:16 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: f3d8713c_7f60ef04
 Bytes: 11
 extra space
+
+223:25-223:26
+Wed Jul 01 14:27:49 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f3d8713c_7f60ef04
+UUID: d3ab6d9c_7e8ed1b6
+Bytes: 4
+Done
 
