@@ -1,0 +1,74 @@
+Revision: a790c39bf2621c03a7c119f6672465804f7d3b76
+Patch-set: 2
+File: media/libstagefright/codecs/amrnb/enc/test/amrnb_enc_test.cpp
+
+47:57-47:58
+Wed Jul 01 05:09:16 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f3d8713c_3f56672e
+Bytes: 11
+extra space
+
+50:28-50:29
+Wed Jul 01 05:09:16 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 13d6e50c_a0217ad9
+Bytes: 27
+extra space here and below.
+
+91:34-91:63
+Wed Jul 01 05:09:16 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f37f91e4_077b36ec
+Bytes: 51
+does this need to change if kInputSize is in bytes?
+
+142:39-142:40
+Wed Jul 01 05:09:16 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d3d44d30_1fca2f3f
+Bytes: 12
+\n preferred
+
+142:36-142:37
+Wed Jul 01 05:09:16 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9370151a_c73f6090
+Bytes: 41
+h is not needed as framenum is not int16.
+
+149:18-149:19
+Wed Jul 01 05:09:16 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 33cf6974_a14b3e7c
+Bytes: 21
+prefer lf for double.
+
+164:12-164:13
+Wed Jul 01 05:09:16 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d3dfed21_5e1ed566
+Bytes: 29
+would prefer {} here and 166.
+
+205:73-205:74
+Wed Jul 01 05:09:16 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f3d8713c_5f5b2b55
+Bytes: 37
+extra space here, line 211, line 224.
+
+211:27-211:28
+Wed Jul 01 05:09:16 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f37f91e4_47852e59
+Bytes: 33
+extra space here and on line 224.
+
+223:25-223:26
+Wed Jul 01 05:09:16 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f3d8713c_7f60ef04
+Bytes: 11
+extra space
+
