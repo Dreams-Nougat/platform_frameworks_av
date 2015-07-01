@@ -22,12 +22,28 @@ UUID: b3da7933_dde3cbc4
 Bytes: 9
 duplicate
 
+32:0-32:19
+Wed Jul 01 16:29:08 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b3da7933_dde3cbc4
+UUID: d3ab6d9c_21d0283a
+Bytes: 4
+Done
+
 43:24-43:54
 Wed Jul 01 05:34:07 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 33cf6974_218ace25
 Bytes: 51
 better to compute this with exact width and height?
+
+43:24-43:54
+Wed Jul 01 16:29:08 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 33cf6974_218ace25
+UUID: b3cfd99d_58ed6102
+Bytes: 4
+Done
 
 53:45-53:46
 Wed Jul 01 05:34:07 2015 +0000
@@ -36,12 +52,28 @@ UUID: d3d44d30_76115059
 Bytes: 28
 extra spaces here and below.
 
+53:45-53:46
+Wed Jul 01 16:29:08 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d3d44d30_76115059
+UUID: d3ab6d9c_e1e00011
+Bytes: 4
+Done
+
 108:8-108:17
 Wed Jul 01 05:34:07 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: d3dfed21_7e3d517b
 Bytes: 27
 prefer NULL here and below.
+
+108:8-108:17
+Wed Jul 01 16:29:08 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d3dfed21_7e3d517b
+UUID: b3cfd99d_98153979
+Bytes: 4
+Done
 
 117:8-117:28
 Wed Jul 01 05:34:07 2015 +0000
@@ -50,12 +82,28 @@ UUID: 9370151a_07ec188c
 Bytes: 64
 would be nice to free resources on early return, here and below.
 
+117:8-117:28
+Wed Jul 01 16:29:08 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 9370151a_07ec188c
+UUID: b3cfd99d_b810f588
+Bytes: 4
+Done
+
 151:0-155:5
 Wed Jul 01 05:34:07 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 33cf6974_a17dfe94
 Bytes: 70
 ok, but shouldn't this check be before line 133?  Possibly by line 77?
+
+151:0-155:5
+Wed Jul 01 16:29:08 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 33cf6974_a17dfe94
+UUID: 13bb45f3_dba727c6
+Bytes: 4
+Done
 
 207:22-207:47
 Wed Jul 01 05:34:07 2015 +0000
@@ -64,10 +112,26 @@ UUID: 33cf6974_6184d616
 Bytes: 131
 don't you already check height is a multiple of 16 on line 151? - just make a comment here that width, height are a multiple of 16.
 
+207:22-207:47
+Wed Jul 01 16:29:08 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 33cf6974_6184d616
+UUID: 53c13d6b_fd50a333
+Bytes: 4
+Done
+
 208:22-208:27
 Wed Jul 01 05:34:07 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 33cf6974_8189da2f
 Bytes: 5
 ditto
+
+208:22-208:27
+Wed Jul 01 16:29:08 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 33cf6974_8189da2f
+UUID: 53c13d6b_dd55df21
+Bytes: 4
+Done
 
