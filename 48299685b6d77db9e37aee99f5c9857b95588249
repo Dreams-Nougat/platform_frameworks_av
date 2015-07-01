@@ -1,0 +1,81 @@
+Revision: 48299685b6d77db9e37aee99f5c9857b95588249
+Patch-set: 2
+File: media/libstagefright/codecs/m4v_h263/dec/test/m4v_h263_dec_test.cpp
+
+39:4-39:51
+Wed Jul 01 06:02:44 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d3760d12_466b726b
+Bytes: 23
+prefer to compute this.
+
+49:4-49:26
+Wed Jul 01 06:02:44 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b3da7933_1d5293e2
+Bytes: 52
+should this be set only if the return value is true?
+
+52:4-52:37
+Wed Jul 01 06:02:44 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f3d8713c_3f6667a4
+Bytes: 61
+would it be more efficient to read a block of data at a time?
+
+58:4-58:43
+Wed Jul 01 06:02:44 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 33cf6974_c17a029a
+Bytes: 92
+why read into nextBytes and do a copy from nextBytes into buf?  just read directly into buf.
+
+81:0-84:43
+Wed Jul 01 06:02:44 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d3dfed21_3e6669a4
+Bytes: 53
+maybe do a uint32 compare, and shift the new byte in?
+
+98:5-98:26
+Wed Jul 01 06:02:44 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f3d8713c_7f70ef52
+Bytes: 71
+see the previous function for comments.  would be nice to combine them.
+
+123:12-123:41
+Wed Jul 01 06:02:44 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f3d8713c_9f74d347
+Bytes: 17
+this isn't valid.
+
+168:43-168:60
+Wed Jul 01 06:02:44 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b3da7933_3d574fd3
+Bytes: 21
+can this be computed?
+
+182:15-182:27
+Wed Jul 01 06:02:44 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b3da7933_5d4c1b47
+Bytes: 93
+doesn't free resources; actually there is inconsistent freeing below when exiting on failure.
+
+267:12-267:18
+Wed Jul 01 06:02:44 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 13d6e50c_800c7647
+Bytes: 22
+retVal = EXIT_FAILURE?
+
+270:29-270:51
+Wed Jul 01 06:02:44 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f3d8713c_ff7b1f32
+Bytes: 69
+make this a loop constant of outputBufferSize, perhaps near line 168?
+
