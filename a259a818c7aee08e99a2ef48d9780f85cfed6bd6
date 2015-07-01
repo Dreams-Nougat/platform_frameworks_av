@@ -124,6 +124,14 @@ UUID: d3ae0d65_6cd48fe5
 Bytes: 67
 kInputSize is set to 320, which is 160 samples * 16-bit per sample.
 
+113:39-113:49
+Wed Jul 01 05:09:16 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d3ae0d65_6cd48fe5
+UUID: 53985d8f_854ca495
+Bytes: 27
+please change line 96 then.
+
 114:25-114:35
 Mon Jun 29 22:50:39 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
