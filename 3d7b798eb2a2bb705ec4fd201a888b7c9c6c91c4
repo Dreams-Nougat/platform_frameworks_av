@@ -1,5 +1,18 @@
 Revision: 3d7b798eb2a2bb705ec4fd201a888b7c9c6c91c4
 Patch-set: 4
+File: /COMMIT_MSG
+
+14:0-15:5
+Wed Jul 01 05:57:51 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9370151a_8731e8a7
+Bytes: 80
+Before the Change-Id: can you please put on its own line
+
+Bug: 17722767
+
+Thanks!
+
 File: media/libstagefright/codecs/m4v_h263/enc/test/m4v_h263_enc_test.cpp
 
 32:0-32:19
