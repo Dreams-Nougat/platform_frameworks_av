@@ -13,6 +13,14 @@ Bug: 17722566
 
 Thanks!
 
+14:0-15:1
+Wed Jul 01 15:57:29 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 53985d8f_8511445c
+UUID: d3ab6d9c_5e6c352f
+Bytes: 4
+Done
+
 File: media/libstagefright/codecs/amrwb/test/amrwbdec_test.cpp
 
 50:67-50:69
@@ -22,12 +30,28 @@ UUID: d3d44d30_16d0dc39
 Bytes: 69
 inconsistent spacing, would suggest an additional space after the 60.
 
+50:67-50:69
+Wed Jul 01 15:57:29 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d3d44d30_16d0dc39
+UUID: b3cfd99d_9560642e
+Bytes: 4
+Done
+
 72:7-72:28
 Wed Jul 01 05:12:27 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: d3d44d30_d6e02411
 Bytes: 38
 doesn't close resources here and below
+
+72:7-72:28
+Wed Jul 01 15:57:29 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d3d44d30_d6e02411
+UUID: b3cfd99d_5553ec61
+Bytes: 4
+Done
 
 106:11-106:13
 Wed Jul 01 05:12:27 2015 +0000
@@ -36,12 +60,28 @@ UUID: d3d44d30_b6d5a829
 Bytes: 14
 not consistent
 
+106:11-106:13
+Wed Jul 01 15:57:29 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d3d44d30_b6d5a829
+UUID: d3ab6d9c_3e7969ed
+Bytes: 4
+Done
+
 120:62-120:63
 Wed Jul 01 05:12:27 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: d3d44d30_f6fc4084
 Bytes: 18
 \n here and below.
+
+120:62-120:63
+Wed Jul 01 15:57:29 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d3d44d30_f6fc4084
+UUID: d3ab6d9c_1e76adfb
+Bytes: 4
+Done
 
 128:15-128:28
 Wed Jul 01 05:12:27 2015 +0000
@@ -50,10 +90,26 @@ UUID: 33c4c97c_b9ac7fab
 Bytes: 66
 needed?  suggest /* if (mode < 9) */  if you wish to comment this.
 
+128:15-128:28
+Wed Jul 01 15:57:29 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 33c4c97c_b9ac7fab
+UUID: b3cfd99d_35507053
+Bytes: 4
+Done
+
 160:30-160:31
 Wed Jul 01 05:12:27 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 339be98e_a1dd5e09
 Bytes: 77
 optionally, maybe comment the number of mono samples == number of pcm frames.
+
+160:30-160:31
+Wed Jul 01 15:57:29 2015 +0000
+Author: Ashok Bhat <1074037@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 339be98e_a1dd5e09
+UUID: 53c13d6b_fd066357
+Bytes: 35
+Not sure I understand this comment.
 
