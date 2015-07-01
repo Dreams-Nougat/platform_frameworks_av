@@ -1,5 +1,18 @@
 Revision: 23a33868da09f9b3cdf02a9fd0a06f6d3f1612cb
 Patch-set: 3
+File: /COMMIT_MSG
+
+18:0-18:0
+Wed Jul 01 05:54:25 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 53985d8f_e5013010
+Bytes: 81
+before the Change-Id:, can you please put on its own line
+
+Bug: 17722566
+
+Thanks!
+
 File: media/libstagefright/codecs/mp3dec/test/mp3dec_test.cpp
 
 69:53-69:54
