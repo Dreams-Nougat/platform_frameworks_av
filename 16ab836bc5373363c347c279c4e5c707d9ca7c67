@@ -1,0 +1,11 @@
+Revision: 16ab836bc5373363c347c279c4e5c707d9ca7c67
+Patch-set: 1
+File: media/libstagefright/codecs/amrwbenc/SampleCode/Android.mk
+
+8:21-8:29
+Wed Jul 01 05:34:56 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 73f6419f_b45ee6f1
+Bytes: 5
+tests
+
