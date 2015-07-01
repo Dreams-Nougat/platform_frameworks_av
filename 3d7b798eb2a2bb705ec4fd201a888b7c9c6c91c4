@@ -1,0 +1,60 @@
+Revision: 3d7b798eb2a2bb705ec4fd201a888b7c9c6c91c4
+Patch-set: 4
+File: media/libstagefright/codecs/m4v_h263/enc/test/m4v_h263_enc_test.cpp
+
+32:0-32:19
+Wed Jul 01 05:34:07 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b3da7933_dde3cbc4
+Bytes: 9
+duplicate
+
+43:24-43:54
+Wed Jul 01 05:34:07 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 33cf6974_218ace25
+Bytes: 51
+better to compute this with exact width and height?
+
+53:45-53:46
+Wed Jul 01 05:34:07 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d3d44d30_76115059
+Bytes: 28
+extra spaces here and below.
+
+108:8-108:17
+Wed Jul 01 05:34:07 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d3dfed21_7e3d517b
+Bytes: 27
+prefer NULL here and below.
+
+117:8-117:28
+Wed Jul 01 05:34:07 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9370151a_07ec188c
+Bytes: 64
+would be nice to free resources on early return, here and below.
+
+151:0-155:5
+Wed Jul 01 05:34:07 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 33cf6974_a17dfe94
+Bytes: 70
+ok, but shouldn't this check be before line 133?  Possibly by line 77?
+
+207:22-207:47
+Wed Jul 01 05:34:07 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 33cf6974_6184d616
+Bytes: 131
+don't you already check height is a multiple of 16 on line 151? - just make a comment here that width, height are a multiple of 16.
+
+208:22-208:27
+Wed Jul 01 05:34:07 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 33cf6974_8189da2f
+Bytes: 5
+ditto
+
