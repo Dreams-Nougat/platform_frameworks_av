@@ -1,0 +1,46 @@
+Revision: 04e5215b59bb667609be9966ff2e8dc3426f366a
+Patch-set: 3
+File: media/libstagefright/codecs/amrwb/test/amrwbdec_test.cpp
+
+50:67-50:69
+Wed Jul 01 05:12:27 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d3d44d30_16d0dc39
+Bytes: 69
+inconsistent spacing, would suggest an additional space after the 60.
+
+72:7-72:28
+Wed Jul 01 05:12:27 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d3d44d30_d6e02411
+Bytes: 38
+doesn't close resources here and below
+
+106:11-106:13
+Wed Jul 01 05:12:27 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d3d44d30_b6d5a829
+Bytes: 14
+not consistent
+
+120:62-120:63
+Wed Jul 01 05:12:27 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d3d44d30_f6fc4084
+Bytes: 18
+\n here and below.
+
+128:15-128:28
+Wed Jul 01 05:12:27 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 33c4c97c_b9ac7fab
+Bytes: 66
+needed?  suggest /* if (mode < 9) */  if you wish to comment this.
+
+160:30-160:31
+Wed Jul 01 05:12:27 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 339be98e_a1dd5e09
+Bytes: 77
+optionally, maybe comment the number of mono samples == number of pcm frames.
+
