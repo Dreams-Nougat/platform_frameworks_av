@@ -1,0 +1,102 @@
+Revision: 3faeb27a9794067a8572cc34caf3c32ad665bcbc
+Patch-set: 2
+File: media/libstagefright/codecs/avc/enc/test/h264_enc_test.cpp
+
+32:0-32:19
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b3a6f9d3_5d91db1f
+Bytes: 15
+included twice.
+
+44:51-44:55
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 339be98e_01c52a03
+Bytes: 22
+space before and after
+
+51:11-51:13
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 33c4c97c_99a77b95
+Bytes: 20
+inconsistent spacing
+
+52:0-54:29
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b3a6f9d3_1d8b53f4
+Bytes: 46
+prefer calloc if you are initializing to zero.
+
+58:44-58:46
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 339be98e_a1d31ecb
+Bytes: 20
+inconsistent spacing
+
+65:34-65:43
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 339be98e_41e3329f
+Bytes: 26
+would * 64 * 6 more clear?
+
+88:37-88:42
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b3a6f9d3_7d5ff7ef
+Bytes: 30
+unneeded space here and below.
+
+138:8-138:10
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 33c4c97c_b94b5f2f
+Bytes: 20
+inconsistent spacing
+
+148:8-148:28
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b3a6f9d3_fd166705
+Bytes: 40
+doesn't close resources. here and below.
+
+202:0-207:5
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 33c4c97c_79d947ea
+Bytes: 44
+seems slightly complicated for what it does.
+
+209:4-209:32
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 339be98e_8756ea50
+Bytes: 64
+initialization to NULL not needed,why not combine with line 213?
+
+210:29-210:48
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 33c4c97c_223f1442
+Bytes: 184
+perhaps saving the rounded-up width and height would make the code easier to read.   &~0xf is another alternative way of masking out the lower bits 4 bits, not sure if you prefer that.
+
+276:12-276:41
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 53985d8f_c5acecac
+Bytes: 220
+if you're going to do a memset, you could just create one reference image of vin and copy that over as AVCFrameIO vin = vinReference;.  Then you only need to modify those two member variables that rely on numInputFrames.
+
+277:25-277:50
+Wed Jul 01 05:27:08 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d3760d12_c614c2fa
+Bytes: 49
+could use rounded-up height & width stored above.
+
