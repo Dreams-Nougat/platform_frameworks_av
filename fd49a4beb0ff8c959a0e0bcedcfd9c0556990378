@@ -1,0 +1,18 @@
+Revision: fd49a4beb0ff8c959a0e0bcedcfd9c0556990378
+Patch-set: 5
+File: media/libstagefright/codecs/m4v_h263/enc/test/m4v_h263_enc_test.cpp
+
+111:8-111:10
+Mon Jul 06 20:44:13 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 135425e3_531bb679
+Bytes: 39
+prefer *fpInput here to match and below
+
+215:30-215:36
+Mon Jul 06 20:44:13 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 736d61b3_f689fe76
+Bytes: 5
+width
+
