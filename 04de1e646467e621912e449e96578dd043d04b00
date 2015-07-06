@@ -1,0 +1,16 @@
+Revision: 04de1e646467e621912e449e96578dd043d04b00
+Patch-set: 1
+File: services/camera/libcameraservice/api1/client2/Parameters.cpp
+
+86:0-93:53
+Mon Jul 06 17:02:15 2015 +0000
+Author: Yin-Chia Yeh <1060513@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 33b12958_c0988855
+Bytes: 196
+Can you change this to:
+
+if (display_info.h > display_info.w) {
+   swap display_info's width and height
+}
+max_preview_size = (display_info.w < MAX_PREVIEW_WIDTH) ? display_info : MAX_PREVIEW_SIZE;
+
