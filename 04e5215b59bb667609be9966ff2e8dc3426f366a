@@ -113,3 +113,18 @@ UUID: 53c13d6b_fd066357
 Bytes: 35
 Not sure I understand this comment.
 
+160:30-160:31
+Mon Jul 06 20:52:46 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 53c13d6b_fd066357
+UUID: 534a1d43_95db465f
+Bytes: 22
+see the comment below.
+
+161:43-161:59
+Mon Jul 06 20:52:46 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 736d61b3_b93cd7f2
+Bytes: 87
+in other words, this should be kSamplesPerFrame / kChannels, if you want to be correct.
+
