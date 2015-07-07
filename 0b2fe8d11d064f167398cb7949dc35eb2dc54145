@@ -1,0 +1,18 @@
+Revision: 0b2fe8d11d064f167398cb7949dc35eb2dc54145
+Patch-set: 2
+File: services/camera/libcameraservice/api1/client2/Parameters.cpp
+
+86:8-86:19
+Tue Jul 07 18:10:55 2015 +0000
+Author: Yin-Chia Yeh <1060513@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f356b1ec_e3d85a1b
+Bytes: 76
+I'd prefer this just print a warning and use the default preview size bound.
+
+96
+Tue Jul 07 18:10:55 2015 +0000
+Author: Yin-Chia Yeh <1060513@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f80dae2c_fd0fff36
+Bytes: 60
+Long line. Please break this to 100 characters limit. thanks
+
