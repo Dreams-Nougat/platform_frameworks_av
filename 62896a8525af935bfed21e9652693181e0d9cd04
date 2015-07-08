@@ -11,10 +11,26 @@ Would it make sense to set mSignalledError to true every time we notify OMX_Even
 
 Right now I am only seeing it being set at one source location (where the assert fails when playing 4k clips).
 
+530
+Wed Jul 08 10:43:09 2015 +0000
+Author: Hamsalekha S <1069058@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 138ee5ef_fa8da9b9
+UUID: 53bbfd9f_104c0c46
+Bytes: 4
+Done
+
 608
 Mon Jun 29 18:00:40 2015 +0000
 Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 93a1f560_96579cd1
 Bytes: 120
 Would you please put `if` and the opening `{` on the same line? ... Well I can also do this myself before I cherry pick.
+
+608
+Wed Jul 08 10:43:09 2015 +0000
+Author: Hamsalekha S <1069058@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 93a1f560_96579cd1
+UUID: d3436d7f_c14b047c
+Bytes: 4
+Done
 
