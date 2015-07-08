@@ -1,0 +1,12 @@
+Revision: 75619c4aab08aa28e36c41775474f5880fcbb278
+Patch-set: 3
+File: services/camera/libcameraservice/api1/client2/Parameters.cpp
+
+100:51-100:74
+Wed Jul 08 16:50:44 2015 +0000
+Author: Yin-Chia Yeh <1060513@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 93201584_d86a5d67
+Bytes: 144
+Sorry, one more change needed.
+This cast is unsafe. Layout of DisplayInfo or Size may be modified. Please change this to assign w, h separately.
+
