@@ -1,0 +1,11 @@
+Revision: 7b04e2b909400f9eb9e6b349541cf48e9dc10c7d
+Patch-set: 4
+File: services/camera/libcameraservice/api1/client2/Parameters.cpp
+
+102:13-102:48
+Thu Jul 09 18:51:38 2015 +0000
+Author: Yin-Chia Yeh <1060513@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 387026c3_1f740b78
+Bytes: 134
+Please also check w here. Otherwise we might be picking w and h from different source if the display_info got some weird aspect ratio.
+
