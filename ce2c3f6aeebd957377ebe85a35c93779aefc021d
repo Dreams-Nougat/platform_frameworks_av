@@ -1,0 +1,11 @@
+Revision: ce2c3f6aeebd957377ebe85a35c93779aefc021d
+Patch-set: 4
+File: media/mtp/MtpServer.cpp
+
+217:16-217:25
+Fri Jul 17 10:32:12 2015 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b817b6fa_953d44ef
+Bytes: 30
+perhaps call this savedErrno ?
+
