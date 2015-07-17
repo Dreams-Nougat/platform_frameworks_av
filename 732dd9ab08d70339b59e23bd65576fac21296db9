@@ -1,0 +1,11 @@
+Revision: 732dd9ab08d70339b59e23bd65576fac21296db9
+Patch-set: 3
+File: media/mtp/MtpServer.cpp
+
+217
+Fri Jul 17 10:05:05 2015 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 58aebafa_521ab49c
+Bytes: 100
+does dump() change the state of mResponse (i.e is it const) ? If not, this is a change in semantics.
+
