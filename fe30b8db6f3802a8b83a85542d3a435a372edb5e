@@ -1,0 +1,18 @@
+Revision: fe30b8db6f3802a8b83a85542d3a435a372edb5e
+Patch-set: 6
+File: media/mtp/MtpServer.cpp
+
+791:4-791:58
+Tue Jul 21 09:52:47 2015 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 8d19d274_330b6863
+Bytes: 100
+I'll move this ALOGV below the errno check. the calls to writev can also set errno as a side result.
+
+1039
+Tue Jul 21 09:52:47 2015 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2df2a655_00f5a6bf
+Bytes: 24
+missing space (i'll fix)
+
