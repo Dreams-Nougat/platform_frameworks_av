@@ -1,0 +1,11 @@
+Revision: b282b511bfa2e8a8aaff89c9921334e384c74178
+Patch-set: 1
+File: media/libstagefright/codecs/avc/enc/SoftAVCEncoder.cpp
+
+564:20-570:21
+Tue Jul 28 14:58:19 2015 +0000
+Author: Ronghua Wu <1051820@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2db8e63c_b037989b
+Bytes: 66
+extractGraphicBuffer also checks the len, can we just remove this?
+
