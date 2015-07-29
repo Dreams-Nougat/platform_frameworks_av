@@ -9,3 +9,11 @@ UUID: 2db8e63c_b037989b
 Bytes: 66
 extractGraphicBuffer also checks the len, can we just remove this?
 
+564:20-570:21
+Wed Jul 29 01:55:22 2015 +0000
+Author: Dan Liang <1004496@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2db8e63c_b037989b
+UUID: 2db8e63c_a4a3da84
+Bytes: 43
+Yes, I think so. Let me submit a new patch.
+
