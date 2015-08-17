@@ -1,0 +1,25 @@
+Revision: 9e894a93fe039b21a940557d136ffd16b4a9a61b
+Patch-set: 1
+File: media/libstagefright/foundation/ABitReader.cpp
+
+58
+Mon Aug 17 00:13:39 2015 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 04b861a5_905c75fa
+Bytes: 252
+This is an error prone interface. If ABitReader::getBits() returns false, the value pout is unchanged instead of being reset to a safe value. Instead of safely crashing, the caller would end up using a random value, potentially with disastrous results.
+
+80
+Mon Aug 17 00:13:39 2015 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 04806112_e72b827f
+Bytes: 120
+no return value checking. Instead of safely crashing, attempting to skip more bits than available will silently succeed.
+
+85
+Mon Aug 17 00:13:39 2015 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c471e91c_455e0a4a
+Bytes: 24
+no return value checking
+
