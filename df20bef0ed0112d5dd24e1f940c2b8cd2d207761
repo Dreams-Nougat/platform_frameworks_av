@@ -10,3 +10,11 @@ Bytes: 62
 Should this be be "<" ?
 There's no underflow if they're equal.
 
+604
+Wed Aug 19 17:33:02 2015 +0000
+Author: Robert Shih <1043093@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 243ac5f6_712117a8
+UUID: c4a9e95f_9c67ab45
+Bytes: 83
+Thanks for catching this; this check should indeed be different than the one above.
+
