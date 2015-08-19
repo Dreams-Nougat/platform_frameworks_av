@@ -1,0 +1,12 @@
+Revision: df20bef0ed0112d5dd24e1f940c2b8cd2d207761
+Patch-set: 2
+File: media/libstagefright/id3/ID3.cpp
+
+604:19-604:21
+Wed Aug 19 17:28:13 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 243ac5f6_712117a8
+Bytes: 62
+Should this be be "<" ?
+There's no underflow if they're equal.
+
