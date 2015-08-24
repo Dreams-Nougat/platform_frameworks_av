@@ -1,0 +1,11 @@
+Revision: 7ea582e1dbdd9a88b2105fbe29ed0ec92cbf70c6
+Patch-set: 1
+File: /COMMIT_MSG
+
+21
+Mon Aug 24 16:58:24 2015 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c42ba915_14730d90
+Bytes: 103
+minor, but worth filing an llvm bug? do we know if this is arm-only or a general constant pool problem?
+
