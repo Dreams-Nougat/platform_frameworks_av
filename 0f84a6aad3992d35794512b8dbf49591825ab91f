@@ -1,0 +1,75 @@
+Revision: 0f84a6aad3992d35794512b8dbf49591825ab91f
+Patch-set: 1
+File: media/libstagefright/WAVExtractor.cpp
+
+197:33-197:35
+Wed Aug 26 15:51:35 2015 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c4700952_bb09c938
+Bytes: 32
+Thanks for this fix, good catch!
+
+198:55-198:57
+Wed Aug 26 15:51:35 2015 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 048f817d_4a948949
+Bytes: 608
+Technical Debt, taking action on whole file may be out-of-scope for this CL, but only a few instances of similar issues so worth the plunge IMHO.
+
+nNumChannels is an uint16_t, this means the format statement must be the following to print the correct type (unsigned should never use a %d) and also support 32 and 64 bit on all architectures and libc implementations:
+
+#include <inttypes.h>
+. . .
+    ALOGE("Unsupported number of channels (%" PRIu16 ")", nNumChannels);
+
+These associated changes can result in exceeding the Android Coding Standard 100 character line limit, so wrap appropriately if necessary.
+
+204:49-204:51
+Wed Aug 26 15:51:35 2015 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c42ba915_c99093d4
+Bytes: 5
+ditto
+
+239:63-239:64
+Wed Aug 26 15:51:35 2015 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a47f9520_ad6f4b1e
+Bytes: 19
+...(%" PRIu16 ")...
+
+239:42-239:43
+Wed Aug 26 15:51:35 2015 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 4485f957_df011e7b
+Bytes: 19
+...(%" PRIu16 ")...
+
+250:36-250:37
+Wed Aug 26 15:51:35 2015 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c4700952_db013514
+Bytes: 19
+...=%" PRIu16 " ...
+
+250:53-250:54
+Wed Aug 26 15:51:35 2015 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 248c8586_18f25091
+Bytes: 20
+...=0x%" PRIx32, ...
+
+252:51-252:53
+Wed Aug 26 15:51:35 2015 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 4485f957_3ff14a09
+Bytes: 30
+...0x%" PRIx32, mChannelMask);
+
+258:79-258:80
+Wed Aug 26 15:51:35 2015 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 248c8586_d8e4c8cd
+Bytes: 20
+...(0x%" PRIx32 ")",
+
