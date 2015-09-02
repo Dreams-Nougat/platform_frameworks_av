@@ -1,0 +1,12 @@
+Revision: 559730b020683f98b1cf94d22d37aa0f8ae467c5
+Patch-set: 1
+File: media/libstagefright/Android.mk
+
+122:0-122:41
+Wed Sep 02 17:47:35 2015 +0000
+Author: Chad Brubaker <1022895@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 84f1b2a4_ae45f77f
+Bytes: 118
+This can be on the same line as the above by doing
+LOCAL_SANITIZE := unsigned-integer-overflow signed-integer-overflow
+
