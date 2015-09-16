@@ -1,0 +1,11 @@
+Revision: 79aec1e601170f85406848f637f93b91d1ea6da4
+Patch-set: 1
+File: media/libstagefright/httplive/Android.mk
+
+6:8-6:26
+Wed Sep 16 00:05:55 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 848ff2ac_9b238483
+Bytes: 40
+I think this will cause a compile error.
+
