@@ -9,6 +9,14 @@ UUID: a46156bd_f65bb9e5
 Bytes: 51
 Remove the comma, LOCAL_SANITIZE is space delimited
 
+34:43-34:44
+Wed Sep 16 00:17:51 2015 +0000
+Author: Vishwath Mohan <1068404@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: a46156bd_f65bb9e5
+UUID: c45e4afd_6dd0b3e0
+Bytes: 30
+TIL. Fixing in next patch set.
+
 File: media/libstagefright/httplive/Android.mk
 
 6:8-6:26
