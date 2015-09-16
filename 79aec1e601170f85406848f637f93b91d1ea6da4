@@ -1,5 +1,14 @@
 Revision: 79aec1e601170f85406848f637f93b91d1ea6da4
 Patch-set: 1
+File: media/libstagefright/foundation/Android.mk
+
+34:43-34:44
+Wed Sep 16 00:10:20 2015 +0000
+Author: Chad Brubaker <1022895@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a46156bd_f65bb9e5
+Bytes: 51
+Remove the comma, LOCAL_SANITIZE is space delimited
+
 File: media/libstagefright/httplive/Android.mk
 
 6:8-6:26
@@ -8,4 +17,11 @@ Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 848ff2ac_9b238483
 Bytes: 40
 I think this will cause a compile error.
+
+18:43-18:44
+Wed Sep 16 00:10:20 2015 +0000
+Author: Chad Brubaker <1022895@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a46156bd_36761161
+Bytes: 12
+here as well
 
