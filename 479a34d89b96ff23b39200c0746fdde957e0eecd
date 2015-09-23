@@ -1,0 +1,11 @@
+Revision: 479a34d89b96ff23b39200c0746fdde957e0eecd
+Patch-set: 1
+File: media/libmedia/AudioTrack.cpp
+
+0
+Wed Sep 23 23:34:35 2015 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ee616dea_c98911ad
+Bytes: 213
+Would this be more clear if rewritten to check mServer > newServer and set delta accordingly? (as an uint32_t, since that's what its returned as). That way, you don't have multiple typecasts on multiple variables.
+
