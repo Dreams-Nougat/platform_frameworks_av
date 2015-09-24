@@ -9,3 +9,11 @@ UUID: ee616dea_c98911ad
 Bytes: 213
 Would this be more clear if rewritten to check mServer > newServer and set delta accordingly? (as an uint32_t, since that's what its returned as). That way, you don't have multiple typecasts on multiple variables.
 
+0
+Thu Sep 24 17:55:35 2015 +0000
+Author: Chad Brubaker <1022895@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ee616dea_c98911ad
+UUID: 6e4d7d85_2b365d79
+Bytes: 4
+Done
+
