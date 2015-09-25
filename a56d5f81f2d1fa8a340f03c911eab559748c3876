@@ -1,0 +1,11 @@
+Revision: a56d5f81f2d1fa8a340f03c911eab559748c3876
+Patch-set: 1
+File: media/libstagefright/codecs/amrwb/Android.mk
+
+77
+Fri Sep 25 22:58:48 2015 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2e470569_f1a82bc5
+Bytes: 17
+whitespace at EOL
+
