@@ -1,0 +1,15 @@
+Revision: a1cda5716632e0fe534c99776c2d336be8217458
+Patch-set: 1
+File: /COMMIT_MSG
+
+9
+Mon Sep 28 23:06:36 2015 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ae5bf53d_482509ec
+Bytes: 229
+Please get rid of the "revert revert" and just put:
+
+  Enable integer overflow detection in libmedia
+
+In general, the resubmission of a previously reverted patch should reuse the commit message associated with the original patch.
+
