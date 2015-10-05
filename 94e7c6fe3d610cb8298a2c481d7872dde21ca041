@@ -1,0 +1,13 @@
+Revision: 94e7c6fe3d610cb8298a2c481d7872dde21ca041
+Patch-set: 2
+File: media/libstagefright/codecs/avcdec/SoftAVCDec.cpp
+
+479:8-479:76
+Mon Oct 05 17:19:37 2015 +0000
+Author: Ronghua Wu <1051820@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ab804cc5_d68524cf
+Bytes: 139
+do we want to hard code the size limit here in framework code?
+
+Shouldn't the check be done inside the codec, who actually knows the limit.
+
