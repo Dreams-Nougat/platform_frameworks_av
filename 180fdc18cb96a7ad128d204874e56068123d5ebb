@@ -1,0 +1,11 @@
+Revision: 180fdc18cb96a7ad128d204874e56068123d5ebb
+Patch-set: 3
+File: media/libstagefright/codecs/avcdec/SoftAVCDec.cpp
+
+582:0-591:13
+Tue Oct 06 15:16:53 2015 +0000
+Author: Ronghua Wu <1051820@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 8b92a812_4c52e74a
+Bytes: 29
+can we move this to line 572.
+
