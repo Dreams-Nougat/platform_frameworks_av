@@ -11,3 +11,11 @@ do we want to hard code the size limit here in framework code?
 
 Shouldn't the check be done inside the codec, who actually knows the limit.
 
+479:8-479:76
+Tue Oct 06 02:59:37 2015 +0000
+Author: Harish Mahendrakar <1047003@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ab804cc5_d68524cf
+UUID: 55884e36_30e5c64a
+Bytes: 116
+Sure. Will modify this patch and upload a corresponding patch to libavc to return error for unsupported resolutions.
+
