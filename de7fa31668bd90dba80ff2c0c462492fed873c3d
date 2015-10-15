@@ -1,0 +1,14 @@
+Revision: de7fa31668bd90dba80ff2c0c462492fed873c3d
+Patch-set: 1
+File: media/libeffects/preprocessing/PreProcessing.cpp
+
+1795:27-1795:47
+Thu Oct 15 22:45:35 2015 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 39611e20_b9ba7745
+Bytes: 259
+does sample samples_per_channel_ mean the same thing as _payloadDataLengthInSamples?
+The name seems to indicate differently.
+It seems to be the number of multi channel samples that is 
+session->apmFrameCount should not be multiplied by session->inChannelCount
+
