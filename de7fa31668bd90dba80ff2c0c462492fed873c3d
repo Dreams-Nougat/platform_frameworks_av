@@ -12,3 +12,29 @@ The name seems to indicate differently.
 It seems to be the number of multi channel samples that is 
 session->apmFrameCount should not be multiplied by session->inChannelCount
 
+1795:27-1795:47
+Thu Oct 15 23:56:58 2015 +0000
+Author: Chih-hung Hsieh <1052399@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 39611e20_b9ba7745
+UUID: 99f12aa5_c27132cb
+Bytes: 617
+I have not looked into details of this PreProcessing.cpp file,
+but the comment for class AudioFrame in
+webrtc/src/modules/interface/module_common_types.h
+looks like so.
+
+The older version says:
+
+ * - _payloadDataLengthInSamples is the number of
+ *   samples per channel. Therefore, the total
+ *   number of samples in _payloadData is
+ *   (_payloadDataLengthInSamples * _audioChannel).
+
+and the newer version says:
+
+ * - The total number of samples in |data_| is
+ *   samples_per_channel_ * num_channels_
+
+The other code in module_common_types.h also look like
+a simple rename of data members in the AudioFrame class.
+
