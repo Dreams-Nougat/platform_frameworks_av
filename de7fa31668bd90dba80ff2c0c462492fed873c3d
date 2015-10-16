@@ -38,3 +38,14 @@ and the newer version says:
 The other code in module_common_types.h also look like
 a simple rename of data members in the AudioFrame class.
 
+1795:27-1795:47
+Fri Oct 16 01:38:39 2015 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 99f12aa5_c27132cb
+UUID: b9550e3b_4be9c5af
+Bytes: 161
+If the old comment was correct then the code here is broken.
+We never had a problem maybe because it was only used with mono content?
+
+Andrew, what do you think?
+
