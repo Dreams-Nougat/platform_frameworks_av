@@ -15,3 +15,11 @@ if ((data_size - 8) / 4 < mNumChunkOffset) {..}
 
 (data_size is already guaranteed to be > 8 by line 179)
 
+197
+Fri Oct 16 22:02:20 2015 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 79fd56bf_c8162fd1
+UUID: 79d47637_939d04a6
+Bytes: 79
+I do believe you can. I'll fix the variable name issue too, and simplify these.
+
