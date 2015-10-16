@@ -1,0 +1,11 @@
+Revision: 3b15ae2ec229b51397dcbf1cb183bdc7f25ae2c4
+Patch-set: 2
+File: media/libstagefright/SampleTable.cpp
+
+250
+Fri Oct 16 20:06:18 2015 +0000
+Author: Michał Piechowski <1021920@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f936a66e_01a66ae7
+Bytes: 11
+white space
+
