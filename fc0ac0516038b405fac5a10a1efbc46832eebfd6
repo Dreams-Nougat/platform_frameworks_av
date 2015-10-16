@@ -1,0 +1,17 @@
+Revision: fc0ac0516038b405fac5a10a1efbc46832eebfd6
+Patch-set: 3
+File: media/libstagefright/SampleTable.cpp
+
+197
+Fri Oct 16 21:15:30 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 79fd56bf_c8162fd1
+Bytes: 125
+couldn't you do:
+
+if ((data_size - 8) / 4 < mNumChunkOffset) {..}
+
+?
+
+(data_size is already guaranteed to be > 8 by line 179)
+
