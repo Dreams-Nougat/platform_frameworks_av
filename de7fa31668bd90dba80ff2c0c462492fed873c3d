@@ -2,6 +2,13 @@ Revision: de7fa31668bd90dba80ff2c0c462492fed873c3d
 Patch-set: 1
 File: media/libeffects/preprocessing/PreProcessing.cpp
 
+1283:28-1283:48
+Fri Oct 16 16:25:57 2015 +0000
+Author: Andrew MacDonald <1084298@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 190ffab2_6a59776e
+Bytes: 10
+Same here.
+
 1795:27-1795:47
 Thu Oct 15 22:45:35 2015 +0000
 Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -48,4 +55,19 @@ If the old comment was correct then the code here is broken.
 We never had a problem maybe because it was only used with mono content?
 
 Andrew, what do you think?
+
+1795:27-1795:47
+Fri Oct 16 16:25:57 2015 +0000
+Author: Andrew MacDonald <1084298@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b9550e3b_4be9c5af
+UUID: b90b4ea8_c71e1eaa
+Bytes: 395
+Yeah we changed the name of that member (and others) a long time ago, because they were very confusing. I agree with your assessment Eric.
+
+This should now be
+session->revFrame->samples_per_channel_ = session->apmFrameCount;
+
+Is it possible to unit test this?
+
+(BTW we're adopting the use of num_frames instead of samples_per_channel in new code which appears to align with the convention here.)
 
