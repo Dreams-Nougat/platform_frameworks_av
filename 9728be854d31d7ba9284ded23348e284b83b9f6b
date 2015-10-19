@@ -1,0 +1,18 @@
+Revision: 9728be854d31d7ba9284ded23348e284b83b9f6b
+Patch-set: 2
+File: media/libstagefright/SkipCutBuffer.cpp
+
+27
+Mon Oct 19 15:00:51 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 79fd56bf_7954af8d
+Bytes: 159
+Making the arguments unsigned and moving the calculations from OMXCodec and ACodec to here fixes the issue with compiler overflow checks firing before our own.
+
+29:15-29:24
+Mon Oct 19 15:00:51 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b9ec2e3d_9f4a733f
+Bytes: 226
+Values chosen so that they cover any reasonable input file (and even most unreasonable ones), while not allowing overflows. Purposely not defined as constants because that gives them an air of authority they don't really have.
+

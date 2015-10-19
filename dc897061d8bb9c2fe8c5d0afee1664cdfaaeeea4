@@ -1,0 +1,29 @@
+Revision: dc897061d8bb9c2fe8c5d0afee1664cdfaaeeea4
+Base-for-patch-set: 2
+File: media/libstagefright/ACodec.cpp
+
+4450:32-4450:33
+Mon Oct 19 15:00:51 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d90802ae_770efa7a
+Bytes: 62
+Previous overflow for one of the security test files was here.
+
+File: media/libstagefright/OMXCodec.cpp
+
+1761:78-1761:79
+Mon Oct 19 15:00:51 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 79fd56bf_993e4b53
+Bytes: 62
+Previous overflow for one of the security test files was here.
+
+File: media/libstagefright/SkipCutBuffer.cpp
+
+29:24-29:25
+Mon Oct 19 15:00:51 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b90b4ea8_7b2dc72f
+Bytes: 47
+overflowed value was checked here, so it was OK
+
