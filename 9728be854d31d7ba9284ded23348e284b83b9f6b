@@ -9,12 +9,28 @@ UUID: 79fd56bf_7440366c
 Bytes: 55
 now 'skip' and 'cut' become the number of frames to ...
 
+32:7-33:55
+Mon Oct 19 16:56:34 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 79fd56bf_7440366c
+UUID: d90802ae_57b8964d
+Bytes: 36
+ah yes, I need to update the comment
+
 35:50-35:63
 Mon Oct 19 16:52:20 2015 +0000
 Author: Wei Jia <1060405@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 79d47637_bc6fad2a
 Bytes: 114
 Do we want to make this more generic, e.g., change num16Channels to 2 arguments as numChannels and bytesPerSample?
+
+35:50-35:63
+Mon Oct 19 16:56:34 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 79d47637_bc6fad2a
+UUID: 79fd56bf_747276d0
+Bytes: 102
+I thought about that, but we really only support 16 bit at this point, so didn't want to go overboard.
 
 File: media/libstagefright/SkipCutBuffer.cpp
 
@@ -38,4 +54,12 @@ Author: Wei Jia <1060405@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 39de7e5b_5f0b1b69
 Bytes: 145
 Not sure about the newly added restrictions. Is it good to just check possible integer overflow for line 34 and 35 and keep previous restriction?
+
+29:8-29:68
+Mon Oct 19 16:56:34 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 39de7e5b_5f0b1b69
+UUID: 39de7e5b_ff44078d
+Bytes: 109
+I prefer to add the extra restriction. If we get a stream with > 64 channels, something is very likely wrong.
 
