@@ -1,5 +1,21 @@
 Revision: 9728be854d31d7ba9284ded23348e284b83b9f6b
 Patch-set: 2
+File: include/media/stagefright/SkipCutBuffer.h
+
+32:7-33:55
+Mon Oct 19 16:52:20 2015 +0000
+Author: Wei Jia <1060405@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 79fd56bf_7440366c
+Bytes: 55
+now 'skip' and 'cut' become the number of frames to ...
+
+35:50-35:63
+Mon Oct 19 16:52:20 2015 +0000
+Author: Wei Jia <1060405@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 79d47637_bc6fad2a
+Bytes: 114
+Do we want to make this more generic, e.g., change num16Channels to 2 arguments as numChannels and bytesPerSample?
+
 File: media/libstagefright/SkipCutBuffer.cpp
 
 27
@@ -15,4 +31,11 @@ Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: b9ec2e3d_9f4a733f
 Bytes: 226
 Values chosen so that they cover any reasonable input file (and even most unreasonable ones), while not allowing overflows. Purposely not defined as constants because that gives them an air of authority they don't really have.
+
+29:8-29:68
+Mon Oct 19 16:52:20 2015 +0000
+Author: Wei Jia <1060405@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 39de7e5b_5f0b1b69
+Bytes: 145
+Not sure about the newly added restrictions. Is it good to just check possible integer overflow for line 34 and 35 and keep previous restriction?
 
