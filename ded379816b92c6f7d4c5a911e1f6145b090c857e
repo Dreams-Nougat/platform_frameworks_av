@@ -1,0 +1,11 @@
+Revision: ded379816b92c6f7d4c5a911e1f6145b090c857e
+Patch-set: 1
+File: media/libstagefright/SkipCutBuffer.cpp
+
+52:33-52:36
+Mon Oct 19 21:48:01 2015 +0000
+Author: Stephen Hines <1010056@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: b9f26ee4_49b925b0
+Bytes: 59
+mCapacity is an int32t, so it is signed and not size_t-ish.
+
