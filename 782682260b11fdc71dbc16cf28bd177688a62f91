@@ -1,0 +1,11 @@
+Revision: 782682260b11fdc71dbc16cf28bd177688a62f91
+Patch-set: 3
+File: media/libstagefright/SkipCutBuffer.cpp
+
+39:26-39:35
+Mon Oct 19 18:05:58 2015 +0000
+Author: Wei Jia <1060405@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 39de7e5b_5f143b0c
+Bytes: 31
+need check frameSize against 0.
+
