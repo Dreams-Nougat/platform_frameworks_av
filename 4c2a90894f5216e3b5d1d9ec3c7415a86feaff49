@@ -1,0 +1,11 @@
+Revision: 4c2a90894f5216e3b5d1d9ec3c7415a86feaff49
+Patch-set: 1
+File: services/camera/libcameraservice/CameraService.cpp
+
+311
+Mon Oct 19 18:22:11 2015 +0000
+Author: Eino-Ville Talvala <1010050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 99020a8c_da79554f
+Bytes: 98
+minor: sufficient to compare nullptr directly against clientToDisconnect, don't need to call get()
+
