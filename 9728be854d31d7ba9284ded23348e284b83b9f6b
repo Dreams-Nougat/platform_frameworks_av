@@ -63,3 +63,11 @@ UUID: 39de7e5b_ff44078d
 Bytes: 109
 I prefer to add the extra restriction. If we get a stream with > 64 channels, something is very likely wrong.
 
+29:8-29:68
+Mon Oct 19 16:59:19 2015 +0000
+Author: Wei Jia <1060405@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 39de7e5b_ff44078d
+UUID: f91146d4_de4ee133
+Bytes: 81
+how about "skip > 64 * 1024"? It seems EncoderDelay could be that kind of number?
+
