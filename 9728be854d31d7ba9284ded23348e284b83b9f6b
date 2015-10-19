@@ -71,3 +71,11 @@ UUID: f91146d4_de4ee133
 Bytes: 81
 how about "skip > 64 * 1024"? It seems EncoderDelay could be that kind of number?
 
+29:8-29:68
+Mon Oct 19 17:33:25 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f91146d4_de4ee133
+UUID: f91146d4_1ed8f976
+Bytes: 192
+The delay is between 1-2 encoding units, so no more than 4096 for AAC and no more than 2304 for mp3 (for mp3/lame tags, the value is actually encoded in 12 bits). so 64KB seems quite generous.
+
