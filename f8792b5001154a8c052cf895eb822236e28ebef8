@@ -1,0 +1,12 @@
+Revision: f8792b5001154a8c052cf895eb822236e28ebef8
+Patch-set: 5
+File: media/libstagefright/rtsp/APacketSource.cpp
+
+421:40-421:41
+Fri Oct 23 16:15:14 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: f66f95e4_732d40cb
+Bytes: 173
+Does this need to be -1?
+(java MediaPlayer.getDuration() is documented to return -1 for unknown duration, but I'm not sure if any translation is done between here and there)
+
