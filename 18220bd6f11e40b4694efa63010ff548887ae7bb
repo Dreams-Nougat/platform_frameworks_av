@@ -1,0 +1,19 @@
+Revision: 18220bd6f11e40b4694efa63010ff548887ae7bb
+Patch-set: 1
+File: media/libmedia/AudioTrack.cpp
+
+831
+Tue Oct 27 23:32:54 2015 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 36f76de3_c6e744c3
+Bytes: 258
+I don't think this is the same. AUDIO_RESAMPLER_UP_RATIO_MAX is 65536. If effectiveRate=1 and mSampleRate=65537, the two statements work out to be:
+
+  if ((1*65536) < 65537)
+
+vs
+
+  if (1 < (65537 / 65536))
+
+The first one is true, and the second one is false.
+
