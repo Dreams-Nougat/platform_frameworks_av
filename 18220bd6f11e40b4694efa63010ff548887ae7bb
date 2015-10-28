@@ -2,6 +2,13 @@ Revision: 18220bd6f11e40b4694efa63010ff548887ae7bb
 Patch-set: 1
 File: media/libmedia/AudioTrack.cpp
 
+825:24-825:38
+Wed Oct 28 00:05:25 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 964739ec_4180f4c1
+Bytes: 65
+this should be fixed, too, although much less likely to overflow.
+
 831
 Tue Oct 27 23:32:54 2015 +0000
 Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -24,4 +31,12 @@ Parent: 36f76de3_c6e744c3
 UUID: d63d314e_e6103a69
 Bytes: 27
 Why not do the * in 64-bit?
+
+831
+Wed Oct 28 00:05:25 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d63d314e_e6103a69
+UUID: d63d314e_86228eb7
+Bytes: 42
++1, perhaps unsigned long long or uint64_t
 
