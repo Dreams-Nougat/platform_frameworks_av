@@ -9,6 +9,14 @@ UUID: 964739ec_4180f4c1
 Bytes: 65
 this should be fixed, too, although much less likely to overflow.
 
+825:24-825:38
+Wed Oct 28 17:18:00 2015 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 964739ec_4180f4c1
+UUID: 769c85d8_ed2665ee
+Bytes: 4
+Done
+
 831
 Tue Oct 27 23:32:54 2015 +0000
 Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -39,4 +47,12 @@ Parent: d63d314e_e6103a69
 UUID: d63d314e_86228eb7
 Bytes: 42
 +1, perhaps unsigned long long or uint64_t
+
+831
+Wed Oct 28 17:18:00 2015 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d63d314e_e6103a69
+UUID: 769c85d8_cd2ba9b4
+Bytes: 4
+Done
 
