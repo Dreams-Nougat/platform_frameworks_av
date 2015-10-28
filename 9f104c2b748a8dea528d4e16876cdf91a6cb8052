@@ -47,3 +47,13 @@ UUID: f6d955b5_4c684f6d
 Bytes: 85
 Removing the parentheses here triggers a sanitize abort. Leaving them as is does not.
 
+831:8-831:77
+Wed Oct 28 19:09:11 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f6d955b5_4c684f6d
+UUID: 56ab01f0_2f0fc575
+Bytes: 326
+seems like a bug in the sanitizer. as i understand it, the operation by removing the parentheses should be equivalent to both arguments converted to uint64_t and the multiplication operation performed (which should not overflow).
+
+Does it overflow when both effectiveRate and AUDIO_RESAMPLER_UP_RATIO_MAX are cast to uint64_t?
+
