@@ -16,6 +16,22 @@ UUID: 96cad9dc_a6cf6617
 Bytes: 78
 (uint64_t) cast must be inside the left paren, or simply drop the parenthesis.
 
+825:44-825:45
+Wed Oct 28 17:18:00 2015 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 96cad9dc_a6cf6617
+UUID: 56ab01f0_2cfcf368
+Bytes: 14
+oops, will fix
+
+825:8-825:18
+Wed Oct 28 17:18:00 2015 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: f6d955b5_293b4db4
+UUID: 769c85d8_cdc8c93f
+Bytes: 114
+This gave a type mismatch compile error on the new version of clang when I left it as 32 bit. I also like clarity.
+
 831:8-831:77
 Wed Oct 28 16:53:46 2015 +0000
 Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
