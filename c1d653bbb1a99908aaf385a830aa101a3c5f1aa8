@@ -16,3 +16,11 @@ UUID: 769c85d8_fcdc55f9
 Bytes: 147
 similarly here. note that vsyncsForLastFrame can only be ULONG_MAX if nextVsyncTime has already overflown, and we measured vsyncperiod to be 1nsec.
 
+471
+Thu Oct 29 15:57:47 2015 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 769c85d8_fcdc55f9
+UUID: f6d955b5_bef12dc9
+Bytes: 340
+Both of these could be optimized further, I'm sure. My main concern was eliminating the overflow condition that was triggering the SIGABRT. Since these just are used for logging purposes, I figured the changes with the least impact would be those that limited the FRAME_VSYNCS value, as they would be invalid after an over/underflow anyway.
+
