@@ -1,0 +1,18 @@
+Revision: c1d653bbb1a99908aaf385a830aa101a3c5f1aa8
+Patch-set: 1
+File: media/libstagefright/VideoFrameScheduler.cpp
+
+463:20-463:38
+Thu Oct 29 05:20:25 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7621e584_2e0a4bf4
+Bytes: 336
+this does not really make sense as written here, as if vsyncsForLastFrame was already 0, we should instead skip the whole VSYNC correction. BTW, it is really hard for me to imagine how mTimeCorrection could be positive if vsyncsForLastFrame was in fact 0.  The better fix would have been to add && vsyncsForLastFrame > 0 after line 457.
+
+471
+Thu Oct 29 05:20:25 2015 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 769c85d8_fcdc55f9
+Bytes: 147
+similarly here. note that vsyncsForLastFrame can only be ULONG_MAX if nextVsyncTime has already overflown, and we measured vsyncperiod to be 1nsec.
+
