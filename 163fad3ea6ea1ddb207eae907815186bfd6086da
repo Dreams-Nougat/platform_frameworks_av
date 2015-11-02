@@ -1,0 +1,18 @@
+Revision: 163fad3ea6ea1ddb207eae907815186bfd6086da
+Patch-set: 1
+File: services/audiopolicy/common/managerdefinitions/src/StreamDescriptor.cpp
+
+38:48-38:49
+Mon Nov 02 17:26:54 2015 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 161fca56_1164db24
+Bytes: 9
+mIndexMax
+
+41:44-41:45
+Mon Nov 02 17:26:54 2015 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5625c29e_4be185be
+Bytes: 45
+more clear if we use mIndexMax instead of one
+
