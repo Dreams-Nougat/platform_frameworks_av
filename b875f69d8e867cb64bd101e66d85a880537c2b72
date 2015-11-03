@@ -9,3 +9,11 @@ UUID: d6bb729e_2ab43fa8
 Bytes: 29
 ... This function is scary...
 
+251
+Tue Nov 03 21:01:58 2015 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d6bb729e_2ab43fa8
+UUID: 16d0aae3_6cfa5be2
+Bytes: 369
+I especially like the negative array index on line 283. The only conditions I actually was able to trigger however where the overflow checks in 304-336. Also, the lg variable is constrained to constant values -does not appear to be directly set from user provided input. A rewrite would be better, but disabling for this function at least protects the rest of the codec
+
