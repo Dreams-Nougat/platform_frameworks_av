@@ -1,0 +1,11 @@
+Revision: b875f69d8e867cb64bd101e66d85a880537c2b72
+Patch-set: 1
+File: media/libstagefright/codecs/amrnb/common/src/syn_filt.cpp
+
+251
+Tue Nov 03 20:51:23 2015 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: d6bb729e_2ab43fa8
+Bytes: 29
+... This function is scary...
+
