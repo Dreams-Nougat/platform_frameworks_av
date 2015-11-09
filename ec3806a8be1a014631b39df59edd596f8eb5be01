@@ -10,3 +10,11 @@ Bytes: 101
 "unsigned-integer-overflow"
 This way we get to keep signed overflow, shift and divide-by-zero checks.
 
+2195
+Mon Nov 09 21:01:43 2015 +0000
+Author: Chad Brubaker <1022895@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 760646d1_f715a0ca
+UUID: b60c3eef_f9b9173c
+Bytes: 99
+Is that new? I could have sworn when I was first turning these on that integer was the only option.
+
