@@ -18,3 +18,11 @@ UUID: b60c3eef_f9b9173c
 Bytes: 99
 Is that new? I could have sworn when I was first turning these on that integer was the only option.
 
+2195
+Mon Nov 09 21:03:25 2015 +0000
+Author: Evgenii Stepanov <1005967@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: b60c3eef_f9b9173c
+UUID: d6ae12f9_d26224bb
+Bytes: 116
+Not really. "integer" is an alias for these four, and the attribute takes the same set of names as -fsanitize= flag.
+
