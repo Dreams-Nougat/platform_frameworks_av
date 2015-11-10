@@ -1,0 +1,15 @@
+Revision: ffd7950633edeb8e990770e4c8abb81bdcaa6f32
+Patch-set: 4
+File: media/libstagefright/SampleTable.cpp
+
+249
+Tue Nov 10 17:04:07 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7689e6a7_223170c8
+Bytes: 173
+This broke playback of some legitimate files.
+Based on the calculation at line 254, the check should be:
+(SIZE_MAX - 8 - (i * 12) < mSampleToChunkOffset)
+
+I'll upload a fix.
+
