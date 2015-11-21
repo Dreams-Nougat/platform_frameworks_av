@@ -1,0 +1,11 @@
+Revision: 811fc4e67dabc2c33f62a68077b3d8d9b15af2f9
+Patch-set: 1
+File: media/libmediaplayerservice/nuplayer/NuPlayerCCDecoder.cpp
+
+238:35-238:51
+Sat Nov 21 21:43:53 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: db271bf3_53fb4ea1
+Bytes: 57
+should check first that (payload_size * 8) won't overflow
+
