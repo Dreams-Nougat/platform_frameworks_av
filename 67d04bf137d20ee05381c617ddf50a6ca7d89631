@@ -1,0 +1,13 @@
+Revision: 67d04bf137d20ee05381c617ddf50a6ca7d89631
+Patch-set: 1
+File: media/libeffects/preprocessing/Android.mk
+
+30:6-30:27
+Tue Nov 24 23:03:42 2015 +0000
+Author: Chih-hung Hsieh <1052399@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9bbbe3f1_3b5d03c6
+Bytes: 286
+Referencing variables defined in other project is unusual.
+It might work when build all projects, but won't work when "mm" inside this directory.
+I tried to add only -DWEBRTC_POSIX to LOCAL_CFLAGS and that worked for me. Could you use it and if any other required flags explicitly here?
+
