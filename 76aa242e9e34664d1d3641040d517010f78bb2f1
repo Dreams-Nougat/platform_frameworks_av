@@ -1,0 +1,11 @@
+Revision: 76aa242e9e34664d1d3641040d517010f78bb2f1
+Patch-set: 1
+File: services/audioflinger/Tracks.cpp
+
+438:0-438:73
+Tue Nov 24 19:53:45 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: bbc4277e_e21b5c4e
+Bytes: 120
+Right now framesReadyIsCalledByMultipleThreads is never set, as it is commented out here.  shouldn't this fix the issue?
+
