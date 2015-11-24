@@ -9,3 +9,11 @@ UUID: bbc4277e_e21b5c4e
 Bytes: 120
 Right now framesReadyIsCalledByMultipleThreads is never set, as it is commented out here.  shouldn't this fix the issue?
 
+438:0-438:73
+Tue Nov 24 20:44:56 2015 +0000
+Author: Sumit Bhattacharya <1057645@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: bbc4277e_e21b5c4e
+UUID: 5bac0bb5_5e9b15e4
+Bytes: 116
+Yes this will fix this issue. This change was not part of our internal android code-base. Will cherry-pick it there.
+
