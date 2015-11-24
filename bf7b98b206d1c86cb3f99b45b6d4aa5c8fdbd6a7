@@ -1,0 +1,11 @@
+Revision: bf7b98b206d1c86cb3f99b45b6d4aa5c8fdbd6a7
+Patch-set: 1
+File: media/libmediaplayerservice/nuplayer/NuPlayerRenderer.cpp
+
+1147:21-1147:27
+Tue Nov 24 21:10:01 2015 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1b153384_4bd6f6ea
+Bytes: 38
+is this guaranteed to be set properly?
+
