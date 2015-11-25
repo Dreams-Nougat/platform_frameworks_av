@@ -1,0 +1,19 @@
+Revision: 2c12c2d5f2bf461a70a0612a7cd7f38b2c50d48d
+Patch-set: 2
+File: media/libeffects/preprocessing/PreProcessing.cpp
+
+926:27-926:37
+Wed Nov 25 22:35:43 2015 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5b1b2bb8_1aac3ff2
+Bytes: 65
+Initialize() can be called several time on the same APM instance?
+
+1044:52-1044:63
+Wed Nov 25 22:35:43 2015 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: fbb05f0b_da0e047c
+Bytes: 198
+the reverse port (echo reference) channel config is not necessarily the same as the forward port config.
+We should apply session->inChannelCount and session->outChannelCount here for forward channel
+
