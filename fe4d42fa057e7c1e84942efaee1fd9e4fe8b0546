@@ -1,0 +1,13 @@
+Revision: fe4d42fa057e7c1e84942efaee1fd9e4fe8b0546
+Patch-set: 3
+File: media/mediaserver/main_mediaserver.cpp
+
+41:0-41:18
+Mon Nov 30 21:00:33 2015 +0000
+Author: Todd Poynor <1004277@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: db0f1bb0_0d8b3541
+Bytes: 261
+Should probably replace with an add of $(TOP)/external/icu/android_utils/include to LOCAL_C_INCLUDES in Android.mk -- if so, this should actually be done regardless of the outcome of this patch.
+
+(This is my fault for hacking around this in a prototype, sorry.)
+
