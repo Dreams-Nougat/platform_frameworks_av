@@ -17,6 +17,14 @@ UUID: 5b1deb19_a58c881d
 Bytes: 101
 that's mNumSampleToChunkOffsets (which is a uint32_t), not mSampleToChunkOffset (which is an off64_t)
 
+232
+Wed Dec 02 23:28:25 2015 +0000
+Author: Mok Keith <1061414@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 5b1deb19_a58c881d
+UUID: fba69f26_65144a2a
+Bytes: 31
+my bad, it is from data_offset.
+
 249:22-249:32
 Wed Dec 02 23:09:57 2015 +0000
 Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -24,4 +32,12 @@ UUID: 5b1deb19_254b58ab
 Bytes: 107
 I *think* this might impact the ability to read 4GB+ files.
 Seems like INT64_MAX would be more appropriate?
+
+249:22-249:32
+Wed Dec 02 23:28:25 2015 +0000
+Author: Mok Keith <1061414@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 5b1deb19_254b58ab
+UUID: 5ba24b12_1894cab5
+Bytes: 4
+Done
 
