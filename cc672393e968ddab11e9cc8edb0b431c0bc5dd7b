@@ -1,0 +1,11 @@
+Revision: cc672393e968ddab11e9cc8edb0b431c0bc5dd7b
+Patch-set: 1
+File: services/audiopolicy/engineconfigurable/src/Stream.cpp
+
+132:17-132:19
+Wed Dec 02 16:18:11 2015 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1bac5306_d5b20ebe
+Bytes: 30
+same problem here: return 0.0f
+
