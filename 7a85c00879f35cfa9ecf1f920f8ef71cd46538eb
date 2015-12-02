@@ -2,6 +2,13 @@ Revision: 7a85c00879f35cfa9ecf1f920f8ef71cd46538eb
 Patch-set: 1
 File: media/libstagefright/SampleTable.cpp
 
+232
+Wed Dec 02 23:13:05 2015 +0000
+Author: Mok Keith <1061414@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: dbae3bf9_813a04a1
+Bytes: 73
+See here mNumSampleToChunkOffsets read from file is maximum 4 bytes only.
+
 249:22-249:32
 Wed Dec 02 23:09:57 2015 +0000
 Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
