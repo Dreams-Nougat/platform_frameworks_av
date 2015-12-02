@@ -9,6 +9,14 @@ UUID: dbae3bf9_813a04a1
 Bytes: 73
 See here mNumSampleToChunkOffsets read from file is maximum 4 bytes only.
 
+232
+Wed Dec 02 23:18:53 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: dbae3bf9_813a04a1
+UUID: 5b1deb19_a58c881d
+Bytes: 101
+that's mNumSampleToChunkOffsets (which is a uint32_t), not mSampleToChunkOffset (which is an off64_t)
+
 249:22-249:32
 Wed Dec 02 23:09:57 2015 +0000
 Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
