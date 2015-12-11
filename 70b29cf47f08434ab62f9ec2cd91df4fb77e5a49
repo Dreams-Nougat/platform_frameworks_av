@@ -42,3 +42,11 @@ UUID: 25ead6c4_3c80311b
 Bytes: 81
 But that include in main_mediaserver.cpp isn't new. Did it never build on brillo?
 
+56
+Fri Dec 11 23:52:42 2015 +0000
+Author: Todd Poynor <1004277@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 25ead6c4_3c80311b
+UUID: 05e5d2f2_3e1ca5b4
+Bytes: 224
+When libicuuc is taken out of LOCAL_SHARED_LIBRARIES the include path disappears as well.  It might not be necessary to remove the LOCAL_SHARED_LIBRARIES entry if there's no actual references to it, can experiment with that.
+
