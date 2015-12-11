@@ -1,0 +1,19 @@
+Revision: 70b29cf47f08434ab62f9ec2cd91df4fb77e5a49
+Patch-set: 4
+File: media/mediaserver/Android.mk
+
+32
+Fri Dec 11 23:29:33 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e5cc3e7f_62ca169c
+Bytes: 57
+makefiles can use C-style #ifndef syntax?
+I never knew...
+
+56
+Fri Dec 11 23:29:33 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e5cc3e7f_02db0a68
+Bytes: 19
+Why was this added?
+
