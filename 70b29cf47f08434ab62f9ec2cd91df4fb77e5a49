@@ -10,10 +10,27 @@ Bytes: 57
 makefiles can use C-style #ifndef syntax?
 I never knew...
 
+32:0-32:14
+Fri Dec 11 23:38:24 2015 +0000
+Author: Todd Poynor <1004277@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c5b81ad7_b90fffb6
+Bytes: 48
+Oh that does need to be ifndef/endif, no # sign.
+
 56
 Fri Dec 11 23:29:33 2015 +0000
 Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: e5cc3e7f_02db0a68
 Bytes: 19
 Why was this added?
+
+56
+Fri Dec 11 23:38:24 2015 +0000
+Author: Todd Poynor <1004277@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e5cc3e7f_02db0a68
+UUID: c5cf3a71_c44850b1
+Bytes: 160
+main_mediaserver.cpp include of "IcuUtils.h"
+
+fails if LOCAL_SHARED_LIBRARIES doesn't bring in its exported includes.  There may be a better way to handle this?
 
