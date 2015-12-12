@@ -50,3 +50,11 @@ UUID: 05e5d2f2_3e1ca5b4
 Bytes: 224
 When libicuuc is taken out of LOCAL_SHARED_LIBRARIES the include path disappears as well.  It might not be necessary to remove the LOCAL_SHARED_LIBRARIES entry if there's no actual references to it, can experiment with that.
 
+56
+Sat Dec 12 00:21:05 2015 +0000
+Author: Ralph Nathan <1075488@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 05e5d2f2_3e1ca5b4
+UUID: e5cc3e7f_c5804cb2
+Bytes: 13
+Removed this.
+
