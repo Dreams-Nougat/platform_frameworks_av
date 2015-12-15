@@ -1,0 +1,19 @@
+Revision: 109de2a7d499aca4c9a2db2ddb9de0c58251338c
+Patch-set: 1
+File: media/libstagefright/FLACExtractor.cpp
+
+861
+Tue Dec 15 17:32:15 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 85d9c240_28ef0aab
+Bytes: 495
+The id3 spec says:
+
+"An ID3v2 tag can be detected with the following pattern:
+$49 44 33 yy yy xx zz zz zz zz
+Where yy is less than $FF, xx is the 'flags' byte and zz is less than $80."
+
+so it might be a good idea to check those yy and zz bytes in addition to the three leading 'ID3' bytes.
+
+Also note that id3v2.4 defines an optional footer at the end of the tag, which is not included in the size. So if the version is 2.4, and the footer-flag is set, another sizeof(id3header) should be added.
+
