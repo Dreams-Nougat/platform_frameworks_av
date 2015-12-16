@@ -28,3 +28,15 @@ Will look into updating the commit.
 However please note that the current upload brings it more in line with how the reference sniffer in external/flac/libFLAC/metadata_iterators.c handles ID3v2 tags. By adding additional checks on the file would make Android more strict than the reference sniffer.
 Is this wanted and expected?
 
+861
+Wed Dec 16 16:23:38 2015 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 85b2a2f4_fdeebfac
+UUID: 455a6ade_a529be7a
+Bytes: 816
+It can be argued both ways. I expect the reference implementation to fail on id3v2.4 files with footer (because it will end up at the wrong offset in the file). Making the change I suggested would make it work with such files. On the other hand, we'd be less forgiving with files that are technically in violation of the spec, whereas the reference parser would accept those anyway.
+
+Note that the id3 parser at frameworks/av/media/libstagefright/id3/ID3.cpp doesn't deal with footers either, but it does check that the version fields are valid.
+
+Perhaps a compromise here could be to check the version and flags, but only specifically for v2.4+footer. That way flac files that specify the id3 version wrong would still be accepted, while files that correctly specify the version and footer flag could be parsed too.
+
