@@ -17,3 +17,14 @@ so it might be a good idea to check those yy and zz bytes in addition to the thr
 
 Also note that id3v2.4 defines an optional footer at the end of the tag, which is not included in the size. So if the version is 2.4, and the footer-flag is set, another sizeof(id3header) should be added.
 
+861
+Wed Dec 16 15:52:50 2015 +0000
+Author: John Eckerdal <1037953@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 85d9c240_28ef0aab
+UUID: 85b2a2f4_fdeebfac
+Bytes: 328
+Will look into updating the commit.
+
+However please note that the current upload brings it more in line with how the reference sniffer in external/flac/libFLAC/metadata_iterators.c handles ID3v2 tags. By adding additional checks on the file would make Android more strict than the reference sniffer.
+Is this wanted and expected?
+
