@@ -1,0 +1,11 @@
+Revision: 7c42cafe3937ff4e36bef2a984dd7b633e2f9303
+Patch-set: 1
+File: media/libstagefright/ACodec.cpp
+
+3843
+Thu Dec 17 21:56:24 2015 +0000
+Author: Dan Stoza <1043625@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: aa593347_e88053e3
+Bytes: 139
+I couldn't quickly find where these formats are defined, so if you would rather add a corresponding OMX_COLOR_Format, I'd be just as happy.
+
