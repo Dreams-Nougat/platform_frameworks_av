@@ -17,6 +17,14 @@ UUID: 8a1aaf01_1ab9f9ea
 Bytes: 126
 It's 0x8000 * 0x8000, so this is special-casing SHORT_MIN*SHORT_MIN. The multiply function in basic_op.h does it that way too.
 
+209:41-209:42
+Tue Jan 05 21:06:03 2016 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 8a1aaf01_1ab9f9ea
+UUID: 0a4ddf0f_7e234d82
+Bytes: 26
+So it does. That is weird.
+
 File: media/libstagefright/codecs/amrwbenc/src/voAMRWBEnc.c
 
 677
