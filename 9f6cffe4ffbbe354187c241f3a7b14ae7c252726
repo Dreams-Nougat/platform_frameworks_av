@@ -1,0 +1,27 @@
+Revision: 9f6cffe4ffbbe354187c241f3a7b14ae7c252726
+Patch-set: 1
+File: media/libstagefright/codecs/amrwbenc/src/math_op.c
+
+209:41-209:42
+Tue Jan 05 20:17:11 2016 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 8a41cfd9_a24ea06f
+Bytes: 32
+Where is this value coming from?
+
+File: media/libstagefright/codecs/amrwbenc/src/voAMRWBEnc.c
+
+677
+Tue Jan 05 20:17:11 2016 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ca202730_b97a5f01
+Bytes: 49
+is the elimination of the left shift intentional?
+
+1226
+Tue Jan 05 20:17:11 2016 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: aa3e9347_032bd0bf
+Bytes: 44
+shift is gone here too, is that intentional?
+
