@@ -9,6 +9,14 @@ UUID: 8a41cfd9_a24ea06f
 Bytes: 32
 Where is this value coming from?
 
+209:41-209:42
+Tue Jan 05 20:34:16 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 8a41cfd9_a24ea06f
+UUID: 8a1aaf01_1ab9f9ea
+Bytes: 126
+It's 0x8000 * 0x8000, so this is special-casing SHORT_MIN*SHORT_MIN. The multiply function in basic_op.h does it that way too.
+
 File: media/libstagefright/codecs/amrwbenc/src/voAMRWBEnc.c
 
 677
@@ -17,6 +25,14 @@ Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: ca202730_b97a5f01
 Bytes: 49
 is the elimination of the left shift intentional?
+
+677
+Tue Jan 05 20:34:16 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ca202730_b97a5f01
+UUID: 8a41cfd9_42179431
+Bytes: 58
+Yes, because L_mult() does that internally. Weird, I know.
 
 1226
 Tue Jan 05 20:17:11 2016 +0000
