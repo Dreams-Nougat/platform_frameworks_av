@@ -1,0 +1,11 @@
+Revision: 347dfa3dea2af2ffcaaa9f7b1b3049023d89bc8a
+Patch-set: 2
+File: media/mtp/MtpUtils.cpp
+
+46:4-46:29
+Wed Jan 06 09:21:50 2016 +0000
+Author: Narayan Kamath <1014443@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 6a31fb81_f6f540eb
+Bytes: 60
+is this fixed now ? (can't figure out what the author meant)
+
