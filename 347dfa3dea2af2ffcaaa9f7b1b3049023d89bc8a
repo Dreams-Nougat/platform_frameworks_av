@@ -9,3 +9,13 @@ UUID: 6a31fb81_f6f540eb
 Bytes: 60
 is this fixed now ? (can't figure out what the author meant)
 
+46:4-46:29
+Wed Jan 06 16:32:16 2016 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 6a31fb81_f6f540eb
+UUID: aa1773d7_8ca0770e
+Bytes: 796
+no. they mean that non-"Z" doesn't necessarily imply local time. it might be that you're in Asia/Seoul on vacation and your Android device has noticed this via the network, but your camera was set to America/Los_Angeles once when you bought it and doesn't know where it is right now, so the camera says "20160106T081700-0800" but we just ignore the "-0800" and assume local time which is actually "+0900".
+
+short of switching to icu4c (or doing this in Java rather than native code), i can't off the top of my head think of a reasonable way to support that. strptime(3) doesn't support time zones, and mktime(3) ignores tm_gmtoff. i guess what you'd have to do is use timegm and then manually add/subtract the UTC offset (with wrapping). so since this isn't a regression i wasn't volunteering :-)
+
