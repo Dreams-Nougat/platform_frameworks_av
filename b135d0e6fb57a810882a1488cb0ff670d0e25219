@@ -9,3 +9,11 @@ UUID: a5d1668e_4b08393d
 Bytes: 105
 I suppose you verified that changing the config on the fly was OK for all effect types (AGC, AEC and NS)?
 
+901:17-901:27
+Wed Jan 06 02:11:16 2016 +0000
+Author: Alex Luebs <1083718@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: a5d1668e_4b08393d
+UUID: 6a481bfe_c448920e
+Bytes: 177
+I verified on AGC and NS, but not on AEC, since the HAL for the device I am testing with doesn't support it, but the is no reason why it wouldn't work from a WebRTC perspective.
+
