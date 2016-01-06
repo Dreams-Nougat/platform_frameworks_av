@@ -1,0 +1,18 @@
+Revision: dacda2f44c612f43f1ebb5a721e9edbc58d62bdd
+Patch-set: 1
+File: media/mtp/MtpUtils.cpp
+
+33:0-33:2
+Wed Jan 06 01:25:22 2016 +0000
+Author: Christopher Ferris <1019050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 8a41cfd9_08176b28
+Bytes: 115
+I think you should mention the fact that the string ending in Z means the string is treated as UTC in this comment.
+
+67:26-67:27
+Wed Jan 06 01:25:22 2016 +0000
+Author: Christopher Ferris <1019050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ea1debf7_4eeed3a9
+Bytes: 45
+As long as you are here, can you remove this?
+
