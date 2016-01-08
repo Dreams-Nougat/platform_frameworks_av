@@ -1,0 +1,11 @@
+Revision: 122c257fc1d95c0a85c5e22d581a1c1c53430e27
+Patch-set: 1
+File: services/camera/libcameraservice/CameraService.cpp
+
+1525
+Fri Jan 08 17:55:59 2016 +0000
+Author: Eino-Ville Talvala <1010050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: aa5f73f8_589f3d23
+Bytes: 159
+it's unfortunately not valid for us to skip this eviction step; it would break API guarantees about being able to access the camera when there is another user.
+
