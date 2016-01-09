@@ -1,0 +1,11 @@
+Revision: a6b30f7e55560583f31b5938c6a82c8cdf6b2826
+Patch-set: 1
+File: services/camera/libcameraservice/api1/CameraClient.cpp
+
+239:4-239:55
+Sat Jan 09 00:30:03 2016 +0000
+Author: Chien-Yu Chen <1060491@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 4a8b57a3_031712d6
+Bytes: 160
+I think this change will fix the problem but now whenever this is TRUE, the condition in line 234 will be TRUE too. So you can just remove line 239 to line 242.
+
