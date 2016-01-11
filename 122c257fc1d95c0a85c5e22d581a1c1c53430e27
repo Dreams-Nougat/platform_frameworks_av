@@ -9,3 +9,12 @@ UUID: aa5f73f8_589f3d23
 Bytes: 159
 it's unfortunately not valid for us to skip this eviction step; it would break API guarantees about being able to access the camera when there is another user.
 
+1525
+Mon Jan 11 02:06:53 2016 +0000
+Author: Yang, Dong <1091938@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: aa5f73f8_589f3d23
+UUID: 4a8b57a3_f16d9009
+Bytes: 423
+I find there only one function CameraService::binderDied() call evictClientIdByRemote(), it will wait 1s timeout to get the lock, if lock didn't get success, it will return and leave the client to be removed by next time Binder transaction.
+but if you guarantees the API to access the camera and wait the lock forever, it can not fix the deadlock case when the called already gotten the lock, and here try to lock it again.
+
