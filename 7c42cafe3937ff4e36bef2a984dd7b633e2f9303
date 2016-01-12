@@ -9,3 +9,13 @@ UUID: aa593347_e88053e3
 Bytes: 139
 I couldn't quickly find where these formats are defined, so if you would rather add a corresponding OMX_COLOR_Format, I'd be just as happy.
 
+3843
+Tue Jan 12 21:20:04 2016 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: aa593347_e88053e3
+UUID: 274e5eac_eb325dc5
+Bytes: 147
+Is this resulting in a compiler error now?
+
+Note we use C-style casting in frameworks/av/media, e.g. (OMX_COLOR_FORMATTYPE)HAL_PIXEL_FORMAT_YV12...
+
