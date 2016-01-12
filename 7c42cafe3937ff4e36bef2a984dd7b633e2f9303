@@ -19,3 +19,11 @@ Is this resulting in a compiler error now?
 
 Note we use C-style casting in frameworks/av/media, e.g. (OMX_COLOR_FORMATTYPE)HAL_PIXEL_FORMAT_YV12...
 
+3843
+Tue Jan 12 21:27:40 2016 +0000
+Author: Dan Stoza <1043625@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 274e5eac_eb325dc5
+UUID: e759a674_74c2a85d
+Bytes: 109
+Not yet, but I want to name the HAL_PIXEL_FORMAT enum in graphics.h, at which point this will cause an error.
+
