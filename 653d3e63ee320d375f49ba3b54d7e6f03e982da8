@@ -9,3 +9,11 @@ UUID: c75ca266_62fb0769
 Bytes: 161
 it looks like you can just remove the few references to AwesomePlayer from AudioPlayer, but leave AudioPlayer as a way for the stagefright command to play audio.
 
+206
+Wed Jan 13 19:14:31 2016 +0000
+Author: Lajos Molnar <1021605@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: c75ca266_62fb0769
+UUID: 07623a24_0836b3bb
+Bytes: 312
+The problem is that AudioPlayer is on top of MediaSource and we are also removing OMXCodec which was generally used as the MediaSource in these cmd utils, but is not used otherwise anywhere once AwesomePlayer is gone... We have MediaCodecSource, but it wraps encoders while we would want to have a decoder source
+
