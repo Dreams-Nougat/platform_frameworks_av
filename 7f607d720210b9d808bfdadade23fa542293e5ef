@@ -1,0 +1,11 @@
+Revision: 7f607d720210b9d808bfdadade23fa542293e5ef
+Patch-set: 1
+File: media/libeffects/preprocessing/PreProcessing.cpp
+
+887:21-887:54
+Sat Jan 16 00:06:18 2016 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e759a674_eff250c2
+Bytes: 68
+I just noticed that this should be  audio_channel_count_from_in_mask
+
