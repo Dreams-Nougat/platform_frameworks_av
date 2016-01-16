@@ -1,0 +1,11 @@
+Revision: 91fb17759f6e690b69ec0fdb419047f4779611b9
+Patch-set: 2
+File: media/libeffects/preprocessing/PreProcessing.cpp
+
+888:22-888:55
+Sat Jan 16 00:36:48 2016 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 07495aa4_16e6c0d3
+Bytes: 132
+sorry same here. outCnl is "out" as in output of the process but as this is preprocessing all channel masks are input channel masks.
+
