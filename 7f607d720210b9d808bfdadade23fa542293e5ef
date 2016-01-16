@@ -9,3 +9,11 @@ UUID: e759a674_eff250c2
 Bytes: 68
 I just noticed that this should be  audio_channel_count_from_in_mask
 
+887:21-887:54
+Sat Jan 16 00:26:46 2016 +0000
+Author: Alex Luebs <1083718@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e759a674_eff250c2
+UUID: 07495aa4_767aa4c4
+Bytes: 4
+Done
+
