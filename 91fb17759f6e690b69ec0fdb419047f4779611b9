@@ -9,3 +9,11 @@ UUID: 07495aa4_16e6c0d3
 Bytes: 132
 sorry same here. outCnl is "out" as in output of the process but as this is preprocessing all channel masks are input channel masks.
 
+888:22-888:55
+Sat Jan 16 00:41:19 2016 +0000
+Author: Alex Luebs <1083718@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 07495aa4_16e6c0d3
+UUID: 07495aa4_96fbf067
+Bytes: 17
+Good point. Done.
+
