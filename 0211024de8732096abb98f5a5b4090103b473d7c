@@ -1,0 +1,25 @@
+Revision: 0211024de8732096abb98f5a5b4090103b473d7c
+Patch-set: 3
+File: media/libeffects/preprocessing/PreProcessing.cpp
+
+596:36-596:41
+Wed Jan 20 23:42:39 2016 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 07123a0e_b9d157f7
+Bytes: 23
+status is always 0 here
+
+611:40-611:45
+Wed Jan 20 23:42:39 2016 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 4718b22c_1b24c388
+Bytes: 87
+status is always 0 here and value always NS_TYPE_MULTI_CHANNEL. no need to display them
+
+629:48-629:59
+Wed Jan 20 23:42:39 2016 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 07f95afe_a17aba99
+Bytes: 63
+should beamforming be set to true regardless of NS_PARAM_TYPE ?
+
