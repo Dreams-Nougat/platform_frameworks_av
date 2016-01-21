@@ -10,3 +10,12 @@ Bytes: 157
 1) shouldn't we reset beamforming if value != NS_TYPE_MULTI_CHANNEL
 2) do we have to disable/re enable the effect if the parameter is received while enabled?
 
+614:12-614:13
+Thu Jan 21 02:45:38 2016 +0000
+Author: Alex Luebs <1083718@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e7ae06f9_9b48b766
+UUID: 07123a0e_7cffad7e
+Bytes: 167
+1) I didn't know you could send 2 parameters to setting it and then un-setting it, but done.
+2) I didn't know you could enable before setting the parameters, but done.
+
