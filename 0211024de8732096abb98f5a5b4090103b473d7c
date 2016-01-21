@@ -9,6 +9,14 @@ UUID: 07123a0e_b9d157f7
 Bytes: 23
 status is always 0 here
 
+596:36-596:41
+Thu Jan 21 01:05:51 2016 +0000
+Author: Alex Luebs <1083718@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 07123a0e_b9d157f7
+UUID: 671db61a_3c5539d5
+Bytes: 4
+Done
+
 611:40-611:45
 Wed Jan 20 23:42:39 2016 +0000
 Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -16,10 +24,26 @@ UUID: 4718b22c_1b24c388
 Bytes: 87
 status is always 0 here and value always NS_TYPE_MULTI_CHANNEL. no need to display them
 
+611:40-611:45
+Thu Jan 21 01:05:51 2016 +0000
+Author: Alex Luebs <1083718@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 4718b22c_1b24c388
+UUID: c70ca2f0_621eec3e
+Bytes: 4
+Done
+
 629:48-629:59
 Wed Jan 20 23:42:39 2016 +0000
 Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 07f95afe_a17aba99
 Bytes: 63
 should beamforming be set to true regardless of NS_PARAM_TYPE ?
+
+629:48-629:59
+Thu Jan 21 01:05:51 2016 +0000
+Author: Alex Luebs <1083718@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 07f95afe_a17aba99
+UUID: 07123a0e_59b00346
+Bytes: 214
+That is a good point, I thought WebRTC would do the right thing when the geometry was never set, but apparently it doesn't. Now I added a subtype to the struct and test for that, what do you think of that approach?
 
