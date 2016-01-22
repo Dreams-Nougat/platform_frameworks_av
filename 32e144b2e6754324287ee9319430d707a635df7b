@@ -1,0 +1,11 @@
+Revision: 32e144b2e6754324287ee9319430d707a635df7b
+Patch-set: 5
+File: media/libeffects/preprocessing/PreProcessing.cpp
+
+623:8-623:9
+Fri Jan 22 23:15:17 2016 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 54c14218_d3e44cce
+Bytes: 65
+looks weird to have just part of the case inside the brackets no?
+
