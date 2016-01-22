@@ -1,0 +1,11 @@
+Revision: 47dabd38252860dd70b83380fc3df0f84a7ede49
+Base-for-patch-set: 1
+File: media/libstagefright/ACodec.cpp
+
+3445:0-3460:35
+Fri Jan 22 18:28:53 2016 +0000
+Author: Ronghua Wu <1051820@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 94b81aa8_871d2643
+Bytes: 93
+This piece of code doesn't have the equivalent for other profiles, I'm not sure if that's ok.
+
