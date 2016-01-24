@@ -901,6 +901,12 @@ bool AudioFlinger::getMicMute() const
     for (size_t i = 0; i < mAudioHwDevs.size(); i++) {
         audio_hw_device_t *dev = mAudioHwDevs.valueAt(i)->hwDevice();
         status_t result = dev->get_mic_mute(dev, &state);
+#ifdef CAPRI_HWC
+        // When not muted, Capri's audio driver incorrectly returns NO_INIT instead of NO_ERROR
+        if (mAudioHwDevs.valueAt(i) == mPrimaryHardwareDev && result == NO_INIT) {
+            result = NO_ERROR;
+        }
+#endif
         if (result == NO_ERROR) {
             mute = mute && state;
         }
