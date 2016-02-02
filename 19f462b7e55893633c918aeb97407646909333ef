@@ -1,0 +1,12 @@
+Revision: 19f462b7e55893633c918aeb97407646909333ef
+Patch-set: 3
+File: media/libstagefright/codecs/amrwbenc/inc/basic_op.h
+
+213
+Tue Feb 02 18:39:04 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 711bb8b8_49c0c555
+Bytes: 135
+The original fix in shl() in patch set 1 was incorrect (I accidentally replaced a multiply with add).
+This new fix should do the trick.
+
