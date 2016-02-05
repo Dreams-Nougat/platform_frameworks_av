@@ -13,3 +13,13 @@ Also, how do you expect service arbitration to work (or are you leaving that for
 
 I'd also be happier with this if we factored out the body within the #if into a separate method (maybe validateClientPermissionsLocked?) so that the #ifdef is harder to mess up.
 
+869
+Fri Feb 05 19:24:11 2016 +0000
+Author: Christopher Wiley <1057759@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 315940ea_44256e87
+UUID: d1e38448_21e34e36
+Bytes: 179
+Ah, good point re: lines and I agree that I should refactor this a little more.
+
+I'm unsure what you mean by service arbitration.  I'll clarify offline then respond for posterity.
+
