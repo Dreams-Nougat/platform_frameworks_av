@@ -23,3 +23,13 @@ Ah, good point re: lines and I agree that I should refactor this a little more.
 
 I'm unsure what you mean by service arbitration.  I'll clarify offline then respond for posterity.
 
+869
+Sat Feb 06 00:29:04 2016 +0000
+Author: Christopher Wiley <1057759@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d1e38448_21e34e36
+UUID: 518b14a3_605a8c7a
+Bytes: 706
+I chatted with etalvala@ a little offline.  To start, we're fine with clients racing for control of the camera.  Because the functionality of the system is controlled by a single device maker (i.e. no applications, all functional pieces configured by a single individual/company), resource sharing becomes less important (they have only themselves to blame if one piece of their software locks another piece of their software out).
+
+If it's easy to do the most Android thing and use your prioritization logic, I think thats what we should do.  If it isn't easy (e.g. you need to talk about packages or applications with particular uids or permissions) then we're fine with the race for basic functionality.
+
