@@ -1,0 +1,36 @@
+Revision: dce1cb46ae800fd4838b8ebaf331acf2c0eccc68
+Patch-set: 1
+File: media/libstagefright/codecs/avcenc/SoftAVCEnc.cpp
+
+1296
+Tue Feb 09 18:14:28 2016 +0000
+Author: Hangyu Kuang <1022116@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3d8e7442_0e350bc0
+Bytes: 685
+I do not prefer adding a bool variable for each updated config. If there is only one config that needed to be updated, this seems fine. But if more configs that need to be added in the future, this end up with doing more extra checks and adding more bool variables.
+
+I suggest having just one mUpdateFlag = 0 to indicate if there is any config that needs to be updated
+
+Define a enum in the header:
+enum {
+  config1 = 1 << 0,
+  config2 = 1 << 1,
+  config3 = 1 << 2,
+}
+
+when need to update the config, do 
+"mUpdateFlag |= config1".
+
+Then here could be
+if (mUpdateFlag) {
+  if (mUpdateFlag | config1) {
+  ....
+  }
+  if (mUpdateFlag | config2) {
+
+  }
+
+  // Reset flag
+  mUpdateFlag = 0;
+}
+
