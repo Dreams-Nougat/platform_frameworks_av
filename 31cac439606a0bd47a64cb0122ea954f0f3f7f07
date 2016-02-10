@@ -1,0 +1,11 @@
+Revision: 31cac439606a0bd47a64cb0122ea954f0f3f7f07
+Patch-set: 2
+File: media/libstagefright/codecs/avcenc/SoftAVCEnc.h
+
+146:21-146:30
+Wed Feb 10 06:47:17 2016 +0000
+Author: Hangyu Kuang <1022116@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: dd92b865_e5fa9ad2
+Bytes: 108
+Prefer alignment. i.e, http://androidxref.com/6.0.1_r10/xref/frameworks/av/include/media/mediarecorder.h#105
+
