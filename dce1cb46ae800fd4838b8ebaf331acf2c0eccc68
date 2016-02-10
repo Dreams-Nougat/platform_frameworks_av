@@ -34,3 +34,20 @@ if (mUpdateFlag) {
   mUpdateFlag = 0;
 }
 
+1296
+Wed Feb 10 04:21:38 2016 +0000
+Author: Hangyu Kuang <1022116@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 3d8e7442_0e350bc0
+UUID: bd83441c_8419dabf
+Bytes: 148
+typo should be:
+if (mUpdateFlag) {
+  if (mUpdateFlag & config1) {
+  ....
+  }
+  if (mUpdateFlag & config2) {
+  }
+  // Reset flag
+  mUpdateFlag = 0;
+}
+
