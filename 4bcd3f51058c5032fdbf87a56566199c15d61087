@@ -9,3 +9,11 @@ UUID: 62be89e4_91a06c6c
 Bytes: 57
 If order doesn't matter, can you add this in alpha order?
 
+21:8-21:14
+Mon Feb 22 21:20:33 2016 +0000
+Author: Dimitry Ivanov <1041673@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 62be89e4_91a06c6c
+UUID: c2c1f56d_fa61beb2
+Bytes: 100
+it does matter.. it reflects the order of DT_NEEDED entries so we want liblog to go before libcutils
+
