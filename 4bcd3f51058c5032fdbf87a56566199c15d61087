@@ -17,3 +17,11 @@ UUID: c2c1f56d_fa61beb2
 Bytes: 100
 it does matter.. it reflects the order of DT_NEEDED entries so we want liblog to go before libcutils
 
+21:8-21:14
+Mon Feb 22 21:21:41 2016 +0000
+Author: Christopher Ferris <1019050@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: c2c1f56d_fa61beb2
+UUID: 62a5a9c6_d93df3a6
+Bytes: 83
+Can you add a comment so that someone doesn't come along later and "fix" the order?
+
