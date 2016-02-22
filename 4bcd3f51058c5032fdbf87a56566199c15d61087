@@ -1,0 +1,11 @@
+Revision: 4bcd3f51058c5032fdbf87a56566199c15d61087
+Patch-set: 1
+File: media/libstagefright/httplive/Android.mk
+
+21:8-21:14
+Mon Feb 22 21:13:00 2016 +0000
+Author: Christopher Ferris <1019050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 62be89e4_91a06c6c
+Bytes: 57
+If order doesn't matter, can you add this in alpha order?
+
