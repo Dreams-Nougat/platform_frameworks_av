@@ -60,3 +60,23 @@ Bytes: 311
 If the logic is similar to the normal mixer, then we should clear the mix buffer only if all tracks are underruning because in this case the mixer process function will be a nop.
 To answer Glenn's concern this takes place before the actual mixer process() so there is no risk to lose data from a previous track.
 
+390:20-390:62
+Wed Mar 02 09:27:34 2016 +0000
+Author: Sumit Bhattacharya <1057645@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 02594de9_0e4d4c68
+UUID: 42034591_2c96f773
+Bytes: 762
+As eric mentioned any data loss will not happen in this case because mixer->process() gets called after processing all the tracks. So memset will happen before actual mixing happens.
+
+But yes if there are possibility of unnecessary memset() operations with this change.
+
+Problem is we can't just set mMixerBufferState to UNDEFINED when there is a underrun for a track, since some other track may have ready data.
+
+My suggestion to avoid extra memset is :
+
+=> Add a new MixerBufferState as READY
+=> Set mMixerBufferState to UNDEFINED at start of every onWork() loop. Set mMixerBufferState to READY if for any track data is available.
+=> Call mixer->process() only if mMixerBufferState is READY.
+
+Let me know how this sounds. If you agree i will update the commit.
+
