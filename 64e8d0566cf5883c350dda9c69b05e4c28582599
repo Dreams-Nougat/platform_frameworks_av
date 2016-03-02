@@ -51,3 +51,12 @@ Is this new code being executed for _every_ track
 track was not in underrun ... would we lose the previously
 mixed data? Either would be bad.
 
+390:20-390:62
+Wed Mar 02 02:54:37 2016 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 42318581_4ce258eb
+UUID: 02594de9_0e4d4c68
+Bytes: 311
+If the logic is similar to the normal mixer, then we should clear the mix buffer only if all tracks are underruning because in this case the mixer process function will be a nop.
+To answer Glenn's concern this takes place before the actual mixer process() so there is no risk to lose data from a previous track.
+
