@@ -18,3 +18,17 @@ Bytes: 299
 On nvidia platforms we use direct output for multi-channel and hra streams and we have not seen any issue for that. But we faced this issue for IEC958 streams.
 For PCM direct streams (framesWritten >= mPresentationCompleteFrames) condition will satisfy but that does not happen for a non-pcm stream.
 
+1011:70-1011:102
+Wed Mar 02 19:47:28 2016 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 8209bdb1_57d09617
+UUID: 02594de9_842cbbdd
+Bytes: 447
+Just discussed with Eric - please see the calling function:
+
+AudioFlinger::DirectOutputThread::prepareTracks_l()
+
+it seems audioHalFrames should be 0 if !audio_is_linear_pcm(mFormat).  So this check should not be needed here unless (1) we have a stale value of mPresentationCompleteFrames or (2) mFormat in the track differs from the DirectOutputThread. Would it be possible to check this case again and see why this new clause is needed?
+
+Thanks!
+
