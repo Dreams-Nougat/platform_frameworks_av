@@ -25,3 +25,11 @@ UUID: 62a5a9c6_d93df3a6
 Bytes: 83
 Can you add a comment so that someone doesn't come along later and "fix" the order?
 
+21:8-21:14
+Wed Mar 02 23:02:39 2016 +0000
+Author: Dimitry Ivanov <1041673@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 62a5a9c6_d93df3a6
+UUID: 02594de9_ff473849
+Bytes: 126
+I am kind of hopping libcutils will stop exporting liblog symbols before that happens, at which point it won't matter. anymore
+
