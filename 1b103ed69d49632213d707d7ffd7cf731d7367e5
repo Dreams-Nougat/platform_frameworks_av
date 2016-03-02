@@ -1,0 +1,11 @@
+Revision: 1b103ed69d49632213d707d7ffd7cf731d7367e5
+Patch-set: 1
+File: services/audioflinger/Tracks.cpp
+
+1011:70-1011:102
+Wed Mar 02 01:26:59 2016 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: c26bb568_e13d5aa6
+Bytes: 137
+or maybe isDirect() here? Seems like this could be a common problem with all direct tracks. Eric might be able to comment better than me.
+
