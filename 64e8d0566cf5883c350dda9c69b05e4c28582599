@@ -1,0 +1,13 @@
+Revision: 64e8d0566cf5883c350dda9c69b05e4c28582599
+Patch-set: 1
+File: services/audioflinger/FastMixer.cpp
+
+390:20-390:62
+Wed Mar 02 01:41:22 2016 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e27a7932_3f5db8f3
+Bytes: 291
+I believe this only needs to be cleared if there are no tracks to mix (none are enabled).  We might be able to check this condition on line 412, and if mMixerBufferState is not ZEROED, set mMixerBufferState to UNDEFINED.  That should clear the buffer on line 419.
+
+Glenn would know better...
+
