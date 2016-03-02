@@ -11,3 +11,43 @@ I believe this only needs to be cleared if there are no tracks to mix (none are 
 
 Glenn would know better...
 
+390:20-390:62
+Wed Mar 02 02:40:34 2016 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e27a7932_3f5db8f3
+UUID: 02986d84_58e34ac2
+Bytes: 639
+I am away from the full source code at the moment,
+so it is difficult for me to review this right now.
+However, the intention of mMixerBufferState is to keeo track
+of the state of the mix buffer, and to only zero it when necessary.
+We definitely would want to keep that optimization to eliminate
+unnecessary zero operations. 
+
+Again, I'm not seeing all the code, but it seems like
+it would be incorrect to clear the mix buffer for each track.
+Is this new code being executed for _every_ track
+(that is in underrun)?  And what happens if a previous
+track was not in underrun ... would we lose the previously
+mixed data? Either would be bad.
+
+390:20-390:62
+Wed Mar 02 02:40:34 2016 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e27a7932_3f5db8f3
+UUID: 42318581_4ce258eb
+Bytes: 639
+I am away from the full source code at the moment,
+so it is difficult for me to review this right now.
+However, the intention of mMixerBufferState is to keeo track
+of the state of the mix buffer, and to only zero it when necessary.
+We definitely would want to keep that optimization to eliminate
+unnecessary zero operations. 
+
+Again, I'm not seeing all the code, but it seems like
+it would be incorrect to clear the mix buffer for each track.
+Is this new code being executed for _every_ track
+(that is in underrun)?  And what happens if a previous
+track was not in underrun ... would we lose the previously
+mixed data? Either would be bad.
+
