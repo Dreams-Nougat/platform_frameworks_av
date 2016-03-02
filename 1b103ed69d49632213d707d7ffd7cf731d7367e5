@@ -9,3 +9,12 @@ UUID: c26bb568_e13d5aa6
 Bytes: 137
 or maybe isDirect() here? Seems like this could be a common problem with all direct tracks. Eric might be able to comment better than me.
 
+1011:70-1011:102
+Wed Mar 02 04:19:58 2016 +0000
+Author: Sumit Bhattacharya <1057645@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: c26bb568_e13d5aa6
+UUID: 8209bdb1_57d09617
+Bytes: 299
+On nvidia platforms we use direct output for multi-channel and hra streams and we have not seen any issue for that. But we faced this issue for IEC958 streams.
+For PCM direct streams (framesWritten >= mPresentationCompleteFrames) condition will satisfy but that does not happen for a non-pcm stream.
+
