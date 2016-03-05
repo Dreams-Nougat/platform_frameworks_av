@@ -1,0 +1,11 @@
+Revision: cd64e0ed477fcaadd2ad03c5ef79d43ae98d7e44
+Patch-set: 4
+File: services/audioflinger/AudioFlinger.cpp
+
+1358:65-1358:70
+Sat Mar 05 00:33:41 2016 +0000
+Author: Andy Hung <1040213@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 97ebc162_a1ba7efe
+Bytes: 64
+note, we use kb elsewhere, as in "audio.offload.buffer.size.kb".
+
