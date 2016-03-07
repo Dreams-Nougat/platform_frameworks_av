@@ -9,3 +9,13 @@ UUID: 97ebc162_a1ba7efe
 Bytes: 64
 note, we use kb elsewhere, as in "audio.offload.buffer.size.kb".
 
+1358:65-1358:70
+Mon Mar 07 20:55:46 2016 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 97ebc162_a1ba7efe
+UUID: 37c69531_6ee24fc1
+Bytes: 124
+As we don't have naming conventions for properties,
+I don't think it is worth holding this up.
+I will give +2 now and merge.
+
