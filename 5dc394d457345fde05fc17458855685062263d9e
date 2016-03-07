@@ -1,0 +1,11 @@
+Revision: 5dc394d457345fde05fc17458855685062263d9e
+Patch-set: 1
+File: services/audioflinger/Threads.cpp
+
+190
+Mon Mar 07 20:59:30 2016 +0000
+Author: Glenn Kasten <1004395@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 97be618f_c9f01184
+Bytes: 5
+const
+
