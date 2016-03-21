@@ -1,0 +1,11 @@
+Revision: 1e70916d4a10ec40606255d3fd51a803ca001b97
+Patch-set: 1
+File: media/libstagefright/SampleTable.cpp
+
+249:48-249:68
+Mon Mar 21 16:37:00 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: dcf63e9d_b18266c1
+Bytes: 61
+This will never be negative here, so casting to size_t is OK.
+
