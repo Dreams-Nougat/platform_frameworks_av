@@ -9,3 +9,11 @@ UUID: dcf63e9d_b18266c1
 Bytes: 61
 This will never be negative here, so casting to size_t is OK.
 
+249:48-249:68
+Mon Mar 21 17:40:51 2016 +0000
+Author: Dan Austin <1079886@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: dcf63e9d_b18266c1
+UUID: dcf63e9d_b1a426e4
+Bytes: 129
+Can you elaborate on how this will never be negative? data_offset is an off64_t? It's not clear that's the case in this function.
+
