@@ -17,3 +17,11 @@ UUID: dcf63e9d_b1a426e4
 Bytes: 129
 Can you elaborate on how this will never be negative? data_offset is an off64_t? It's not clear that's the case in this function.
 
+249:48-249:68
+Mon Mar 21 17:45:03 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: dcf63e9d_b1a426e4
+UUID: dcf63e9d_8ca3d1c9
+Bytes: 286
+mSampleToChunkOffset is initialized to a negative value to indicate an invalid/uninitialized state (see constructor and isValid() method above), and setSampleToChunkParams is only called with positive values (from MPEG4Extractor). I can add a specific check for that if that would help.
+
