@@ -1,0 +1,11 @@
+Revision: 7569d0d5376ca62a30b5d27d9aa19be5dc468304
+Patch-set: 1
+File: media/libstagefright/MPEG4Extractor.cpp
+
+4231:20-4231:29
+Wed Apr 13 20:58:52 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0bac0e06_3b142365
+Bytes: 71
+nalLength is a size_t, which is unsigned and will therefore never be <0
+
