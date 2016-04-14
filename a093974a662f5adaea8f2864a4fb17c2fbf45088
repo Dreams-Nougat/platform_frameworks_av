@@ -1,0 +1,11 @@
+Revision: a093974a662f5adaea8f2864a4fb17c2fbf45088
+Patch-set: 1
+File: media/libstagefright/codecs/mpeg2dec/SoftMPEG2.cpp
+
+545
+Thu Apr 14 13:03:24 2016 +0000
+Author: Wonsik Kim <1018606@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0bac0e06_a231ffc9
+Bytes: 66
+Isn't mStride update code as in avcdec and hevcdec necessary here?
+
