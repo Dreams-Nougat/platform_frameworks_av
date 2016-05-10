@@ -48,3 +48,34 @@ We don't yet support running the media framework in 64-bit (it runs in 32-bit mo
 Can you update the commit message to say that this is a fix for 64-bit mode?
 And still, this is only a problem if offset is negative, right? Who's calling it with a negative offset?
 
+646:0-646:62
+Tue May 10 03:20:31 2016 +0000
+Author: Shuxiao Zhang <1090168@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 123fe8e9_c30dca32
+UUID: 9286782c_88472a69
+Bytes: 570
+There are also problems on 32bit.
+E.g.
+when offset < 0.
+
+    if (offset < mCacheOffset
+            || offset >= (off64_t)(mCacheOffset + mCache->totalSize())) {
+        ...
+        seekInternal_l(seekOffset); // seekOffset = 0; mCacheOffset = seekOffset = 0;
+        ...
+    }
+    size_t delta = offset - mCacheOffset; // delta = (size_t)(offset) 
+    if (offset + size <= mCacheOffset + mCache->totalSize()) {   // mCacheOffset + mCache->totalSize() == 0, when offset + size < 0, but delta > 0.
+
+    mCache->copy(delta, data, size); // delta is very large.
+    ...
+   }
+
+646:4-646:62
+Tue May 10 03:20:31 2016 +0000
+Author: Shuxiao Zhang <1090168@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9286782c_28247ea3
+Bytes: 240
+Who's calling it with a negative offset?
+Many vendor(e.g.: qcom, mediatek) multimedia library calls MediaSource, causing a large number of crash, many crash because offset negative. Therefore, we can avoid this problem when you call readAt.
+
