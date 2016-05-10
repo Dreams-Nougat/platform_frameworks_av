@@ -1,0 +1,11 @@
+Revision: 648dc95701952b87cf652378f0afe14709a62e05
+Patch-set: 1
+File: media/libmedia/ToneGenerator.cpp
+
+817:8-817:14
+Tue May 10 01:15:12 2016 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 9286782c_f54c0365
+Bytes: 65
+I think it is time to change this for something based on strstr()
+
