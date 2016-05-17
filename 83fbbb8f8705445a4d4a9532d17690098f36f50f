@@ -1,0 +1,11 @@
+Revision: 83fbbb8f8705445a4d4a9532d17690098f36f50f
+Patch-set: 1
+File: include/media/stagefright/foundation/ABase.h
+
+27
+Tue May 17 23:53:58 2016 +0000
+Author: Jean-Michel Trivi <1002682@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 570b1261_d52f2c78
+Bytes: 33
+What the error here without this?
+
