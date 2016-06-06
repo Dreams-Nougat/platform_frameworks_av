@@ -34,3 +34,11 @@ UUID: a6aee2f7_b2e7a0bb
 Bytes: 129
 please explain broken -- is it just rounding errors from NEON not going the IEEE754 route, or does it make an audible difference?
 
+1233:87-1233:93
+Mon Jun 06 22:26:04 2016 +0000
+Author: Stephen Hines <1010056@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: a6aee2f7_b2e7a0bb
+UUID: 63213ce2_0ea1af07
+Bytes: 244
+https://android-review.googlesource.com/#/c/235874/ is the corresponding other patch to demonstrate how this is broken. Both of these patches are just here to help reproduce the bug externally for ARM (an email which I am writing up right now).
+
