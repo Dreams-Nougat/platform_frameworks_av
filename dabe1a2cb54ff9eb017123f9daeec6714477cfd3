@@ -1,0 +1,36 @@
+Revision: dabe1a2cb54ff9eb017123f9daeec6714477cfd3
+Patch-set: 1
+File: media/libstagefright/codecs/amrwbenc/Android.mk
+
+94:0-94:22
+Mon Jun 06 10:04:21 2016 +0000
+Author: Bernhard Rosenkränzer <1010121@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e34c4c8d_24fd7278
+Bytes: 99
+The only use of liblog in the patch is commented out -- so there shouldn't be a need to link liblog
+
+File: media/libstagefright/codecs/amrwbenc/SampleCode/Android.mk
+
+18:4-18:10
+Mon Jun 06 10:04:21 2016 +0000
+Author: Bernhard Rosenkränzer <1010121@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 069deed3_2d418da0
+Bytes: 85
+The only use of liblog is commented out -- so there shouldn't be a need to link to it
+
+File: media/libstagefright/codecs/amrwbenc/src/voAMRWBEnc.c
+
+1225:0-1231:13
+Mon Jun 06 10:04:21 2016 +0000
+Author: Bernhard Rosenkränzer <1010121@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 06188e2b_d8641137
+Bytes: 105
+exc_copy is only used in code that is commented out - no point in creating and filling it unconditionally
+
+1233:87-1233:93
+Mon Jun 06 10:04:21 2016 +0000
+Author: Bernhard Rosenkränzer <1010121@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a6aee2f7_b2e7a0bb
+Bytes: 129
+please explain broken -- is it just rounding errors from NEON not going the IEEE754 route, or does it make an audible difference?
+
