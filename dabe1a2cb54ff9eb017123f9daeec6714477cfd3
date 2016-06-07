@@ -42,3 +42,15 @@ UUID: 63213ce2_0ea1af07
 Bytes: 244
 https://android-review.googlesource.com/#/c/235874/ is the corresponding other patch to demonstrate how this is broken. Both of these patches are just here to help reproduce the bug externally for ARM (an email which I am writing up right now).
 
+1233:87-1233:93
+Tue Jun 07 10:41:01 2016 +0000
+Author: Renato Golin <1038207@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 63213ce2_0ea1af07
+UUID: 83cf1072_a1289ed0
+Bytes: 308
+Hi Stephen,
+
+The patch you pointed at is a Java file, how does that relate to Clang?
+
+Also, if you could report a bug in LLVM's bugzilla with a reduced self-contained source file (C/C++/IR) where the problem shows itself, and the command line to show it, it'd be much easier to try and guess what's wrong. :)
+
