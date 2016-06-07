@@ -54,3 +54,11 @@ The patch you pointed at is a Java file, how does that relate to Clang?
 
 Also, if you could report a bug in LLVM's bugzilla with a reduced self-contained source file (C/C++/IR) where the problem shows itself, and the command line to show it, it'd be much easier to try and guess what's wrong. :)
 
+1233:87-1233:93
+Tue Jun 07 16:17:53 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 83cf1072_a1289ed0
+UUID: c392e865_ab986979
+Bytes: 142
+The other patch is for the test app you'd run in order to trigger the problem here, since there is no way to trigger it from the command line.
+
