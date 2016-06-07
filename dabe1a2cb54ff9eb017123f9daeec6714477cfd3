@@ -62,3 +62,11 @@ UUID: c392e865_ab986979
 Bytes: 142
 The other patch is for the test app you'd run in order to trigger the problem here, since there is no way to trigger it from the command line.
 
+1233:87-1233:93
+Tue Jun 07 16:21:16 2016 +0000
+Author: Stephen Hines <1010056@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: c392e865_ab986979
+UUID: c392e865_4bfd4577
+Bytes: 311
+Yes, we are trying to reduce this, but it is substantial to do so. Pirama has isolated part of it, but it still requires some more cleanup before we have something more that we can share. In the meantime, the repro instructions we have require us to use CTS (and Java) + manual verification of the audio stream.
+
