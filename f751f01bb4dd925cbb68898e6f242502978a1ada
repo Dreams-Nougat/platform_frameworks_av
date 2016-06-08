@@ -1,0 +1,11 @@
+Revision: f751f01bb4dd925cbb68898e6f242502978a1ada
+Patch-set: 2
+File: media/libstagefright/codecs/amrwbenc/src/voAMRWBEnc.c
+
+1240
+Wed Jun 08 19:45:14 2016 +0000
+Author: Pirama Arumuga Nainar <1058860@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 63d13c8c_b1e8428d
+Bytes: 43
+This is the loop that hits the bad codegen.
+
