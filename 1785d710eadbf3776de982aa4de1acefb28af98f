@@ -1,0 +1,11 @@
+Revision: 1785d710eadbf3776de982aa4de1acefb28af98f
+Patch-set: 5
+File: media/libstagefright/codecs/avcdec/SoftAVCDec.cpp
+
+441:38-441:55
+Wed Jun 15 21:59:50 2016 +0000
+Author: Ray Essick <1108919@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 141d1d1b_2bd16964
+Bytes: 24
+change already in place.
+
