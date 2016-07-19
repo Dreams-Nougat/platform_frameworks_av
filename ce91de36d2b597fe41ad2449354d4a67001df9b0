@@ -17,3 +17,18 @@ UUID: 0a425b4c_242a08e5
 Bytes: 186
 are these the "variable-length arrays" you mention in the commit message? If so what's variable length about them? They get created with length nElems, and don't/can't change after that.
 
+456:0-458:1
+Tue Jul 19 17:51:10 2016 +0000
+Author: Daniel Micay <1069238@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0a425b4c_242a08e5
+UUID: 2a8b9fe1_605d7224
+Bytes: 683
+These are C99 variable length arrays rather than fixed-size arrays - it's technically not standard C++, but I don't care about that aspect. It's essentially doing alloca here although optimization likely changes it to identical code as a fixed-size array.
+
+The motivation for removing them is making auditing via -Wvla easier. Variable length arrays can be exploited if the length is attacker controlled, and these ones are in a location that looks scary until you see that the size is really constant.
+
+See these if you're able to for cases where it's actually bad:
+
+https://code.google.com/p/android/issues/detail?id=216257
+https://code.google.com/p/android/issues/detail?id=216252
+
