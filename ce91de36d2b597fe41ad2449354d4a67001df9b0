@@ -1,0 +1,19 @@
+Revision: ce91de36d2b597fe41ad2449354d4a67001df9b0
+Patch-set: 1
+File: media/libstagefright/webm/WebmWriter.cpp
+
+455:4-455:16
+Tue Jul 19 14:41:31 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0a425b4c_64201005
+Bytes: 255
+I'll admit I don't understand what this actually improves. Doesn't the compiler see that 'elems' has a fixed size and so will already consider nElems to be a compile time constant?
+Does this actually change the generated assembly code in a meaningful way?
+
+456:0-458:1
+Tue Jul 19 14:41:31 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0a425b4c_242a08e5
+Bytes: 186
+are these the "variable-length arrays" you mention in the commit message? If so what's variable length about them? They get created with length nElems, and don't/can't change after that.
+
