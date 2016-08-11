@@ -1,0 +1,11 @@
+Revision: e05551983910801c4bf3c157a000246e26713609
+Base-for-patch-set: 1
+File: media/libstagefright/MediaCodecList.cpp
+
+1168:47-1168:48
+Thu Aug 11 01:23:39 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 5950b7ef_5a2029b3
+Bytes: 57
+it seems to me like this is really the only problem here.
+
