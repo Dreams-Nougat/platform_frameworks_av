@@ -11,3 +11,16 @@ add a line
 
 Bug: 28581069
 
+File: media/libmedia/Visualizer.cpp
+
+58:4-58:41
+Fri Aug 12 22:57:40 2016 +0000
+Author: Ricardo Garcia <1061109@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 7e1e41f5_da8065a8
+Bytes: 404
+Please comment out this call.  If this is removed, the CTS tests work as expected.
+
+As you pointed out, the code has changed so the "force" parameter is not needed anymore, but we need to take into account that the setEnabled(false) might take some time to exit, so, we can't depend on mEnabled to be false right after the setEnabled(false) call.
+
+Comment this line out and let me know how your tests go.
+
