@@ -34,3 +34,11 @@ This calling setCaptureCallBack should not be removed.
 Because we need to call mCaptureThread->requestExitAndWait to wait mCaptureThread exiting synchronously. 
 In setEnabled, it only calling t->requestExit, which is asynchronous and CaptureThread won't exit in time, and then the CaptureThread use Visualizer already deleted and cause crash.
 
+58:4-58:41
+Mon Aug 15 03:58:38 2016 +0000
+Author: Xiaolin Gan <1089784@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: de5c8dda_4519ea8f
+UUID: de5c8dda_e5101661
+Bytes: 64
+In addition, the cts passed when I do NOT comment out this call.
+
