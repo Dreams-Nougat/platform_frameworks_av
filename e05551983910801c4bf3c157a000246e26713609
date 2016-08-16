@@ -9,3 +9,13 @@ UUID: 5950b7ef_5a2029b3
 Bytes: 57
 it seems to me like this is really the only problem here.
 
+Base-for-patch-set: 2
+File: media/libstagefright/MediaCodecList.cpp
+
+1168:47-1168:48
+Tue Aug 16 16:37:15 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1bde37f7_18442455
+Bytes: 65
+I still prefer to just remove this negation and leave it at that.
+

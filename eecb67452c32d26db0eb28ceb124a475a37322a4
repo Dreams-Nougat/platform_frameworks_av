@@ -1,0 +1,18 @@
+Revision: eecb67452c32d26db0eb28ceb124a475a37322a4
+Patch-set: 2
+File: media/libstagefright/MediaCodecList.cpp
+
+1171:16-1171:18
+Tue Aug 16 16:37:15 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1bde37f7_387b2888
+Bytes: 5
+space
+
+1171:72-1171:94
+Tue Aug 16 16:37:15 2016 +0000
+Author: Marco Nelissen <1001525@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1bde37f7_58806c5b
+Bytes: 4
+typo
+
