@@ -1,0 +1,11 @@
+Revision: a345011b45c065bfebf6f8dfb8ececd623999b5a
+Patch-set: 1
+File: services/camera/libcameraservice/CameraService.cpp
+
+930
+Thu Aug 25 19:36:29 2016 +0000
+Author: Eino-Ville Talvala <1010050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e5ac6270_c518fad3
+Bytes: 22
+whitespace - 4 spaces.
+
