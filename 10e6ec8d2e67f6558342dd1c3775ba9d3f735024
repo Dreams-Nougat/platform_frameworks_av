@@ -1,0 +1,11 @@
+Revision: 10e6ec8d2e67f6558342dd1c3775ba9d3f735024
+Patch-set: 2
+File: include/media/Visualizer.h
+
+100:9-100:30
+Mon Sep 12 15:30:52 2016 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: cbe692fe_915cbc1f
+Bytes: 50
+why not call setCaptureCallBack() with a NULL cbk?
+
