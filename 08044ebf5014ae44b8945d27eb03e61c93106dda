@@ -1,0 +1,11 @@
+Revision: 08044ebf5014ae44b8945d27eb03e61c93106dda
+Patch-set: 1
+File: camera/ndk/Android.bp
+
+1:17-1:21
+Thu Sep 15 22:22:14 2016 +0000
+Author: Dan Albert <1043845@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: eb3b56ab_16f83dab
+Bytes: 4
+2016
+
