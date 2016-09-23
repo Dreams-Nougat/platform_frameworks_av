@@ -1,0 +1,11 @@
+Revision: 2975a24dc42c8953125b39a5194da3aec244cbef
+Patch-set: 1
+File: include/ndk/NdkMediaError.h
+
+60:4-60:31
+Fri Sep 23 23:47:05 2016 +0000
+Author: Yin-Chia Yeh <1060513@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: a5850fca_a2effe74
+Bytes: 107
+Not sure does it matters for enum, but these IMGREADER error codes are added in level 24. Does that matter?
+
