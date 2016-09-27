@@ -9,3 +9,13 @@ UUID: a5850fca_a2effe74
 Bytes: 107
 Not sure does it matters for enum, but these IMGREADER error codes are added in level 24. Does that matter?
 
+60:4-60:31
+Tue Sep 27 20:50:20 2016 +0000
+Author: Dan Albert <1043845@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: a5850fca_a2effe74
+UUID: 45ba9338_af18d939
+Bytes: 171
+No, that shouldn't be a problem.
+
+It could be a problem if these were arguments to an API and the APIs weren't checking for invalid values, but error codes should be fine.
+
