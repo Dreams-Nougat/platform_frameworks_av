@@ -10,3 +10,11 @@ Bytes: 224
 The commit message explains why offset shouldn't be <0, but what about the check against mHighwaterThresholdBytes ?
 It seems that check could cause the read to return an error when it should be waiting for the cache to fill.
 
+514:22-514:61
+Mon Oct 10 07:49:06 2016 +0000
+Author: Shuxiao Zhang <1090168@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: cb277249_54b0ace1
+UUID: 7fe6485b_4142d295
+Bytes: 171
+mHighwaterThresholdBytes colud can not be checked here, since there is also a check on mHighwaterThresholdBytes in readInternal, but this will cause the mediaserver crash.
+
