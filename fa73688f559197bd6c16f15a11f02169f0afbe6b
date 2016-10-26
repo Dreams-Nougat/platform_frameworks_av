@@ -16,6 +16,22 @@ UUID: 810004b4_5e674500
 Bytes: 7
 nullptr
 
+39
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 610b10aa_674c12e2
+UUID: 810004b4_6788bcab
+Bytes: 4
+Done
+
+39:20-39:24
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_5e674500
+UUID: 810004b4_878b50a8
+Bytes: 4
+Done
+
 98
 Wed Oct 26 01:18:51 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -53,12 +69,28 @@ UUID: 610b10aa_272f3aea
 Bytes: 52
 Could you explain why doCloseSession is needed here?
 
+261
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 610b10aa_272f3aea
+UUID: 810004b4_e7504c4c
+Bytes: 50
+Left over from experimenting with events, removed.
+
 293:19-293:25
 Wed Oct 26 16:03:12 2016 +0000
 Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 810004b4_bef021ea
 Bytes: 67
 "m" was meant to mean "member", so this should just be "event" now.
+
+293:19-293:25
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_bef021ea
+UUID: 810004b4_072580dc
+Bytes: 4
+Done
 
 828
 Wed Oct 26 01:18:51 2016 +0000
@@ -74,6 +106,22 @@ UUID: 610b10aa_c745feb2
 Bytes: 24
 The log should be ALOGV?
 
+828:4-828:9
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 610b10aa_c745feb2
+UUID: 810004b4_473f78ec
+Bytes: 4
+Done
+
+828
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 610b10aa_e74002a5
+UUID: 810004b4_273c04f6
+Bytes: 4
+Done
+
 1099:72-1099:73
 Wed Oct 26 01:18:51 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -88,6 +136,22 @@ UUID: 610b10aa_a73a0a2d
 Bytes: 24
 The log should be ALOGV?
 
+1099:4-1099:9
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 610b10aa_a73a0a2d
+UUID: 810004b4_07f3c034
+Bytes: 4
+Done
+
+1099:72-1099:73
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 610b10aa_873f061d
+UUID: 810004b4_a7fdb400
+Bytes: 4
+Done
+
 1100:35-1100:50
 Wed Oct 26 01:18:51 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -95,12 +159,28 @@ UUID: 610b10aa_6735323c
 Bytes: 47
 You can use PRIu64 as a formatter for uint64_t.
 
+1100:35-1100:50
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 610b10aa_6735323c
+UUID: 810004b4_47edb848
+Bytes: 4
+Done
+
 1101
 Wed Oct 26 01:18:51 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 610b10aa_47322e56
 Bytes: 55
 nit: A space is needed bteween (double) and finalsize ?
+
+1101
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 610b10aa_47322e56
+UUID: 810004b4_27ea4432
+Bytes: 4
+Done
 
 File: media/mtp/MtpServer.h
 
@@ -110,6 +190,14 @@ Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 610b10aa_8766e666
 Bytes: 63
 nit: UsbHandle*      usb? to make the line consistent with #42?
+
+68
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 610b10aa_8766e666
+UUID: 810004b4_0728e09a
+Bytes: 4
+Done
 
 File: media/mtp/UsbFfsHandle.cpp
 
@@ -128,12 +216,36 @@ UUID: 810004b4_3ee53123
 Bytes: 81
 you probably don't want this *and* <android-base/logging.h>... prefer the latter.
 
+17
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_3ee53123
+UUID: 810004b4_c7f0a8eb
+Bytes: 4
+Done
+
+17
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 610b10aa_072c36f1
+UUID: 810004b4_6771dc8d
+Bytes: 4
+Done
+
 20
 Wed Oct 26 16:03:12 2016 +0000
 Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 810004b4_7edfa94e
 Bytes: 36
 <android-base/properties.h> instead?
+
+20
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_7edfa94e
+UUID: 810004b4_8774f07f
+Bytes: 4
+Done
 
 45
 Wed Oct 26 01:18:51 2016 +0000
@@ -142,6 +254,14 @@ UUID: 610b10aa_e7a5a257
 Bytes: 36
 Can we make the constants constexpr?
 
+45
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 610b10aa_e7a5a257
+UUID: 810004b4_d2f22481
+Bytes: 4
+Done
+
 60
 Wed Oct 26 01:18:51 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -149,12 +269,28 @@ UUID: e16c60ba_33ad4869
 Bytes: 51
 private: line should not increase the indent level.
 
+60
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_33ad4869
+UUID: 810004b4_32044079
+Bytes: 4
+Done
+
 72
 Wed Oct 26 16:03:12 2016 +0000
 Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 810004b4_be7e615a
 Bytes: 69
 std::mutex in new code? http://en.cppreference.com/w/cpp/thread/mutex
+
+72
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_be7e615a
+UUID: 810004b4_ff3290bd
+Bytes: 4
+Done
 
 95:0-326:2
 Wed Oct 26 16:03:12 2016 +0000
@@ -195,6 +331,14 @@ or just
 
   PLOG(ERROR) << USB_FFS_MTP_EP0 << ": cannot open control endpoint";
 
+400:12-400:17
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_de64f5d1
+UUID: 810004b4_b24b3075
+Bytes: 4
+Done
+
 447:0-449:18
 Wed Oct 26 16:03:12 2016 +0000
 Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -217,6 +361,14 @@ UUID: 810004b4_fe2d795c
 Bytes: 11
 short seek?
 
+581
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_fe2d795c
+UUID: 810004b4_f2b4888b
+Bytes: 43
+This gets me the current offset in the file
+
 584
 Wed Oct 26 16:03:12 2016 +0000
 Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -225,6 +377,14 @@ Bytes: 71
 missing null checks.
 
 but better to use std::vector and lose the gotos.
+
+584
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_be230173
+UUID: 810004b4_825dfb5e
+Bytes: 4
+Done
 
 715
 Wed Oct 26 16:03:12 2016 +0000
@@ -257,12 +417,28 @@ UUID: e16c60ba_b3723857
 Bytes: 134
 nit: Can we make it IUsbHandle? According to the framework style guide, interfaces (only pure virtual functions) should have prefix I.
 
+21
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_b3723857
+UUID: 810004b4_75d5ff44
+Bytes: 4
+Done
+
 22
 Wed Oct 26 01:18:51 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: e16c60ba_d377b445
 Bytes: 49
 'public:' lines should not increase indent level.
+
+22
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_d377b445
+UUID: 810004b4_157643bb
+Bytes: 4
+Done
 
 42
 Wed Oct 26 01:18:51 2016 +0000
@@ -290,6 +466,14 @@ UUID: e16c60ba_f3caf036
 Bytes: 75
 Private member should have m prefix according to the framework style guide.
 
+39
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_f3caf036
+UUID: 810004b4_b54b1775
+Bytes: 4
+Done
+
 57
 Wed Oct 26 01:18:51 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -297,12 +481,28 @@ UUID: e16c60ba_d3c5f429
 Bytes: 30
 nit: break line is not needed.
 
+57
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_d3c5f429
+UUID: 810004b4_15412355
+Bytes: 4
+Done
+
 71:39-71:54
 Wed Oct 26 15:25:53 2016 +0000
 Author: Andreas Gampe <1041833@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 810004b4_7e832952
 Bytes: 45
 This is C++, please do not use C-style casts.
+
+71:39-71:54
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_7e832952
+UUID: 810004b4_f5458f60
+Bytes: 4
+Done
 
 File: media/mtp/aio.cpp
 
@@ -313,6 +513,14 @@ UUID: e16c60ba_33a8e860
 Bytes: 29
 Please sort the include lines
 
+18:0-19:16
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_33a8e860
+UUID: 810004b4_d51deb7c
+Bytes: 4
+Done
+
 File: media/mtp/aio.h
 
 1
@@ -321,6 +529,14 @@ Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: e16c60ba_d390942d
 Bytes: 30
 Please add the licence header.
+
+1
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_d390942d
+UUID: 810004b4_5556fb45
+Bytes: 4
+Done
 
 15
 Wed Oct 26 16:03:12 2016 +0000
@@ -351,10 +567,26 @@ Bytes: 80
 extern 'c' is needed here?
 Will this header file be included from c source file?
 
+18
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_93bb7cac
+UUID: 810004b4_9560931a
+Bytes: 4
+Done
+
 51
 Wed Oct 26 01:18:51 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: e16c60ba_53a56487
 Bytes: 25
 nit: Please add // _AIO_H
+
+51
+Wed Oct 26 23:20:01 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_53a56487
+UUID: 810004b4_755dff5b
+Bytes: 4
+Done
 
