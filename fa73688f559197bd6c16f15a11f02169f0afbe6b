@@ -1,0 +1,185 @@
+Revision: fa73688f559197bd6c16f15a11f02169f0afbe6b
+Patch-set: 2
+File: media/mtp/MtpServer.cpp
+
+39
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 610b10aa_674c12e2
+Bytes: 40
+Can we put it in an anonymous namespace?
+
+98
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_13b04cc4
+Bytes: 45
+Could you explain who invokes mtp_configure ?
+
+241
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 610b10aa_47490ed0
+Bytes: 44
+Sending MTP Mtp Event! -> Sending MTP Event!
+
+261
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 610b10aa_272f3aea
+Bytes: 52
+Could you explain why doCloseSession is needed here?
+
+828
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 610b10aa_e74002a5
+Bytes: 30
+Please remove trailing spaces.
+
+828:4-828:9
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 610b10aa_c745feb2
+Bytes: 24
+The log should be ALOGV?
+
+1099:72-1099:73
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 610b10aa_873f061d
+Bytes: 34
+Please remove the trailing spaces.
+
+1099:4-1099:9
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 610b10aa_a73a0a2d
+Bytes: 24
+The log should be ALOGV?
+
+1100:35-1100:50
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 610b10aa_6735323c
+Bytes: 47
+You can use PRIu64 as a formatter for uint64_t.
+
+1101
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 610b10aa_47322e56
+Bytes: 55
+nit: A space is needed bteween (double) and finalsize ?
+
+File: media/mtp/MtpServer.h
+
+68
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 610b10aa_8766e666
+Bytes: 63
+nit: UsbHandle*      usb? to make the line consistent with #42?
+
+File: media/mtp/UsbFfsHandle.cpp
+
+17
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 610b10aa_072c36f1
+Bytes: 30
+nit: Please sort the includes.
+
+45
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 610b10aa_e7a5a257
+Bytes: 36
+Can we make the constants constexpr?
+
+60
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_33ad4869
+Bytes: 51
+private: line should not increase the indent level.
+
+File: media/mtp/UsbHandle.h
+
+21:6-21:15
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_73898006
+Bytes: 72
+If the interface is MTP specific, maybe we should name it as IMtpHandle?
+
+21
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_b3723857
+Bytes: 134
+nit: Can we make it IUsbHandle? According to the framework style guide, interfaces (only pure virtual functions) should have prefix I.
+
+22
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_d377b445
+Bytes: 49
+'public:' lines should not increase indent level.
+
+42
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_337f081d
+Bytes: 40
+Can we switch the macros into constexpr?
+
+File: media/mtp/UsbMtpHandle.cpp
+
+39
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_f3caf036
+Bytes: 75
+Private member should have m prefix according to the framework style guide.
+
+57
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_d3c5f429
+Bytes: 30
+nit: break line is not needed.
+
+File: media/mtp/aio.cpp
+
+18:0-19:16
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_33a8e860
+Bytes: 29
+Please sort the include lines
+
+File: media/mtp/aio.h
+
+1
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_d390942d
+Bytes: 30
+Please add the licence header.
+
+18
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_93bb7cac
+Bytes: 80
+extern 'c' is needed here?
+Will this header file be included from c source file?
+
+51
+Wed Oct 26 01:18:51 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_53a56487
+Bytes: 25
+nit: Please add // _AIO_H
+
