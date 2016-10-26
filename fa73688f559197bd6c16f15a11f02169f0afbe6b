@@ -23,12 +23,28 @@ UUID: e16c60ba_13b04cc4
 Bytes: 45
 Could you explain who invokes mtp_configure ?
 
+98
+Wed Oct 26 17:45:10 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_13b04cc4
+UUID: 810004b4_ccce0f16
+Bytes: 226
+MtpReceiver will invoke this when mtp or ptp is enabled in config, but not connected. This tells functionfs to write the descriptors, and connecting is not possible until that happens. Check out the other commits in this topic
+
 241
 Wed Oct 26 01:18:51 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 610b10aa_47490ed0
 Bytes: 44
 Sending MTP Mtp Event! -> Sending MTP Event!
+
+241
+Wed Oct 26 17:45:10 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 610b10aa_47490ed0
+UUID: 810004b4_eccdd317
+Bytes: 32
+whoops, left over from debugging
 
 261
 Wed Oct 26 01:18:51 2016 +0000
@@ -147,12 +163,28 @@ UUID: 810004b4_9e5a7d0a
 Bytes: 90
 can we put this in a header somewhere? (seems like some of this is copy & paste from adb?)
 
+95:0-326:2
+Wed Oct 26 17:45:10 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_9e5a7d0a
+UUID: 810004b4_a1ada486
+Bytes: 126
+Unfortunately it's just different enough that they don't really have any common structures or elements that can be generalized
+
 360
 Wed Oct 26 16:03:12 2016 +0000
 Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 810004b4_9e839d26
 Bytes: 45
 shouldn't the destructor close the endpoints?
+
+360
+Wed Oct 26 17:45:10 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_9e839d26
+UUID: 810004b4_8c56d771
+Bytes: 350
+The handles are static to MtpServer, and live longer than a single server instance. MtpServer will call close() which handles closing the endpoint files. As for ep0, there's actually no real need to close it unless the descriptors change, we save some time by leaving it open so we don't have to write the descriptors again the next time we start up.
 
 400:12-400:17
 Wed Oct 26 16:03:12 2016 +0000
@@ -169,6 +201,14 @@ Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 810004b4_3e937177
 Bytes: 59
 is this needed? should these actually be in the destructor?
+
+447:0-449:18
+Wed Oct 26 17:45:10 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_3e937177
+UUID: 810004b4_ecf1537b
+Bytes: 35
+see above comment on the destructor
 
 581
 Wed Oct 26 16:03:12 2016 +0000
@@ -192,6 +232,14 @@ Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 810004b4_3e189137
 Bytes: 112
 do you really want to go through the loop once if file_length is 0? comment why if so, otherwise use while loop?
+
+715
+Wed Oct 26 17:45:10 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_3e189137
+UUID: 810004b4_ec1833eb
+Bytes: 36
+you might be right, let me make sure
 
 File: media/mtp/UsbHandle.h
 
@@ -284,6 +332,16 @@ this should either go in libc (with tests), or be renamed to not clash with <aio
 but the splice stuff makes this a *superset* of POSIX, no?
 
 but it seems like you're not actually using the splice stuff?
+
+15
+Wed Oct 26 17:45:10 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 810004b4_3e41b103
+UUID: 810004b4_0c9767d4
+Bytes: 361
+I'm not using the splice stuff atm, but once I get splice actually implemented for functionfs in the kernel it will give a slight performance increase.
+
+My original intent was to have just the posix stuff and remove this file when aio is added to bionic, but since the splice stuff may be necessary in the future it would probably be better to just rename this.
 
 18
 Wed Oct 26 01:18:51 2016 +0000
