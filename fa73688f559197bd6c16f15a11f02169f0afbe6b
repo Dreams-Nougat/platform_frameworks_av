@@ -9,6 +9,13 @@ UUID: 610b10aa_674c12e2
 Bytes: 40
 Can we put it in an anonymous namespace?
 
+39:20-39:24
+Wed Oct 26 15:25:53 2016 +0000
+Author: Andreas Gampe <1041833@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 810004b4_5e674500
+Bytes: 7
+nullptr
+
 98
 Wed Oct 26 01:18:51 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -134,6 +141,16 @@ UUID: e16c60ba_337f081d
 Bytes: 40
 Can we switch the macros into constexpr?
 
+42
+Wed Oct 26 15:25:53 2016 +0000
+Author: Andreas Gampe <1041833@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_337f081d
+UUID: 810004b4_fe8e197b
+Bytes: 119
+Not if you want the string concatentation macros below to work...
+
+Whether they are necessary at all is the question...
+
 File: media/mtp/UsbMtpHandle.cpp
 
 39
@@ -149,6 +166,13 @@ Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: e16c60ba_d3c5f429
 Bytes: 30
 nit: break line is not needed.
+
+71:39-71:54
+Wed Oct 26 15:25:53 2016 +0000
+Author: Andreas Gampe <1041833@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 810004b4_7e832952
+Bytes: 45
+This is C++, please do not use C-style casts.
 
 File: media/mtp/aio.cpp
 
