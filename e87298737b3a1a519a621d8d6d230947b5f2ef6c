@@ -1,0 +1,17 @@
+Revision: e87298737b3a1a519a621d8d6d230947b5f2ef6c
+Patch-set: 2
+File: media/libstagefright/SampleTable.cpp
+
+489:0-491:9
+Wed Oct 26 18:07:48 2016 +0000
+Author: Wei Jia <1060405@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 810004b4_ecce736a
+Bytes: 278
+mSyncSamples[i] == 0 means the stream is malformed. It's better to at least log this, e.g.,
+
+        if (mSyncSamples[i] == 0) {
+            ALOGE("b/32423862, unexpected zero value in stss");
+            continue;
+        }
+        mSyncSamples[i] = ntohl(mSyncSamples[i]) - 1;
+
