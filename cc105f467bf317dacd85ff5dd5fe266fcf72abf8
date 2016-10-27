@@ -1,0 +1,158 @@
+Revision: cc105f467bf317dacd85ff5dd5fe266fcf72abf8
+Patch-set: 3
+File: media/mtp/Android.mk
+
+39
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_f6cade36
+Bytes: 27
+nit: Please sort the lines.
+
+File: media/mtp/AsyncIO.cpp
+
+2
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_76b7aeba
+Bytes: 20
+nit: Should be 2016?
+
+21
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_96e44acc
+Bytes: 55
+anonymous namespace is better for C++ code than static?
+
+119
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_b6e946a3
+Bytes: 27
+You can use constexpr here.
+
+123
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_36d616dd
+Bytes: 39
+It's OK to access done without locking?
+
+File: media/mtp/AsyncIO.h
+
+2
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_36ad3669
+Bytes: 18
+nit: 2007 -> 2016?
+
+File: media/mtp/IUsbHandle.h
+
+2
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_b60ea6a3
+Bytes: 9
+nit: 2016
+
+23
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_36045679
+Bytes: 46
+If this is MTP specific, IMtpHandle is better?
+
+24
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_56d392eb
+Bytes: 30
+nit: Please remove the intent.
+
+25
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_16075a80
+Bytes: 63
+Please add comments about the returning value. Same for others.
+
+File: media/mtp/MtpServer.cpp
+
+267
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_161e7ad4
+Bytes: 80
+Need to set usb = nullptr here? Maybe need to add mutex to avoid race condition?
+
+File: media/mtp/MtpServer.h
+
+37
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_d61322ce
+Bytes: 53
+Can we remove this since we have MtpServer#configure?
+
+68
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_f6181eeb
+Bytes: 41
+Static member should start with prefix s.
+
+File: media/mtp/UsbFfsHandle.cpp
+
+57
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_7625ee1e
+Bytes: 49
+Please add m prefix for private member variables.
+
+58
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_361b76e5
+Bytes: 22
+nit: Remove the intent
+
+77
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_5628f2f7
+Bytes: 6
+ditto.
+
+374
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_96f28a80
+Bytes: 53
+nit: Fix the style to make it consistent with others.
+
+File: media/mtp/UsbMtpHandle.cpp
+
+35
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_b6f7866f
+Bytes: 22
+nit: Make it constexpr
+
+39
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_f6f1fe7a
+Bytes: 8
+nit: mFd
+
+38:0-53:32
+Thu Oct 27 09:04:25 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_d6ec02a2
+Bytes: 27
+nit: Decrease indent level.
+
