@@ -9,6 +9,14 @@ UUID: e16c60ba_f6cade36
 Bytes: 27
 nit: Please sort the lines.
 
+39
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_f6cade36
+UUID: a617de36_b9107f6c
+Bytes: 4
+Done
+
 File: media/mtp/AsyncIO.cpp
 
 2
@@ -18,12 +26,28 @@ UUID: e16c60ba_76b7aeba
 Bytes: 20
 nit: Should be 2016?
 
+2
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_76b7aeba
+UUID: 06318aec_0fd2890f
+Bytes: 4
+Done
+
 21
 Thu Oct 27 09:04:25 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: e16c60ba_96e44acc
 Bytes: 55
 anonymous namespace is better for C++ code than static?
+
+21
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_96e44acc
+UUID: 06318aec_efb61dde
+Bytes: 4
+Done
 
 119
 Thu Oct 27 09:04:25 2016 +0000
@@ -32,12 +56,28 @@ UUID: e16c60ba_b6e946a3
 Bytes: 27
 You can use constexpr here.
 
+119
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_b6e946a3
+UUID: 06318aec_cfb361ec
+Bytes: 4
+Done
+
 123
 Thu Oct 27 09:04:25 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: e16c60ba_36d616dd
 Bytes: 39
 It's OK to access done without locking?
+
+123
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_36d616dd
+UUID: a617de36_39f46f17
+Bytes: 51
+yes -- the threads haven't started up at this point
 
 File: media/mtp/AsyncIO.h
 
@@ -48,6 +88,14 @@ UUID: e16c60ba_36ad3669
 Bytes: 18
 nit: 2007 -> 2016?
 
+2
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_36ad3669
+UUID: a617de36_59ff23f7
+Bytes: 4
+Done
+
 File: media/mtp/IUsbHandle.h
 
 2
@@ -57,12 +105,28 @@ UUID: e16c60ba_b60ea6a3
 Bytes: 9
 nit: 2016
 
+2
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_b60ea6a3
+UUID: 06318aec_8fbd59ba
+Bytes: 4
+Done
+
 23
 Thu Oct 27 09:04:25 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: e16c60ba_36045679
 Bytes: 46
 If this is MTP specific, IMtpHandle is better?
+
+23
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_36045679
+UUID: 06318aec_52727456
+Bytes: 148
+Then the children classes would have to be renamed as well. MtpFfsHandle would be alright, but the other one would be MtpMtpHandle which sounds odd.
 
 24
 Thu Oct 27 09:04:25 2016 +0000
@@ -71,12 +135,28 @@ UUID: e16c60ba_56d392eb
 Bytes: 30
 nit: Please remove the intent.
 
+24
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_56d392eb
+UUID: 06318aec_127cec26
+Bytes: 100
+Do you mean to remove the public specifier? Without it all these functions become private by default
+
 25
 Thu Oct 27 09:04:25 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: e16c60ba_16075a80
 Bytes: 63
 Please add comments about the returning value. Same for others.
+
+25
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_16075a80
+UUID: 06318aec_b235180a
+Bytes: 4
+Done
 
 File: media/mtp/MtpServer.cpp
 
@@ -87,6 +167,16 @@ UUID: e16c60ba_161e7ad4
 Bytes: 80
 Need to set usb = nullptr here? Maybe need to add mutex to avoid race condition?
 
+267
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_161e7ad4
+UUID: 06318aec_92945c28
+Bytes: 214
+yeah there is a slight chance that the next configure could somehow arrive before this close call so that would work.
+
+there is not a need to set usb to nullptr though, since it has a lifetime longer than mtpserver
+
 File: media/mtp/MtpServer.h
 
 37
@@ -96,12 +186,28 @@ UUID: e16c60ba_d61322ce
 Bytes: 53
 Can we remove this since we have MtpServer#configure?
 
+37
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_d61322ce
+UUID: 06318aec_72fa1009
+Bytes: 4
+Done
+
 68
 Thu Oct 27 09:04:25 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: e16c60ba_f6181eeb
 Bytes: 41
 Static member should start with prefix s.
+
+68
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_f6181eeb
+UUID: 06318aec_b210786c
+Bytes: 4
+Done
 
 File: media/mtp/UsbFfsHandle.cpp
 
@@ -112,12 +218,28 @@ UUID: e16c60ba_7625ee1e
 Bytes: 49
 Please add m prefix for private member variables.
 
+57
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_7625ee1e
+UUID: 06318aec_f535ca3a
+Bytes: 4
+Done
+
 58
 Thu Oct 27 09:04:25 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: e16c60ba_361b76e5
 Bytes: 22
 nit: Remove the intent
+
+58
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_361b76e5
+UUID: 06318aec_75bf9a98
+Bytes: 17
+what do you mean?
 
 77
 Thu Oct 27 09:04:25 2016 +0000
@@ -133,6 +255,14 @@ UUID: e16c60ba_96f28a80
 Bytes: 53
 nit: Fix the style to make it consistent with others.
 
+374
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_96f28a80
+UUID: 06318aec_b5a1827f
+Bytes: 33
+what style elements specifically?
+
 File: media/mtp/UsbMtpHandle.cpp
 
 35
@@ -142,6 +272,14 @@ UUID: e16c60ba_b6f7866f
 Bytes: 22
 nit: Make it constexpr
 
+35
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_b6f7866f
+UUID: 06318aec_92321c1e
+Bytes: 4
+Done
+
 39
 Thu Oct 27 09:04:25 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -149,10 +287,26 @@ UUID: e16c60ba_f6f1fe7a
 Bytes: 8
 nit: mFd
 
+39
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_f6f1fe7a
+UUID: 06318aec_f206003c
+Bytes: 4
+Done
+
 38:0-53:32
 Thu Oct 27 09:04:25 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: e16c60ba_d6ec02a2
 Bytes: 27
 nit: Decrease indent level.
+
+38:0-53:32
+Thu Oct 27 22:19:00 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: e16c60ba_d6ec02a2
+UUID: 06318aec_d203042a
+Bytes: 4
+Done
 
