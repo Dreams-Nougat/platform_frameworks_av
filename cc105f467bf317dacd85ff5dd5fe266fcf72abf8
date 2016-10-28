@@ -79,6 +79,14 @@ UUID: a617de36_39f46f17
 Bytes: 51
 yes -- the threads haven't started up at this point
 
+123
+Fri Oct 28 00:44:43 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: a617de36_39f46f17
+UUID: e16c60ba_3665363a
+Bytes: 151
+How about the case the client invokes aio_pool_splice_init then it invokes aio_pool_write_init ? It looks the done flag is unintentionally initialized.
+
 File: media/mtp/AsyncIO.h
 
 2
@@ -128,6 +136,14 @@ UUID: 06318aec_52727456
 Bytes: 148
 Then the children classes would have to be renamed as well. MtpFfsHandle would be alright, but the other one would be MtpMtpHandle which sounds odd.
 
+23
+Fri Oct 28 00:44:43 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 06318aec_52727456
+UUID: e16c60ba_969c4af9
+Bytes: 66
+Maybe MtpKernelHandle or MtpDriverHandle is better for child name?
+
 24
 Thu Oct 27 09:04:25 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -142,6 +158,14 @@ Parent: e16c60ba_56d392eb
 UUID: 06318aec_127cec26
 Bytes: 100
 Do you mean to remove the public specifier? Without it all these functions become private by default
+
+24
+Fri Oct 28 00:44:43 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 06318aec_127cec26
+UUID: e16c60ba_b67866e8
+Bytes: 57
+Sorry it was typo. I meant that please remove the indent.
 
 25
 Thu Oct 27 09:04:25 2016 +0000
@@ -160,6 +184,20 @@ Done
 
 File: media/mtp/MtpServer.cpp
 
+124
+Fri Oct 28 00:44:43 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_b6a14634
+Bytes: 47
+Please check the return value of usb->configure
+
+166
+Fri Oct 28 00:44:43 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_d696c2d6
+Bytes: 46
+Please check the return value of usb->start().
+
 267
 Thu Oct 27 09:04:25 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -176,6 +214,16 @@ Bytes: 214
 yeah there is a slight chance that the next configure could somehow arrive before this close call so that would work.
 
 there is not a need to set usb to nullptr though, since it has a lifetime longer than mtpserver
+
+267
+Fri Oct 28 00:44:43 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 06318aec_92945c28
+UUID: e16c60ba_f69bbefb
+Bytes: 145
+Ah yes. I misunderstood usb is unusable after invoking #close. But we can reopen it by calling #start.
+
+Please check the return value of close().
 
 File: media/mtp/MtpServer.h
 
@@ -211,6 +259,13 @@ Done
 
 File: media/mtp/UsbFfsHandle.cpp
 
+42
+Fri Oct 28 00:44:43 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: e16c60ba_16911add
+Bytes: 66
+nit: Constant name should be like FFS_MTP_EP_OUT. Same for others.
+
 57
 Thu Oct 27 09:04:25 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -241,6 +296,14 @@ UUID: 06318aec_75bf9a98
 Bytes: 17
 what do you mean?
 
+58
+Fri Oct 28 00:44:43 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 06318aec_75bf9a98
+UUID: e16c60ba_5672b204
+Bytes: 43
+This should be indent. Sorry for confusion.
+
 77
 Thu Oct 27 09:04:25 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -262,6 +325,14 @@ Parent: e16c60ba_96f28a80
 UUID: 06318aec_b5a1827f
 Bytes: 33
 what style elements specifically?
+
+374
+Fri Oct 28 00:44:43 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 06318aec_b5a1827f
+UUID: e16c60ba_766fae17
+Bytes: 74
+I meant the position of '{'. Same for #353. Sorry for unclear description.
 
 File: media/mtp/UsbMtpHandle.cpp
 
