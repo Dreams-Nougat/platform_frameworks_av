@@ -1,0 +1,93 @@
+Revision: 1f40faaa987aa0d927e094b6bebc2cfc35e5858f
+Patch-set: 6
+File: media/mtp/AsyncIO.h
+
+62:62-62:63
+Mon Oct 31 02:05:06 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_0df0b174
+Bytes: 31
+nit: Remove the trailing space.
+
+File: media/mtp/MtpFfsHandle.cpp
+
+151
+Mon Oct 31 02:05:06 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_2df56d65
+Bytes: 36
+nit: The structures should be const?
+
+156
+Mon Oct 31 02:05:06 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_4deab988
+Bytes: 258
+Maybe we should use the same value for bInterfaceClass, bInterfaceSubClass, bInterfaceProtocol, defined in f_mtp.c ?
+
+https://cs.corp.google.com/android/hardware/bsp/kernel/common/v4.4/drivers/usb/gadget/function/f_mtp.c?q=package:android+mtp_usb&dr=C&l=1048
+
+175
+Mon Oct 31 02:05:06 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_6def7597
+Bytes: 28
+source should be USB_DIR_IN?
+
+183
+Mon Oct 31 02:05:06 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_8d03c173
+Bytes: 27
+sink should be USB_DIR_OUT?
+
+262
+Mon Oct 31 02:05:06 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_ad007d67
+Bytes: 16
+nit: Debug code?
+
+553:36-553:46
+Mon Oct 31 02:05:06 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_4d65595d
+Bytes: 27
+This should be mClosedLock.
+
+556
+Mon Oct 31 02:05:06 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_8d4e61dc
+Bytes: 130
+1. configure()
+2. configure()
+3. start()
+
+will cause dead lock here because mClosed will not be true at the second configure call.
+
+562:4-562:30
+Mon Oct 31 02:05:06 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_6d6a1530
+Bytes: 169
+We have dead lock here?
+
+1. configure()
+2. configure() // Return here because mBulkIn > 0.
+3. start() // mReadyCond.wait does not return because mReady will not be true.
+
+562
+Mon Oct 31 02:05:06 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_cd26a92e
+Bytes: 72
+If mBulkIn has already been opened, it's OK not to check mPtp != usePtp?
+
+771
+Mon Oct 31 02:05:06 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_cdfdc94a
+Bytes: 77
+Can we define everything except for get_ffs_handle in an anonymous namespace?
+
