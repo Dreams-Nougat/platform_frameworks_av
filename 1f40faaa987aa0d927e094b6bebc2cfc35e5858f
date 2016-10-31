@@ -9,6 +9,14 @@ UUID: 268cce49_0df0b174
 Bytes: 31
 nit: Remove the trailing space.
 
+62:62-62:63
+Mon Oct 31 21:14:05 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_0df0b174
+UUID: 2675ae07_392db7c8
+Bytes: 4
+Done
+
 File: media/mtp/MtpFfsHandle.cpp
 
 151
@@ -17,6 +25,14 @@ Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 268cce49_2df56d65
 Bytes: 36
 nit: The structures should be const?
+
+151
+Mon Oct 31 21:14:05 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_2df56d65
+UUID: 2675ae07_1ac38949
+Bytes: 4
+Done
 
 156
 Mon Oct 31 02:05:06 2016 +0000
@@ -27,12 +43,30 @@ Maybe we should use the same value for bInterfaceClass, bInterfaceSubClass, bInt
 
 https://cs.corp.google.com/android/hardware/bsp/kernel/common/v4.4/drivers/usb/gadget/function/f_mtp.c?q=package:android+mtp_usb&dr=C&l=1048
 
+156
+Mon Oct 31 21:14:05 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_4deab988
+UUID: 2675ae07_3a104530
+Bytes: 798
+So according to the MTP protocol, compliant class and subclass should be the same as those for PTP. The vendor specific codes are necessary for windows, which for some time didn't support the compliant version and instead required a special handshake. There isn't really a clean way to implement this handshake with ffs and on my testing with windows 10, it seems like windows now also supports the standard compliant values without the handshake. It would be easy to move to these new values, although we might lose compatibility with some older versions of windows. I haven't gotten my hands on an older windows device to test yet though. Do you have any thoughts on this? 
+
+See slide 6 in http://events.linuxfoundation.org/sites/events/files/slides/Media%20Transfer%20Protocol.pdf for this info.
+
 175
 Mon Oct 31 02:05:06 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 268cce49_6def7597
 Bytes: 28
 source should be USB_DIR_IN?
+
+175
+Mon Oct 31 21:14:05 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_6def7597
+UUID: 2675ae07_d93ae3e0
+Bytes: 88
+For usb endpoints, IN always refers to device to host, and OUT refers to host to device.
 
 183
 Mon Oct 31 02:05:06 2016 +0000
@@ -41,6 +75,14 @@ UUID: 268cce49_8d03c173
 Bytes: 27
 sink should be USB_DIR_OUT?
 
+183
+Mon Oct 31 21:14:05 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_8d03c173
+UUID: 2675ae07_19447b67
+Bytes: 9
+see above
+
 262
 Mon Oct 31 02:05:06 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -48,12 +90,28 @@ UUID: 268cce49_ad007d67
 Bytes: 16
 nit: Debug code?
 
+262
+Mon Oct 31 21:14:05 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_ad007d67
+UUID: 2675ae07_7a363db1
+Bytes: 4
+Done
+
 553:36-553:46
 Mon Oct 31 02:05:06 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 268cce49_4d65595d
 Bytes: 27
 This should be mClosedLock.
+
+553:36-553:46
+Mon Oct 31 21:14:05 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_4d65595d
+UUID: 2675ae07_0e9fca35
+Bytes: 4
+Done
 
 556
 Mon Oct 31 02:05:06 2016 +0000
@@ -65,6 +123,14 @@ Bytes: 130
 3. start()
 
 will cause dead lock here because mClosed will not be true at the second configure call.
+
+556
+Mon Oct 31 21:14:05 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_8d4e61dc
+UUID: 2675ae07_f9d31f5d
+Bytes: 115
+you're right this block should be below the check for ffs being already open so the second configure does not wait.
 
 562:4-562:30
 Mon Oct 31 02:05:06 2016 +0000
@@ -84,10 +150,34 @@ UUID: 268cce49_cd26a92e
 Bytes: 72
 If mBulkIn has already been opened, it's OK not to check mPtp != usePtp?
 
+562:4-562:30
+Mon Oct 31 21:14:05 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_6d6a1530
+UUID: 466e220f_ab3e997c
+Bytes: 94
+If the first configure sets mReady to true, additional configures shouldn't affect that value.
+
+562
+Mon Oct 31 21:14:05 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_cd26a92e
+UUID: 2675ae07_b96527cd
+Bytes: 222
+A configuration change from mtp to ptp will cause mtpserver to shut down and close the non config endpoints. Configure would be called, but it would have to wait for the server to finish closing before resetting the config
+
 771
 Mon Oct 31 02:05:06 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 268cce49_cdfdc94a
 Bytes: 77
 Can we define everything except for get_ffs_handle in an anonymous namespace?
+
+771
+Mon Oct 31 21:14:05 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_cdfdc94a
+UUID: 2675ae07_1a4e293a
+Bytes: 4
+Done
 
