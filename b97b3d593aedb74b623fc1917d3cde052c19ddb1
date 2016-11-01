@@ -9,6 +9,14 @@ UUID: 268cce49_8d302103
 Bytes: 22
 nit: Please remove it.
 
+39:28-39:29
+Tue Nov 01 19:06:52 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_8d302103
+UUID: 06cc2aaa_fd9f7b99
+Bytes: 4
+Done
+
 File: media/mtp/MtpDevHandle.cpp
 
 38:0-38:4
@@ -18,6 +26,14 @@ UUID: 268cce49_2d22cdbf
 Bytes: 30
 nit: Please remove the indent.
 
+38:0-38:4
+Tue Nov 01 19:06:52 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_2d22cdbf
+UUID: 06cc2aaa_dda4bff4
+Bytes: 4
+Done
+
 41:0-41:4
 Tue Nov 01 01:05:53 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -25,12 +41,28 @@ UUID: 268cce49_4d2719cf
 Bytes: 30
 nit: Please remove the indent.
 
+41:0-41:4
+Tue Nov 01 19:06:52 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_4d2719cf
+UUID: 06cc2aaa_bd9903b7
+Bytes: 4
+Done
+
 58:6-58:8
 Tue Nov 01 01:05:53 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 268cce49_6d2cd5b2
 Bytes: 25
 nit: Remove extra spaces.
+
+58:6-58:8
+Tue Nov 01 19:06:52 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_6d2cd5b2
+UUID: 06cc2aaa_7db48b1d
+Bytes: 4
+Done
 
 File: media/mtp/MtpFfsHandle.cpp
 
@@ -42,6 +74,14 @@ Bytes: 70
 Should we set:
 android::base::SetProperty("sys.usb.ffs.ready", "0");
 ?
+
+455
+Tue Nov 01 19:06:52 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_ad2dddad
+UUID: 06cc2aaa_dd171f68
+Bytes: 131
+That is handled by init.usb.configfs.rc when configfs is enabled. If configfs is not enabled, the property isn't used for anything.
 
 555
 Tue Nov 01 01:05:53 2016 +0000
@@ -57,12 +97,28 @@ I think we still have race condition.
 4. MtpFfsHandle::configure is invoked. It returns because mBulkIn is not 0.
 5. mBulkIn is closed. And it will not be reopened.
 
+555
+Tue Nov 01 19:06:52 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_cd3a29e1
+UUID: 06cc2aaa_5d878f5f
+Bytes: 581
+Yeah this is a tricky one. Without additional information somehow we don't know from inside configure whether the configure comes from a different instance of the server than previous configures. The only way I can think of that would perhaps work is to add a field to the intent that is set only on config change, and have MtpReceiver filter for that field. This way we would only ever receive one configure call per server startup, and we wouldn't have to worry about ignoring other calls. This would require a decent number of changes in UsbDeviceManager. Do you have any ideas?
+
 564:0-564:4
 Tue Nov 01 01:05:53 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 268cce49_ed37e5f5
 Bytes: 24
 nit: Please remove this.
+
+564:0-564:4
+Tue Nov 01 19:06:52 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_ed37e5f5
+UUID: 06cc2aaa_3d84d358
+Bytes: 4
+Done
 
 File: media/mtp/MtpRequestPacket.h
 
@@ -72,4 +128,12 @@ Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 268cce49_0d443167
 Bytes: 28
 nit: Please remove the line.
+
+2
+Tue Nov 01 19:06:52 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_0d443167
+UUID: 06cc2aaa_9dc767a1
+Bytes: 4
+Done
 
