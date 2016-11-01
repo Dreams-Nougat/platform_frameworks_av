@@ -61,6 +61,14 @@ UUID: 268cce49_0d1d117b
 Bytes: 298
 I'm still thinking if there is benefit for users if we follow the spec. I agree with that we basically should follow the spec. But in this case, changing the classes may break old Windows or AFT (https://www.android.com/filetransfer/). Following the spec does not give us better compatibility here.
 
+156
+Tue Nov 01 19:06:52 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_0d1d117b
+UUID: 06cc2aaa_9b6bec11
+Bytes: 174
+Yeah I will do some testing on older windows machines soon so we can be sure. I'm not sure that a lot of users still use windows xp, but 7 and above are definitely important.
+
 175
 Mon Oct 31 02:05:06 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -89,6 +97,14 @@ https://cs.corp.google.com/android/hardware/bsp/kernel/common/v4.4/drivers/usb/g
 In the func_desc structure in this file, there are also three endpoints: source, sink, intr. And the directions look like USB_DIR_OUT for source, USB_DIR_IN for sink, and USB_DIR_IN for intr.
 
 I'm not sure if the difference of orders (USB_DIR_IN, USB_DIR_OUT, USB_DIR_IN) vs (USB_DIR_OUT, USB_DIR_IN, USB_DIR_IN) is matter. But wondered why the two definitions are different.
+
+175
+Tue Nov 01 19:06:52 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 268cce49_8ded814f
+UUID: 06cc2aaa_7bb1302c
+Bytes: 539
+Except for the difference in orders, which I didn't realize, this is all consistent. I used the conventions from /system/core/adb/usb_linux_client.cpp where hs_source is the source for the device, but the endpoint name (bulk_out) refers to the hosts perspective and USB_DIR_OUT refers to the host's perspective as well. See https://developer.android.com/reference/android/hardware/usb/UsbConstants.html#USB_DIR_IN. f_mtp doesn't use the terms source and sink but you can see that ep_in is used as the sink and ep_out is used as the source.
 
 183
 Mon Oct 31 02:05:06 2016 +0000
