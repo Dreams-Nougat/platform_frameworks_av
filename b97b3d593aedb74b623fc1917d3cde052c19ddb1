@@ -1,0 +1,75 @@
+Revision: b97b3d593aedb74b623fc1917d3cde052c19ddb1
+Patch-set: 7
+File: media/mtp/IMtpHandle.h
+
+39:28-39:29
+Tue Nov 01 01:05:53 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_8d302103
+Bytes: 22
+nit: Please remove it.
+
+File: media/mtp/MtpDevHandle.cpp
+
+38:0-38:4
+Tue Nov 01 01:05:53 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_2d22cdbf
+Bytes: 30
+nit: Please remove the indent.
+
+41:0-41:4
+Tue Nov 01 01:05:53 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_4d2719cf
+Bytes: 30
+nit: Please remove the indent.
+
+58:6-58:8
+Tue Nov 01 01:05:53 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_6d2cd5b2
+Bytes: 25
+nit: Remove extra spaces.
+
+File: media/mtp/MtpFfsHandle.cpp
+
+455
+Tue Nov 01 01:05:53 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_ad2dddad
+Bytes: 70
+Should we set:
+android::base::SetProperty("sys.usb.ffs.ready", "0");
+?
+
+555
+Tue Nov 01 01:05:53 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_cd3a29e1
+Bytes: 374
+I think we still have race condition.
+
+1. Host reconnect our Android device.
+2. MtpServer loop breaks and it invokes MtpFfsHandle::close.
+   The thread switch happens just before #530.
+3. UsbService sends an intent and it's handled by MtpReceiver.
+4. MtpFfsHandle::configure is invoked. It returns because mBulkIn is not 0.
+5. mBulkIn is closed. And it will not be reopened.
+
+564:0-564:4
+Tue Nov 01 01:05:53 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_ed37e5f5
+Bytes: 24
+nit: Please remove this.
+
+File: media/mtp/MtpRequestPacket.h
+
+2
+Tue Nov 01 01:05:53 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 268cce49_0d443167
+Bytes: 28
+nit: Please remove the line.
+
