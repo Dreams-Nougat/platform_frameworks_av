@@ -10,12 +10,28 @@ Bytes: 197
 It looks it's OK to type the argument as aiocb* instead of void*, because std::thread processes a function and its arguments by using template.
 http://en.cppreference.com/w/cpp/thread/thread/thread
 
+24
+Wed Nov 02 21:27:30 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0670aa87_144f54da
+UUID: 86b57a46_25b084c0
+Bytes: 4
+Done
+
 54:11-54:24
 Wed Nov 02 09:24:12 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 0670aa87_b4f4e069
 Bytes: 50
 Should use std::unique_ptr instead of raw pointer?
+
+54:11-54:24
+Wed Nov 02 21:27:30 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0670aa87_b4f4e069
+UUID: 86b57a46_372ef7a8
+Bytes: 4
+Done
 
 64
 Wed Nov 02 09:24:12 2016 +0000
@@ -24,6 +40,14 @@ UUID: 0670aa87_3401b06b
 Bytes: 31
 nit: lk.unlock() is not needed?
 
+64
+Wed Nov 02 21:27:30 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0670aa87_3401b06b
+UUID: 86b57a46_65d1ecde
+Bytes: 77
+Why is it not? If the lock isn't unlocked then other threads cannot continue.
+
 71
 Wed Nov 02 09:24:12 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -31,12 +55,28 @@ UUID: 0670aa87_f469f83a
 Bytes: 31
 Can we reuse splice_write_func?
 
+71
+Wed Nov 02 21:27:30 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0670aa87_f469f83a
+UUID: 86b57a46_e59e7c9b
+Bytes: 4
+Done
+
 87
 Wed Nov 02 09:24:12 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 0670aa87_54fe2c46
 Bytes: 31
 nit: lk.unlock() is not needed?
+
+87
+Wed Nov 02 21:27:30 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0670aa87_54fe2c46
+UUID: 86b57a46_c508989f
+Bytes: 13
+same as above
 
 92
 Wed Nov 02 09:24:12 2016 +0000
@@ -48,12 +88,28 @@ notify_one should be invoked after lk.unlock()?
 It looks the thread invoking write_cond.wait try to acquire queue_lock mutex before checking the condition. Keeping the lock while calling notify_one block the thread immediately again, so it's not efficient.
 http://en.cppreference.com/w/cpp/thread/condition_variable/notify_one
 
+92
+Wed Nov 02 21:27:30 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0670aa87_74fb2855
+UUID: 86b57a46_c5a4185e
+Bytes: 4
+Done
+
 94
 Wed Nov 02 09:24:12 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 0670aa87_d464fc63
 Bytes: 24
 Can we reuse write_func?
+
+94
+Wed Nov 02 21:27:30 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0670aa87_d464fc63
+UUID: 86b57a46_c50a5805
+Bytes: 4
+Done
 
 111
 Wed Nov 02 09:24:12 2016 +0000
@@ -64,6 +120,14 @@ Adding CHECK is useful to prevent double call of aio_pool_init ?
 
 https://cs.corp.google.com/android/system/core/base/include/android-base/logging.h?q=package:android+CHECK&l=204
 
+111
+Wed Nov 02 21:27:30 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0670aa87_f4ee5899
+UUID: 86b57a46_451b0834
+Bytes: 4
+Done
+
 129
 Wed Nov 02 09:24:12 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -71,12 +135,28 @@ UUID: 0670aa87_945a849a
 Bytes: 34
 unlock before invoking notify_one.
 
+129
+Wed Nov 02 21:27:30 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0670aa87_945a849a
+UUID: 86b57a46_652d6cf1
+Bytes: 4
+Done
+
 142
 Wed Nov 02 09:24:12 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 0670aa87_b45f8089
 Bytes: 34
 unlock before invoking notify_one.
+
+142
+Wed Nov 02 21:27:30 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0670aa87_b45f8089
+UUID: 86b57a46_053c6027
+Bytes: 4
+Done
 
 File: media/mtp/AsyncIO.h
 
@@ -199,6 +279,14 @@ Parent: 06cc2aaa_7bb1302c
 UUID: 0670aa87_5459cc9f
 Bytes: 200
 I wonder if any order of endpoints is acceptable for USB hosts. I checked Android MTP host implementation and it looks it can handle any order. Not sure for others. Do you have information about that?
+
+175
+Wed Nov 02 21:27:30 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0670aa87_5459cc9f
+UUID: 86b57a46_17c3f397
+Bytes: 176
+It seems like they can handle any order since using this order has never failed to work for me. There's no real reason to not make them consistent though so I will change them.
 
 183
 Mon Oct 31 02:05:06 2016 +0000
