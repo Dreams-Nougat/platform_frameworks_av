@@ -105,6 +105,14 @@ UUID: 06cc2aaa_5d878f5f
 Bytes: 581
 Yeah this is a tricky one. Without additional information somehow we don't know from inside configure whether the configure comes from a different instance of the server than previous configures. The only way I can think of that would perhaps work is to add a field to the intent that is set only on config change, and have MtpReceiver filter for that field. This way we would only ever receive one configure call per server startup, and we wouldn't have to worry about ignoring other calls. This would require a decent number of changes in UsbDeviceManager. Do you have any ideas?
 
+555
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 06cc2aaa_5d878f5f
+UUID: 0670aa87_7456c870
+Bytes: 361
+You explained start() may be called before configure is completed() and I wonder when it happens. It looks MtpReceiver always invoke start() after configure(). Could you explain the details of the situation? I'm asking this because if we can ensure the order of two calls, the problem is much simper and we can just using mutex to wait for configure completion.
+
 564:0-564:4
 Tue Nov 01 01:05:53 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
