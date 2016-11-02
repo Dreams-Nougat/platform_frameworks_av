@@ -1,0 +1,30 @@
+Revision: 0f39e906d1f2574a1b9414032fa835fa4ec9a6dc
+Patch-set: 8
+File: media/mtp/AsyncIO.cpp
+
+17
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_f44018a3
+Bytes: 175
+Sorry for asking this in last minute, but can we add unit tests for AsyncIO?
+https://g3doc.corp.google.com/wireless/android/test_tools/g3doc/apct/development/native.md?cl=head
+
+99
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_344c50e3
+Bytes: 110
+I think it's unclear who should free the buffer.
+write_pool_func frees's the buffer though aio_write does not.
+
+File: media/mtp/MtpFfsHandle.cpp
+
+59
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_14367446
+Bytes: 180
+Sorry for asking this in last minute, but can we add unit tests for MtpFfsHandle?
+https://g3doc.corp.google.com/wireless/android/test_tools/g3doc/apct/development/native.md?cl=head
+
