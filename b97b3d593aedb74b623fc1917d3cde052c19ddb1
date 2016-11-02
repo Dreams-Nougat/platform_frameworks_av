@@ -113,6 +113,17 @@ UUID: 0670aa87_7456c870
 Bytes: 361
 You explained start() may be called before configure is completed() and I wonder when it happens. It looks MtpReceiver always invoke start() after configure(). Could you explain the details of the situation? I'm asking this because if we can ensure the order of two calls, the problem is much simper and we can just using mutex to wait for configure completion.
 
+555
+Wed Nov 02 21:27:30 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 0670aa87_7456c870
+UUID: 86b57a46_d74deb3d
+Bytes: 595
+I checked it out and I think you are right about configure always being finished before start. However I'm not sure if a mutex by itself solves the problem of this race. Lets say :
+First intent -> configure -> Connected intent -> start -> more intents -> configure will wait -> new intent, switch to ptp mode -> close.
+
+I'm not sure what will happen in that case where 2 configures are both sleeping and waiting for the lock. Perhaps they will both wake up and just reset the config unnecessarily. I also remember that BroadcastReceivers shouldn't take on long running tasks that require sleeps.
+
 564:0-564:4
 Tue Nov 01 01:05:53 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
