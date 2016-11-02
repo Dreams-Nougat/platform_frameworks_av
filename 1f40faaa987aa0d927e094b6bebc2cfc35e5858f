@@ -1,5 +1,83 @@
 Revision: 1f40faaa987aa0d927e094b6bebc2cfc35e5858f
 Patch-set: 6
+File: media/mtp/AsyncIO.cpp
+
+24
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_144f54da
+Bytes: 197
+It looks it's OK to type the argument as aiocb* instead of void*, because std::thread processes a function and its arguments by using template.
+http://en.cppreference.com/w/cpp/thread/thread/thread
+
+54:11-54:24
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_b4f4e069
+Bytes: 50
+Should use std::unique_ptr instead of raw pointer?
+
+64
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_3401b06b
+Bytes: 31
+nit: lk.unlock() is not needed?
+
+71
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_f469f83a
+Bytes: 31
+Can we reuse splice_write_func?
+
+87
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_54fe2c46
+Bytes: 31
+nit: lk.unlock() is not needed?
+
+92
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_74fb2855
+Bytes: 327
+notify_one should be invoked after lk.unlock()?
+
+It looks the thread invoking write_cond.wait try to acquire queue_lock mutex before checking the condition. Keeping the lock while calling notify_one block the thread immediately again, so it's not efficient.
+http://en.cppreference.com/w/cpp/thread/condition_variable/notify_one
+
+94
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_d464fc63
+Bytes: 24
+Can we reuse write_func?
+
+111
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_f4ee5899
+Bytes: 178
+Adding CHECK is useful to prevent double call of aio_pool_init ?
+
+https://cs.corp.google.com/android/system/core/base/include/android-base/logging.h?q=package:android+CHECK&l=204
+
+129
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_945a849a
+Bytes: 34
+unlock before invoking notify_one.
+
+142
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 0670aa87_b45f8089
+Bytes: 34
+unlock before invoking notify_one.
+
 File: media/mtp/AsyncIO.h
 
 62:62-62:63
@@ -69,6 +147,14 @@ UUID: 06cc2aaa_9b6bec11
 Bytes: 174
 Yeah I will do some testing on older windows machines soon so we can be sure. I'm not sure that a lot of users still use windows xp, but 7 and above are definitely important.
 
+156
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 06cc2aaa_9b6bec11
+UUID: 0670aa87_d43b1c30
+Bytes: 52
+I read the article you attached and SGTM. Thank you!
+
 175
 Mon Oct 31 02:05:06 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -105,6 +191,14 @@ Parent: 268cce49_8ded814f
 UUID: 06cc2aaa_7bb1302c
 Bytes: 539
 Except for the difference in orders, which I didn't realize, this is all consistent. I used the conventions from /system/core/adb/usb_linux_client.cpp where hs_source is the source for the device, but the endpoint name (bulk_out) refers to the hosts perspective and USB_DIR_OUT refers to the host's perspective as well. See https://developer.android.com/reference/android/hardware/usb/UsbConstants.html#USB_DIR_IN. f_mtp doesn't use the terms source and sink but you can see that ep_in is used as the sink and ep_out is used as the source.
+
+175
+Wed Nov 02 09:24:12 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 06cc2aaa_7bb1302c
+UUID: 0670aa87_5459cc9f
+Bytes: 200
+I wonder if any order of endpoints is acceptable for USB hosts. I checked Android MTP host implementation and it looks it can handle any order. Not sure for others. Do you have information about that?
 
 183
 Mon Oct 31 02:05:06 2016 +0000
