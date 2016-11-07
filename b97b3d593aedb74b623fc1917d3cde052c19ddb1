@@ -124,6 +124,31 @@ First intent -> configure -> Connected intent -> start -> more intents -> config
 
 I'm not sure what will happen in that case where 2 configures are both sleeping and waiting for the lock. Perhaps they will both wake up and just reset the config unnecessarily. I also remember that BroadcastReceivers shouldn't take on long running tasks that require sleeps.
 
+555
+Mon Nov 07 05:10:27 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 86b57a46_d74deb3d
+UUID: 2b7f379a_557d8c5c
+Bytes: 1119
+Let's assume the more intents are dispatched by UsbDeviceManager because a user select different role in the USB device role dialog. (e.g. MTP -> MIDI)
+
+In this case, do we explicitly need to close the current configuration mControl here, or the kernel close the connection internally and mControl will go automatically to an invalid state?
+
+It looks we close mControl here only when the MTP and PTP is switched. So I guess the kernel automatically close the connection internally, then mControl and the endpoints go to the invalid state.
+
+It means, if the receiver receives more intents with different configuration, MtpServer starts getting errors from the mControl and endpoints and it eventually invokes MtpFfsHandle#close.
+
+So I guess the behavior should be:
+
+1. First intent -> configure.
+2. Connected intent -> start.
+3. More intents -> configure will wait.
+4. MtpFfsHandle::close is invoked.
+5. configure is invoked with different settings. Maybe settings with the last intent should be honored?
+6. start() is invoked.
+
+If we cannot wait in BroadcastReceivers, we can use a queue to remember configure requests.
+
 564:0-564:4
 Tue Nov 01 01:05:53 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
