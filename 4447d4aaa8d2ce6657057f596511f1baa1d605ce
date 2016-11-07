@@ -1,0 +1,46 @@
+Revision: 4447d4aaa8d2ce6657057f596511f1baa1d605ce
+Patch-set: 9
+File: media/mtp/MtpFfsHandle.cpp
+
+460
+Mon Nov 07 05:40:40 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2b7f379a_357c905e
+Bytes: 94
+PLOG is used when we would like to output errno. Here please use LOG instead. Same for others.
+
+596:27-596:35
+Mon Nov 07 05:40:40 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2b7f379a_5526ec86
+Bytes: 35
+buf2_len can be negative. Is it OK?
+
+616:54-616:59
+Mon Nov 07 05:40:40 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2b7f379a_f58db84f
+Bytes: 37
+Please use C++ cast. Same for others.
+
+651:8-651:46
+Mon Nov 07 05:40:40 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2b7f379a_958a4435
+Bytes: 76
+It looks we can add an else closure here instead of starting new if closure.
+
+665:5-665:6
+Mon Nov 07 05:40:40 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2b7f379a_b587402e
+Bytes: 28
+Please remove the semicolon.
+
+696:26-696:34
+Mon Nov 07 05:40:40 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2b7f379a_752be84b
+Bytes: 35
+buf2_len can be negative. Is it OK?
+
