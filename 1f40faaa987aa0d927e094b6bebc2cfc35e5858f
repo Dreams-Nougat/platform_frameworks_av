@@ -48,6 +48,14 @@ UUID: 86b57a46_65d1ecde
 Bytes: 77
 Why is it not? If the lock isn't unlocked then other threads cannot continue.
 
+64
+Mon Nov 07 05:10:27 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 86b57a46_65d1ecde
+UUID: 2b7f379a_d5e67c31
+Bytes: 69
+Because unique_lock should unlock the mutex object in the destructor.
+
 71
 Wed Nov 02 09:24:12 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -287,6 +295,14 @@ Parent: 0670aa87_5459cc9f
 UUID: 86b57a46_17c3f397
 Bytes: 176
 It seems like they can handle any order since using this order has never failed to work for me. There's no real reason to not make them consistent though so I will change them.
+
+175
+Mon Nov 07 05:10:27 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 86b57a46_17c3f397
+UUID: 2b7f379a_95e00414
+Bytes: 16
+SGTM. Thank you!
 
 183
 Mon Oct 31 02:05:06 2016 +0000
