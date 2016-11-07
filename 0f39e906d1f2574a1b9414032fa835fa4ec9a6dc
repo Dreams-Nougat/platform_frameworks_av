@@ -34,6 +34,14 @@ UUID: 86b57a46_b77307c9
 Bytes: 264
 aio_write allows the caller to manage the buffer which avoids unnecessary allocs. With the pool, the caller doesn't know when the buffer is done being used so the caller can't reuse buffers or even know when to free them, so it is easiest to free them immediately.
 
+99
+Mon Nov 07 05:10:27 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 86b57a46_b77307c9
+UUID: 2b7f379a_f5e3781e
+Bytes: 258
+Adding comments to the header file may help to let users of the class know about that. Also how about adding new field aio_pool_buf that is std::unique_ptr or std::vector? Currently it's a bit easy to miss the difference between aio_write and aio_pool_write.
+
 File: media/mtp/MtpFfsHandle.cpp
 
 59
