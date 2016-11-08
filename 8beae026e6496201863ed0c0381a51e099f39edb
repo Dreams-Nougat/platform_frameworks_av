@@ -1,0 +1,28 @@
+Revision: 8beae026e6496201863ed0c0381a51e099f39edb
+Patch-set: 2
+File: services/audioflinger/Effects.cpp
+
+340:4-343:5
+Tue Nov 08 23:00:50 2016 +0000
+Author: Ricardo Garcia <1061109@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2bde5729_8b456b8e
+Bytes: 437
+I'd suggest that instead of forcing ALL the effects to have stereo output, just make sure this is the case for auxiliary effects: 
+
+if ((mDescriptor.flags & EFFECT_FLAG_TYPE_MASK) == EFFECT_FLAG_TYPE_AUXILIARY) {
+        mConfig.inputCfg.channels = AUDIO_CHANNEL_OUT_MONO;
+        mConfig.outputCfg.channels = AUDIO_CHANNEL_OUT_STEREO;
+    }
+
+
+This will make easier to improve the logic in the future when we tackle multichannel effects.
+
+353
+Tue Nov 08 23:00:50 2016 +0000
+Author: Ricardo Garcia <1061109@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2bde5729_8b172b6a
+Bytes: 115
+(continuing my previous comment). Keep the statement here: 
+
+mConfig.outputCfg.channels = AUDIO_CHANNEL_OUT_STEREO;
+
