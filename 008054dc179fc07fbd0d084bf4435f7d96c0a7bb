@@ -9,3 +9,11 @@ UUID: 6b8e8f82_92d2ba18
 Bytes: 79
 Do we need to do something intelligent in this patch to handle TARGET_2ND_ARCH?
 
+11
+Wed Nov 09 20:01:39 2016 +0000
+Author: Alex Naidis <1092708@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 6b8e8f82_92d2ba18
+UUID: 4b49cb00_3e8aa9a6
+Bytes: 101
+I think the extensions coming from BOARD_SECCOMP_POLICY are meant to be applied on all architectures.
+
