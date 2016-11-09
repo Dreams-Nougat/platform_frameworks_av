@@ -17,3 +17,11 @@ UUID: 4b49cb00_3e8aa9a6
 Bytes: 101
 I think the extensions coming from BOARD_SECCOMP_POLICY are meant to be applied on all architectures.
 
+11
+Wed Nov 09 20:02:41 2016 +0000
+Author: Jorge Lucangeli Obes <1076138@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 6b8e8f82_92d2ba18
+UUID: 6b8e8f82_729cf650
+Bytes: 271
+I would assume that the board-specific policy will contain architecture-appropriate syscalls. E.g. a 64-bit ARM device should have 32-bit syscalls in its device-specific policy. This is OK because for a specific device, mediacoded should always run with the same bitness.
+
