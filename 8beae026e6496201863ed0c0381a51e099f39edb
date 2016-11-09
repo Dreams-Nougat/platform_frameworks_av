@@ -17,6 +17,14 @@ if ((mDescriptor.flags & EFFECT_FLAG_TYPE_MASK) == EFFECT_FLAG_TYPE_AUXILIARY) {
 
 This will make easier to improve the logic in the future when we tackle multichannel effects.
 
+340:4-343:5
+Wed Nov 09 04:48:37 2016 +0000
+Author: Hidenari Koshimae <1022419@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2bde5729_8b456b8e
+UUID: 2b7f379a_38ffa58d
+Bytes: 76
+Thanks you for your review. I uploaded new patch set to follow your comment.
+
 353
 Tue Nov 08 23:00:50 2016 +0000
 Author: Ricardo Garcia <1061109@85c56323-6fa9-3386-8a01-6480fb634889>
