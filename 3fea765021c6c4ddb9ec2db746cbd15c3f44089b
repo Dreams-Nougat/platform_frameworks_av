@@ -1,0 +1,12 @@
+Revision: 3fea765021c6c4ddb9ec2db746cbd15c3f44089b
+Patch-set: 3
+File: services/audioflinger/Effects.cpp
+
+342
+Wed Nov 09 19:22:41 2016 +0000
+Author: Ricardo Garcia <1061109@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 6b8e8f82_f299c655
+Bytes: 90
+add a log message
+ALOGV("Overriding auxiliary effect input as MONO and output as STEREO");
+
