@@ -1,0 +1,11 @@
+Revision: 008054dc179fc07fbd0d084bf4435f7d96c0a7bb
+Patch-set: 3
+File: services/mediacodec/minijail/Android.mk
+
+11
+Wed Nov 09 19:56:29 2016 +0000
+Author: Nick Kralevich <1003966@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 6b8e8f82_92d2ba18
+Bytes: 79
+Do we need to do something intelligent in this patch to handle TARGET_2ND_ARCH?
+
