@@ -10,3 +10,11 @@ Bytes: 90
 add a log message
 ALOGV("Overriding auxiliary effect input as MONO and output as STEREO");
 
+342
+Thu Nov 10 00:33:58 2016 +0000
+Author: Hidenari Koshimae <1022419@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 6b8e8f82_f299c655
+UUID: 6b8e8f82_4996e531
+Bytes: 4
+Done
+
