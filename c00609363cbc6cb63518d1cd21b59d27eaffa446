@@ -1,0 +1,18 @@
+Revision: c00609363cbc6cb63518d1cd21b59d27eaffa446
+Patch-set: 1
+File: /COMMIT_MSG
+
+7
+Mon Nov 14 19:21:18 2016 +0000
+Author: Eino-Ville Talvala <1010050@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: cb669bd0_9ed8c406
+Bytes: 335
+to be specific: please limit the first sentence to ~65 characters. That'll require reformatting the rest of the commit message.  So for example:
+
+"Add missing mTriggerMutex lock.
+
+There is thread safety problem for mTriggerMap
+when using mTriggerMutex and mRequestLock. For correctness, 
+add mTriggerMutex before mTriggermap.clear().
+"
+
