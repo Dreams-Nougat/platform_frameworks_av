@@ -1,0 +1,12 @@
+Revision: 151d0a64acdd9143bb252bdc0713b26a046fffdc
+Patch-set: 1
+File: services/audioflinger/AudioMixer.cpp
+
+1616:20-1616:24
+Mon Nov 14 17:18:39 2016 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: cb669bd0_45301bb5
+Bytes: 261
+This should not be needed as out pointer is incremented each time we write a sample. so out position should be consistent with the remaining frames numFrames.
+I think the problem is that in case of floating point format, fout should be used here instead of out.
+
