@@ -42,6 +42,14 @@ UUID: 2b7f379a_f5e3781e
 Bytes: 258
 Adding comments to the header file may help to let users of the class know about that. Also how about adding new field aio_pool_buf that is std::unique_ptr or std::vector? Currently it's a bit easy to miss the difference between aio_write and aio_pool_write.
 
+99
+Thu Nov 17 22:27:34 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2b7f379a_f5e3781e
+UUID: d0bc8cd0_2290109f
+Bytes: 134
+What do you mean by the new field? Do you mean to replace the current argument or add a new one, and what would the field be used for?
+
 File: media/mtp/MtpFfsHandle.cpp
 
 59
