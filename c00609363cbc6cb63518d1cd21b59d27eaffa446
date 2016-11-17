@@ -16,3 +16,12 @@ when using mTriggerMutex and mRequestLock. For correctness,
 add mTriggerMutex before mTriggermap.clear().
 "
 
+7
+Thu Nov 17 02:38:19 2016 +0000
+Author: Jinguang Dong <1129218@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: cb669bd0_9ed8c406
+UUID: 0b1ef349_ad7ac5db
+Bytes: 85
+Thanks very much for Eino-Ville.
+I will upload it again, please help to review again.
+
