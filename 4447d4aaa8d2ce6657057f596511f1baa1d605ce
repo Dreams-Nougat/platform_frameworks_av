@@ -9,12 +9,28 @@ UUID: 2b7f379a_357c905e
 Bytes: 94
 PLOG is used when we would like to output errno. Here please use LOG instead. Same for others.
 
+460
+Thu Nov 17 00:26:46 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2b7f379a_357c905e
+UUID: 7037600d_bc488c2f
+Bytes: 4
+Done
+
 596:27-596:35
 Mon Nov 07 05:40:40 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 2b7f379a_5526ec86
 Bytes: 35
 buf2_len can be negative. Is it OK?
+
+596:27-596:35
+Thu Nov 17 00:26:46 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2b7f379a_5526ec86
+UUID: 7037600d_367c8cd6
+Bytes: 53
+Seems like it will throw std::bad_alloc. I'll use max
 
 616:54-616:59
 Mon Nov 07 05:40:40 2016 +0000
@@ -30,6 +46,14 @@ UUID: 2b7f379a_958a4435
 Bytes: 76
 It looks we can add an else closure here instead of starting new if closure.
 
+651:8-651:46
+Thu Nov 17 00:26:46 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2b7f379a_958a4435
+UUID: 7037600d_1c0898d8
+Bytes: 4
+Done
+
 665:5-665:6
 Mon Nov 07 05:40:40 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -37,10 +61,26 @@ UUID: 2b7f379a_b587402e
 Bytes: 28
 Please remove the semicolon.
 
+665:5-665:6
+Thu Nov 17 00:26:46 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2b7f379a_b587402e
+UUID: 7037600d_5c12200a
+Bytes: 4
+Done
+
 696:26-696:34
 Mon Nov 07 05:40:40 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 2b7f379a_752be84b
 Bytes: 35
 buf2_len can be negative. Is it OK?
+
+696:26-696:34
+Thu Nov 17 00:26:46 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2b7f379a_752be84b
+UUID: 7037600d_5662f02d
+Bytes: 4
+Done
 
