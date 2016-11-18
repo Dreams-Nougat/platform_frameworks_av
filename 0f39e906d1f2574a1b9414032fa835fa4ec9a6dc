@@ -50,6 +50,18 @@ UUID: d0bc8cd0_2290109f
 Bytes: 134
 What do you mean by the new field? Do you mean to replace the current argument or add a new one, and what would the field be used for?
 
+99
+Fri Nov 18 02:29:39 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: d0bc8cd0_2290109f
+UUID: 707a00f8_c89f6f3a
+Bytes: 636
+I meant adding new unique_ptr<char[]> aio_pool_buf to aiocb as well as void* aio_buf.
+
+My concern is it's unclear if aio_buf has owner ship of memory region. Actually it depends on the function the client code invokes. In this situation, the client code can wrongly use the memory after free, or miss releasing the memory. The bug is difficult to find.
+
+The purpose of adding new aio_pool_buf is explicitly telling the client code that write_pool function takes the ownership of the memory while write function using aio_buf does not take the ownership of memory. It also easy to find the bug when the client code uses the wrong buffer.
+
 File: media/mtp/MtpFfsHandle.cpp
 
 59
