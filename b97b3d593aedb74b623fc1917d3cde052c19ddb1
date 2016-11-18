@@ -157,6 +157,39 @@ UUID: 7037600d_4d09ba4d
 Bytes: 523
 so the issue with what you stated is that in step 5, we do not know when to actually invoke configure. The correct configure that actually is intended to set the next functions could have been sent before close() or after close() and you do not know, even after close finishes, whether the most recent intent is actually the right one. I am going to try a solution that involves creating a custom field in the intent that is only set when UsbDeviceManager wants to change the config, and only call configure if that is set.
 
+555
+Fri Nov 18 02:29:39 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 7037600d_4d09ba4d
+UUID: 707a00f8_08e0a7b0
+Bytes: 1342
+I still wonder why configure cannot wait until the close method is invoked.
+
+Maybe talking on VC is faster if you are fine. Let me add my thought here.
+
+* Two operations are conducted on MtpFfshandle. a) configure() and b) message loop (containing start() and close())
+* a) configure and b) message loop cannot be done at the same time. We need to guard by using mutex.
+* b) message loop will automatically finish if the loop is using old condition. (My assumption here is the kernel makes mControl invalid when configuration is changed).
+
+So the configure and the message loop will be done sequentially while we cannot ensure the order of two operations.
+
+For example)
+
+configure -> message loop -> configure -> configure -> message loop ...
+
+OR
+
+message loop -> configure -> configure -> message loop ...
+
+So the simple rule:
+
+1. configure and message loop shares the same lock to run sequentially.
+2. Message loop fail if no configure call is invoked so far. (It's fine as we always call message loop after configure)
+3. Before obtaining lock, each configure and message loop increments a counter stored in std::atomic_integer and remember the value.
+4. After obtaining lock, configure and message loop checks the counter value, and if the counter value is updated, it just returns as there is another the most recent call.
+
+does not work?
+
 564:0-564:4
 Tue Nov 01 01:05:53 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
