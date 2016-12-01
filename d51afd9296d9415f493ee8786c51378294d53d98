@@ -1,0 +1,15 @@
+Revision: d51afd9296d9415f493ee8786c51378294d53d98
+Patch-set: 1
+File: media/libstagefright/MPEG4Extractor.cpp
+
+992:24-993:45
+Thu Dec 01 19:43:41 2016 +0000
+Author: Wei Jia <1060405@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: cd47938e_5da7cef3
+Bytes: 60
+please use braces, i.e.,
+
+if (cur) {
+    cur->next = NULL;
+}
+
