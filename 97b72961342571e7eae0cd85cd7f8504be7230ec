@@ -1,0 +1,11 @@
+Revision: 97b72961342571e7eae0cd85cd7f8504be7230ec
+Patch-set: 1
+File: services/audiopolicy/engineconfigurable/parameter-framework/examples/Settings/device_for_strategy_accessibility.pfw
+
+378:6-378:41
+Thu Dec 01 16:50:47 2016 +0000
+Author: Mikhail Naganov <1042638@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: cd47938e_84caa701
+Bytes: 125
+How after this change the case of "ForceUseForMedia Is ForceSpeaker AND ForceUseForCommunication Is ForceSpeaker" is handled?
+
