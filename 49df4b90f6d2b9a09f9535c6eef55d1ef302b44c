@@ -1,0 +1,11 @@
+Revision: 49df4b90f6d2b9a09f9535c6eef55d1ef302b44c
+Patch-set: 1
+File: services/audiopolicy/common/managerdefinitions/include/TypeConverter.h
+
+33:5-33:41
+Fri Dec 02 16:41:03 2016 +0000
+Author: Mikhail Naganov <1042638@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: cd47938e_c7c824b6
+Bytes: 189
+I don't really like including so much static data into a header file. Why didn't you use the regular approach with putting these definitions into .cpp and using MAKE_STRING_FROM_ENUM macro?
+
