@@ -1,0 +1,100 @@
+Revision: f18d3a6cf16d04cf94579a158e82ce8733b8e173
+Patch-set: 17
+File: media/mtp/MtpDevHandle.cpp
+
+39
+Mon Dec 05 00:47:22 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_4e3f131b
+Bytes: 144
+Coudl you use unique_fd?
+https://cs.corp.google.com/android/system/core/base/include/android-base/unique_fd.h?q=package:android+unique_fd&dr=CSs
+
+File: media/mtp/MtpFfsHandle.cpp
+
+455
+Mon Dec 05 00:47:22 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_8e381b31
+Bytes: 62
+Maybe we can change the return type of close from int to void?
+
+460
+Mon Dec 05 00:47:22 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_ae35d739
+Bytes: 62
+Maybe we can change the return type of start from int to void?
+
+557
+Mon Dec 05 00:47:22 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_6e44cfb8
+Bytes: 30
+nit: Please remove the spaces.
+
+File: media/mtp/MtpFfsHandle.h
+
+42
+Mon Dec 05 00:47:22 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_2e4ac7c5
+Bytes: 153
+Can we use unique_fd for the FDs?
+https://cs.corp.google.com/android/system/core/base/include/android-base/unique_fd.h?q=package:android+unique_fd&dr=CSs
+
+File: media/mtp/tests/AsyncIO_test.cpp
+
+45
+Mon Dec 05 00:47:22 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_eebc3f6b
+Bytes: 156
+Please use TempFile.
+https://cs.corp.google.com/android/system/core/base/include/android-base/test_utils.h?rcl=2aaa485e1503e35890e8570546e1866bfd783a20&l=24
+
+165
+Mon Dec 05 00:47:22 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_ee2fdfe1
+Bytes: 25
+Please remove the spaces.
+
+191
+Mon Dec 05 00:47:22 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_0ea26b4b
+Bytes: 25
+Please remove the spaces.
+
+File: media/mtp/tests/MtpFfsHandle_test.cpp
+
+46
+Mon Dec 05 00:47:22 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_4eac733c
+Bytes: 144
+Maybe we can remove the field after turning ffs_handle->{mBulkIn, mBulkOut, mIntr} into unique_fd since we don't need to close the FDs manually.
+
+49
+Mon Dec 05 00:47:22 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_8eb57b83
+Bytes: 22
+Please use unique_ptr.
+
+52
+Mon Dec 05 00:47:22 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_6eb12f95
+Bytes: 33
+Please use unique_fd for the FDs.
+
+56
+Mon Dec 05 00:47:22 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_aeb23796
+Bytes: 166
+Please use TemporaryFile here.
+https://cs.corp.google.com/android/system/core/base/include/android-base/test_utils.h?rcl=2aaa485e1503e35890e8570546e1866bfd783a20&l=24
+
