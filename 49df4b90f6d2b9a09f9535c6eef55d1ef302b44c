@@ -9,3 +9,11 @@ UUID: cd47938e_c7c824b6
 Bytes: 189
 I don't really like including so much static data into a header file. Why didn't you use the regular approach with putting these definitions into .cpp and using MAKE_STRING_FROM_ENUM macro?
 
+33:5-33:41
+Mon Dec 05 13:23:34 2016 +0000
+Author: Francois Gaffie <1103033@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: cd47938e_c7c824b6
+UUID: 4d0ba3a9_6757721e
+Bytes: 29
+sure, i will move this to cpp
+
