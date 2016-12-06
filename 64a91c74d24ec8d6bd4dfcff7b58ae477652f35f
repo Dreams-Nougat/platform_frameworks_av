@@ -1,0 +1,49 @@
+Revision: 64a91c74d24ec8d6bd4dfcff7b58ae477652f35f
+Patch-set: 18
+File: media/mtp/MtpFfsHandle.h
+
+21
+Tue Dec 06 02:18:17 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_cee22315
+Bytes: 30
+nit: Please sort the includes.
+
+27
+Tue Dec 06 02:18:17 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_ce886342
+Bytes: 332
+It's a bit strange publishing definition in the anonymous namespace.
+MtpFfsHandle.cc and MtpFfsHandle_test..cc refers different (their own) MtpFfsHandle, though it works since the two implementations of MtpFfsHandle has the exactly same definition.
+
+Could you move MtpFfsHandle from the anonymous namespace to the android namespace?
+
+45
+Tue Dec 06 02:18:17 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_aee5d71f
+Bytes: 44
+nit: The line does not with the column with.
+
+File: media/mtp/MtpServer.cpp
+
+167
+Tue Dec 06 02:18:17 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_ae6237bc
+Bytes: 663
+I think this is introducing new race condition because configure is invoked without synchronizing with UsbDeviceManager.
+
+1. MSG_SET_CURRENT_FUNCTIONS (MTP)
+2.     Receive intnet issued by step 1. MtpServer::configure(/* isPtp */ false)
+3. Process of MtpServer is killed.
+4. MSG_UPDATE_STATE
+5. MSG_SET_CURRENT_FUNCTIONS (PTP)
+6.     Receive intnet issued by step 4. MtpServer::run() -> MtpServer::configure(/* isPtp */ false)
+
+Step 5 configures the drive as MTP though the current functions in UsbDeviceManager is PTP.
+Also it's not efficient to re-invoke MtpServer::configure.
+
+Cannot we remove the lines and let MtpServer keep living after configure succeeded?
+
