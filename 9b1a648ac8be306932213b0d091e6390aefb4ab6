@@ -1,0 +1,12 @@
+Revision: 9b1a648ac8be306932213b0d091e6390aefb4ab6
+Patch-set: 19
+File: media/mtp/MtpServer.h
+
+61
+Tue Dec 06 03:43:20 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 2d8f4f3f_cec1433e
+Bytes: 127
+Copying MtpEventPacket causes double free in MtpPacket's destructor.
+Please use std::queue<unique_ptr<MtpEventPacket>> instead.
+
