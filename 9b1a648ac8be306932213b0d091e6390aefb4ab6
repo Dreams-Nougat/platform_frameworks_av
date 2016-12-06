@@ -9,6 +9,14 @@ UUID: 2d8f4f3f_316f8a6b
 Bytes: 24
 nit: Can we remove this?
 
+21
+Tue Dec 06 20:15:06 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_316f8a6b
+UUID: ad1edff1_2edcbf74
+Bytes: 150
+Would it be better to have this include line repeated in MtpData/Request/Response/Event Packets? They use the definition even though MtpPacket doesn't
+
 69
 Tue Dec 06 04:06:13 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -16,6 +24,14 @@ UUID: 2d8f4f3f_116a8e5a
 Bytes: 214
 Could you add DISALLOW_COPY_AND_ASSIGN(MtpPacket) here while you are working here?
 https://cs.corp.google.com/android/system/core/base/include/android-base/macros.h?rcl=d96446712c4ddd365100fea3b52aeef0cbb56e03&l=44
+
+69
+Tue Dec 06 20:15:06 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_116a8e5a
+UUID: ad1edff1_0e6d3be0
+Bytes: 4
+Done
 
 File: media/mtp/MtpServer.h
 
@@ -26,4 +42,12 @@ UUID: 2d8f4f3f_cec1433e
 Bytes: 127
 Copying MtpEventPacket causes double free in MtpPacket's destructor.
 Please use std::queue<unique_ptr<MtpEventPacket>> instead.
+
+61
+Tue Dec 06 20:15:06 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_cec1433e
+UUID: ad1edff1_eea6c7f6
+Bytes: 4
+Done
 
