@@ -10,6 +10,14 @@ Bytes: 144
 Coudl you use unique_fd?
 https://cs.corp.google.com/android/system/core/base/include/android-base/unique_fd.h?q=package:android+unique_fd&dr=CSs
 
+39
+Tue Dec 06 01:30:54 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_4e3f131b
+UUID: 8decbb0b_f479c0e6
+Bytes: 4
+Done
+
 File: media/mtp/MtpFfsHandle.cpp
 
 455
@@ -19,6 +27,14 @@ UUID: 2d8f4f3f_8e381b31
 Bytes: 62
 Maybe we can change the return type of close from int to void?
 
+455
+Tue Dec 06 01:30:54 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_8e381b31
+UUID: adc25f6f_ee1227d0
+Bytes: 4
+Done
+
 460
 Mon Dec 05 00:47:22 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -26,12 +42,28 @@ UUID: 2d8f4f3f_ae35d739
 Bytes: 62
 Maybe we can change the return type of start from int to void?
 
+460
+Tue Dec 06 01:30:54 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_ae35d739
+UUID: adc25f6f_ce1763be
+Bytes: 100
+FfsHandle can't have an error during start, but DevHandle can -- it can fail to open the driver file
+
 557
 Mon Dec 05 00:47:22 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 2d8f4f3f_6e44cfb8
 Bytes: 30
 nit: Please remove the spaces.
+
+557
+Tue Dec 06 01:30:54 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_6e44cfb8
+UUID: 8decbb0b_9461542c
+Bytes: 4
+Done
 
 File: media/mtp/MtpFfsHandle.h
 
@@ -43,6 +75,14 @@ Bytes: 153
 Can we use unique_fd for the FDs?
 https://cs.corp.google.com/android/system/core/base/include/android-base/unique_fd.h?q=package:android+unique_fd&dr=CSs
 
+42
+Tue Dec 06 01:30:54 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_2e4ac7c5
+UUID: 8decbb0b_7412707d
+Bytes: 4
+Done
+
 File: media/mtp/tests/AsyncIO_test.cpp
 
 45
@@ -53,6 +93,14 @@ Bytes: 156
 Please use TempFile.
 https://cs.corp.google.com/android/system/core/base/include/android-base/test_utils.h?rcl=2aaa485e1503e35890e8570546e1866bfd783a20&l=24
 
+45
+Tue Dec 06 01:30:54 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_eebc3f6b
+UUID: 8decbb0b_54340c99
+Bytes: 4
+Done
+
 165
 Mon Dec 05 00:47:22 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -60,12 +108,28 @@ UUID: 2d8f4f3f_ee2fdfe1
 Bytes: 25
 Please remove the spaces.
 
+165
+Tue Dec 06 01:30:54 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_ee2fdfe1
+UUID: 8decbb0b_34f628ba
+Bytes: 4
+Done
+
 191
 Mon Dec 05 00:47:22 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 2d8f4f3f_0ea26b4b
 Bytes: 25
 Please remove the spaces.
+
+191
+Tue Dec 06 01:30:54 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_0ea26b4b
+UUID: 8decbb0b_14fb24a1
+Bytes: 4
+Done
 
 File: media/mtp/tests/MtpFfsHandle_test.cpp
 
@@ -76,12 +140,28 @@ UUID: 2d8f4f3f_4eac733c
 Bytes: 144
 Maybe we can remove the field after turning ffs_handle->{mBulkIn, mBulkOut, mIntr} into unique_fd since we don't need to close the FDs manually.
 
+46
+Tue Dec 06 01:30:54 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_4eac733c
+UUID: 8decbb0b_d4047cc9
+Bytes: 4
+Done
+
 49
 Mon Dec 05 00:47:22 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 2d8f4f3f_8eb57b83
 Bytes: 22
 Please use unique_ptr.
+
+49
+Tue Dec 06 01:30:54 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_8eb57b83
+UUID: 8decbb0b_940714ca
+Bytes: 4
+Done
 
 52
 Mon Dec 05 00:47:22 2016 +0000
@@ -90,6 +170,14 @@ UUID: 2d8f4f3f_6eb12f95
 Bytes: 33
 Please use unique_fd for the FDs.
 
+52
+Tue Dec 06 01:30:54 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_6eb12f95
+UUID: 8decbb0b_7414b0f6
+Bytes: 4
+Done
+
 56
 Mon Dec 05 00:47:22 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -97,4 +185,12 @@ UUID: 2d8f4f3f_aeb23796
 Bytes: 166
 Please use TemporaryFile here.
 https://cs.corp.google.com/android/system/core/base/include/android-base/test_utils.h?rcl=2aaa485e1503e35890e8570546e1866bfd783a20&l=24
+
+56
+Tue Dec 06 01:30:54 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 2d8f4f3f_aeb23796
+UUID: 8decbb0b_5411ac04
+Bytes: 4
+Done
 
