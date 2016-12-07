@@ -79,3 +79,15 @@ UUID: 8decbb0b_280008b4
 Bytes: 268
 Yeah it might be better to leave it the way it was. The issue I was trying to fix is when MtpServer is killed and restarted, UsbDeviceManager does not take any action since no Usb state changed, but the new server does not have a usb driver and will close immediately.
 
+167
+Wed Dec 07 01:07:38 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 8decbb0b_280008b4
+UUID: 6dcea7f1_c8c6ef37
+Bytes: 557
+I think we should fix the issue in MtpService.
+Currently MtpService ask MediaProvider to bind service so that the process will not be killed by the system.
+https://cs.corp.google.com/android/packages/providers/MediaProvider/src/com/android/providers/media/MtpReceiver.java?rcl=ed9ec79b7f8e8001042ebb5678f8e88de3ad986a&l=62
+
+So that the process will not be killed after MtpService is running. However MtpService process may be killed between configure()  and MtpService launches. We can fix this by letting MediaProvider bind MtpService just after configure.
+
