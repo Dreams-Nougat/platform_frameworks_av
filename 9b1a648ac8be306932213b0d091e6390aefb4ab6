@@ -17,6 +17,19 @@ UUID: ad1edff1_2edcbf74
 Bytes: 150
 Would it be better to have this include line repeated in MtpData/Request/Response/Event Packets? They use the definition even though MtpPacket doesn't
 
+21
+Wed Dec 07 01:07:38 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ad1edff1_2edcbf74
+UUID: 6dcea7f1_a8b73bbc
+Bytes: 291
+I think it's better to do:
+
+1. Add forward declaration "class IMtpHandle;" to each packet header.
+2. Add #include "IMtpHandle.h" to each packet source.
+
+See the header file section: https://docs.google.com/a/google.com/document/d/1QivJI_03TcfRAyMGWkTNHEdiQh8h_F-rYGup9soSeLA/edit?usp=sharing
+
 69
 Tue Dec 06 04:06:13 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
