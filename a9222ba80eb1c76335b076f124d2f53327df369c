@@ -1,0 +1,29 @@
+Revision: a9222ba80eb1c76335b076f124d2f53327df369c
+Patch-set: 22
+File: media/mtp/MtpFfsHandle.cpp
+
+465:0-465:1
+Wed Dec 07 01:07:38 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 6dcea7f1_c891cf33
+Bytes: 40
+nit: Please replace the tag with spaces.
+
+File: media/mtp/MtpFfsHandle.h
+
+23
+Wed Dec 07 01:07:38 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 6dcea7f1_e88c9319
+Bytes: 46
+nit: Please add a space between android and {.
+
+File: media/mtp/MtpServer.cpp
+
+166
+Wed Dec 07 01:07:38 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 6dcea7f1_28a7cb90
+Bytes: 27
+Should we add return; here?
+
