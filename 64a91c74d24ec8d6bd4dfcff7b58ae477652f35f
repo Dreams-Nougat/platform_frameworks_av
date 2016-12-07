@@ -91,3 +91,11 @@ https://cs.corp.google.com/android/packages/providers/MediaProvider/src/com/andr
 
 So that the process will not be killed after MtpService is running. However MtpService process may be killed between configure()  and MtpService launches. We can fix this by letting MediaProvider bind MtpService just after configure.
 
+167
+Wed Dec 07 22:01:59 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 6dcea7f1_c8c6ef37
+UUID: ad1edff1_b7dc94cf
+Bytes: 4
+Done
+
