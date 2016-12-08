@@ -1,0 +1,11 @@
+Revision: f77f84d2d438ef4a82215266b634209597dc6c13
+Patch-set: 21
+File: media/mtp/MtpServer.cpp
+
+240
+Thu Dec 08 01:19:09 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 6dcea7f1_c8d26f16
+Bytes: 32
+nit: Why did you remove the fix?
+
