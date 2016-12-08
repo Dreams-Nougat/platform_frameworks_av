@@ -1,0 +1,11 @@
+Revision: 455d209d5cab6541876850e0c6944917485edd91
+Patch-set: 23
+File: media/mtp/MtpRequestPacket.h
+
+20
+Thu Dec 08 01:19:09 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 6dcea7f1_e8cdb374
+Bytes: 58
+nit: You can remove this as you added forward declaration.
+
