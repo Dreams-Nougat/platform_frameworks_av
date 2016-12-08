@@ -17,3 +17,11 @@ UUID: ad1edff1_8364ab29
 Bytes: 513
 At some point I thought that an event sent in the middle of say a file transfer would interrupt that file transfer, so we should not send events asyncronously. Now I realize that that is incorrect -- in fact sending events synchronously is wrong. Interrupts require the host to poll the device, so if the host is not reading from the event endpoint, then the write will continue to block and stop the whole server. Furthermore, since the event endpoint is a separate endpoint, it won't affect other endpoint data.
 
+240
+Thu Dec 08 08:25:44 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: ad1edff1_8364ab29
+UUID: 6dcea7f1_6bb6ddbc
+Bytes: 34
+Got it. Thank you for explanation!
+
