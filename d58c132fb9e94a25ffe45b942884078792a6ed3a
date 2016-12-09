@@ -1,0 +1,21 @@
+Revision: d58c132fb9e94a25ffe45b942884078792a6ed3a
+Patch-set: 26
+File: media/mtp/MtpDataPacket.cpp
+
+27
+Fri Dec 09 00:20:37 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 6d5147f4_70b350cb
+Bytes: 30
+nit: Please sort the includes.
+
+File: media/mtp/MtpFfsHandle.cpp
+
+446
+Fri Dec 09 00:20:37 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 6d5147f4_90e0b4b4
+Bytes: 107
+When mPtp == usePtp case, don't we need to call closeEndpoints() ?
+It results in warning in initFunctionfs.
+
