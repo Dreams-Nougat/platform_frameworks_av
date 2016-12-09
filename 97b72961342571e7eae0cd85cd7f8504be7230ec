@@ -9,3 +9,11 @@ UUID: cd47938e_84caa701
 Bytes: 125
 How after this change the case of "ForceUseForMedia Is ForceSpeaker AND ForceUseForCommunication Is ForceSpeaker" is handled?
 
+378:6-378:41
+Fri Dec 09 12:30:43 2016 +0000
+Author: Francois Gaffie <1103033@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: cd47938e_84caa701
+UUID: 6dd9470d_f3538a2e
+Bytes: 311
+In fact, i might have done a copy paste error and the configurable engine was not aligned with the default engine. Accessibility strategy does not care of ForceUseForCommunication if out of call. ForceUseForMedia Is Speaker will be handled by falling back to the next applicable configuration (aka Speaker conf)
+
