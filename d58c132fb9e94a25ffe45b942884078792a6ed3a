@@ -9,6 +9,14 @@ UUID: 6d5147f4_70b350cb
 Bytes: 30
 nit: Please sort the includes.
 
+27
+Fri Dec 09 00:26:11 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 6d5147f4_70b350cb
+UUID: 3a26a7ad_b9e3db19
+Bytes: 252
+This include is causing the entire patch to fail to merge into master. The issue is that the includes on master are sorted differently. What would be the best solution here? I'm trying different placements of the line to see if any of them merge better
+
 File: media/mtp/MtpFfsHandle.cpp
 
 446
@@ -18,4 +26,12 @@ UUID: 6d5147f4_90e0b4b4
 Bytes: 107
 When mPtp == usePtp case, don't we need to call closeEndpoints() ?
 It results in warning in initFunctionfs.
+
+446
+Fri Dec 09 00:26:11 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 6d5147f4_90e0b4b4
+UUID: 3a26a7ad_1991af9e
+Bytes: 253
+In that situation the endpoints will be individually closed by unique_fd::reset. in the case where the config is closed, the endpoints must all be closed at the same time since functionfs refcounts open files and doesn't reset until everything is closed
 
