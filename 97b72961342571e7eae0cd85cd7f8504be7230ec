@@ -17,3 +17,11 @@ UUID: 6dd9470d_f3538a2e
 Bytes: 311
 In fact, i might have done a copy paste error and the configurable engine was not aligned with the default engine. Accessibility strategy does not care of ForceUseForCommunication if out of call. ForceUseForMedia Is Speaker will be handled by falling back to the next applicable configuration (aka Speaker conf)
 
+378:6-378:41
+Fri Dec 09 16:51:41 2016 +0000
+Author: Mikhail Naganov <1042638@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 6dd9470d_f3538a2e
+UUID: 3a26a7ad_2bf3e97c
+Bytes: 198
+OK. Yes, actually I realized that "TelephonyMode IsNot InCommunication" implies that we are not very much interested in the value of "ForceUseForCommunication", so now your change makes sense to me.
+
