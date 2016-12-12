@@ -18,6 +18,14 @@ UUID: 3a26a7ad_7ef073df
 Bytes: 75
 So we mark the property as being ready, even if the configure above failed?
 
+125:0-127:61
+Mon Dec 12 22:31:35 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 3a26a7ad_7ef073df
+UUID: 6d2a2762_ee22fbc7
+Bytes: 4
+Done
+
 820:4-820:16
 Mon Dec 12 19:16:02 2016 +0000
 Author: Jeff Sharkey <1006166@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -36,4 +44,12 @@ Parent: 3a26a7ad_9e7d8f5c
 UUID: fa632f25_34a15048
 Bytes: 45
 (or std::chrono::steady_clock in modern C++.)
+
+820:4-820:16
+Mon Dec 12 22:31:35 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: fa632f25_34a15048
+UUID: fa632f25_3de2d3bc
+Bytes: 4
+Done
 
