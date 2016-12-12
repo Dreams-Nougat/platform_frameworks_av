@@ -67,3 +67,11 @@ UUID: 3a26a7ad_3c9459cf
 Bytes: 227
 The warning only happens if a configure follows a configure without the server being started in the middle. This should be rare, so if there were ever problems or bugs it would be helpful to have the warning message so we know.
 
+446
+Mon Dec 12 05:27:52 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 3a26a7ad_7c9ad100
+UUID: 6d5147f4_30cf08bb
+Bytes: 34
+Got it. Thank you for explanation!
+
