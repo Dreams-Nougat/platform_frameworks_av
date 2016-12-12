@@ -1,0 +1,31 @@
+Revision: 285c39437ab7c6c6a545d6f10bbbc338e8b0236a
+Patch-set: 28
+File: media/mtp/MtpFfsHandle.cpp
+
+574:0-574:76
+Mon Dec 12 19:16:02 2016 +0000
+Author: Jeff Sharkey <1006166@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3a26a7ad_3e031bf2
+Bytes: 27
+This makes me so happy.  <3
+
+File: media/mtp/MtpServer.cpp
+
+125:0-127:61
+Mon Dec 12 19:16:02 2016 +0000
+Author: Jeff Sharkey <1006166@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3a26a7ad_7ef073df
+Bytes: 75
+So we mark the property as being ready, even if the configure above failed?
+
+820:4-820:16
+Mon Dec 12 19:16:02 2016 +0000
+Author: Jeff Sharkey <1006166@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3a26a7ad_9e7d8f5c
+Bytes: 274
+If you're measuring time-between-events, you probably want to use:
+
+  nsecs_t time = systemTime(SYSTEM_TIME_BOOTTIME);
+
+Since it gives you a nice single value to add/subtract for deltas, and it uses the monotonic clock that won't be at-risk for shuffling around due to NITZ.
+
