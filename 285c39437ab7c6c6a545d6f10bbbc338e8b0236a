@@ -29,3 +29,11 @@ If you're measuring time-between-events, you probably want to use:
 
 Since it gives you a nice single value to add/subtract for deltas, and it uses the monotonic clock that won't be at-risk for shuffling around due to NITZ.
 
+820:4-820:16
+Mon Dec 12 20:36:08 2016 +0000
+Author: Elliott Hughes <1003224@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 3a26a7ad_9e7d8f5c
+UUID: fa632f25_34a15048
+Bytes: 45
+(or std::chrono::steady_clock in modern C++.)
+
