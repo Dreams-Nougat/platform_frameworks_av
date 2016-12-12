@@ -1,0 +1,18 @@
+Revision: 20be05bec0e4ec5248fb515bd7e51cf86dad28cd
+Patch-set: 2
+File: services/audiopolicy/common/managerdefinitions/src/AudioPolicyMix.cpp
+
+64:8-64:12
+Mon Dec 12 18:45:10 2016 +0000
+Author: Mikhail Naganov <1042638@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3a26a7ad_7edcf300
+Bytes: 60
+In Android, "logical not" operator is used in a form of "!".
+
+359:4-359:52
+Mon Dec 12 18:45:10 2016 +0000
+Author: Mikhail Naganov <1042638@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 3a26a7ad_be5f2b8f
+Bytes: 60
+Why can't we just pass a string literal to 'write' directly?
+
