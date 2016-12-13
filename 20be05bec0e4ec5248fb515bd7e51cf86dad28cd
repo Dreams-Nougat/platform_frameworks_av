@@ -9,10 +9,26 @@ UUID: 3a26a7ad_7edcf300
 Bytes: 60
 In Android, "logical not" operator is used in a form of "!".
 
+64:8-64:12
+Tue Dec 13 07:51:59 2016 +0000
+Author: Francois Gaffie <1103033@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 3a26a7ad_7edcf300
+UUID: 9aeeb371_844668c3
+Bytes: 4
+Done
+
 359:4-359:52
 Mon Dec 12 18:45:10 2016 +0000
 Author: Mikhail Naganov <1042638@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: 3a26a7ad_be5f2b8f
 Bytes: 60
 Why can't we just pass a string literal to 'write' directly?
+
+359:4-359:52
+Tue Dec 13 07:51:59 2016 +0000
+Author: Francois Gaffie <1103033@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: 3a26a7ad_be5f2b8f
+UUID: 9aeeb371_644b64cd
+Bytes: 4
+Done
 
