@@ -1,0 +1,11 @@
+Revision: c94f8598ebd451f30ecd601826aa938bc76f467c
+Patch-set: 3
+File: services/audiopolicy/common/managerdefinitions/src/AudioPolicyMix.cpp
+
+89:8-89:10
+Tue Dec 13 21:56:03 2016 +0000
+Author: Eric Laurent <1003259@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ba845725_8d074584
+Bytes: 55
+I think only MIX_TYPE_PLAYERS mixes have usage criteria
+
