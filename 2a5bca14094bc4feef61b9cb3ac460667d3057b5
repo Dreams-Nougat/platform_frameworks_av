@@ -1,0 +1,11 @@
+Revision: 2a5bca14094bc4feef61b9cb3ac460667d3057b5
+Patch-set: 1
+File: /COMMIT_MSG
+
+7:54-7:73
+Wed Dec 14 22:49:50 2016 +0000
+Author: Colin Cross <1002751@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: ba845725_61468ac6
+Bytes: 21
+tautological-compare?
+
