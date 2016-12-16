@@ -1,0 +1,11 @@
+Revision: 694c777cd57f19b3bb71cf57ff4cfadf48b6e5a5
+Patch-set: 6
+File: media/libeffects/visualizer/EffectVisualizer.cpp
+
+30:0-30:23
+Fri Dec 16 18:57:21 2016 +0000
+Author: Mark Salyzyn <1032276@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 1a772381_4ab59f13
+Bytes: 3
+wth
+
