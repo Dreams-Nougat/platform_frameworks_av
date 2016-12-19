@@ -10,6 +10,14 @@ Bytes: 199
 Why don't we have the definition of IOCTL in functionfs.h ?
 https://cs.corp.google.com/android/external/kernel-headers/original/uapi/linux/usb/functionfs.h?q=package:android+functionfs.h&dr=CSs&l=283
 
+41
+Mon Dec 19 19:28:34 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: da93cbd8_1b405b73
+UUID: 1a772381_9d029571
+Bytes: 110
+The ioctl is android only (for now, I wrote it). bionic team only wants upstream definitions in their headers.
+
 459
 Mon Dec 19 01:45:43 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
@@ -17,10 +25,26 @@ UUID: da93cbd8_bb30471a
 Bytes: 60
 Please check result of ioctl and add logging for error case.
 
+459
+Mon Dec 19 19:28:34 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: da93cbd8_bb30471a
+UUID: 1a772381_5d863d69
+Bytes: 4
+Done
+
 522
 Mon Dec 19 01:45:43 2016 +0000
 Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
 UUID: da93cbd8_db2513db
 Bytes: 158
 How about defining helper class like ScopedEndpointBufferAlloc that increases buffer size at the constructor and resets buffer size to zero at the destructor?
+
+522
+Mon Dec 19 19:28:34 2016 +0000
+Author: Jerry Zhang <1113594@85c56323-6fa9-3386-8a01-6480fb634889>
+Parent: da93cbd8_db2513db
+UUID: 1a772381_7d83f957
+Bytes: 4
+Done
 
