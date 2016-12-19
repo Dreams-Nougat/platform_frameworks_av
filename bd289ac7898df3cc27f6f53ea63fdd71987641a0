@@ -1,0 +1,18 @@
+Revision: bd289ac7898df3cc27f6f53ea63fdd71987641a0
+Patch-set: 1
+File: media/mtp/MtpFfsHandle.cpp
+
+459
+Mon Dec 19 01:45:43 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: da93cbd8_bb30471a
+Bytes: 60
+Please check result of ioctl and add logging for error case.
+
+522
+Mon Dec 19 01:45:43 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: da93cbd8_db2513db
+Bytes: 158
+How about defining helper class like ScopedEndpointBufferAlloc that increases buffer size at the constructor and resets buffer size to zero at the destructor?
+
