@@ -1,0 +1,25 @@
+Revision: ae1b2a3f415db35d04edb7c6a6c5364198cb2ab0
+Patch-set: 2
+File: media/mtp/MtpFfsHandle.cpp
+
+433
+Tue Dec 20 00:09:54 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 17961e08_5d913b31
+Bytes: 21
+nit: Please add const
+
+434
+Tue Dec 20 00:09:54 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 17961e08_7d96772c
+Bytes: 6
+ditto.
+
+486
+Tue Dec 20 00:09:54 2016 +0000
+Author: Daichi Hirono <1091002@85c56323-6fa9-3386-8a01-6480fb634889>
+UUID: 17961e08_1d8bb303
+Bytes: 41
+Now return -1 is enough. Same for others.
+
